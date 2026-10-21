@@ -6,6 +6,7 @@
  *              GET  /wp-json/c36/v1/translations?element_type=post_page&id=123
  *              POST /wp-json/c36/v1/link {element_type, source_id, translation_id, lang, source_lang}
  *              POST /wp-json/c36/v1/string-translation {context, lang, strings: {naam: vertaling}}
+ *              GET/POST /wp-json/c36/v1/content-block-options (weergaveregels Blocksy-contentblok)
  *              element_type: post_page | post_post | post_product | tax_category | tax_product_cat | …
  * Author: 36cycling migratie
  */
@@ -83,6 +84,38 @@ add_action('rest_api_init', function () {
 
     // Vertalingen van losse strings (WPML String Translation), bv. de teksten van de Complianz-cookiebalk.
     //   POST {context, lang, strings: {naam: vertaling, ...}}
+    // Weergaveregels van een Blocksy-contentblok (waar het blok verschijnt), opgeslagen in blocksy_post_meta_options.
+    //   GET  /wp-json/c36/v1/content-block-options?id=123          → alle Blocksy-opties van het blok
+    //   POST /wp-json/c36/v1/content-block-options {id, conditions} → alleen de weergaveregels vervangen
+    register_rest_route('c36/v1', '/content-block-options', [
+        [
+            'methods'             => 'GET',
+            'permission_callback' => $can,
+            'callback'            => function ($req) {
+                $id = (int) $req['id'];
+                if (get_post_type($id) !== 'ct_content_block') {
+                    return new WP_Error('c36_not_found', 'Geen contentblok.', ['status' => 404]);
+                }
+                return ['id' => $id, 'options' => get_post_meta($id, 'blocksy_post_meta_options', true)];
+            },
+        ],
+        [
+            'methods'             => 'POST',
+            'permission_callback' => $can,
+            'callback'            => function ($req) {
+                $id = (int) $req['id'];
+                if (get_post_type($id) !== 'ct_content_block' || !is_array($req['conditions'])) {
+                    return new WP_Error('c36_bad_request', 'Geen contentblok of geen conditions.', ['status' => 400]);
+                }
+                $options = get_post_meta($id, 'blocksy_post_meta_options', true);
+                $options = is_array($options) ? $options : [];
+                $options['conditions'] = $req['conditions'];
+                update_post_meta($id, 'blocksy_post_meta_options', $options);
+                return ['id' => $id, 'options' => get_post_meta($id, 'blocksy_post_meta_options', true)];
+            },
+        ],
+    ]);
+
     register_rest_route('c36/v1', '/string-translation', [
         'methods'             => 'POST',
         'permission_callback' => $can,
