@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/sportkleding-collectie/singlet-rudy/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "sportkleding-collectie",
+  "seo": {
+    "title": "Singlet - Rudy ontwerpen en bedrukken",
+    "metaDescription": "Singlet - Rudy voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Singlet - Rudy ontwerpen en bedrukken",
+    "ogDescription": "Singlet - Rudy voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "singlet-rudy"
+  },
+  "headings": {
+    "h1": "Singlet - Rudy",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Singlet - Rudy</h1>\n<p>Dit hardloophemd is perfect voor sporters die comfort en stijl willen combineren. Dit lichtgewicht singlet is gemaakt van ademend, sneldrogend materiaal dat je droog en koel houdt tijdens elke run. Met een moderne pasvorm en een sportief design is het ideaal voor hardlopen, maar ook voor fitness of andere intensieve activiteiten.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/singlet-rudy.jpg",
+    "alt": "sportkleding ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/sportkleding-collectie/singlet-rudy/",
+    "to": "https://rondevanrotterdam.nl/nl/sportkleding-collectie/singlet-rudy/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

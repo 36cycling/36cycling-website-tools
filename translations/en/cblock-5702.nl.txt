@@ -1,0 +1,9 @@
+@title: Shop categorie navigatie
+@slug: archive-top
+@path: /nl/ct_content_block/archive-top/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+[rvrd_subcategories]

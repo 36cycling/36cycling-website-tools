@@ -1,0 +1,199 @@
+{
+  "id": 934,
+  "date": "2024-05-21T13:47:59",
+  "date_gmt": "2024-05-21T13:47:59",
+  "guid": {
+    "rendered": "https://startersites.io/blocksy/e-bike/ct_content_block/exit-intent-popup/",
+    "raw": "https://startersites.io/blocksy/e-bike/ct_content_block/exit-intent-popup/"
+  },
+  "modified": "2024-05-21T13:47:59",
+  "modified_gmt": "2024-05-21T13:47:59",
+  "password": "",
+  "slug": "exit-intent-popup",
+  "status": "publish",
+  "type": "ct_content_block",
+  "link": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/",
+  "title": {
+    "raw": "Exit Intent Popup",
+    "rendered": "Exit Intent Popup"
+  },
+  "content": {
+    "raw": "<!-- wp:greenshift-blocks/container {\"id\":\"gsbp-11ea6ca\",\"flexbox\":{\"type\":\"flexbox\",\"flexDirection\":[\"column\"],\"justifyContent\":[\"flex-end\"]},\"overlay\":{\"image\":[\"https://rondevanrotterdam.nl/wp-content/uploads/2024/04/shop-sidebar-banner-image.webp\"],\"repeat\":[\"no-repeat\"],\"size\":[\"cover\"],\"opacity\":0.4,\"positionImage\":[{\"x\":0.49,\"y\":0}]},\"spacing\":{\"margin\":{\"values\":{},\"locked\":false},\"padding\":{\"values\":{\"top\":[\"45px\"],\"right\":[\"45px\"],\"bottom\":[\"45px\"],\"left\":[\"45px\"]},\"locked\":true}},\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[]},\"heightType\":\"custom\",\"minHeight\":[\"400px\"]}} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-11ea6ca\" id=\"gspb_container-id-gsbp-11ea6ca\"><div class=\"gspb_backgroundOverlay\"></div><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-a2eca4b\",\"headingContent\":\"Provide Sustainable Electric Bikes For Everyone\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"5px\"]},\"locked\":false},\"padding\":{\"values\":{},\"locked\":false}},\"typography\":{\"textShadow\":{},\"size\":[\"27px\"],\"color\":\"#ffffff\"}} -->\n<h2 id=\"gspb_heading-id-gsbp-a2eca4b\" class=\"gspb_heading gspb_heading-id-gsbp-a2eca4b \">Provide Sustainable Electric Bikes For Everyone</h2>\n<!-- /wp:greenshift-blocks/heading -->\n\n<!-- wp:greenshift-blocks/text {\"id\":\"gsbp-129a6dc\",\"textContent\":\"Malesuada fames ac turpis egestas. Interdum velit laoreet id donec. Eu tincidunt tortor aliquam nulla facilisi cras.\",\"spacing\":{\"margin\":{\"values\":{\"bottom\":[\"30px\"]},\"locked\":false},\"padding\":{\"values\":{},\"locked\":false}},\"typography\":{\"textShadow\":{},\"color\":\"#ffffff9c\"}} -->\n<div id=\"gspb_text-id-gsbp-129a6dc\" class=\"gspb_text gspb_text-id-gsbp-129a6dc \">Malesuada fames ac turpis egestas. Interdum velit laoreet id donec. Eu tincidunt tortor aliquam nulla facilisi cras.</div>\n<!-- /wp:greenshift-blocks/text -->\n\n<!-- wp:greenshift-blocks/buttonbox {\"id\":\"gsbp-871d3c1\",\"buttonContent\":\"20% OFF your first purchase!\",\"spacing\":{\"margin\":{\"values\":{},\"locked\":false},\"padding\":{\"values\":{\"right\":[\"20px\"],\"left\":[\"20px\"]},\"locked\":false}},\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[]},\"heightType\":\"custom\",\"minHeight\":[\"50px\"]}} -->\n<div class=\"gspb_button_wrapper gspb_button-id-gsbp-871d3c1\" id=\"gspb_button-id-gsbp-871d3c1\"><a class=\"wp-block-greenshift-blocks-buttonbox gspb-buttonbox wp-element-button\" rel=\"noopener\"><span class=\"gspb-buttonbox-textwrap\"><span class=\"gspb-buttonbox-text\"><span class=\"gspb-buttonbox-title\">20% OFF your first purchase!</span></span></span></a></div>\n<!-- /wp:greenshift-blocks/buttonbox --></div>\n<!-- /wp:greenshift-blocks/container -->",
+    "rendered": "\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-11ea6ca\" id=\"gspb_container-id-gsbp-11ea6ca\"><div class=\"gspb_backgroundOverlay\"></div>\n<h2 id=\"gspb_heading-id-gsbp-a2eca4b\" class=\"gspb_heading gspb_heading-id-gsbp-a2eca4b \">Provide Sustainable Electric Bikes For Everyone</h2>\n\n\n\n<div id=\"gspb_text-id-gsbp-129a6dc\" class=\"gspb_text gspb_text-id-gsbp-129a6dc \">Malesuada fames ac turpis egestas. Interdum velit laoreet id donec. Eu tincidunt tortor aliquam nulla facilisi cras.</div>\n\n\n\n<div class=\"gspb_button_wrapper gspb_button-id-gsbp-871d3c1\" id=\"gspb_button-id-gsbp-871d3c1\"><a class=\"wp-block-greenshift-blocks-buttonbox gspb-buttonbox wp-element-button\" rel=\"noopener\"><span class=\"gspb-buttonbox-textwrap\"><span class=\"gspb-buttonbox-text\"><span class=\"gspb-buttonbox-title\">20% OFF your first purchase!</span></span></span></a></div>\n</div>\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "template": "",
+  "meta": {
+    "_gspb_post_css": "#gspb_heading-id-gsbp-a2eca4b{font-size:27px;color:#fff;margin-top:0;margin-bottom:5px}#gspb_button-id-gsbp-871d3c1{display:flex;justify-content:flex-start}#gspb_button-id-gsbp-871d3c1 .gspb-buttonbox-text{display:flex;flex-direction:column}#gspb_button-id-gsbp-871d3c1>.gspb-buttonbox{box-sizing:border-box;padding-right:20px;padding-left:20px;min-height:50px}.gspb_text-id-gsbp-129a6dc{color:#ffffff9c;margin-bottom:30px!important}.gspb_container-id-gsbp-11ea6ca{flex-direction:column;box-sizing:border-box}#gspb_container-id-gsbp-11ea6ca.gspb_container>p:last-of-type{margin-bottom:0}.gspb_container{position:relative}#gspb_container-id-gsbp-11ea6ca.gspb_container{display:flex;flex-direction:column;justify-content:flex-end;padding:45px;isolation:isolate}#gspb_container-id-gsbp-11ea6ca.gspb_container>.gspb_backgroundOverlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;opacity:.4;background-image:url(https://startersites.io/blocksy/e-bike/wp-content/uploads/2024/04/shop-sidebar-banner-image.webp);background-size:cover;background-repeat:no-repeat;background-position:49% 0}body.gspb-bodyfront #gspb_container-id-gsbp-11ea6ca.gspb_container{min-height:400px}",
+    "footnotes": ""
+  },
+  "permalink_template": "https://rondevanrotterdam.nl/nl/ct_content_block/%pagename%/",
+  "generated_slug": "exit-intent-popup",
+  "class_list": [
+    "post-934",
+    "ct_content_block",
+    "type-ct_content_block",
+    "status-publish",
+    "hentry"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Exit Intent Popup - 36 Cycling</title>\n<!-- Opmerking voor de beheerder: deze pagina toont geen meta description omdat het geen heeft. Dit kun je oplossen door er een voor deze pagina te schrijven of ga naar het [Yoast SEO - Instellingen] menu en stel een template in. -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Exit Intent Popup - 36 Cycling\" />\n<meta property=\"og:url\" content=\"https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/\" />\n<meta property=\"og:site_name\" content=\"36 Cycling\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/ct_content_block\\/exit-intent-popup\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/ct_content_block\\/exit-intent-popup\\/\",\"name\":\"Exit Intent Popup - 36 Cycling\",\"isPartOf\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\"},\"datePublished\":\"2024-05-21T13:47:59+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/ct_content_block\\/exit-intent-popup\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/ct_content_block\\/exit-intent-popup\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/ct_content_block\\/exit-intent-popup\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Exit Intent Popup\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"name\":\"36 Cycling\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\",\"name\":\"36 Cycling\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"contentUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"width\":500,\"height\":514,\"caption\":\"36 Cycling\"},\"image\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Exit Intent Popup - 36 Cycling",
+    "robots": {
+      "index": "noindex",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "og_locale": "nl_NL",
+    "og_type": "article",
+    "og_title": "Exit Intent Popup - 36 Cycling",
+    "og_url": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/",
+    "og_site_name": "36 Cycling",
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/",
+          "url": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/",
+          "name": "Exit Intent Popup - 36 Cycling",
+          "isPartOf": {
+            "@id": "https://rondevanrotterdam.nl/nl/#website"
+          },
+          "datePublished": "2024-05-21T13:47:59+00:00",
+          "breadcrumb": {
+            "@id": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/#breadcrumb"
+          },
+          "inLanguage": "nl-NL",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rondevanrotterdam.nl/nl/ct_content_block/exit-intent-popup/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rondevanrotterdam.nl/nl/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Exit Intent Popup"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rondevanrotterdam.nl/nl/#website",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "name": "36 Cycling",
+          "description": "",
+          "publisher": {
+            "@id": "https://rondevanrotterdam.nl/nl/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rondevanrotterdam.nl/nl/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://rondevanrotterdam.nl/nl/#organization",
+          "name": "36 Cycling",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "nl-NL",
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/",
+            "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "contentUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "width": 500,
+            "height": 514,
+            "caption": "36 Cycling"
+          },
+          "image": {
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/"
+          }
+        }
+      ]
+    }
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/ct_content_block/934",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/ct_content_block"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/ct_content_block"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 0,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/ct_content_block/934/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=934"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/ct_content_block/934"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/ct_content_block/934"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

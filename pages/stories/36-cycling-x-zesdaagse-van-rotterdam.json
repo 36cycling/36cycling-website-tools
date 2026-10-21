@@ -1,0 +1,53 @@
+{
+  "slug": "36-cycling-x-zesdaagse-van-rotterdam",
+  "seo": {
+    "title": "36 Cycling x Zesdaagse van Rotterdam",
+    "metaDescription": ""
+  },
+  "hero": {
+    "src": "https://www.36cycling.com/media/iv0bv2zs/zesdaagse-2024_1.jpg",
+    "title": "36 Cycling x Zesdaagse van Rotterdam"
+  },
+  "rows": [
+    [
+      {
+        "type": "text",
+        "html": "<p style=\"text-align: left; font-size: 1.2em;\"><strong>36 Cycling is in 2025 voor de elfde keer de official supplier van de wielerkleding tijdens de Zesdaagse van Rotterdam. Sinds de eerste keer in 2014 hebben al talloze grote kampioenen – wereld-, maar ook olympisch kampioenen – in onze kleding hun rondes op de baan van Rotterdam Ahoy gereden.</strong></p>"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p>36 Cycling werd de officiële kledingleverancier van de zesdaagse in 2014. Daags na nieuwjaarsdag kwamen de nieuwe truitjes de baan op: een nog heel jonge Yoeri Havik met de huidige bondscoach Nick Stöpler in het blauw-groen van de sponsor, de Amerikanen Guy East en Dan Holloway in de Stars and Stripes, de Fransman Vivien Brisse als de wereldkampioen koppelkoers in de regenboogtrui, Iljo Keisse en Niki Terpstra in de witte shirts, waarin zij prachtige successen haalden in de Maasstad…</p>\n<p>En toen kon er worden gekoerst. Toen de uitlaatgassen van de derny’s na zes dagen weer waren neergedaald, na ontelbaar veel handaflossingen, spannende sprints en razendsnelle rondes, stonden Keisse en Terpstra op het hoogste treetje van het podium. Het was het begin van een duurzaam en langdurig partnerschap tussen 36 Cycling en de Zesdaagse van Rotterdam, het grootste indoor wielerevenement van Nederland.&nbsp;</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/qu3pdsec/zesdaagse-2023_2.jpg"
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/rbpgy4el/zesdaagse-2023_3.jpg"
+      },
+      {
+        "type": "text",
+        "html": "<p>In de jaren die volgden bleef 36 Cycling voor de fietskleding in de zesdaagse zorgen. Daar zaten ook de regenboogtruien van verschillende wereldkampioenen bij, zoals Yoeri Havik en Jan-Willem van Schip in 2023. Maar ook bijvoorbeeld de kleding van sprintkanonnen als Harrie Lavreysen, Jeffrey Hoogland en Matthijs Büchli, als ook de outfits van de renners en rensters in de Talents Cup en de damescompetitie.</p>\n<p><strong>Recente winnaars</strong></p>\n<ul>\n<li>2024: Tobias Aagaard Hansen - Michael Morkov</li>\n<li>2023: Yoeri Havik - Jan-Willem van Schip</li>\n<li>2022: Niki Terpstra - Yoeri Havik</li>\n<li><em>2021: Niet gehouden vanwege COVID-19</em></li>\n<li>2020: Yoeri Havik - Wim Stroetinga</li>\n<li>2019: Niki Terpstra - Thomas Boudat</li>\n<li>2018: Kenny De Ketele - Moreno De Pauw</li>\n</ul>"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p style=\"text-align: left;\"><strong>Geschiedenis van de zesdaagse</strong><br>Zesdaagse-baanwielrennen is zo oud als de weg naar Rome: nog voor het einde van de negentiende eeuw was deze tak van sport al enorm populair in de VS. Begin twintigste eeuw waaide de sport over naar Europa en werden ook daar zesdaagses uit de grond gestampt, en uiteindelijk kreeg de sport ook voet aan de grond in Rotterdam. De eerste Rotterdamse zesdaagses werden in 1936 en 1937 gehouden in de Blijdorpse polder.</p>\n<p style=\"text-align: left;\">Daarna duurde het tot 1968 tot het evenement weer kon plaatsvinden: eerst nog een paar jaar in de Energiehal, later in Rotterdam Ahoy. Daar namen pure specialisten als Peter Post, Patrick Sercu en René Pijnen het op tegen bekende namen als Jan Raas, Gerrie Knetemann en Eddy Merckx. Maar eind jaren tachtig verdween de zesdaagse uit Rotterdam, werd de vaste baan uit Rotterdam Ahoy gesloopt en leek het erop dat de geschiedenisboeken dicht konden worden geslagen.</p>\n<p style=\"text-align: left;\">Het vlammetje doofde echter nooit helemaal en wakkerde begin eenentwintigste eeuw opnieuw aan. In 2005 keerde de zesdaagse terug op de kalender, op een demontabele baan in Rotterdam Ahoy. Sindsdien wordt ieder jaar de 200 meter lange piste ingepast in het Sportpaleis – alleen ten tijde van COVID-19 bleef de velodroom in de opslag. En aan deze historie wordt een nieuw hoofdstuk toegevoegd tijdens de 41e Zesdaagse van Rotterdam, die van 10-15 december 2024 in Rotterdam Ahoy wordt gehouden.</p>\n<p style=\"text-align: left;\"><strong>Uitleg Zesdaagse van Rotterdam</strong><br>De Zesdaagse van Rotterdam is een zes dagen durende wielerwedstrijd. Anders dan vroeger, toen koppels zes volle dagen in de baan waren, kent de wedstrijd vandaag de dag vijf keer een avondprogramma en een keer een dagprogramma (op zondag). De koppels rijden verschillende onderdelen, zoals een koppelkoers, een afvalwedstrijd en een tijdrit, en kunnen daarin ronden voorsprong pakken op de concurrentie en punten verdienen voor het algemeen klassement.</p>\n<p style=\"text-align: left;\">Welk koppel aan het eind van de zesdaagse de meeste ronden voorsprong heeft of bij een gelijk aantal ronden de meeste punten, wint het klassement!</p>"
+      }
+    ]
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/stories/36-cycling-x-zesdaagse-van-rotterdam/",
+    "to": "https://rondevanrotterdam.nl/nl/stories/36-cycling-x-zesdaagse-van-rotterdam/"
+  },
+  "status": {
+    "extracted": true,
+    "built": false
+  }
+}

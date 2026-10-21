@@ -1,0 +1,21 @@
+@title: Running tight
+@slug: running-tight
+@path: /nl/sportkleding-collectie/running-tight/
+@yoast_title: Running tight ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Running tight voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.
+@yoast_focuskw: 
+
+=== 1
+sportkleding ontwerpen en bedrukken
+=== 2
+Running tight
+=== 3
+Deze hardloopbroek is ontworpen voor hardlopers die maximale ondersteuning en comfort zoeken. Gemaakt van hoogwaardig, elastisch materiaal biedt deze hardlooptight optimale bewegingsvrijheid en lichte compressie voor spierondersteuning. Het ademende en vochtafvoerende design houdt je droog en comfortabel. Ideaal voor trainingen en wedstrijden in elk seizoen!
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

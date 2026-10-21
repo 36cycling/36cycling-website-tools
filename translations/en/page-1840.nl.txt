@@ -1,0 +1,21 @@
+@title: Leisure jack
+@slug: leisure-jack
+@path: /nl/teamkleding-collectie/leisure-jack/
+@yoast_title: Leisure jack ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Leisure jack voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+trainingsjack in eigen ontwerp bedrukken
+=== 2
+Leisure jack
+=== 3
+Blijf stijlvol en comfortabel, zowel op als naast de fiets, met ons trendy leisure jack. Dit jack is gemaakt van ademend, waterafstotend materiaal dat je beschermt tegen de elementen. De sportieve pasvorm zorgt voor optimale bewegingsvrijheid, terwijl handige zakken genoeg ruimte bieden voor je essentials.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

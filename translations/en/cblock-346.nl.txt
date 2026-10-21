@@ -1,0 +1,7 @@
+@title: Above Footer CTA (Shop Page)
+@slug: above-footer-cta-shop-page
+@path: /nl/ct_content_block/above-footer-cta-shop-page/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+

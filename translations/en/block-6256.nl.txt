@@ -1,0 +1,39 @@
+@title: Testimonials
+@slug: testimanials
+@path: /nl/stories/testimanials/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+Vijf sterren klantbeoordeling
+=== 2
+Wat klanten over ons zeggen
+=== 3
+Gradient
+=== 4
+linear-gradient(0deg,rgba(0,0,0,0.77) 9%,rgba(255,255,255,0) 69%)
+=== 5
+Content Container
+=== 6
+Wielrenners van FTVV in custom teamkleding
+=== 7
+Fietsgroep in custom teamkleding op een dijkweg
+=== 8
+Wielrenners in custom teamkleding van De Rijke
+=== 9
+var:preset|spacing|60
+=== 10
+<em>"Door omstandigheden had ik hals over kop een nieuwe leverancier voor onze fietskleding nodig. 36 Cycling was voor mij onbekend. Het eerste mailcontact gaf direct een goed gevoel. Er werd zeer goed meegedacht en een prachtig shirt ontworpen. En dat keurig op tijd en betaalbaar. En zeker niet onbelangrijk, de shirts zijn fantastisch."</em>
+=== 11
+<strong>Bertus van den Bunt</strong><br>Stichting Kerkrade
+=== 12
+var:preset|spacing|50
+=== 13
+<em>"Geweldig bedrijf met fantastisch kwaliteit aan kleding. Voor ons bedrijf een ontwerp laten maken, is heel fijn schakelen met 36cycling. Wij zijn super blij met onze nieuwe wielren- en hardloopkleding."</em>
+=== 14
+<strong>Richard Steffers</strong><br>Fundament Advies
+=== 15
+<em>"Was de eerste keer dat ik wielerkleding heb besteld bij 36 Cycling, ik zou het iedereen aanraden. Mooi resultaat, reëele kosten en hele nette communicatie. Kortom, Team Chasse Patate is er blij mee!"</em>
+=== 16
+<strong>Paul van Rooijen</strong><br>Team Chasse Patate

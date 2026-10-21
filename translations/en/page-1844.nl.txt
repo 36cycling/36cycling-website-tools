@@ -1,0 +1,13 @@
+@title: Offerte aanvragen
+@slug: offerteaanvraag
+@path: /nl/offerteaanvraag/
+@yoast_title: Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling
+@yoast_metadesc: Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.
+@yoast_focuskw: 
+
+=== 1
+Zwarte kop met titel
+=== 2
+Offerte aanvragen
+=== 3
+Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag hieronder eenvoudig je offerte aan.

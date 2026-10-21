@@ -1,0 +1,1258 @@
+{
+  "oldShop": [
+    "/nl/fietskleding/",
+    "/nl/shop/cart/",
+    "/nl/shop/thankyou/",
+    "/nl/fietskleding/heren/",
+    "/nl/fietskleding/heren/fietsbroeken/",
+    "/nl/fietskleding/heren/fietsbroeken/korte-fietsbroeken/",
+    "/nl/shop/158547/wielerbroek-carve-zwart-v2/",
+    "/nl/shop/95051/wielerbroek-carve-rood/",
+    "/nl/shop/95065/wielerbroek-carve-bruin/",
+    "/nl/shop/95072/wielerbroek-carve-petrol-blauw/",
+    "/nl/shop/95093/wielerbroek-carve-olijfgroen/",
+    "/nl/shop/95079/wielerbroek-carve-marine-blauw/",
+    "/nl/shop/95086/wielerbroek-carve-grijs/",
+    "/nl/shop/159949/wielerbroek-totalgrip-zwart/",
+    "/nl/shop/53531/wielerbroek-ecopower-50-zwart/",
+    "/nl/shop/158536/wielerbroek-ecopower-70-zwart/",
+    "/nl/shop/52546/wielerbroek-elements-zwart/",
+    "/nl/shop/6471/wielerbroek-ecoracer-zwart-lichtblauw-logo/",
+    "/nl/shop/6512/wielerbroek-ecoracer-zwart-grijs-logo/",
+    "/nl/shop/55523/wielerbroek-navy-blauw-zonder-bretels-heren/",
+    "/nl/fietskleding/heren/fietsbroeken/lange-fietsbroeken/",
+    "/nl/shop/52588/lange-wielerbroek-zwart-zonder-zeem/",
+    "/nl/shop/52596/lange-wielerbroek-zwart-met-zeem/",
+    "/nl/fietskleding/heren/fietsshirts-heren/",
+    "/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-korte-mouw/",
+    "/nl/shop/181094/volt-wielershirt-zwart/",
+    "/nl/shop/181038/volt-wielershirt-zwart-neon/",
+    "/nl/shop/181103/chroma-wielershirt-burgundy/",
+    "/nl/shop/94905/chroma-wielershirt-olijfgroen/",
+    "/nl/shop/94953/chroma-wielershirt-metaal-blauw/",
+    "/nl/shop/94809/chroma-wielershirt-okergeel/",
+    "/nl/shop/94857/chroma-wielershirt-bruin/",
+    "/nl/shop/94743/chroma-wielershirt-marine-blauw/",
+    "/nl/shop/94785/chroma-wielershirt-blauw/",
+    "/nl/shop/94833/chroma-wielershirt-petrol/",
+    "/nl/shop/94929/chroma-wielershirt-mint-groen/",
+    "/nl/shop/94977/chroma-wielershirt-lila/",
+    "/nl/shop/94881/chroma-wielershirt-oranje/",
+    "/nl/shop/6470/pro-wielershirt-zwart-grijs/",
+    "/nl/shop/43399/slider-wielershirt-blauw-zwart/",
+    "/nl/shop/161795/wielershirt-roffa/",
+    "/nl/shop/161802/wielershirt-arcade/",
+    "/nl/shop/77069/wielershirt-aero-light-blauw/",
+    "/nl/shop/79756/wielershirt-aero-light-blauw-zwart/",
+    "/nl/shop/53523/slider-wielershirt-donkergrijs/",
+    "/nl/shop/43411/slider-wielershirt-groen/",
+    "/nl/shop/55498/slider-wielershirt-bordeaux/",
+    "/nl/shop/43350/slider-wielershirt-rood/",
+    "/nl/shop/43391/slider-wielershirt-creme/",
+    "/nl/shop/6475/tego-shirt-zwart/",
+    "/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-lange-mouw/",
+    "/nl/shop/181112/volt-wielershirt-lange-mouwen-zwart/",
+    "/nl/shop/97520/chroma-wielershirt-lange-mouwen-marine-blauw/",
+    "/nl/shop/97530/chroma-wielershirt-lange-mouwen-petrol/",
+    "/nl/shop/97540/chroma-wielershirt-lange-mouwen-olijf-groen/",
+    "/nl/shop/129633/chroma-wielershirt-lange-mouwen-aubergine/",
+    "/nl/shop/133513/chroma-wielershirt-lange-mouwen-metal-blue/",
+    "/nl/fietskleding/heren/fietsjacks/",
+    "/nl/shop/158227/thermojack-zwart/",
+    "/nl/shop/6472/pro-all-season-jack-zwart-grijs/",
+    "/nl/shop/49750/all-season-jack-slider-blauw-zwart/",
+    "/nl/shop/49736/all-season-jack-slider-groen/",
+    "/nl/shop/49783/aquazero-jack-zwart/",
+    "/nl/shop/172976/windstopper-neon-geel/",
+    "/nl/shop/173027/windstopper-donkerblauw/",
+    "/nl/shop/173037/windstopper-zwart/",
+    "/nl/shop/6476/tego-jack-zwart/",
+    "/nl/shop/84590/wielerjack-vuelta-marine-blauw/",
+    "/nl/shop/85047/wielerjack-vuelta-kobaltblauw/",
+    "/nl/shop/85055/wielerjack-vuelta-rood/",
+    "/nl/shop/6528/regenjack-transparant-wit/",
+    "/nl/fietskleding/dames/",
+    "/nl/fietskleding/dames/fietsbroeken/",
+    "/nl/fietskleding/dames/fietsbroeken/korte-fietsbroeken-dames/",
+    "/nl/shop/175638/fietsbroek-dames-totalgrip-zwart/",
+    "/nl/shop/54076/fietsbroek-dames-ecopower-zwart/",
+    "/nl/shop/54065/fietsbroek-dames-elements-zwart/",
+    "/nl/shop/6502/fietsbroek-dames-ecoracer-lichtblauw-logo-zwart/",
+    "/nl/shop/6514/fietsbroek-dames-ecoracer-grijs-logo-zwart/",
+    "/nl/shop/55539/fietsbroek-dames-marine-blauw-zonder-bretels/",
+    "/nl/shop/6519/fietsbroek-dames-fragment-zwart/",
+    "/nl/fietskleding/dames/fietsbroeken/lange-fietsbroeken-dames/",
+    "/nl/shop/52407/lange-dames-fietsbroek-zonder-zeem-zwart/",
+    "/nl/shop/52580/lange-dames-fietsbroek-met-zeem-zwart/",
+    "/nl/fietskleding/dames/fietsshirts-dames/",
+    "/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/",
+    "/nl/shop/60618/pro-wielershirt-zwart-grijs-dames/",
+    "/nl/shop/49757/slider-wielershirt-blauw-zwart-dames/",
+    "/nl/shop/49767/slider-wielershirt-groen-dames/",
+    "/nl/shop/49775/slider-wielershirt-rood-dames/",
+    "/nl/shop/58019/slider-wielershirt-bordeaux-dames/",
+    "/nl/shop/55532/mouwloos-wielershirt-dames-licht-blauw/",
+    "/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-lange-mouw/",
+    "/nl/shop/85069/all-season-jack-zwart-grijs-dames/",
+    "/nl/fietskleding/dames/fietsjacks-dames/",
+    "/nl/shop/53659/all-season-jack-slider-blauw-zwart-dames/",
+    "/nl/shop/53665/all-season-jack-slider-groen-dames/",
+    "/nl/shop/58426/aquazero-jack-zwart-dames/",
+    "/nl/shop/85089/wielerjack-vuelta-kobaltblauw-dames/",
+    "/nl/shop/85099/wielerjack-vuelta-rood-dames/",
+    "/nl/shop/85109/wielerjack-vuelta-marine-blauw-dames/",
+    "/nl/fietskleding/accessoires/",
+    "/nl/fietskleding/accessoires/fietsbrillen/",
+    "/nl/shop/172335/fietsbril-volt-blauw/",
+    "/nl/shop/171101/fietsbril-volt-neon-geel/",
+    "/nl/shop/172334/fietsbril-jade-groen/",
+    "/nl/shop/172339/fietsbril-nebula-zwart-pink/",
+    "/nl/shop/55591/fietsbril-revo-wit/",
+    "/nl/shop/55600/fietsbril-revo-zwart/",
+    "/nl/shop/55711/fietsbril-transparant-wit/",
+    "/nl/shop/172343/fietsbril-nebula-transparant/",
+    "/nl/fietskleding/accessoires/fietssokken/",
+    "/nl/shop/135105/wielersokken-dry-knit-22-cm-hoog-wit/",
+    "/nl/shop/135120/wielersokken-dry-knit-22-cm-hoog-zwart/",
+    "/nl/shop/6546/sokken-band-wit/",
+    "/nl/shop/6548/sokken-zwart/",
+    "/nl/fietskleding/accessoires/fiets-onderkleding/",
+    "/nl/shop/6531/ondershirt-36-wit/",
+    "/nl/shop/100170/mouwloos-ondershirt-wit/",
+    "/nl/fietskleding/accessoires/fietshandschoenen/",
+    "/nl/shop/158110/wielerhandschoen-zwart-direct-grip/",
+    "/nl/shop/158137/wielerhandschoen-zwart-direct-grip-carbon/",
+    "/nl/shop/109810/winter-handschoenen-sipora-zwart/",
+    "/nl/shop/52260/windproof-handschoenen-zwart/",
+    "/nl/shop/6539/voorjaarshandschoen-zwart/",
+    "/nl/shop/111566/wielerhandschoen-zwart/",
+    "/nl/shop/111580/wielerhandschoen-grijs/",
+    "/nl/shop/111551/wielerhandschoen-wit/",
+    "/nl/shop/111275/wielerhandschoen-rood/",
+    "/nl/shop/111601/wielerhandschoen-oranje/",
+    "/nl/shop/111573/wielerhandschoen-geel/",
+    "/nl/shop/111594/wielerhandschoen-groen/",
+    "/nl/shop/111559/wielerhandschoen-blauw/",
+    "/nl/shop/111587/wielerhandschoen-navy/",
+    "/nl/shop/111544/wielerhandschoen-roze/",
+    "/nl/shop/6538/winter-handschoen-2018-zwart/",
+    "/nl/fietskleding/accessoires/overschoenen/",
+    "/nl/shop/52246/zipless-neopreen-overschoenen-zwart/",
+    "/nl/shop/111699/neopreen-overschoenen-zwart/",
+    "/nl/shop/52233/waterdichte-overschoenen-zwart/",
+    "/nl/shop/52253/teenwarmers-zwart/",
+    "/nl/shop/161364/teenwarmers-zwart-neopreen/",
+    "/nl/fietskleding/accessoires/arm-en-beenstukken/",
+    "/nl/shop/6521/armstukken-36-zwart/",
+    "/nl/shop/6522/beenstukken-36-zwart/",
+    "/nl/shop/52318/armstukken-aqua-seal-zwart/",
+    "/nl/shop/85532/beenstukken-aqua-seal-zwart/",
+    "/nl/fietskleding/accessoires/wielerpetten-en-mutsen/",
+    "/nl/shop/173047/wielerpet-zwart-neon-geel/",
+    "/nl/shop/173048/wielerpet-donkerblauw-neon-geel/",
+    "/nl/shop/173049/wielerpet-neon-geel/",
+    "/nl/shop/86965/wielerpet-zwart-thrtsx/",
+    "/nl/shop/6557/underhelmet-muts-zwart/",
+    "/nl/fietskleding/accessoires/sportkleding/",
+    "/nl/shop/6533/running-jacket-vrouw-36-zwart-blauw/",
+    "/nl/shop/6532/running-jacket-man-36-zwart-blauw/",
+    "/nl/shop/6477/pro-triathlonpak-heren-zwart/",
+    "/nl/shop/55812/mtb-shorts-zwart/",
+    "/nl/fietskleding/accessoires/tassen/",
+    "/nl/shop/6550/the-cyclist-bag-zwart-oranje/",
+    "/nl/shop/6492/36-ipad-hoes-zwart/",
+    "/nl/fietskleding/accessoires/36-accessoires/",
+    "/nl/fietskleding/speed-on-wheels/",
+    "/nl/shop/160110/speed-on-wheels-wielershirt-elite-wit/",
+    "/nl/shop/160133/speed-on-wheels-wielershirt-elite-zwart/",
+    "/nl/shop/160124/speed-on-wheels-wielershirt-elite-wit-oranje/",
+    "/nl/shop/157405/speed-on-wheels-oranje-wielershirt/",
+    "/nl/shop/159700/speed-on-wheels-jack-wit/",
+    "/nl/shop/159688/speed-on-wheels-jack-zwart/",
+    "/nl/shop/159737/speed-on-wheels-wielerbroek-zwart/",
+    "/nl/shop/159709/speed-on-wheels-sokken-zwart/",
+    "/nl/shop/159728/speed-on-wheels-sokken-wit/",
+    "/nl/shop/161500/speed-on-wheels-sokken-aero-zwart/",
+    "/nl/shop/161509/speed-on-wheels-sokken-aero-wit/",
+    "/nl/shop/161518/speed-on-wheels-sokken-de-snelste-sok-ter-wereld/",
+    "/nl/shop/161466/speed-on-wheels-hoodie-zwart/",
+    "/nl/shop/161475/speed-on-wheels-hoodie-wit/",
+    "/nl/shop/161484/speed-on-wheels-t-shirt-zwart/",
+    "/nl/shop/161492/speed-on-wheels-t-shirt-wit/",
+    "/nl/fietskleding/volt-collection/"
+  ],
+  "newProducts": [
+    {
+      "slug": "volt-wielershirt",
+      "status": "private",
+      "path": "/nl/shop/volt-wielershirt/"
+    },
+    {
+      "slug": "speed-on-wheels-t-shirt-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-t-shirt-wit/"
+    },
+    {
+      "slug": "speed-on-wheels-t-shirt-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-t-shirt-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-hoodie-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-hoodie-wit/"
+    },
+    {
+      "slug": "speed-on-wheels-hoodie-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-hoodie-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-sokken-de-snelste-sok-ter-wereld",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-sokken-de-snelste-sok-ter-wereld/"
+    },
+    {
+      "slug": "speed-on-wheels-sokken-aero-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-sokken-aero-wit/"
+    },
+    {
+      "slug": "speed-on-wheels-sokken-aero-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-sokken-aero-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-sokken-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-sokken-wit/"
+    },
+    {
+      "slug": "speed-on-wheels-sokken-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-sokken-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-wielerbroek-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-wielerbroek-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-jack-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-jack-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-jack-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-jack-wit/"
+    },
+    {
+      "slug": "sok",
+      "status": "publish",
+      "path": "/nl/shop/sok/"
+    },
+    {
+      "slug": "36-ipad-hoes-zwart",
+      "status": "publish",
+      "path": "/nl/shop/36-ipad-hoes-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-oranje-wielershirt",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-oranje-wielershirt/"
+    },
+    {
+      "slug": "speed-on-wheels-wielershirt-elite-wit-oranje",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-wielershirt-elite-wit-oranje/"
+    },
+    {
+      "slug": "speed-on-wheels-wielershirt-elite-zwart",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-wielershirt-elite-zwart/"
+    },
+    {
+      "slug": "speed-on-wheels-wielershirt-elite-wit",
+      "status": "publish",
+      "path": "/nl/shop/speed-on-wheels-wielershirt-elite-wit/"
+    },
+    {
+      "slug": "the-cyclist-bag-zwart-oranje",
+      "status": "publish",
+      "path": "/nl/shop/the-cyclist-bag-zwart-oranje/"
+    },
+    {
+      "slug": "trainingspak-zwart",
+      "status": "private",
+      "path": "/nl/shop/trainingspak-zwart/"
+    },
+    {
+      "slug": "mtb-shorts-zwart",
+      "status": "publish",
+      "path": "/nl/shop/mtb-shorts-zwart/"
+    },
+    {
+      "slug": "pro-triathlonpak-heren-zwart",
+      "status": "publish",
+      "path": "/nl/shop/pro-triathlonpak-heren-zwart/"
+    },
+    {
+      "slug": "wielerpet-wit",
+      "status": "private",
+      "path": "/nl/shop/wielerpet-wit/"
+    },
+    {
+      "slug": "wielerpet-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-zwart/"
+    },
+    {
+      "slug": "underhelmet-muts-zwart",
+      "status": "publish",
+      "path": "/nl/shop/underhelmet-muts-zwart/"
+    },
+    {
+      "slug": "nekwarmer-multifunctional-zwart-grijs",
+      "status": "publish",
+      "path": "/nl/shop/nekwarmer-multifunctional-zwart-grijs/"
+    },
+    {
+      "slug": "wielerpet-euromast-rotterdam-grijs",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-euromast-rotterdam-grijs/"
+    },
+    {
+      "slug": "wielerpet-zwart-thrtsx",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-zwart-thrtsx/"
+    },
+    {
+      "slug": "wielerpet-neon-geel",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-neon-geel/"
+    },
+    {
+      "slug": "wielerpet-donkerblauw-neon-geel",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-donkerblauw-neon-geel/"
+    },
+    {
+      "slug": "wielerpet-zwart-neon-geel",
+      "status": "publish",
+      "path": "/nl/shop/wielerpet-zwart-neon-geel/"
+    },
+    {
+      "slug": "running-jacket-man-36-zwart-blauw",
+      "status": "publish",
+      "path": "/nl/shop/running-jacket-man-36-zwart-blauw/"
+    },
+    {
+      "slug": "running-jacket-vrouw-36-zwart-blauw",
+      "status": "publish",
+      "path": "/nl/shop/running-jacket-vrouw-36-zwart-blauw/"
+    },
+    {
+      "slug": "muts-36",
+      "status": "publish",
+      "path": "/nl/shop/muts-36/"
+    },
+    {
+      "slug": "beenstukken-aqua-seal-zwart",
+      "status": "publish",
+      "path": "/nl/shop/beenstukken-aqua-seal-zwart/"
+    },
+    {
+      "slug": "armstukken-aqua-seal-zwart",
+      "status": "publish",
+      "path": "/nl/shop/armstukken-aqua-seal-zwart/"
+    },
+    {
+      "slug": "beenstukken-36-zwart",
+      "status": "publish",
+      "path": "/nl/shop/beenstukken-36-zwart/"
+    },
+    {
+      "slug": "armstukken-36-zwart",
+      "status": "publish",
+      "path": "/nl/shop/armstukken-36-zwart/"
+    },
+    {
+      "slug": "teenwarmers-zwart-neopreen",
+      "status": "publish",
+      "path": "/nl/shop/teenwarmers-zwart-neopreen/"
+    },
+    {
+      "slug": "overschoenen-36-zwart",
+      "status": "publish",
+      "path": "/nl/shop/overschoenen-36-zwart/"
+    },
+    {
+      "slug": "teenwarmers-zwart",
+      "status": "publish",
+      "path": "/nl/shop/teenwarmers-zwart/"
+    },
+    {
+      "slug": "waterdichte-overschoenen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/waterdichte-overschoenen-zwart/"
+    },
+    {
+      "slug": "neopreen-overschoenen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/neopreen-overschoenen-zwart/"
+    },
+    {
+      "slug": "zipless-neopreen-overschoenen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/zipless-neopreen-overschoenen-zwart/"
+    },
+    {
+      "slug": "winter-handschoen-2018-zwart",
+      "status": "publish",
+      "path": "/nl/shop/winter-handschoen-2018-zwart/"
+    },
+    {
+      "slug": "soft-grip-schapenleer-wielerhandschoenen-wit",
+      "status": "publish",
+      "path": "/nl/shop/soft-grip-schapenleer-wielerhandschoenen-wit/"
+    },
+    {
+      "slug": "wielerhandschoen-zwart-wit",
+      "status": "private",
+      "path": "/nl/shop/wielerhandschoen-zwart-wit/"
+    },
+    {
+      "slug": "wielerhandschoen-roze",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-roze/"
+    },
+    {
+      "slug": "wielerhandschoen-navy",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-navy/"
+    },
+    {
+      "slug": "wielerhandschoen-blauw",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-blauw/"
+    },
+    {
+      "slug": "wielerhandschoen-groen",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-groen/"
+    },
+    {
+      "slug": "wielerhandschoen-geel",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-geel/"
+    },
+    {
+      "slug": "wielerhandschoen-oranje",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-oranje/"
+    },
+    {
+      "slug": "wielerhandschoen-rood",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-rood/"
+    },
+    {
+      "slug": "wielerhandschoen-wit",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-wit/"
+    },
+    {
+      "slug": "wielerhandschoen-grijs",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-grijs/"
+    },
+    {
+      "slug": "wielerhandschoen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-zwart/"
+    },
+    {
+      "slug": "voorjaarshandschoen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/voorjaarshandschoen-zwart/"
+    },
+    {
+      "slug": "windproof-handschoenen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/windproof-handschoenen-zwart/"
+    },
+    {
+      "slug": "winter-handschoenen-sipora-zwart",
+      "status": "publish",
+      "path": "/nl/shop/winter-handschoenen-sipora-zwart/"
+    },
+    {
+      "slug": "wielerhandschoen-zwart-direct-grip-carbon",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-zwart-direct-grip-carbon/"
+    },
+    {
+      "slug": "wielerhandschoen-zwart-direct-grip",
+      "status": "publish",
+      "path": "/nl/shop/wielerhandschoen-zwart-direct-grip/"
+    },
+    {
+      "slug": "mouwloos-ondershirt-wit",
+      "status": "publish",
+      "path": "/nl/shop/mouwloos-ondershirt-wit/"
+    },
+    {
+      "slug": "ondershirt-36-wit",
+      "status": "publish",
+      "path": "/nl/shop/ondershirt-36-wit/"
+    },
+    {
+      "slug": "wielersokken-dry-knit-circle",
+      "status": "private",
+      "path": "/nl/shop/wielersokken-dry-knit-circle/"
+    },
+    {
+      "slug": "sokken-zwart",
+      "status": "publish",
+      "path": "/nl/shop/sokken-zwart/"
+    },
+    {
+      "slug": "sokken-band-wit",
+      "status": "publish",
+      "path": "/nl/shop/sokken-band-wit/"
+    },
+    {
+      "slug": "wielersokken-aero-wit",
+      "status": "private",
+      "path": "/nl/shop/wielersokken-aero-wit/"
+    },
+    {
+      "slug": "fietsbril-nebula-transparant",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-nebula-transparant/"
+    },
+    {
+      "slug": "fietsbril-revo-transparant-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-revo-transparant-zwart/"
+    },
+    {
+      "slug": "fietsbril-transparant-wit",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-transparant-wit/"
+    },
+    {
+      "slug": "fietsbril-revo-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-revo-zwart/"
+    },
+    {
+      "slug": "fietsbril-revo-wit",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-revo-wit/"
+    },
+    {
+      "slug": "fietsbril-nebula-zwart-pink",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-nebula-zwart-pink/"
+    },
+    {
+      "slug": "fietsbril-jade-groen",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-jade-groen/"
+    },
+    {
+      "slug": "fietsbril-volt-neon-geel",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-volt-neon-geel/"
+    },
+    {
+      "slug": "fietsbril-volt-blauw",
+      "status": "publish",
+      "path": "/nl/shop/fietsbril-volt-blauw/"
+    },
+    {
+      "slug": "wielersokken-dry-knit-20-cm-hoog-wit",
+      "status": "publish",
+      "path": "/nl/shop/wielersokken-dry-knit-20-cm-hoog-wit/"
+    },
+    {
+      "slug": "wielersokken-dry-knit-22-cm-hoog-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielersokken-dry-knit-22-cm-hoog-zwart/"
+    },
+    {
+      "slug": "wielersokken-dry-knit-22-cm-hoog-wit",
+      "status": "publish",
+      "path": "/nl/shop/wielersokken-dry-knit-22-cm-hoog-wit/"
+    },
+    {
+      "slug": "wielerjack-vuelta-marine-blauw-dames",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-marine-blauw-dames/"
+    },
+    {
+      "slug": "wielerjack-vuelta-rood-dames",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-rood-dames/"
+    },
+    {
+      "slug": "wielerjack-vuelta-kobaltblauw-dames",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-kobaltblauw-dames/"
+    },
+    {
+      "slug": "trainingspak-zwart-dames",
+      "status": "private",
+      "path": "/nl/shop/trainingspak-zwart-dames/"
+    },
+    {
+      "slug": "aquazero-jack-zwart-dames",
+      "status": "publish",
+      "path": "/nl/shop/aquazero-jack-zwart-dames/"
+    },
+    {
+      "slug": "all-season-jack-zwart-camo-dames",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-zwart-camo-dames/"
+    },
+    {
+      "slug": "all-season-jack-slider-groen-dames",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-slider-groen-dames/"
+    },
+    {
+      "slug": "all-season-jack-slider-blauw-zwart-dames",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-slider-blauw-zwart-dames/"
+    },
+    {
+      "slug": "all-season-jack-zwart-grijs-dames",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-zwart-grijs-dames/"
+    },
+    {
+      "slug": "mouwloos-wielershirt-dames-licht-blauw",
+      "status": "publish",
+      "path": "/nl/shop/mouwloos-wielershirt-dames-licht-blauw/"
+    },
+    {
+      "slug": "wielershirt-dames-zwart-camo",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-dames-zwart-camo/"
+    },
+    {
+      "slug": "slider-wielershirt-bordeaux-dames",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-bordeaux-dames/"
+    },
+    {
+      "slug": "slider-wielershirt-creme-dames",
+      "status": "private",
+      "path": "/nl/shop/slider-wielershirt-creme-dames/"
+    },
+    {
+      "slug": "slider-wielershirt-rood-dames",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-rood-dames/"
+    },
+    {
+      "slug": "slider-wielershirt-groen-dames",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-groen-dames/"
+    },
+    {
+      "slug": "slider-wielershirt-blauw-zwart-dames",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-blauw-zwart-dames/"
+    },
+    {
+      "slug": "pro-wielershirt-zwart-grijs-dames",
+      "status": "publish",
+      "path": "/nl/shop/pro-wielershirt-zwart-grijs-dames/"
+    },
+    {
+      "slug": "lange-dames-fietsbroek-met-zeem-zwart",
+      "status": "publish",
+      "path": "/nl/shop/lange-dames-fietsbroek-met-zeem-zwart/"
+    },
+    {
+      "slug": "lange-dames-fietsbroek-zonder-zeem-zwart",
+      "status": "publish",
+      "path": "/nl/shop/lange-dames-fietsbroek-zonder-zeem-zwart/"
+    },
+    {
+      "slug": "fietsbroek-dames-zwart-camo",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-zwart-camo/"
+    },
+    {
+      "slug": "fietsbroek-dames-fragment-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-fragment-zwart/"
+    },
+    {
+      "slug": "fietsbroek-dames-marine-blauw-zonder-bretels",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-marine-blauw-zonder-bretels/"
+    },
+    {
+      "slug": "fietsbroek-dames-ecoracer-grijs-logo-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-ecoracer-grijs-logo-zwart/"
+    },
+    {
+      "slug": "fietsbroek-dames-ecoracer-lichtblauw-logo-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-ecoracer-lichtblauw-logo-zwart/"
+    },
+    {
+      "slug": "fietsbroek-dames-elements-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-elements-zwart/"
+    },
+    {
+      "slug": "fietsbroek-dames-ecopower-zwart",
+      "status": "publish",
+      "path": "/nl/shop/fietsbroek-dames-ecopower-zwart/"
+    },
+    {
+      "slug": "pro-all-season-jack-camo",
+      "status": "publish",
+      "path": "/nl/shop/pro-all-season-jack-camo/"
+    },
+    {
+      "slug": "regenjack-fluo-36",
+      "status": "private",
+      "path": "/nl/shop/regenjack-fluo-36/"
+    },
+    {
+      "slug": "regenjack-transparant-wit",
+      "status": "publish",
+      "path": "/nl/shop/regenjack-transparant-wit/"
+    },
+    {
+      "slug": "windstopper-zwart-grijs",
+      "status": "publish",
+      "path": "/nl/shop/windstopper-zwart-grijs/"
+    },
+    {
+      "slug": "wielerjack-vuelta-rood",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-rood/"
+    },
+    {
+      "slug": "wielerjack-vuelta-kobaltblauw",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-kobaltblauw/"
+    },
+    {
+      "slug": "wielerjack-vuelta-marine-blauw",
+      "status": "publish",
+      "path": "/nl/shop/wielerjack-vuelta-marine-blauw/"
+    },
+    {
+      "slug": "tego-jack-zwart",
+      "status": "publish",
+      "path": "/nl/shop/tego-jack-zwart/"
+    },
+    {
+      "slug": "windstopper-zwart",
+      "status": "publish",
+      "path": "/nl/shop/windstopper-zwart/"
+    },
+    {
+      "slug": "windstopper-donkerblauw",
+      "status": "publish",
+      "path": "/nl/shop/windstopper-donkerblauw/"
+    },
+    {
+      "slug": "windstopper-neon-geel",
+      "status": "publish",
+      "path": "/nl/shop/windstopper-neon-geel/"
+    },
+    {
+      "slug": "aquazero-jack-zwart",
+      "status": "publish",
+      "path": "/nl/shop/aquazero-jack-zwart/"
+    },
+    {
+      "slug": "all-season-jack-slider-groen",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-slider-groen/"
+    },
+    {
+      "slug": "all-season-jack-slider-blauw-zwart",
+      "status": "publish",
+      "path": "/nl/shop/all-season-jack-slider-blauw-zwart/"
+    },
+    {
+      "slug": "pro-all-season-jack-zwart-grijs",
+      "status": "publish",
+      "path": "/nl/shop/pro-all-season-jack-zwart-grijs/"
+    },
+    {
+      "slug": "thermojack-zwart",
+      "status": "publish",
+      "path": "/nl/shop/thermojack-zwart/"
+    },
+    {
+      "slug": "chroma-wielershirt-lange-mouwen-metal-blue",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lange-mouwen-metal-blue/"
+    },
+    {
+      "slug": "chroma-wielershirt-lange-mouwen-aubergine",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lange-mouwen-aubergine/"
+    },
+    {
+      "slug": "chroma-wielershirt-lange-mouwen-olijf-groen",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lange-mouwen-olijf-groen/"
+    },
+    {
+      "slug": "chroma-wielershirt-lange-mouwen-petrol",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lange-mouwen-petrol/"
+    },
+    {
+      "slug": "chroma-wielershirt-lange-mouwen-marine-blauw",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lange-mouwen-marine-blauw/"
+    },
+    {
+      "slug": "volt-wielershirt-lange-mouwen-zwart",
+      "status": "publish",
+      "path": "/nl/shop/volt-wielershirt-lange-mouwen-zwart/"
+    },
+    {
+      "slug": "custom-jersey-white",
+      "status": "private",
+      "path": "/nl/shop/custom-jersey-white/"
+    },
+    {
+      "slug": "custom-jersey-navy-blue",
+      "status": "private",
+      "path": "/nl/shop/custom-jersey-navy-blue/"
+    },
+    {
+      "slug": "mouwloos-wielershirt-marine-blauw",
+      "status": "publish",
+      "path": "/nl/shop/mouwloos-wielershirt-marine-blauw/"
+    },
+    {
+      "slug": "pro-wielershirt-zwart-camo",
+      "status": "publish",
+      "path": "/nl/shop/pro-wielershirt-zwart-camo/"
+    },
+    {
+      "slug": "tego-shirt-zwart",
+      "status": "publish",
+      "path": "/nl/shop/tego-shirt-zwart/"
+    },
+    {
+      "slug": "wielershirt-aero-light-blauw-roze",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-aero-light-blauw-roze/"
+    },
+    {
+      "slug": "slider-wielershirt-creme",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-creme/"
+    },
+    {
+      "slug": "slider-wielershirt-rood",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-rood/"
+    },
+    {
+      "slug": "slider-wielershirt-bordeaux",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-bordeaux/"
+    },
+    {
+      "slug": "slider-wielershirt-groen",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-groen/"
+    },
+    {
+      "slug": "slider-wielershirt-donkergrijs",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-donkergrijs/"
+    },
+    {
+      "slug": "wielershirt-aero-light-blauw-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-aero-light-blauw-zwart/"
+    },
+    {
+      "slug": "wielershirt-aero-light-blauw",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-aero-light-blauw/"
+    },
+    {
+      "slug": "wielershirt-arcade",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-arcade/"
+    },
+    {
+      "slug": "wielershirt-roffa",
+      "status": "publish",
+      "path": "/nl/shop/wielershirt-roffa/"
+    },
+    {
+      "slug": "slider-wielershirt-blauw-zwart",
+      "status": "publish",
+      "path": "/nl/shop/slider-wielershirt-blauw-zwart/"
+    },
+    {
+      "slug": "pro-wielershirt-zwart-grijs",
+      "status": "publish",
+      "path": "/nl/shop/pro-wielershirt-zwart-grijs/"
+    },
+    {
+      "slug": "chroma-wielershirt-oranje",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-oranje/"
+    },
+    {
+      "slug": "chroma-wielershirt-lila",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-lila/"
+    },
+    {
+      "slug": "chroma-wielershirt-mint-groen",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-mint-groen/"
+    },
+    {
+      "slug": "chroma-wielershirt-petrol",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-petrol/"
+    },
+    {
+      "slug": "chroma-wielershirt-blauw",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-blauw/"
+    },
+    {
+      "slug": "chroma-wielershirt-marine-blauw",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-marine-blauw/"
+    },
+    {
+      "slug": "chroma-wielershirt-bruin",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-bruin/"
+    },
+    {
+      "slug": "chroma-wielershirt-okergeel",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-okergeel/"
+    },
+    {
+      "slug": "chroma-wielershirt-metaal-blauw",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-metaal-blauw/"
+    },
+    {
+      "slug": "chroma-wielershirt-olijfgroen",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-olijfgroen/"
+    },
+    {
+      "slug": "chroma-wielershirt-burgundy",
+      "status": "publish",
+      "path": "/nl/shop/chroma-wielershirt-burgundy/"
+    },
+    {
+      "slug": "volt-wielershirt-zwart-neon",
+      "status": "publish",
+      "path": "/nl/shop/volt-wielershirt-zwart-neon/"
+    },
+    {
+      "slug": "volt-wielershirt-zwart",
+      "status": "publish",
+      "path": "/nl/shop/volt-wielershirt-zwart/"
+    },
+    {
+      "slug": "lange-wielerbroek-zwart-met-zeem",
+      "status": "publish",
+      "path": "/nl/shop/lange-wielerbroek-zwart-met-zeem/"
+    },
+    {
+      "slug": "lange-wielerbroek-zwart-zonder-zeem",
+      "status": "publish",
+      "path": "/nl/shop/lange-wielerbroek-zwart-zonder-zeem/"
+    },
+    {
+      "slug": "wielerbroek-zwart-36",
+      "status": "private",
+      "path": "/nl/shop/wielerbroek-zwart-36/"
+    },
+    {
+      "slug": "pro-wielerbroek-zwart-camo",
+      "status": "publish",
+      "path": "/nl/shop/pro-wielerbroek-zwart-camo/"
+    },
+    {
+      "slug": "wielerbroek-navy-blauw-zonder-bretels-heren",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-navy-blauw-zonder-bretels-heren/"
+    },
+    {
+      "slug": "wielerbroek-ecoracer-zwart-grijs-logo",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-ecoracer-zwart-grijs-logo/"
+    },
+    {
+      "slug": "wielerbroek-ecoracer-zwart-lichtblauw-logo",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-ecoracer-zwart-lichtblauw-logo/"
+    },
+    {
+      "slug": "wielerbroek-elements-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-elements-zwart/"
+    },
+    {
+      "slug": "wielerbroek-ecopower-70-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-ecopower-70-zwart/"
+    },
+    {
+      "slug": "wielerbroek-ecopower-50-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-ecopower-50-zwart/"
+    },
+    {
+      "slug": "wielerbroek-totalgrip-zwart",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-totalgrip-zwart/"
+    },
+    {
+      "slug": "wielerbroek-carve-grijs",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-grijs/"
+    },
+    {
+      "slug": "wielerbroek-carve-marine-blauw",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-marine-blauw/"
+    },
+    {
+      "slug": "wielerbroek-carve-olijfgroen",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-olijfgroen/"
+    },
+    {
+      "slug": "wielerbroek-carve-petrol-blauw",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-petrol-blauw/"
+    },
+    {
+      "slug": "wielerbroek-carve-bruin",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-bruin/"
+    },
+    {
+      "slug": "wielerbroek-carve-rood",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-rood/"
+    },
+    {
+      "slug": "wielerbroek-carve-zwart-v2",
+      "status": "publish",
+      "path": "/nl/shop/wielerbroek-carve-zwart-v2/"
+    },
+    {
+      "slug": "wielerbroek-carve-zwart",
+      "status": "private",
+      "path": "/nl/shop/wielerbroek-carve-zwart/"
+    }
+  ],
+  "cats": [
+    {
+      "id": 129,
+      "name": "36 Accessoires",
+      "slug": "36-accessoires",
+      "parent": 90
+    },
+    {
+      "id": 90,
+      "name": "Accessoires",
+      "slug": "accessoires",
+      "parent": 41
+    },
+    {
+      "id": 122,
+      "name": "Arm- en Beenstukken",
+      "slug": "arm-en-beenstukken",
+      "parent": 90
+    },
+    {
+      "id": 82,
+      "name": "Dames",
+      "slug": "dames",
+      "parent": 41
+    },
+    {
+      "id": 87,
+      "name": "Dames Fietsshirts Korte Mouw",
+      "slug": "dames-fietsshirts-korte-mouw",
+      "parent": 86
+    },
+    {
+      "id": 88,
+      "name": "Dames Fietsshirts Lange Mouw",
+      "slug": "dames-fietsshirts-lange-mouw",
+      "parent": 86
+    },
+    {
+      "id": 116,
+      "name": "Fiets Onderkleding",
+      "slug": "fiets-onderkleding",
+      "parent": 90
+    },
+    {
+      "id": 91,
+      "name": "Fietsbrillen",
+      "slug": "fietsbrillen",
+      "parent": 90
+    },
+    {
+      "id": 83,
+      "name": "Fietsbroeken",
+      "slug": "fietsbroeken",
+      "parent": 82
+    },
+    {
+      "id": 43,
+      "name": "Fietsbroeken",
+      "slug": "fietsbroeken",
+      "parent": 42
+    },
+    {
+      "id": 117,
+      "name": "Fietshandschoenen",
+      "slug": "fietshandschoenen",
+      "parent": 90
+    },
+    {
+      "id": 79,
+      "name": "Fietsjacks",
+      "slug": "fietsjacks",
+      "parent": 42
+    },
+    {
+      "id": 89,
+      "name": "Fietsjacks Dames",
+      "slug": "fietsjacks-dames",
+      "parent": 82
+    },
+    {
+      "id": 41,
+      "name": "Fietskleding",
+      "slug": "fietskleding",
+      "parent": 0
+    },
+    {
+      "id": 86,
+      "name": "Fietsshirts Dames",
+      "slug": "fietsshirts-dames",
+      "parent": 82
+    },
+    {
+      "id": 67,
+      "name": "Fietsshirts Heren",
+      "slug": "fietsshirts-heren",
+      "parent": 42
+    },
+    {
+      "id": 68,
+      "name": "Fietsshirts Korte Mouw",
+      "slug": "fietsshirts-korte-mouw",
+      "parent": 67
+    },
+    {
+      "id": 78,
+      "name": "Fietsshirts Lange Mouw",
+      "slug": "fietsshirts-lange-mouw",
+      "parent": 67
+    },
+    {
+      "id": 92,
+      "name": "Fietssokken",
+      "slug": "fietssokken",
+      "parent": 90
+    },
+    {
+      "id": 42,
+      "name": "Heren",
+      "slug": "heren",
+      "parent": 41
+    },
+    {
+      "id": 44,
+      "name": "Korte Fietsbroeken",
+      "slug": "korte-fietsbroeken",
+      "parent": 43
+    },
+    {
+      "id": 84,
+      "name": "Korte Fietsbroeken Dames",
+      "slug": "korte-fietsbroeken-dames",
+      "parent": 83
+    },
+    {
+      "id": 61,
+      "name": "Lange Fietsbroeken",
+      "slug": "lange-fietsbroeken",
+      "parent": 43
+    },
+    {
+      "id": 85,
+      "name": "Lange Fietsbroeken Dames",
+      "slug": "lange-fietsbroeken-dames",
+      "parent": 83
+    },
+    {
+      "id": 118,
+      "name": "Overschoenen",
+      "slug": "overschoenen",
+      "parent": 90
+    },
+    {
+      "id": 130,
+      "name": "Speed on Wheels",
+      "slug": "speed-on-wheels",
+      "parent": 41
+    },
+    {
+      "id": 127,
+      "name": "Sportkleding",
+      "slug": "sportkleding",
+      "parent": 90
+    },
+    {
+      "id": 128,
+      "name": "Tassen",
+      "slug": "tassen",
+      "parent": 90
+    },
+    {
+      "id": 134,
+      "name": "Volt Collection",
+      "slug": "volt-collection",
+      "parent": 41
+    },
+    {
+      "id": 126,
+      "name": "Wielerpetten en Mutsen",
+      "slug": "wielerpetten-en-mutsen",
+      "parent": 90
+    }
+  ]
+}

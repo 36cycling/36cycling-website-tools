@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/sportkleding-collectie/running-tight/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "sportkleding-collectie",
+  "seo": {
+    "title": "Running tight ontwerpen en bedrukken",
+    "metaDescription": "Running tight voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Running tight ontwerpen en bedrukken",
+    "ogDescription": "Running tight voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "running-tight"
+  },
+  "headings": {
+    "h1": "Running tight",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Running tight</h1>\n<p>Deze hardloopbroek is ontworpen voor hardlopers die maximale ondersteuning en comfort zoeken. Gemaakt van hoogwaardig, elastisch materiaal biedt deze hardlooptight optimale bewegingsvrijheid en lichte compressie voor spierondersteuning. Het ademende en vochtafvoerende design houdt je droog en comfortabel. Ideaal voor trainingen en wedstrijden in elk seizoen!</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/hardloopbroek-tight.jpg",
+    "alt": "sportkleding ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/sportkleding-collectie/running-tight/",
+    "to": "https://rondevanrotterdam.nl/nl/sportkleding-collectie/running-tight/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

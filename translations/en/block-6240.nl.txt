@@ -1,0 +1,47 @@
+@title: Klantenlogos
+@slug: klantenlogos
+@path: /nl/stories/klantenlogos/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+var:preset|spacing|50
+=== 2
+<em>1.500+ teams gingen jullie voor:</em>
+=== 3
+ABN Amro
+=== 4
+Amstel Gold Race
+=== 5
+Stedin
+=== 6
+DHL
+=== 7
+Kärcher
+=== 8
+Quooker
+=== 9
+Stichting ALS Nederland
+=== 10
+Bicycling
+=== 11
+Van der Valk
+=== 12
+Rotterdam Ahoy
+=== 13
+Dusseldorp BMW Mini
+=== 14
+Schaatsbaan Rotterdam
+=== 15
+RWC Ahoy
+=== 16
+Rotterdams Philharmonisch Orkest
+=== 17
+ASC Olympia
+=== 18
+Jordex
+=== 19
+De Proloog, Amerongen
+=== 20
+Van Leeuwen Tweewielers

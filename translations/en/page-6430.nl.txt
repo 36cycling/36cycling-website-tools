@@ -1,0 +1,263 @@
+@title: Sportkleding Bedrukken
+@slug: sportkleding-bedrukken
+@path: /nl/sportkleding-bedrukken/
+@yoast_title: Sportkleding Ontwerpen en Bedrukken | 36 Cycling
+@yoast_metadesc: Sportkleding ontwerpen en bedrukken. Custom ontwerp en bedruk je eigen sportshirt met onze 3D-configurator of samen met ons ervaren design team.
+@yoast_focuskw: 
+
+=== 1
+Gradient
+=== 2
+linear-gradient(180deg,rgb(255,255,255) 49%,rgba(0,0,0,0.77) 100%)
+=== 3
+Sportkleding bedrukken in eigen ontwerp
+=== 4
+Vraag een offerte aan
+=== 5
+Classic
+=== 6
+Start je design
+=== 7
+Hardlopen, voetbal, triatlon, schaatsen of padel. Vanaf 5 stuks, in jullie huisstijl. Je ziet het complete tenue in 3D voordat je akkoord geeft.
+=== 8
+var:preset|spacing|50
+=== 9
+<em>1.500+ teams gingen jullie voor:</em>
+=== 10
+ABN Amro
+=== 11
+Amstel Gold Race
+=== 12
+Stedin
+=== 13
+DHL
+=== 14
+Kärcher
+=== 15
+Quooker
+=== 16
+Stichting ALS Nederland
+=== 17
+Bicycling
+=== 18
+Van der Valk
+=== 19
+Rotterdam Ahoy
+=== 20
+Dusseldorp BMW Mini
+=== 21
+Schaatsbaan Rotterdam
+=== 22
+RWC Ahoy
+=== 23
+Rotterdams Philharmonisch Orkest
+=== 24
+ASC Olympia
+=== 25
+Jordex
+=== 26
+De Proloog, Amerongen
+=== 27
+Van Leeuwen Tweewielers
+=== 28
+var:preset|spacing|40
+=== 29
+var:preset|spacing|70
+=== 30
+Sportkleding ontwerpen en bedrukken
+=== 31
+Zo werkt het van ontwerp tot levering
+=== 32
+Contact
+=== 33
+Je vertelt welke sport, hoeveel stuks en wanneer. Je hoort binnen een werkdag van ons.
+=== 34
+var:preset|spacing|20
+=== 35
+Custom ontwerp
+=== 36
+Zelf in onze 3D-tool, <strong>of door ons designteam</strong> in jullie huisstijl. Aanpassen tot het klopt.
+=== 37
+Paskleding en maten
+=== 38
+Passen met onze paskleding of bestellen via de maattabel. Monsters op aanvraag.
+=== 39
+Productie &amp; controle
+=== 40
+Na jouw akkoord gaat het naar productie. Alles wordt gecontroleerd voor verzending.
+=== 41
+Levering
+=== 42
+We spreken een duidelijke leverdatum met elkaar af. En we houden ons aan die datum. Speciale wensen? Vraag het ons. <strong>Nabestellen kan altijd.</strong>
+=== 43
+Welke sportkleding kun je laten bedrukken?
+=== 44
+TEAMWEAR COLLECTIE
+=== 45
+Alle items uit onze teamwear-collectie zijn te ontwerpen in je eigen design, van wielershirt tot armstukken. Een greep uit de mogelijkheden:
+=== 46
+sportkleding ontwerpen en bedrukken
+=== 47
+Sportshirts
+=== 48
+Ook voor hardlopen, schaatsen en voetbal: running shirts, singlets, schaatspakken en meer.
+=== 49
+trainingsjack in eigen ontwerp bedrukken
+=== 50
+Body's en jacks
+=== 51
+Windjacks, body's en andere bovenkleding om je warm te houden bij verschillende sporten.
+=== 52
+Sportbroeken
+=== 53
+Running tights of losse sportbroeken, voor hardlopen, veldsporten of bijvoorbeeld padel.
+=== 54
+armstukken bedrukken
+=== 55
+Accessoires
+=== 56
+Armstukken, beenstukken, wintermuts, bandana, team polo en leisure jack.
+=== 57
+Bekijk de complete collectiepagina's om alle producten te zien:
+=== 58
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/">Sportkleding collectie</a>
+=== 59
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/">wielerkleding collectie</a>
+=== 60
+Team doelgroepen
+=== 61
+calc( 0.25 * var(--wp--style--root--padding-right, var(--wp--custom--gap--horizontal)))
+=== 62
+var:preset|color|palette-color-2
+=== 63
+Eigen teamkleding voor elke sport
+=== 64
+var:preset|spacing|60
+=== 65
+Hardloopsters in custom hardloopshirts tijdens een marathon
+=== 66
+Bedrijven &amp; events
+=== 67
+<em>Sportkleding bedrukken met logo</em>
+=== 68
+Een team voor de bedrijfsloop, een estafette of een eigen sportdag. Wij zetten jullie logo en huisstijlkleuren scherp op shirt en singlet.
+=== 69
+<a href="#">Wielerkleding voor bedrijven</a>
+=== 70
+Nederlands team in oranje custom sportkleding op een podium
+=== 71
+Clubs &amp; teams
+=== 72
+<em>Clubkleding met eigen webshop</em>
+=== 73
+Atletiek-, triatlon- of schaatsvereniging: één ontwerp voor de hele club. Leden bestellen zelf via een eigen webshop.
+=== 74
+<a href="#">Wielerkleding voor clubs &amp; teams</a>
+=== 75
+Wielerteam in custom teamkleding op een grindweg
+=== 76
+Meerdere sporten
+=== 77
+<em>Eén huisstijl voor fietsen, lopen en meer</em>
+=== 78
+Fietsen en lopen jullie allebei? Wielertenue, loopshirt en trainingsjack in hetzelfde ontwerp, bij één leverancier.
+=== 79
+<a href="#">Wielerkleding bedrukken</a>
+=== 80
+Vijf sterren klantbeoordeling
+=== 81
+Wat klanten over ons zeggen
+=== 82
+linear-gradient(0deg,rgba(0,0,0,0.77) 9%,rgba(255,255,255,0) 69%)
+=== 83
+Content Container
+=== 84
+Team in oranje custom sportkleding in een sporthal
+=== 85
+Hardloopster in een custom singlet tijdens een wedstrijd
+=== 86
+<em>"Geweldig bedrijf met fantastisch kwaliteit aan kleding. Voor ons bedrijf een ontwerp laten maken, is heel fijn schakelen met 36. Wij zijn super blij met onze nieuwe wielren- en hardloopkleding."</em>
+=== 87
+<strong>Richard Steffers</strong><br>Fundament Advies
+=== 88
+<em>"Was de eerste keer dat ik wielerkleding heb besteld bij 36 , ik zou het iedereen aanraden. Mooi resultaat, reëele kosten en hele nette communicatie. Kortom, Team Chasse Patate is er blij mee!"</em>
+=== 89
+<strong>Paul van Rooijen</strong><br>Team Chasse Patate
+=== 90
+<em>"Door omstandigheden had ik hals over kop een nieuwe leverancier voor onze fietskleding nodig. 36 Cycling was voor mij onbekend. Het eerste mailcontact gaf direct een goed gevoel. Er werd zeer goed meegedacht en een prachtig shirt ontworpen. En dat keurig op tijd en betaalbaar. En zeker niet onbelangrijk, de shirts zijn fantastisch."</em>
+=== 91
+<strong>Bertus van den Bunt</strong><br>Stichting Kerkrade
+=== 92
+Sportkleding ontwerpen in jullie eigen stijl
+=== 93
+Een eigen sportshirt begint bij een logo, een paar kleuren en een idee van de uitstraling. Daarmee ontwerp je in onze 3D-tool zelf een shirt, sportbroek of trainingspak, of je laat het ons designteam uitwerken. Je voegt logo's, afbeeldingen en tekst toe en kiest kleuren en patronen, van opvallend tot strak en ingetogen.
+=== 94
+Heb je al een ontwerp? Dan zetten we dat om naar productie en checken we of alles technisch klopt. Vooraf krijg je kleurstalen en voorbeelden. Pas als jij akkoord geeft, gaat het ontwerp naar de fabriek.
+=== 95
+Hoe we sportkleding bedrukken
+=== 96
+Voor de meeste sportkleding gebruiken we sublimatie. De inkt wordt met hitte in de vezel van de stof opgenomen, in plaats van er als laag op te liggen. Daardoor barst of bladdert de opdruk niet, blijven de kleuren helder na veel wasbeurten en blijft de stof net zo ademend en rekbaar als zonder opdruk.
+=== 97
+De juiste stof voor elke sport
+=== 98
+Een hardloper heeft andere eisen dan een voetballer of schaatser. Voor hardlopen kiezen we lichte, ademende stoffen die vocht snel afvoeren. Voor teamsporten als voetbal en handbal sneldrogende stoffen die tegen een stootje kunnen. Een schaatspak of triatlonpak zit strak voor zo min mogelijk luchtweerstand.
+=== 99
+Ook de pasvorm stemmen we af op de sport: ruimer waar je vrij moet kunnen bewegen, nauwsluitend waar het om snelheid gaat. Twijfel je over maten? Met onze paskleding probeert iedereen vooraf de juiste maat.
+=== 100
+Eigen sportkleding voor teams en bedrijven
+=== 101
+Een eigen tenue maakt van een groep sporters een team. Voor clubs en verenigingen ontwerpen we een herkenbaar teamuniform in de clubkleuren, met desgewenst namen en rugnummers. Voor grotere clubs zetten we een eigen webshop op, zodat leden zelf bestellen en later bijbestellen.
+=== 102
+Voor bedrijven maken we sportkleding in de eigen merkidentiteit: voor de bedrijfsloop, een sportdag of een sponsorteam. We werken met jullie exacte huisstijlkleuren en zorgen dat logo's scherp en op de goede plek staan.
+=== 103
+Kwaliteit uit de wielersport, voor elke sport
+=== 104
+36 begon in de wielersport, met oud-wielrenners als Leontien van Moorsel, Maarten den Bakker en Bart Voskamp in het team. De eisen die renners aan hun kleding stellen, passen we toe op alle sportkleding die we maken: stoffen die presteren, een pasvorm die klopt en een afwerking die lang meegaat.
+=== 105
+Passie voor sport
+=== 106
+Bij <em><strong>36 Sportswear</strong></em> zijn we gepassioneerd door sport en begrijpen we hoe belangrijk het is om in comfortabele en stijlvolle sportkleding te trainen en presteren. Daarom bieden we je de mogelijkheid om je eigen sportkleding te ontwerpen en bedrukken, zodat je kunt uitblinken op het sportveld en je sportieve doelen kunt bereiken met trots en zelfvertrouwen.
+=== 107
+Veelgestelde vragen over wielerkleding bedrukken
+=== 108
+var:preset|spacing|30
+=== 109
+<em>Wat is de minimum afname</em>?
+=== 110
+Vanaf 5 stuks, met een volledig eigen ontwerp.
+=== 111
+<em>Hoe lang duurt het?</em>
+=== 112
+3 tot 5 weken na goedkeuring van het ontwerp, afhankelijk van het product en de tijd van het jaar.
+=== 113
+<em>Wat kost sportkleding bedrukken</em>?
+=== 114
+Dat is afhankelijk van de afname en de kwaliteitskeuze. Er zijn eenmalige kosten voor het instellen van je ontwerp. We kunnen heel snel een offerte voor je maken!
+=== 115
+<em>Betaal ik voor het ontwerp</em>?
+=== 116
+Een ontwerp op maat is werk van ons designteam en staat als aparte post in je offerte. Zo weet je vooraf precies waar je aan toe bent.
+=== 117
+<em>Hoe weet ik welke maat ik nodig heb</em>?
+=== 118
+Passen met onze paskleding is het beste. Lukt dat niet, dan werken we met maattabellen in Nederlandse pasvorm.
+=== 119
+<em>Kan ik later nabestellen</em>?
+=== 120
+Ja, we bewaren jullie ontwerp. Ook als je jaren later je ontwerp nog eens wilt bestellen kan dat. De eenmalige kosten komen dan ook niet meer terug.
+=== 121
+<em>Kunnen er namen of nummers op de kleding</em>?
+=== 122
+Ja, dat kan. Er is dan wel een kleine meerprijs per gepersonaliseerd item.
+=== 123
+Kan ik verschillende sporten combineren?
+=== 124
+Ja. Wielertenue, loopshirt en trainingsjack in hetzelfde ontwerp, in één bestelling. Geen probleem.
+=== 125
+Wielershirt ontwerpen in de 3D-ontwerptool van 36 Cycling
+=== 126
+Zelf ontwerpen
+=== 127
+Met onze 3D Design Tool kun je nu zelf aan de slag met het ontwerpen van jullie eigen team wielershirt of andere wielerkleding. Natuurlijk staan we altijd klaar om je te helpen met jouw design. Breng je fietsshirt tot leven!
+=== 128
+<strong>Laat je het liever aan onze designers over? </strong><br><strong>Wij doen het graag!</strong><br><a href="#">Stuur een berichtje</a>

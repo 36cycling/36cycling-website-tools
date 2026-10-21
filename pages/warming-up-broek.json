@@ -1,0 +1,52 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/warming-up-broek/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Warming-up broek ontwerpen en bedrukken",
+    "metaDescription": "Warming-up broek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Warming-up broek ontwerpen en bedrukken",
+    "ogDescription": "Warming-up broek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "warming-up-broek"
+  },
+  "headings": {
+    "h1": "Warming-up broek",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "Mesh bovenstuk",
+    "Coolmax gripperband",
+    "Compressie lycra zijpanelen",
+    "Optie standaard Dolomiti of Pro Elastic Interface zeem"
+  ],
+  "contentHtml": "<h1>Warming-up broek</h1>\n<p>Een gevoerde broek met ritsen aan de zijkant over de hele lengte. Hierdoor is de broek snel uit te trekken. Blijf warm tot het laatste moment voor de start! Of op het podium. :)</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>Mesh bovenstuk</li>\n<li>Coolmax gripperband</li>\n<li>Compressie lycra zijpanelen</li>\n<li>Optie standaard Dolomiti of Pro Elastic Interface zeem</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielerbroek-warming-up.jpg",
+    "alt": "warming-up wielerbroek bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/warming-up-broek/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/warming-up-broek/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

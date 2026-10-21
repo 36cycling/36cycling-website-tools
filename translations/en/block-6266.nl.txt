@@ -1,0 +1,11 @@
+@title: Offerteblok
+@slug: offerteblok
+@path: /nl/stories/offerteblok/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+<em>Vraag een offerte aan</em>
+=== 2
+Gratis en zonder verplichtingen. Je krijgt binnen een werkdag een reactie van een vaste contactpersoon.<br><br>✓ Gratis ontwerpvoorstel in 3D<br>✓ Vanaf 5 stuks<br>✓ Levering binnen 3 tot 5 weken<br><br>Liever bellen? 0182 - 232 008

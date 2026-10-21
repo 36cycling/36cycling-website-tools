@@ -1,0 +1,7 @@
+@title: Shop
+@slug: shop
+@path: /nl/shop/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+

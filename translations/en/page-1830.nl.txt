@@ -1,0 +1,21 @@
+@title: Armstukken
+@slug: armstukken
+@path: /nl/teamkleding-collectie/armstukken/
+@yoast_title: Armstukken ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Armstukken voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+armstukken bedrukken
+=== 2
+Armstukken
+=== 3
+Deze armstukken zijn ideaal voor fietstochten onder wisselende weersomstandigheden. Ze bieden optimale bescherming tegen de wind en kou op dagen waarop je niet te koud of te warm gekleed eropuit wilt gaan. Met een comfortabele pasvorm zijn ze perfect te combineren met jouw fietskleding.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

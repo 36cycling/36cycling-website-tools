@@ -1,0 +1,21 @@
+@title: Beenstukken
+@slug: beenstukken
+@path: /nl/teamkleding-collectie/beenstukken/
+@yoast_title: Beenstukken ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Beenstukken voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+beenstukken bedrukken
+=== 2
+Beenstukken
+=== 3
+Twijfel je of je met een korte of een lange broek de racefiets op moet stappen omdat het misschien ’s morgens nog koud is, maar in de middag warmer weer wordt verwacht? Dan zijn onze beenstukken de ideale oplossing. Gemaakt van een zachte, ademende stof, bieden ze optimale bescherming tegen kou en wind tijdens je ritten.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

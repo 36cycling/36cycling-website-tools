@@ -1,0 +1,52 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-totalgrip/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "TotalGrip wielerbroek ontwerpen en bedrukken",
+    "metaDescription": "TotalGrip wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "TotalGrip wielerbroek ontwerpen en bedrukken",
+    "ogDescription": "TotalGrip wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "wielerbroek-totalgrip"
+  },
+  "headings": {
+    "h1": "Wielerbroek TotalGrip",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "Mesh bovenstuk",
+    "Coolmax gripperband",
+    "Compressie lycra zijpanelen",
+    "Optie standaard Dolomiti of Pro Elastic Interface zeem"
+  ],
+  "contentHtml": "<h1>Wielerbroek TotalGrip</h1>\n<p>De hoogwaardige compressie lycra's van de TotalGrip wielerbroek zorgt voor een optimale spierondersteuning en bewegingsvrijheid. Aan het uiteinde van de broekspijpen is de stof aan de binnenkant afgewerkt met gel spots die de broek comfortabel op zijn plek houden. Dus geen band, maar toch de grip.</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>Mesh bovenstuk</li>\n<li>Coolmax gripperband</li>\n<li>Compressie lycra zijpanelen</li>\n<li>Optie standaard Dolomiti of Pro Elastic Interface zeem</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielerbroek-totalgrip.jpg",
+    "alt": "wielerbroek met gripper bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-totalgrip/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/wielerbroek-totalgrip/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

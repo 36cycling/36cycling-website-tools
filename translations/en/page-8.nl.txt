@@ -1,0 +1,9 @@
+@title: My account
+@slug: my-account
+@path: /nl/my-account/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+[woocommerce_my_account]

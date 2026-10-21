@@ -1,0 +1,161 @@
+@title: Home
+@slug: home
+@path: /nl/
+@yoast_title: Wielerkleding Bedrukken | Custom Wielershirts & Teamkleding | 36 Cycling
+@yoast_metadesc: 36 Cycling is dé specialist op het gebied van wielerkleding. Kies voor custom teamwear of maak een keuze uit ons assortiment met topkwaliteit wielerkleding.
+@yoast_focuskw: 
+
+=== 1
+Gradient
+=== 2
+linear-gradient(180deg,rgb(255,255,255) 49%,rgba(0,0,0,0.77) 100%)
+=== 3
+WEAR YOUR AMBITION
+=== 4
+Wielerkleding bedrukken
+=== 5
+Jullie team. Jullie ontwerp. Wielerkleding op profniveau.
+=== 6
+Offerte aanvragen
+=== 7
+Classic
+=== 8
+Start je design
+=== 9
+Meer dan 1.500 teams gingen jullie voor
+=== 10
+ABN Amro
+=== 11
+Amstel Gold Race
+=== 12
+Stedin
+=== 13
+DHL
+=== 14
+Kärcher
+=== 15
+Quooker
+=== 16
+Stichting ALS Nederland
+=== 17
+Bicycling
+=== 18
+Van der Valk
+=== 19
+Rotterdam Ahoy
+=== 20
+Dusseldorp BMW Mini
+=== 21
+Schaatsbaan Rotterdam
+=== 22
+RWC Ahoy
+=== 23
+Rotterdams Philharmonisch Orkest
+=== 24
+ASC Olympia
+=== 25
+Jordex
+=== 26
+De Proloog, Amerongen
+=== 27
+Van Leeuwen Tweewielers
+=== 28
+Team doelgroepen
+=== 29
+var:preset|spacing|20
+=== 30
+calc( 0.25 * var(--wp--style--root--padding-right, var(--wp--custom--gap--horizontal)))
+=== 31
+var:preset|spacing|50
+=== 32
+var:preset|color|palette-color-8
+=== 33
+Wielerkleding voor teams met ambitie
+=== 34
+var:preset|spacing|60
+=== 35
+Groep wielrenners in custom wielershirts tijdens een fietsevent in de bergen
+=== 36
+Bedrijven &amp; events
+=== 37
+<em>Jullie huisstijl op de fiets</em>
+=== 38
+Van een bedrijfsteam tot een relatiedag of eigen event. Wij vertalen jullie huisstijl naar een professioneel wielertenue en zorgen dat alles klopt: ontwerp, maten, productie en levering.
+=== 39
+<a href="#">Wielerkleding voor bedrijven</a>
+=== 40
+Twee wielrenners in paarse custom wielershirts met lange mouwen
+=== 41
+Clubs &amp; teams
+=== 42
+<em>Een tenue dat bij jullie past</em>
+=== 43
+Een eigen ontwerp, professionele materialen en een pasvorm die gemaakt is om in te fietsen. Voor kleine én grote teams. En met een eigen webshop kunnen leden eenvoudig zelf bijbestellen.
+=== 44
+<a href="#">Wielerkleding voor clubs &amp; teams</a>
+=== 45
+Hardloopsters in custom hardloopshirts tijdens een marathon
+=== 46
+Andere sporten
+=== 47
+<em>Veel meer dan alleen fietskleding</em>
+=== 48
+Hardlopen, triatlon, padel, schaatsen en meer. Eén ontwerp, één aanspreekpunt en dezelfde kwaliteit.
+=== 49
+<a href="#">Sportkleding</a>
+=== 50
+Hoe het werkt
+=== 51
+Van idee naar tenue
+=== 52
+var:preset|color|palette-color-3
+=== 53
+Ontwerp in 3D
+=== 54
+Jullie idee, ons ontwerpteam. Binnen een paar werkdagen het complete tenue in 3D in je mail.
+=== 55
+Maten en akkoord
+=== 56
+Paskleding of maattabel, jij kiest. Pas als alles klopt, gaat de opdracht naar de fabriek.
+=== 57
+Productie in Europa
+=== 58
+Geproduceerd in Europa, door een vaste partner. Levering binnen 4 weken na akkoord.
+=== 59
+Levering en nabestellen
+=== 60
+Afgesproken datum is de leverdatum. Jullie ontwerp blijft bewaard, dus nabestellen kan altijd.
+=== 61
+linear-gradient(227deg,rgba(204,255,0,0.85) 0%,rgb(136,157,160) 14%)
+=== 62
+Wielershirt ontwerpen in de 3D-ontwerptool van 36 Cycling
+=== 63
+Zelf ontwerpen in 3D
+=== 64
+Zet je kleuren en logo's op het shirt en draai het rond. Liever dat onze designers het doen? Ook goed. Je ziet het resultaat voordat je akkoord geeft.
+=== 65
+Start je ontwerp
+=== 66
+Laat ons ontwerpen
+=== 67
+Laat je het liever aan onze designers over? <br>Wij doen het graag! <a href="#">Stuur een berichtje</a>
+=== 68
+Nu in onze webshop
+=== 69
+Al kennis gemaakt met onze collectie wielerkleding?
+=== 70
+woocommerce/product-collection/featured
+=== 71
+woocommerce/product-collection/product-title
+=== 72
+Visit Shop
+=== 73
+Ontwikkeld en bewezen op het hoogste niveau
+=== 74
+Ons team bestaat uit ex-profs zoals Leontien van Moorsel, Maarten den Bakker en Bart Voskamp. En onze kleding is in profpeloton bewezen.
+=== 75
+Meer weten?
+=== 76
+We delen onze kennis graag met jou en zijn ook benieuwd naar jullie specifieke wensen en ervaringen. Neem gerust vrijblijvend contact op met ons team!
+=== 77
+Contact

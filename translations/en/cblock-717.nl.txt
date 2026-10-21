@@ -1,0 +1,13 @@
+@title: Archives Hero Section
+@slug: archives-hero-section
+@path: /nl/ct_content_block/archives-hero-section/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+wp:archive_title
+=== 2
+var:preset|color|white
+=== 3
+var:preset|spacing|30

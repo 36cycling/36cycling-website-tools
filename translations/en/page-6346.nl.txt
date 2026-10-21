@@ -1,0 +1,173 @@
+@title: Wielerkleding ontwerpen
+@slug: wielerkleding-ontwerpen
+@path: /nl/wielerkleding-ontwerpen/
+@yoast_title: Wielerkleding ontwerpen in 3D, zelf of met ons designteam | 36 Cycling
+@yoast_metadesc: Ontwerp je eigen wielerkleding in onze 3D-ontwerptool of laat ons designteam het ontwerp maken. Gratis en vrijblijvend, met ontwerptips en inspiratie.
+@yoast_focuskw: wielerkleding ontwerpen
+
+=== 1
+Zwarte kop met titel
+=== 2
+Wielerkleding ontwerpen
+=== 3
+Een eigen wielershirt of compleet tenue ontwerpen kan op twee manieren: <br>zelf, in onze 3D-ontwerptool, of samen met ons designteam. Kies de route die bij je past.<br>Je zit nergens aan vast.
+=== 4
+<strong>Eerst je ontwerp, dan pas een besluit. Vrijblijvende offerte binnen een werkdag.</strong>
+=== 5
+var:preset|spacing|60
+=== 6
+var:preset|spacing|80
+=== 7
+Zo werkt de ontwerptool
+=== 8
+var:preset|spacing|50
+=== 9
+in vier stappen naar je eigen wielershirt
+=== 10
+Kies je product
+=== 11
+Begin met het product dat je wilt ontwerpen, bijvoorbeeld een wielershirt of een wielerbroek.
+=== 12
+Kleuren en patroon
+=== 13
+Kies een patroon en geef elk vlak je eigen kleur. Je ziet het resultaat meteen in 3D, van alle kanten.
+=== 14
+Logo en tekst
+=== 15
+Upload je logo's en voeg teksten toe, zoals een clubnaam of sponsor. Verplaats en schaal ze tot alles goed zit.
+=== 16
+Opslaan en versturen
+=== 17
+Sla je ontwerp op en verstuur het naar ons. <strong>Wij checken je ontwerp en je hoort binnen een werkdag van ons.</strong>
+=== 18
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" target="_blank" rel="noopener">Start de ontwerptool</a>
+=== 19
+Inspiratie: ontworpen voor onze klanten
+=== 20
+Van fietsclub tot multinational: dit zijn wielershirts die we samen met onze klanten ontwierpen. Elk ontwerp begon met een logo, een paar huisstijlkleuren en een idee. Of bekijk onze special <a href="https://www.instagram.com/36cyclingportfolio" target="_blank" rel="noreferrer noopener">Instagram pagina</a> voor inspiratie.
+=== 21
+Klantontwerpen wielershirts voor Jordex, ICT Group, Fietsvrouwen en Stadshaven Brouwerij
+=== 22
+Klantontwerpen wielershirts voor Skyworkz, Hotel Le Baroudeur, Crankzinnig en YNNO
+=== 23
+Klantontwerpen wielershirts voor Isla Pastilles, NED. Personeel, BIS en Finco
+=== 24
+Tips voor een goed wielershirt-ontwerp
+=== 25
+Een mooi ontwerp op het scherm is niet automatisch een goed wielershirt op de weg. Met deze tips ziet je tenue er in het peloton net zo goed uit als in de ontwerptool.
+=== 26
+Zorg voor contrast en zichtbaarheid
+=== 27
+Je wilt gezien worden, door je groepsgenoten én door ander verkeer. Lichte en felle kleuren vallen van ver op; combineer ze met een donker accent voor contrast. Een volledig donker shirt ziet er strak uit, maar valt in de schemering minder op.
+=== 28
+Plaats logo's waar ze zichtbaar blijven
+=== 29
+De beste plekken voor een hoofdsponsor zijn de borst en de rug. Mouwen, zijpanelen en broekpijpen lenen zich voor kleinere logo's. Let op de rits: een logo midden op de borst wordt door de rits in tweeën gedeeld. Plaats het iets hoger of kies een ontwerp dat daar rekening mee houdt.
+=== 30
+Ontwerp de achterkant met zorg
+=== 31
+In een groep zie je vooral ruggen. De achterkant is daarom je belangrijkste reclamebord: zet je clubnaam of hoofdsponsor op de rug, boven de achterzakken. Over de zakken heen werkt minder goed, omdat ze het ontwerp vervormen zodra er iets in zit.
+=== 32
+Gebruik maximaal drie hoofdkleuren
+=== 33
+Met twee of drie hoofdkleuren blijft een ontwerp rustig en herkenbaar. Kies kleuren uit je huisstijl en gebruik extra kleuren alleen als accent.
+=== 34
+Ontwerp broek en shirt als één geheel
+=== 35
+Een tenue oogt pas af als shirt en broek bij elkaar passen. Laat een kleur van de broek terugkomen in het shirt, bijvoorbeeld in de mouwboorden of zijpanelen. Twijfel je? Een zwarte broek met een accentkleur uit het shirt past bijna altijd.
+=== 36
+Houd rekening met zweet
+=== 37
+Effen, lichte vlakken laten zweetplekken sneller zien. Een patroon of een donkerdere tint op de rug, de zijkanten en onder de armen maakt dat minder zichtbaar. Een volledig wit shirt kan bovendien licht doorschijnen.
+=== 38
+Maak tekst leesbaar op afstand
+=== 39
+Kies een eenvoudig, stevig lettertype en maak teksten groot genoeg. Dunne letters, kleine slogans en tekst op een drukke achtergrond zijn op een paar meter afstand al niet meer te lezen.
+=== 40
+Denk aan de pasvorm
+=== 41
+Een wielershirt zit strak en rekt mee met je lichaam. Logo's en tekst rekken daardoor ook iets mee, vooral op de borst en schouders. Houd belangrijke details uit de zones die het meest rekken en controleer je ontwerp in de 3D-weergave.
+=== 42
+Laat ons ontwerpen
+=== 43
+Liever een ontwerp van een professional? Ons designteam denkt mee over kleurkeuze, de plaatsing van logo's en de juiste afmetingen, en vertaalt jouw ideeën naar een wieleroutfit in je eigen huisstijl.
+=== 44
+Wat je aanlevert
+=== 45
+Je logo, bij voorkeur als vectorbestand (AI, EPS, SVG of PDF)
+=== 46
+Je huisstijlkleuren, als Pantone-, HEX- of RGB-code
+=== 47
+Logo's van eventuele sponsors
+=== 48
+Je wensen: een schets, voorbeelden die je mooi vindt of een bestaand tenue
+=== 49
+De producten en aantallen die je ongeveer nodig hebt
+=== 50
+Zo gaat het
+=== 51
+We bespreken je wensen. Je hoort binnen een werkdag van ons.
+=== 52
+Ons designteam maakt een ontwerp op maat. Reken op [X werkdagen].
+=== 53
+Je ziet een digitale 3D-proef en geeft feedback. Inclusief [X] ontwerprondes.
+=== 54
+Na jouw akkoord gaat het naar productie. Op verzoek maken we eerst een kleurproef, en vooraf kunnen we je kleurstalen sturen.
+=== 55
+<a class="wp-block-button__link wp-element-button" href="#klaar-om-te-beginnen">Vraag een ontwerp aan</a>
+=== 56
+Van ontwerp naar tenue
+=== 57
+Is het ontwerp klaar en goedgekeurd? Dan gaat het in productie. We leveren al vanaf 5 stuks en de doorlooptijd is 3 tot 5 weken, afhankelijk van de tijd van het jaar. Passen kan met onze paskleding, of je bestelt de maten via de maattabel.
+=== 58
+Volledig bedrukte wielerkleding maken we met sublimatie: de inkt wordt in de stof opgenomen, waardoor kleuren levendig blijven, ook na vele wasbeurten. Meer over materialen, druktechnieken en het bestelproces lees je op onze pagina over <a href="/nl/wielerkleding-bedrukken/">wielerkleding bedrukken</a>.
+=== 59
+Ontwerp je voor een club of bedrijf? Met teamkleding in één ontwerp, eventueel met de namen van teamleden, rijden jullie als één team. Voor grotere groepen bouwen we gratis een webshop, zodat iedereen zelf kan bestellen. Bekijk de <a href="/nl/teamkleding-collectie/">teamkleding collectie</a>.
+=== 60
+Veelgestelde vragen over ontwerpen
+=== 61
+var:preset|spacing|20
+=== 62
+<span class="wp-block-accordion-heading__toggle-title"><strong>Kost een ontwerp iets?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 63
+Nee. Ontwerpen is gratis en vrijblijvend, of je nu zelf aan de slag gaat in de 3D-ontwerptool of ons designteam het ontwerp laat maken. Je betaalt pas als je bestelt.
+=== 64
+<span class="wp-block-accordion-heading__toggle-title"><strong>Kan ik mijn ontwerp opslaan en later aanpassen?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 65
+In de 3D-ontwerptool sla je je ontwerp op en verstuur je het naar ons. Daarna werken we het samen met je verder uit: je ziet een digitale 3D-proef en pas na jouw akkoord gaan we naar productie.
+=== 66
+<span class="wp-block-accordion-heading__toggle-title"><strong>Welke logobestanden heb ik nodig?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 67
+Het liefst een vectorbestand: AI, EPS, SVG of een PDF met vectoren. Die blijven scherp op elk formaat. Heb je alleen een PNG of JPG? Stuur die gerust mee, dan kijken we wat er mogelijk is.
+=== 68
+<span class="wp-block-accordion-heading__toggle-title"><strong>Wat als ik nog geen idee heb?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 69
+Geen probleem, daar is ons designteam voor. We adviseren over kleurkeuze, de plaatsing van logo's en de juiste afmetingen. Vooraf kunnen we je voorbeelden en kleurstalen sturen, zodat je een goed beeld krijgt van het eindresultaat.
+=== 70
+<span class="wp-block-accordion-heading__toggle-title"><strong>Kan ik een bestaand tenue laten namaken?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 71
+Ja. Stuur foto's of het ontwerpbestand van je huidige tenue mee, dan zetten we het om naar onze producten. Desgewenst geven we het meteen een frisse update.
+=== 72
+Kost een ontwerp iets?
+=== 73
+Kan ik mijn ontwerp opslaan en later aanpassen?
+=== 74
+Welke logobestanden heb ik nodig?
+=== 75
+Wat als ik nog geen idee heb?
+=== 76
+Kan ik een bestaand tenue laten namaken?
+=== 77
+Klaar om te beginnen?
+=== 78
+Zelf aan de slag
+=== 79
+Open de 3D-ontwerptool en maak je eigen wielershirt. Gratis en vrijblijvend.
+=== 80
+Ontwerp aanvragen
+=== 81
+Laat je gegevens achter en vertel kort wat je zoekt. Je hoort binnen een werkdag van ons.
+=== 82
+[fluentform id="1"]
+=== 83
+Liever even bellen of mailen? <a href="tel:0182232008">0182 232 008</a> · <a href="mailto:info@36cycling.com">info@36cycling.com</a>

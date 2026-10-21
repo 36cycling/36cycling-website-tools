@@ -1,0 +1,77 @@
+@title: Event collectie
+@slug: event-collectie
+@path: /nl/event-collectie/
+@yoast_title: Team Event wielerkleding collectie "Ride" | 36 Cycling
+@yoast_metadesc: Voor het ontwerpen en produceren van wielerkleding in een eigen design voor je team, club of bedrijf.
+@yoast_focuskw: 
+
+=== 1
+Event collectie: custom wielerkleding
+=== 2
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/teamkleding-collectie/">Wielerkleding</a>
+=== 3
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/sportkleding-collectie/">Sportkleding</a>
+=== 4
+<a class="wp-block-button__link wp-element-button">Event collectie</a>
+=== 5
+<strong>Event Collectie: RIDE</strong>
+=== 6
+Onze RIDE collectie heeft dezelfde hoge kwaliteit die je van 36 kunt verwachten: lichtgewicht technische materialen, aangename pasvorm, een zeer comfortabele broek met een high-end zeem voor lange afstanden. En allemaal te ontwerpen en bedrukken.
+=== 7
+<strong>Waarin verschilt de RIDE lijn dan?</strong>
+=== 8
+What you see is what you get: de Ride wielerkleding collectie heeft verder geen opties en daardoor kunnen we deze gunstig en eenvoudig aanbieden.
+=== 9
+Eigenschappen
+=== 10
+Shirt keuze: Standaard en Pro
+=== 11
+Eén pasvorm: unisex (wel onderscheid in dames/heren zeem)
+=== 12
+Minimale afname: 20 stuks
+=== 13
+Nabestellingen: vanaf 10 stuks
+=== 14
+Levertijd: 5/6 weken
+=== 15
+Wielershirts
+=== 16
+var:preset|spacing|30
+=== 17
+var:preset|spacing|40
+=== 18
+wielershirt bedrukken met eigen ontwerp
+=== 19
+WIELERSHIRT - RIDE
+=== 20
+Wielerhirt gemaakt van lichtgewicht Soft-Grid materiaal: goed ademend door de geperforeerde structuur. Met gel gripper en standaard met een lange blinde rits. Een heerlijk shirt wat voor vrijwel elke fietser geschikt is.
+=== 21
+wielerbroek bedrukken met je design
+=== 22
+WIELERBROEK - RIDE
+=== 23
+Een professionele wielerbroek met flatlock, zeer comfortabele bretels en heerlijke pasvorm. Voorzien van een Elastic Interface zeem geschikt voor lange duurritten.
+=== 24
+wielershirt ontwerpen
+=== 25
+WIELERSHIRT - RIDE PRO
+=== 26
+Een upgrade van het RIDE shirt met 4-way stretch mouwen, waardoor de pasvorm comfortabeler wordt en de uitstraling van het shirt strak en modern afgewerkt is. Een heerlijk shirt wat ook voor de veeleisende wielrenner geschikt is.
+=== 27
+wielerjack ontwerpen en bedrukken
+=== 28
+WIELERJACK - RIDE
+=== 29
+Een gevoerd jack voor de voorjaarsdagen of om je voor en na je rit warm te houden. Met 3 zakken en lange rits.
+=== 30
+wielren windstopper bedrukken
+=== 31
+WINDJACK - RIDE
+=== 32
+Een windjack met winddichte voorkant en mesh achterkant, zodat je via de achterkant je warmte kwijt kunt. Geen achterzakken. Met lange rits.
+=== 33
+sportshirt bedrukken met je eigen ontwerp
+=== 34
+SPORT/RUNNING
+=== 35
+Het technische sportshirt van Soft-Grid materiaal. Stevig, maar toch dun en ademend, waardoor het voor vrijwel alle sporten geschikt is: op het sportveld of om een marathon te lopen.

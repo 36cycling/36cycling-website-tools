@@ -1,0 +1,47 @@
+oude_url;voorstel;actie;reden
+/nl/over-36/;/nl/over-36/;SLUG FIXEN;Pagina bestaat als /nl/about/ (id 939) → slug terug naar over-36
+/nl/ruilen-en-retourneren/;/nl/ruilen-en-retourneren/;SLUG FIXEN;Pagina bestaat als /nl/privacy-policy/ (id 935) → slug terug
+/nl/teamkleding/;/nl/teamkleding-collectie/;301;Dun (94 w), zelfde onderwerp
+/nl/offerte-aanvragen/;/nl/offerteaanvraag/;301;Dubbele offertepagina
+/nl/design-aanvraag/;/nl/offerteaanvraag/;301;Dubbele offertepagina
+/nl/design/;/nl/wielerkleding-ontwerpen/;301;Dun (54 w)
+/nl/landingspagina/;/nl/wielerkleding-ontwerpen/;301;Zelfde title als oude ontwerppagina
+/nl/design-samenwerkingen/;/nl/wielerkleding-ontwerpen/;301 (of herbouwen);292 w eigen content — check Search Console
+/nl/snel-wielershirt-bedrukken/;/nl/snel-wielershirt-bedrukken/;GEBOUWD;Pagina herbouwd op dezelfde URL (id 6501)
+/nl/promotions/;/nl/sportkleding-bedrukken/;301 (of herbouwen);173 w, 'promotiekleding bedrukken' — check Search Console
+/nl/bidon-bedrukken/;/nl/custom-teamwear/;301;Dun (25 w)
+/nl/stories/zemen-reservekopie/;/nl/stories/zemen/;301;Kopie van story
+/nl/stories/wassen-reservekopie/;/nl/stories/wielerkleding-wassen/;301;Kopie van story
+/nl/contact/bedankt/;/nl/contact/;301;Bedankpagina
+/nl/36-cycling-circle/;?;BESLISSEN;Circle-programma (245 w) — nog actief? Dan herbouwen, anders 301 naar /nl/
+/nl/36-cycling-circle-basic/;?;BESLISSEN;idem
+/nl/36-cycling-circle-basic/bedankt/;?;BESLISSEN;idem
+/nl/fietsbrillen/;webshop-categorie;LATER (WooCommerce);455 w categorie-landingspagina
+/nl/kask-helmen/;webshop-categorie;LATER (WooCommerce);Productcategorie
+/nl/speedonwheels/;webshop-collectie;LATER (WooCommerce);252 w collectie Niki Terpstra
+/nl/orderstatus/;/nl/my-account/;LATER (WooCommerce);Shopfunctie
+/nl/bestelling-volgen/;/nl/my-account/;LATER (WooCommerce);Shopfunctie
+/nl/tools/;-;410 GONE;Interne toolpagina, hoort niet in Google
+/nl/export/;-;410 GONE;Interne datadump (12.539 w)
+/nl/import/;-;410 GONE;Interne toolpagina
+/nl/voorraad/;-;410 GONE;Interne datadump (13.949 w)
+/nl/talen/;-;410 GONE;Interne toolpagina
+/nl/migratie/;-;410 GONE;Interne datadump (15.064 w)
+/custom-teamwear/wielerkleding-bedrukken/;/nl/wielerkleding-bedrukken/;301;Oude geneste URL (staat nog in oude sitemap)
+/custom-teamwear/sportkleding-bedrukken/;/nl/sportkleding-bedrukken/;301;Oude geneste URL
+/custom-teamwear/assortiment-teamkleding/;/nl/teamkleding-collectie/;301;Oude geneste URL
+/stories/zemen-reservekopie/;/nl/stories/zemen/;301;Oude URL zonder /nl/ (oud doel: /nl/stories/zemen-reservekopie/)
+/stories/wassen-reservekopie/;/nl/stories/wielerkleding-wassen/;301;Oude URL zonder /nl/ (oud doel: /nl/stories/wassen-reservekopie/)
+/wielerkleding/;/nl/wielerkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/hoe-werkt-het/;/nl/wielerkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/teamkleding-collectie/;/nl/teamkleding-collectie/;301;Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)
+/wielerkleding/wielerkleding-bedrukken/;/nl/wielerkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/wielerkleding-ontwerpen/;/nl/wielerkleding-ontwerpen/;301;Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/sportkleding/;/nl/sportkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)
+/teamkleding/;/nl/teamkleding-collectie/;301;Oude URL zonder /nl/ (oud doel: /nl/teamkleding/)
+/teamkleding/wielerkleding/;/nl/wielerkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/teamkleding/sportkleding/;/nl/sportkleding-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)
+/teamkleding/bekijk-onze-collectie/;/nl/teamkleding-collectie/;301;Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)
+/circle/;? (Circle — beslissen);301;Oude URL zonder /nl/ (oud doel: /nl/36-cycling-circle/)
+/snel-wielershirt-bedrukken/;/nl/snel-wielershirt-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)
+/snel/;/nl/snel-wielershirt-bedrukken/;301;Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)

@@ -1,0 +1,20 @@
+@title: Twee keuzeblokken (EN)
+
+=== 1
+=
+=== 2
+Design it yourself in 3D
+=== 3
+Choose your product, play with colours and patterns and add your logo. You immediately see your cycling jersey in 3D, from every angle. Ideal if you already have an idea or just want to try things out.
+=== 4
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" target="_blank" rel="noopener">Start the design tool</a>
+=== 5
+Designing a cycling jersey in the 36 Cycling 3D design tool
+=== 6
+Let us create the design
+=== 7
+No time, or no idea where to start? Our design team creates a custom design in your corporate identity. You give feedback on a digital 3D proof, and we only continue after your approval.
+=== 8
+<a class="wp-block-button__link wp-element-button" href="#laat-ons-ontwerpen">Request a design</a>
+=== 9
+Custom cycling jersey designs for Cegeka, Goudappel Coffeng, Rotterdam Philharmonic Orchestra and EHV8

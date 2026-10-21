@@ -1,0 +1,21 @@
+@title: Bandana
+@slug: bandana
+@path: /nl/teamkleding-collectie/bandana/
+@yoast_title: Bandana ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Bandana voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+bandana wielrennen ontwerpen
+=== 2
+Bandana
+=== 3
+De bandana werd gemeengoed onder renners dankzij wielerlegende Marco Pantani, die in de jaren negentig zijn aanvallen plaatste vanonder zijn om zijn hoofd geknoopte doek. Nog steeds is de bandana een geliefd kledingstuk onder renners: enerzijds om vocht op te vangen, anderzijds als bescherming tegen de zon.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

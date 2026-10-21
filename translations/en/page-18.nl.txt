@@ -1,0 +1,29 @@
+@title: Contact
+@slug: contact
+@path: /nl/contact/
+@yoast_title: Neem Contact Op met 36 Cycling | Vragen, Feedback en Samenwerkingen
+@yoast_metadesc: Heb je vragen, feedback of interesse in samenwerkingen? Neem contact op met 36 Cycling. Ons team staat klaar om je te helpen. Laat van je horen!
+@yoast_focuskw: 
+
+=== 1
+Contact
+=== 2
+Het maken van gepersonaliseerde wielerkleding is onze specialiteit. Laat ons uw wensen en ideeën weten en we sturen u direct meer informatie.
+=== 3
+<strong>36 Cycling</strong><br>Westbaan 286<br>2841 MC Moordrecht<br><a href="mailto:info@36cycling.com" target="_blank" rel="noopener">info@36cycling.com</a><br><br>Telefoon:<br><strong><a href="tel:0182232008">0182 - 232 008</a></strong><br><br>KvK nr: 55679455<br>BTW nr: NL8518.15.224.B01<br>IBAN: NL26RABO0153329718<br><br>Instagram:&nbsp;<a href="https://www.instagram.com/36cycling" target="_blank" rel="noopener">Instagram.com/36cycling</a><a href="https://www.instagram.com/36cyclingportfolio/" target="_blank" rel="noopener"><br></a>Design portfolio:&nbsp;<a href="https://www.instagram.com/36cyclingportfolio/" target="_blank" rel="noopener">Instagram.com/36cyclingportfolio</a>
+=== 4
+Follow Us
+=== 5
+Blocksy: Socials
+=== 6
+<strong>36 Cycling</strong><br>Westbaan 286<br>2841 MC Moordrecht<br><a href="mailto:info@36cycling.com">info@36cycling.com</a><br><br>KvK nr: 55679455<br>BTW nr: NL8518.15.224.B01<br>IBAN: NL26RABO0153329718
+=== 7
+Instagram: <a href="https://www.instagram.com/36cycling" target="_blank" rel="noopener">Instagram.com/36cycling</a><a href="https://www.instagram.com/36cyclingportfolio/" target="_blank" rel="noopener"><br></a>Design portfolio: <a href="https://www.instagram.com/36cyclingportfolio/" target="_blank" rel="noopener">Instagram.com/36cyclingportfolio</a>
+=== 8
+36 Cycling
+=== 9
+<em>Where folks become cyclists</em>
+=== 10
+Voor advies of een vrijblijvende kennismaking met ons en onze producten bent u van harte welkom in ons kantoor. Of zoals we het zelf liever noemen: de Cycling Room. Want we maken graag een praatje over de wielersport onder het genot van een bakje koffie en hopen daarmee iedereen die binnenkomt iets te laten proeven van de sport, zoals we denken dat het hoort: puur en met passie. <br>En we tonen daarnaast natuurlijk ook met plezier onze <a href="https://www.36cycling.com/nl/shop/">producten</a> en <a href="https://www.36cycling.com/nl/wielerkleding/">wielerkleding</a>.<br>Maak vooraf eerst even een afspraak via het bovenstaande telefoonnummer.
+=== 11
+Openen in Google Maps

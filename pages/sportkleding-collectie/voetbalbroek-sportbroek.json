@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/sportkleding-collectie/voetbalbroek-sportbroek/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "sportkleding-collectie",
+  "seo": {
+    "title": "Voetbalbroek / sportbroek ontwerpen en bedrukken",
+    "metaDescription": "Voetbalbroek / sportbroek voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Voetbalbroek / sportbroek ontwerpen en bedrukken",
+    "ogDescription": "Voetbalbroek / sportbroek voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "voetbalbroek-sportbroek"
+  },
+  "headings": {
+    "h1": "Voetbalbroek / sportbroek",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Voetbalbroek / sportbroek</h1>\n<p>Onze voetbalbroek is ontworpen voor ultieme bewegingsvrijheid en comfort tijdens elke training of wedstrijd. Gemaakt van lichtgewicht, ademend materiaal dat zweet snel afvoert, blijf je droog en gefocust, zelfs tijdens intensieve inspanningen. De elastische tailleband zorgt voor een perfecte pasvorm, terwijl het tijdloze design past bij elke sportoutfit.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/sportbroek-voetbal.jpg",
+    "alt": "sportkleding ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/sportkleding-collectie/voetbalbroek-sportbroek/",
+    "to": "https://rondevanrotterdam.nl/nl/sportkleding-collectie/voetbalbroek-sportbroek/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

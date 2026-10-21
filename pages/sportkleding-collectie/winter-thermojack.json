@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/sportkleding-collectie/winter-thermojack/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "sportkleding-collectie",
+  "seo": {
+    "title": "Winter thermojack ontwerpen en bedrukken",
+    "metaDescription": "Winter thermojack voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Winter thermojack ontwerpen en bedrukken",
+    "ogDescription": "Winter thermojack voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "winter-thermojack"
+  },
+  "headings": {
+    "h1": "Winter thermojack",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Winter thermojack</h1>\n<p>Het winter thermojack is ontworpen om je warm te houden tijdens de koudste dagen. Dit jack van geïsoleerd ademend materiaal biedt uitstekende bescherming tegen de winterse kou en wind, terwijl het je tegelijkertijd comfortabel houdt door vocht af te voeren. De thermische voering zorgt voor extra warmte, zonder dat het jack zwaar aanvoelt.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielerjack-thermo.jpg",
+    "alt": "sportkleding ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/sportkleding-collectie/winter-thermojack/",
+    "to": "https://rondevanrotterdam.nl/nl/sportkleding-collectie/winter-thermojack/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

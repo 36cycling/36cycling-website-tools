@@ -1,0 +1,7 @@
+@title: Checkout
+@slug: checkout
+@path: /nl/checkout/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+

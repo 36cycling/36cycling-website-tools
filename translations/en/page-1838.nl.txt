@@ -1,0 +1,21 @@
+@title: Team polo
+@slug: team-polo
+@path: /nl/teamkleding-collectie/team-polo/
+@yoast_title: Team polo ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Team polo voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+poloshirt ontwerpen en bedrukken
+=== 2
+Team polo
+=== 3
+Als team wil je ook naast de fiets gesoigneerd voor de dag komen. Daarvoor hebben we onze teampolo’s met kraag, naar eigen wensen te ontwerpen en te bedrukken. De polo wordt ook besteld voor andere takken van sport, zoals hockey. De polo kan ook worden uitgevoerd als een Extreme-variant of met Coolmax-technologie.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

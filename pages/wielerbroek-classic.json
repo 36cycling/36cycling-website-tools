@@ -1,0 +1,52 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-classic/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Classic wielerbroek ontwerpen en bedrukken",
+    "metaDescription": "Classic wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Classic wielerbroek ontwerpen en bedrukken",
+    "ogDescription": "Classic wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "wielerbroek-classic"
+  },
+  "headings": {
+    "h1": "Wielerbroek Classic",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "Mesh bovenstuk",
+    "Coolmax gripperband",
+    "Compressie lycra zijpanelen",
+    "Optie standaard Dolomiti of Pro Elastic Interface zeem"
+  ],
+  "contentHtml": "<h1>Wielerbroek Classic</h1>\n<p>Zoals de naam al verraadt heeft de Classic heeft een klassieke snit met een recht zijpaneel. Maar vergis je niet: deze wielerbroek is van moderne hoogwaardige materialen gemaakt en dat maakt dit gewoon een kwalitatieve bib shorts van deze tijd. De broekpijpen zijn afgewerkt met een band met gel spots die de broek comfortabel op zijn plek houden.</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>Mesh bovenstuk</li>\n<li>Coolmax gripperband</li>\n<li>Compressie lycra zijpanelen</li>\n<li>Optie standaard Dolomiti of Pro Elastic Interface zeem</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielerbroek-classic.jpg",
+    "alt": "classic wielerbroek met eigen ontwerp bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-classic/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/wielerbroek-classic/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

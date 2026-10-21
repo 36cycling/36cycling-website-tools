@@ -1,0 +1,15 @@
+@title: Contactblok onderaan
+@slug: contactblok-onderaan
+@path: /nl/stories/contactblok-onderaan/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+Vragen?
+=== 2
+Stel ze gerust!
+=== 3
+We staan graag voor je klaar als je vragen hebt. Stuur ons een mailtje of vul het contactformulier in en we beantwoorden je vraag zo snel mogelijk.
+=== 4
+Contact Info

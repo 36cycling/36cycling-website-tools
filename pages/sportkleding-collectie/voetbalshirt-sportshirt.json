@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/sportkleding-collectie/voetbalshirt-sportshirt/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "sportkleding-collectie",
+  "seo": {
+    "title": "Voetbalshirt / sportshirt ontwerpen en bedrukken",
+    "metaDescription": "Voetbalshirt / sportshirt voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Voetbalshirt / sportshirt ontwerpen en bedrukken",
+    "ogDescription": "Voetbalshirt / sportshirt voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "voetbalshirt-sportshirt"
+  },
+  "headings": {
+    "h1": "Voetbalshirt / sportshirt",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Voetbalshirt / sportshirt</h1>\n<p>Ons allround sportshirt is ontworpen voor ultiem comfort en prestaties. Gemaakt van lichtgewicht, ademend materiaal dat zweet effectief afvoert, houdt het je droog en koel tijdens intensieve inspanningen. De sportieve pasvorm biedt maximale bewegingsvrijheid, terwijl het stijlvolle design perfect past bij team- of individuele sportwedstrijden.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/soccer-shirt.jpg",
+    "alt": "sportkleding ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/sportkleding-collectie/voetbalshirt-sportshirt/",
+    "to": "https://rondevanrotterdam.nl/nl/sportkleding-collectie/voetbalshirt-sportshirt/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

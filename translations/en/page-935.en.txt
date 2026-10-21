@@ -1,0 +1,21 @@
+@title: Returns and Exchanges
+@slug: returns-and-exchanges
+@path_en: /en/returns-and-exchanges/
+@yoast_title: Returns and Exchanges | 36 Cycling
+@yoast_metadesc: Want to exchange or return a purchase from our web shop? You can do so within 2 weeks of receipt. Read how it works and where to send your return.
+@yoast_focuskw: returns and exchanges
+
+=== 1
+It can happen that your purchase is not quite what you expected. You can therefore always exchange or return items you bought in our web shop within 2 weeks of receiving them. They must be unworn and in their original condition.
+=== 2
+Please include the packing slip with your return so that we know who the parcel is from.
+=== 3
+<strong>Exchanges:</strong><br>If you would like to exchange an item, please make a short note on the packing slip of the size or item you would like to receive.
+=== 4
+<strong>Return address:<br></strong>You can send your order back to:
+=== 5
+<strong>36 Cycling</strong><br>Westbaan 286<br>2841MC Moordrecht<br>The Netherlands
+=== 6
+We will refund the purchase amount to you once we have received your order back.
+=== 7
+Shipping costs you incur for the return are not refunded by us.

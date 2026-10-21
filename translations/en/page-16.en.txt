@@ -1,0 +1,6 @@
+@title: Stories
+@slug: stories
+@path_en: /en/stories/
+@yoast_title: Stories | 36 Cycling
+@yoast_metadesc: Stories, tips and news from 36 Cycling: from washing cycling clothing and choosing the right chamois to the Six Days of Rotterdam and the GP Groot winter competition.
+@yoast_focuskw: 

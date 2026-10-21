@@ -1,0 +1,65 @@
+@title: Collectiesamenvatting
+@slug: collectiesamenvatting
+@path: /nl/stories/collectiesamenvatting/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+Welke kleding kun je ontwerpen?
+=== 2
+Alle items uit onze teamwear-collectie zijn te ontwerpen in je eigen design, van wielershirt tot armstukken. Een greep uit de mogelijkheden:
+=== 3
+var:preset|spacing|40
+=== 4
+wielershirt eigen ontwerp
+=== 5
+Wielershirts
+=== 6
+Vijf modellen, van het luchtige Prestige tot de allround Classic.
+=== 7
+Pro wielerbroek bedrukken
+=== 8
+Wielerbroeken
+=== 9
+Elite, Speed, TotalGrip en Classic, plus een lange wielerbroek en een warming-up broek.
+=== 10
+wielerkleding ontwerpen en bedrukken
+=== 11
+Jacks en windjacks
+=== 12
+All Season Jack, Winter Thermo Jack en drie windjacks voor koudere dagen.
+=== 13
+tijdritpak ontwerpen en bedrukken
+=== 14
+Skinsuits en triatlonpakken
+=== 15
+Skinsuit Performance en Criterium voor tijdritten en wedstrijden, en een triatlonpak.
+=== 16
+sportkleding ontwerpen en bedrukken
+=== 17
+Sportshirts
+=== 18
+Ook voor hardlopen, schaatsen en voetbal: running shirts, singlets, schaatspakken en meer.
+=== 19
+body voor wielrennen bedrukken
+=== 20
+Body's en jacks
+=== 21
+Windjacks, body's en andere bovenkleding om je warm te houden bij verschillende sporten.
+=== 22
+Sportbroeken
+=== 23
+Running tights of losse sportbroeken, voor hardlopen, veldsporten of bijvoorbeeld padel.
+=== 24
+armstukken bedrukken
+=== 25
+Accessoires
+=== 26
+Armstukken, beenstukken, wintermuts, bandana, team polo en leisure jack.
+=== 27
+Bekijk de complete collectiepagina's om alle producten te zien:
+=== 28
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/">Teamkleding collectie</a>
+=== 29
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/">Sportkleding collectie</a>

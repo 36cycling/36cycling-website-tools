@@ -1,0 +1,29 @@
+@title: Wielerbroek Elite
+@slug: wielerbroek-elite
+@path: /nl/teamkleding-collectie/wielerbroek-elite/
+@yoast_title: Elite wielerbroek ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Elite wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+wielerbroek ontwerpen en bedrukken
+=== 2
+Wielerbroek Elite
+=== 3
+Geen concessies in materialen, zeem, model, gripper? Dan kom je uit de 'Elite'. Met de zeem is zelfs de hele dag op het zadel geen probleem. De zijpanelen hebben een fraai reliëf en geven de broek extra compressie.
+=== 4
+Eigenschappen
+=== 5
+Mesh bovenstuk
+=== 6
+Coolmax gripperband
+=== 7
+Compressie lycra zijpanelen
+=== 8
+Optie standaard Dolomiti of Pro Elastic Interface zeem
+=== 9
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 10
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 11
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

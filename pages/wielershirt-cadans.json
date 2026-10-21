@@ -1,0 +1,53 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-cadans/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Cadans wielershirt ontwerpen en bedrukken",
+    "metaDescription": "Cadans fietsshirt voor jouw team, bedrijf of evenement. Snelle levering en volledig personaliseerbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Cadans wielershirt ontwerpen en bedrukken",
+    "ogDescription": "Cadans fietsshirt voor jouw team, bedrijf of evenement. Snelle levering en volledig personaliseerbaar met een eigen ontwerp en bedrukking.",
+    "slug": "wielershirt-cadans"
+  },
+  "headings": {
+    "h1": "Wielershirt Cadans",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "3 achterzakken",
+    "Gel gripper",
+    "Lange \"blinde\" rits",
+    "Optie voor hoge of lage kraag",
+    "Clean cut-mouwen"
+  ],
+  "contentHtml": "<h1>Wielershirt Cadans</h1>\n<p>De basis van het Cadans wielershirt is een kwalitatieve vocht- en temperatuurregulerende polyester, gecombineerd met andere functionele materialen die het draagcomfort verbeteren: aero lycra mouwen, mesh lycra en siliconen grip in de mouw en taille. Het resultaat is een zeer hoogwaardig wielershirt, wat voldoet aan de meest moderne sportieve norm.</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>3 achterzakken</li>\n<li>Gel gripper</li>\n<li>Lange \"blinde\" rits</li>\n<li>Optie voor hoge of lage kraag</li>\n<li>Clean cut-mouwen</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielershirt-cadans.jpg",
+    "alt": "wielershirt in eigen ontwerp"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-cadans/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/wielershirt-cadans/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

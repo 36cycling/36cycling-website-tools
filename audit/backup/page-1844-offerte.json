@@ -1,0 +1,290 @@
+{
+  "id": 1844,
+  "date": "2026-08-24T17:34:18",
+  "date_gmt": "2026-08-24T17:34:18",
+  "guid": {
+    "rendered": "https://rondevanrotterdam.nl/?page_id=1844",
+    "raw": "https://rondevanrotterdam.nl/?page_id=1844"
+  },
+  "modified": "2026-10-14T16:43:51",
+  "modified_gmt": "2026-10-14T16:43:51",
+  "password": "",
+  "slug": "offerteaanvraag",
+  "status": "publish",
+  "type": "page",
+  "link": "https://rondevanrotterdam.nl/nl/offerteaanvraag/",
+  "title": {
+    "raw": "Offerte aanvragen",
+    "rendered": "Offerte aanvragen"
+  },
+  "content": {
+    "raw": "<!-- wp:greenshift-blocks/row {\"id\":\"gsbp-96b5086\",\"align\":\"full\",\"gutterClassName\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"rowLayout\":\"2\",\"displayStyles\":false,\"background\":{\"color\":\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dpalette-color-4, var(\\u002d\\u002dtheme-palette-color-4, #0D0E10))\"},\"overlay\":{\"image\":[\"https://rondevanrotterdam.nl/wp-content/uploads/2024/05/background-pattern-2.svg\"],\"repeat\":[\"no-repeat\"],\"size\":[\"cover\"],\"opacity\":0.07},\"spacing\":{\"margin\":{\"values\":{\"bottom\":[\"0px\",\"50px\",null,\"10px\"]},\"locked\":false},\"padding\":{\"values\":{\"top\":[\"100px\",\"150px\",null,\"50px\"],\"bottom\":[\"50px\",\"50px\"]},\"locked\":false}},\"isVariation\":\"\",\"visualBuilder\":false,\"metadata\":{\"categories\":[],\"name\":\"Zwarte kop met titel\"}} -->\n<div class=\"wp-block-greenshift-blocks-row alignfull gspb_row gspb_row-id-gsbp-96b5086 gspb_row--gutter-custom-0\" id=\"gspb_row-id-gsbp-96b5086\"><div class=\"gspb_backgroundOverlay\"></div><div class=\"gspb_row__content\"> <!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-f593698\",\"enableExtendedWidth\":false,\"width\":[null],\"gutterclass\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"gutterGap\":[null,null,null,null],\"columnSize\":\"6\",\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\"],\"right\":[\"0px\"],\"bottom\":[\"0px\"],\"left\":[\"0px\"]},\"locked\":true}},\"visualBuilder\":false} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--6 gspb_col-id-gsbp-f593698\" id=\"gspb_col-id-gsbp-f593698\"><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-759f98d\",\"headingTag\":\"h1\",\"headingContent\":\"Offerte aanvragen\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"10px\"],\"bottom\":[\"0px\"]},\"locked\":false},\"padding\":{\"values\":{\"left\":[\"10px\",\"20px\"]},\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"#ffffff\",\"size\":[\"50px\"],\"transform\":\"uppercase\",\"useFluid\":true,\"fluidLineCustom\":true,\"fluidLineCustomValue\":[\"1.5\"],\"fluidSizeMin\":\"30px\",\"fluidSizePerfect\":\"1.875rem + ((1vw - 3.2px) * 1.563)\",\"fluidSizeMax\":\"50px\"}} -->\n<h1 id=\"gspb_heading-id-gsbp-759f98d\" class=\"gspb_heading gspb_heading-id-gsbp-759f98d \">Offerte aanvragen</h1>\n<!-- /wp:greenshift-blocks/heading -->\n\n<!-- wp:greenshift-blocks/text {\"id\":\"gsbp-d492f2a\",\"textContent\":\"Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag hieronder eenvoudig je offerte aan.\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"25px\"]},\"locked\":false},\"padding\":{\"values\":{\"left\":[\"10px\",\"20px\"],\"right\":[null,null,null,\"20px\"]},\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dpalette-color-8, var(\\u002d\\u002dtheme-palette-color-8, #ffffff))\",\"decoration\":\"remove\",\"customweight\":\"custom\",\"customweightnumber\":500,\"line_height\":[\"1.5em\"]},\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[]},\"widthType\":\"custom\",\"maxWidth\":[\"400px\"]}} -->\n<div id=\"gspb_text-id-gsbp-d492f2a\" class=\"gspb_text gspb_text-id-gsbp-d492f2a \">Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag hieronder eenvoudig je offerte aan.</div>\n<!-- /wp:greenshift-blocks/text --></div>\n<!-- /wp:greenshift-blocks/row-column -->\n\n<!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-2ddc165\",\"enableExtendedWidth\":false,\"width\":[null],\"gutterclass\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"gutterGap\":[null,null,null,null],\"columnSize\":\"6\",\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\"],\"right\":[\"0px\"],\"bottom\":[\"0px\"],\"left\":[\"0px\"]},\"locked\":true}},\"visualBuilder\":false} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--6 gspb_col-id-gsbp-2ddc165\" id=\"gspb_col-id-gsbp-2ddc165\"></div>\n<!-- /wp:greenshift-blocks/row-column --> </div></div>\n<!-- /wp:greenshift-blocks/row -->\n\n<!-- wp:html -->\n<div style=\"text-align:left;\"><iframe style=\"width:100%;max-width:560px;height:2000px;border:0;display:block;\" src=\"https://meeting.teamleader.eu/embed/form/36-cycling/bereken-je-prijs/\" frameborder=\"0\"></iframe></div>\n<!-- /wp:html -->",
+    "rendered": "\n<div class=\"wp-block-greenshift-blocks-row alignfull gspb_row gspb_row-id-gsbp-96b5086 gspb_row--gutter-custom-0\" id=\"gspb_row-id-gsbp-96b5086\"><div class=\"gspb_backgroundOverlay\"></div><div class=\"gspb_row__content\"> \n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--6 gspb_col-id-gsbp-f593698\" id=\"gspb_col-id-gsbp-f593698\">\n<h1 id=\"gspb_heading-id-gsbp-759f98d\" class=\"gspb_heading gspb_heading-id-gsbp-759f98d \">Offerte aanvragen</h1>\n\n\n\n<div id=\"gspb_text-id-gsbp-d492f2a\" class=\"gspb_text gspb_text-id-gsbp-d492f2a \">Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag hieronder eenvoudig je offerte aan.</div>\n</div>\n\n\n\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--6 gspb_col-id-gsbp-2ddc165\" id=\"gspb_col-id-gsbp-2ddc165\"></div>\n </div></div>\n\n\n\n<div style=\"text-align:left;\"><iframe style=\"width:100%;max-width:560px;height:2000px;border:0;display:block;\" src=\"https://meeting.teamleader.eu/embed/form/36-cycling/bereken-je-prijs/\" frameborder=\"0\"></iframe></div>\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "_yoast_wpseo_focuskw": "",
+    "_yoast_wpseo_title": "Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling",
+    "_yoast_wpseo_metadesc": "Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.",
+    "_yoast_wpseo_meta-robots-noindex": "",
+    "_yoast_wpseo_canonical": "",
+    "_gspb_post_css": "#gspb_row-id-gsbp-96b5086{justify-content:space-between;margin-top:0;display:flex;flex-wrap:wrap;margin-bottom:0;padding-top:100px;padding-bottom:50px}#gspb_row-id-gsbp-96b5086>.gspb_row__content{display:flex;justify-content:space-between;margin:0 auto;width:100%;flex-wrap:wrap}.gspb_row{position:relative}div[id^=gspb_col-id]{box-sizing:border-box;position:relative;padding:var(--gs-row-column-padding, 15px min(3vw, 20px))}body.gspb-bodyfront #gspb_row-id-gsbp-96b5086>.gspb_row__content{width:var(--theme-container-width, 1200px);max-width:var(--theme-normal-container-max-width, 1200px)}@media (max-width:999.98px){#gspb_row-id-gsbp-96b5086{margin-bottom:50px;padding-top:150px;padding-bottom:50px}}@media (max-width:689.98px){#gspb_row-id-gsbp-96b5086{margin-bottom:10px;padding-top:50px}}#gspb_row-id-gsbp-96b5086{background-color:var(--wp--preset--color--palette-color-4, var(--theme-palette-color-4, #0D0E10))}@media (max-width:999.98px){#gspb_row-id-gsbp-96b5086{background-color:var(--wp--preset--color--palette-color-4, var(--theme-palette-color-4, #0D0E10))}}@media (max-width:689.98px){#gspb_row-id-gsbp-96b5086{background-color:var(--wp--preset--color--palette-color-4, var(--theme-palette-color-4, #0D0E10))}}#gspb_row-id-gsbp-96b5086>.gspb_backgroundOverlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;opacity:.07;background-image:url(https://rondevanrotterdam.nl/wp-content/uploads/2024/05/background-pattern-2.svg);background-size:cover;background-repeat:no-repeat}#gspb_row-id-gsbp-96b5086{isolation:isolate}#gspb_col-id-gsbp-f593698.gspb_row__col--6{width:50%}@media (max-width:689.98px){#gspb_col-id-gsbp-f593698.gspb_row__col--6{width:100%}}.gspb_row #gspb_col-id-gsbp-2ddc165.gspb_row__col--6,.gspb_row #gspb_col-id-gsbp-f593698.gspb_row__col--6{padding:0}#gspb_heading-id-gsbp-759f98d{text-transform:uppercase;font-size:clamp(30px,1.875rem + ((1vw - 3.2px)*1.563),50px);line-height:1.5;color:#fff;margin-top:10px;margin-bottom:0;padding-left:10px}@media (max-width:999.98px){#gspb_heading-id-gsbp-759f98d{padding-left:20px}}.gspb_text-id-gsbp-d492f2a{line-height:1.5em;text-decoration:none;font-weight:500!important}.gspb_text-id-gsbp-d492f2a a{text-decoration:none}@media (max-width:999.98px){.gspb_text-id-gsbp-d492f2a{font-weight:500!important}}@media (max-width:689.98px){.gspb_text-id-gsbp-d492f2a{font-weight:500!important}}.gspb_text-id-gsbp-d492f2a{color:var(--wp--preset--color--palette-color-8, var(--theme-palette-color-8, #ffffff));margin-top:25px!important;padding-left:10px!important}@media (max-width:999.98px){.gspb_text-id-gsbp-d492f2a{padding-left:20px!important}}@media (max-width:689.98px){.gspb_text-id-gsbp-d492f2a{padding-right:20px!important}}.gspb_text-id-gsbp-d492f2a{max-width:400px}#gspb_col-id-gsbp-2ddc165.gspb_row__col--6{width:50%}@media (max-width:689.98px){#gspb_col-id-gsbp-2ddc165.gspb_row__col--6{width:100%}}",
+    "footnotes": ""
+  },
+  "permalink_template": "https://rondevanrotterdam.nl/nl/%pagename%/",
+  "generated_slug": "offerte-aanvragen",
+  "class_list": [
+    "post-1844",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "blocksy_meta": {
+    "styles_descriptor": {
+      "styles": {
+        "desktop": "[data-prefix=\"single_page\"] {background-color:#ffffff;background-image:none;}",
+        "tablet": "",
+        "mobile": ""
+      },
+      "google_fonts": [],
+      "version": 7
+    },
+    "content_style_source": "inherit",
+    "vertical_spacing_source": "custom",
+    "background": {
+      "background_type": "color",
+      "background_pattern": "type-1",
+      "background_image": {
+        "attachment_id": null,
+        "x": 0,
+        "y": 0
+      },
+      "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+      "background_repeat": "repeat",
+      "background_size": "auto",
+      "background_attachment": "scroll",
+      "patternColor": {
+        "default": {
+          "color": "#e5e7ea"
+        }
+      },
+      "overlayColor": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULE"
+        }
+      },
+      "backgroundColor": {
+        "default": {
+          "color": "#ffffff"
+        }
+      }
+    },
+    "page_structure_type": "default",
+    "disable_header": "no",
+    "content_area_spacing": "none"
+  },
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling</title>\n<meta name=\"description\" content=\"Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.\" />\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling\" />\n<meta property=\"og:description\" content=\"Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.\" />\n<meta property=\"og:url\" content=\"https://rondevanrotterdam.nl/nl/offerteaanvraag/\" />\n<meta property=\"og:site_name\" content=\"Just Deploy It!\" />\n<meta property=\"article:modified_time\" content=\"2026-10-14T16:43:51+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Geschatte leestijd\" />\n\t<meta name=\"twitter:data1\" content=\"1 minuut\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/offerteaanvraag\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/offerteaanvraag\\/\",\"name\":\"Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling\",\"isPartOf\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\"},\"datePublished\":\"2026-08-24T17:34:18+00:00\",\"dateModified\":\"2026-10-14T16:43:51+00:00\",\"description\":\"Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/offerteaanvraag\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/offerteaanvraag\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/offerteaanvraag\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Offerte aanvragen\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"name\":\"Just Deploy It!\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\",\"name\":\"Just Deploy It!\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"contentUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"width\":500,\"height\":514,\"caption\":\"Just Deploy It!\"},\"image\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling",
+    "description": "Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.",
+    "robots": {
+      "index": "noindex",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "og_locale": "nl_NL",
+    "og_type": "article",
+    "og_title": "Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling",
+    "og_description": "Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.",
+    "og_url": "https://rondevanrotterdam.nl/nl/offerteaanvraag/",
+    "og_site_name": "Just Deploy It!",
+    "article_modified_time": "2026-10-14T16:43:51+00:00",
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Geschatte leestijd": "1 minuut"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://rondevanrotterdam.nl/nl/offerteaanvraag/",
+          "url": "https://rondevanrotterdam.nl/nl/offerteaanvraag/",
+          "name": "Wielerkleding bedrukken - offerte aanvragen. | 36 Cycling",
+          "isPartOf": {
+            "@id": "https://rondevanrotterdam.nl/nl/#website"
+          },
+          "datePublished": "2026-08-24T17:34:18+00:00",
+          "dateModified": "2026-10-14T16:43:51+00:00",
+          "description": "Wielerkleding en sportkleding in eigen ontwerp laten bedrukken. Vraag je offerte aan.",
+          "breadcrumb": {
+            "@id": "https://rondevanrotterdam.nl/nl/offerteaanvraag/#breadcrumb"
+          },
+          "inLanguage": "nl-NL",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://rondevanrotterdam.nl/nl/offerteaanvraag/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rondevanrotterdam.nl/nl/offerteaanvraag/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rondevanrotterdam.nl/nl/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Offerte aanvragen"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rondevanrotterdam.nl/nl/#website",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "name": "Just Deploy It!",
+          "description": "",
+          "publisher": {
+            "@id": "https://rondevanrotterdam.nl/nl/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rondevanrotterdam.nl/nl/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://rondevanrotterdam.nl/nl/#organization",
+          "name": "Just Deploy It!",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "nl-NL",
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/",
+            "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "contentUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "width": 500,
+            "height": 514,
+            "caption": "Just Deploy It!"
+          },
+          "image": {
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/"
+          }
+        }
+      ]
+    }
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/comments?post=1844"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 19,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 6472,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844/revisions/6472"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=1844"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1844"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

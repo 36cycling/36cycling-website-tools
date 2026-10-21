@@ -1,0 +1,7 @@
+@title: Stories
+@slug: stories
+@path: /nl/stories/
+@yoast_title: Stories | 36 Cycling
+@yoast_metadesc: Verhalen, tips en nieuws van 36 Cycling: van wielerkleding wassen en de juiste zeem tot de Zesdaagse van Rotterdam en de GP Groot Wintercompetitie.
+@yoast_focuskw: 
+

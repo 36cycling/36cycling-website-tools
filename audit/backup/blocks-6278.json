@@ -1,0 +1,107 @@
+{
+  "id": 6278,
+  "date": "2026-10-12T18:09:31",
+  "date_gmt": "2026-10-12T18:09:31",
+  "guid": {
+    "rendered": "https://rondevanrotterdam.nl/stories/ingestuurde-fotos/",
+    "raw": "https://rondevanrotterdam.nl/stories/ingestuurde-fotos/"
+  },
+  "modified": "2026-10-12T18:09:31",
+  "modified_gmt": "2026-10-12T18:09:31",
+  "password": "",
+  "slug": "ingestuurde-fotos",
+  "status": "publish",
+  "type": "wp_block",
+  "link": "https://rondevanrotterdam.nl/nl/stories/ingestuurde-fotos/",
+  "title": {
+    "raw": "Ingestuurde foto's"
+  },
+  "content": {
+    "raw": "<!-- wp:group {\"align\":\"full\",\"style\":{\"color\":{\"background\":\"#f0f0f0\"},\"spacing\":{\"margin\":{\"top\":\"0\",\"bottom\":\"0\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group alignfull has-background\" style=\"background-color:#f0f0f0;margin-top:0;margin-bottom:0\"><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-cc53db4\",\"headingContent\":\"Ingestuurde foto's\",\"spacing\":{\"margin\":{\"values\":{\"bottom\":[0],\"top\":[\"0px\"]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dpalette-color-1, var(\\u002d\\u002dtheme-palette-color-1, #2e4852))\",\"alignment\":[\"center\"]}} -->\n<h2 id=\"gspb_heading-id-gsbp-cc53db4\" class=\"gspb_heading gspb_heading-id-gsbp-cc53db4 \">Ingestuurde foto's</h2>\n<!-- /wp:greenshift-blocks/heading -->\n\n<!-- wp:greenshift-blocks/row {\"id\":\"gsbp-8afa9e3\",\"align\":\"full\",\"displayStyles\":false,\"background\":{\"color\":[\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dcard-border, #f0f0f0)\"]},\"overlay\":{\"repeat\":[\"no-repeat\"],\"size\":[\"cover\"],\"opacity\":0.07,\"positionImage\":[{\"x\":0.38,\"y\":0.69}]},\"spacing\":{\"margin\":{\"values\":{\"top\":[\"0px\",\"60px\",null,\"0px\"],\"bottom\":[\"0px\"]},\"locked\":false},\"padding\":{\"values\":{\"top\":[\"10px\",\"60px\",null,\"20px\"],\"bottom\":[\"50px\",\"60px\",null,\"20px\"]},\"locked\":false}},\"isVariation\":\"section\",\"htmlTag\":\"section\"} -->\n<section class=\"wp-block-greenshift-blocks-row alignfull gspb_row gspb_row-id-gsbp-8afa9e3\" id=\"gspb_row-id-gsbp-8afa9e3\"><div class=\"gspb_backgroundOverlay\"></div><div class=\"gspb_row__content\"> <!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-f66a4de\",\"gutterclass\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"gutterGap\":[\"60px\",\"30px\",null,null],\"flexbox\":{\"enable\":true},\"columnSize\":\"4\",\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\"],\"right\":[\"0px\"],\"bottom\":[\"0px\"],\"left\":[\"0px\"]},\"locked\":true}}} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--4 gspb_col-id-gsbp-f66a4de\" id=\"gspb_col-id-gsbp-f66a4de\"><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-eea099b\",\"border\":{\"borderRadius\":{\"values\":{\"topLeft\":[\"3px\"],\"topRight\":[\"3px\"],\"bottomRight\":[\"3px\"],\"bottomLeft\":[\"3px\"]},\"locked\":true},\"style\":[],\"size\":[],\"color\":[],\"styleHover\":[],\"sizeHover\":[],\"colorHover\":[],\"custom\":[],\"customEnabled\":[]},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":[],\"locked\":false},\"overflow\":[\"hidden\"]},\"containerLink\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-eea099b\" id=\"gspb_container-id-gsbp-eea099b\"><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-7afcf2a\",\"flexbox\":{\"type\":\"flexbox\",\"flexDirection\":[\"column\"],\"justifyContent\":[\"flex-end\"]},\"background\":{\"backgroundState\":\"Gradient\",\"gradient\":\"linear-gradient(0deg,rgba(0,0,0,0.77) 9%,rgba(255,255,255,0) 69%)\"},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"30px\"],\"right\":[\"30px\"],\"bottom\":[\"30px\"],\"left\":[\"30px\"]},\"locked\":true}},\"position\":{\"positionType\":[\"relative\",\"\",\"\",\"\"],\"positions\":{\"values\":[]},\"Zindex\":1},\"responsive\":{\"customcss\":\"{CURRENT} .gspb_container {\\nbox-sizing: border-box;\\n}\"},\"containerLink\":\"\",\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[\"250px\"]},\"heightType\":\"custom\"},\"metadata\":{\"name\":\"Content Container\"}} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-7afcf2a\" id=\"gspb_container-id-gsbp-7afcf2a\"><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-f3a5dbc\",\"headingTag\":\"h3\",\"headingContent\":\"FTVV\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"10px\"]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"#ffffff\",\"size\":[\"20px\"]}} -->\n<h3 id=\"gspb_heading-id-gsbp-f3a5dbc\" class=\"gspb_heading gspb_heading-id-gsbp-f3a5dbc \">FTVV</h3>\n<!-- /wp:greenshift-blocks/heading --></div>\n<!-- /wp:greenshift-blocks/container -->\n\n<!-- wp:greenshift-blocks/image {\"id\":\"gsbp-a0b68b6\",\"scale\":[\"cover\"],\"positionImage\":[{\"x\":0.59,\"y\":0.49}],\"width\":[\"custom\",null,null,null],\"widthUnit\":[\"%\",\"px\",\"px\",\"px\"],\"heightUnit\":[\"%\",\"px\",\"px\",\"px\"],\"height\":[\"custom\",null,null,null],\"customWidth\":[100,null,null,null],\"customHeight\":[100,null,null,null],\"originalWidth\":900,\"originalHeight\":540,\"position\":{\"positionType\":[\"absolute\",\"\",\"\",\"\"],\"positions\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"0px\"],\"right\":[\"0px\"],\"left\":[\"0px\"]}}},\"csstransform\":{\"hoverClass\":\"gspb-hoverparent-129\",\"time\":\"0.5\",\"scaleHover\":[\"1.1\"]},\"mediaurl\":\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-FTVV.jpg\",\"mediaid\":1239,\"alt\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-image gspb_image gspb_image-id-gsbp-a0b68b6\" id=\"gspb_image-id-gsbp-a0b68b6\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-FTVV.jpg\" data-src=\"\" alt=\"\" loading=\"lazy\" width=\"100%\" height=\"100%\"/></div>\n<!-- /wp:greenshift-blocks/image --></div>\n<!-- /wp:greenshift-blocks/container --></div>\n<!-- /wp:greenshift-blocks/row-column -->\n\n<!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-82b807d\",\"gutterclass\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"gutterGap\":[\"60px\",\"30px\",null,null],\"flexbox\":{\"enable\":true},\"columnSize\":\"4\",\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\"],\"right\":[\"0px\"],\"bottom\":[\"0px\"],\"left\":[\"0px\"]},\"locked\":true}}} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--4 gspb_col-id-gsbp-82b807d\" id=\"gspb_col-id-gsbp-82b807d\"><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-a790033\",\"border\":{\"borderRadius\":{\"values\":{\"topLeft\":[\"3px\"],\"topRight\":[\"3px\"],\"bottomRight\":[\"3px\"],\"bottomLeft\":[\"3px\"]},\"locked\":true},\"style\":[],\"size\":[],\"color\":[],\"styleHover\":[],\"sizeHover\":[],\"colorHover\":[],\"custom\":[],\"customEnabled\":[]},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":[],\"locked\":false},\"overflow\":[\"hidden\"]},\"containerLink\":\"https://startersites.io/blocksy/e-bike/product-category/city-bikes/\"} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-a790033\" id=\"gspb_container-id-gsbp-a790033\"><a class=\"gspb-containerlink\" href=\"https://startersites.io/blocksy/e-bike/product-category/city-bikes/\" rel=\"noopener\"></a><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-5759ce3\",\"flexbox\":{\"type\":\"flexbox\",\"flexDirection\":[\"column\"],\"justifyContent\":[\"flex-end\"]},\"background\":{\"backgroundState\":\"Gradient\",\"gradient\":\"linear-gradient(0deg,rgba(0,0,0,0.77) 9%,rgba(255,255,255,0) 69%)\"},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"30px\"],\"right\":[\"30px\"],\"bottom\":[\"30px\"],\"left\":[\"30px\"]},\"locked\":true}},\"position\":{\"positionType\":[\"relative\",\"\",\"\",\"\"],\"positions\":{\"values\":[]},\"Zindex\":1},\"responsive\":{\"customcss\":\"{CURRENT} .gspb_container {\\nbox-sizing: border-box;\\n}\"},\"containerLink\":\"\",\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[\"250px\"]},\"heightType\":\"custom\"},\"metadata\":{\"name\":\"Content Container\"}} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-5759ce3\" id=\"gspb_container-id-gsbp-5759ce3\"><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-13b4c52\",\"headingTag\":\"h3\",\"headingContent\":\"Loop des Alpes\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"10px\"]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"#ffffff\",\"size\":[\"20px\"]}} -->\n<h3 id=\"gspb_heading-id-gsbp-13b4c52\" class=\"gspb_heading gspb_heading-id-gsbp-13b4c52 \">Loop des Alpes</h3>\n<!-- /wp:greenshift-blocks/heading --></div>\n<!-- /wp:greenshift-blocks/container -->\n\n<!-- wp:greenshift-blocks/image {\"id\":\"gsbp-bff8f43\",\"scale\":[\"cover\"],\"width\":[\"custom\",null,null,null],\"widthUnit\":[\"%\",\"px\",\"px\",\"px\"],\"heightUnit\":[\"%\",\"px\",\"px\",\"px\"],\"height\":[\"custom\",null,null,null],\"customWidth\":[100,null,null,null],\"customHeight\":[100,null,null,null],\"originalWidth\":900,\"originalHeight\":540,\"position\":{\"positionType\":[\"absolute\",\"\",\"\",\"\"],\"positions\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"0px\"],\"right\":[\"0px\"],\"left\":[\"0px\"]}}},\"csstransform\":{\"hoverClass\":\"gspb-hoverparent-129\",\"time\":\"0.5\",\"scaleHover\":[\"1.1\"]},\"mediaurl\":\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-JoostPetit.jpg\",\"mediaid\":1240,\"alt\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-image gspb_image gspb_image-id-gsbp-bff8f43\" id=\"gspb_image-id-gsbp-bff8f43\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-JoostPetit.jpg\" data-src=\"\" alt=\"\" loading=\"lazy\" width=\"100%\" height=\"100%\"/></div>\n<!-- /wp:greenshift-blocks/image --></div>\n<!-- /wp:greenshift-blocks/container --></div>\n<!-- /wp:greenshift-blocks/row-column -->\n\n<!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-90246cb\",\"gutterclass\":\"gspb_row\\u002d\\u002dgutter-custom-0\",\"gutterGap\":[\"60px\",\"30px\",null,null],\"flexbox\":{\"enable\":true},\"columnSize\":\"4\",\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\"],\"right\":[\"0px\"],\"bottom\":[\"0px\"],\"left\":[\"0px\"]},\"locked\":true}}} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--4 gspb_col-id-gsbp-90246cb\" id=\"gspb_col-id-gsbp-90246cb\"><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-66bf323\",\"border\":{\"borderRadius\":{\"values\":{\"topLeft\":[\"3px\"],\"topRight\":[\"3px\"],\"bottomRight\":[\"3px\"],\"bottomLeft\":[\"3px\"]},\"locked\":true},\"style\":[],\"size\":[],\"color\":[],\"styleHover\":[],\"sizeHover\":[],\"colorHover\":[],\"custom\":[],\"customEnabled\":[]},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":[],\"locked\":false},\"overflow\":[\"hidden\"]},\"containerLink\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-66bf323\" id=\"gspb_container-id-gsbp-66bf323\"><!-- wp:greenshift-blocks/container {\"id\":\"gsbp-754ac38\",\"flexbox\":{\"type\":\"flexbox\",\"flexDirection\":[\"column\"],\"justifyContent\":[\"flex-end\"]},\"background\":{\"backgroundState\":\"Gradient\",\"gradient\":\"linear-gradient(0deg,rgba(0,0,0,0.77) 9%,rgba(255,255,255,0) 69%)\"},\"spacing\":{\"margin\":{\"values\":[],\"locked\":false},\"padding\":{\"values\":{\"top\":[\"30px\"],\"right\":[\"30px\"],\"bottom\":[\"30px\"],\"left\":[\"30px\"]},\"locked\":true}},\"position\":{\"positionType\":[\"relative\",\"\",\"\",\"\"],\"positions\":{\"values\":[]},\"Zindex\":1},\"responsive\":{\"customcss\":\"{CURRENT} .gspb_container {\\nbox-sizing: border-box;\\n}\"},\"containerLink\":\"\",\"blockWidth\":{\"customWidth\":{\"value\":[]},\"customHeight\":{\"value\":[\"250px\"]},\"heightType\":\"custom\"},\"metadata\":{\"name\":\"Content Container\"}} -->\n<div class=\"wp-block-greenshift-blocks-container gspb_container gspb_container-gsbp-754ac38\" id=\"gspb_container-id-gsbp-754ac38\"><!-- wp:greenshift-blocks/heading {\"id\":\"gsbp-46c2ce1\",\"headingTag\":\"h3\",\"headingContent\":\"Team De Rijke\",\"spacing\":{\"margin\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"10px\"]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"typography\":{\"textShadow\":[],\"color\":\"#ffffff\",\"size\":[\"20px\"]}} -->\n<h3 id=\"gspb_heading-id-gsbp-46c2ce1\" class=\"gspb_heading gspb_heading-id-gsbp-46c2ce1 \">Team De Rijke</h3>\n<!-- /wp:greenshift-blocks/heading --></div>\n<!-- /wp:greenshift-blocks/container -->\n\n<!-- wp:greenshift-blocks/image {\"id\":\"gsbp-3ba493b\",\"scale\":[\"cover\"],\"width\":[\"custom\",null,null,null],\"widthUnit\":[\"%\",\"px\",\"px\",\"px\"],\"heightUnit\":[\"%\",\"px\",\"px\",\"px\"],\"height\":[\"custom\",null,null,null],\"customWidth\":[100,null,null,null],\"customHeight\":[100,null,null,null],\"originalWidth\":900,\"originalHeight\":540,\"position\":{\"positionType\":[\"absolute\",\"\",\"\",\"\"],\"positions\":{\"values\":{\"top\":[\"0px\"],\"bottom\":[\"0px\"],\"right\":[\"0px\"],\"left\":[\"0px\"]}}},\"csstransform\":{\"hoverClass\":\"gspb-hoverparent-129\",\"time\":\"0.5\",\"scaleHover\":[\"1.1\"]},\"mediaurl\":\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-DeRijke.jpg\",\"mediaid\":1241,\"alt\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-image gspb_image gspb_image-id-gsbp-3ba493b\" id=\"gspb_image-id-gsbp-3ba493b\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/klantfoto-DeRijke.jpg\" data-src=\"\" alt=\"\" loading=\"lazy\" width=\"100%\" height=\"100%\"/></div>\n<!-- /wp:greenshift-blocks/image --></div>\n<!-- /wp:greenshift-blocks/container --></div>\n<!-- /wp:greenshift-blocks/row-column --> </div></section>\n<!-- /wp:greenshift-blocks/row --></div>\n<!-- /wp:group -->",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "",
+    "protected": false
+  },
+  "template": "",
+  "meta": {
+    "_gspb_post_css": "",
+    "footnotes": ""
+  },
+  "wp_pattern_category": [],
+  "wp_pattern_sync_status": "",
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/wp_block"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 0,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=6278"
+      }
+    ],
+    "wp:term": [
+      {
+        "taxonomy": "wp_pattern_category",
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/wp_pattern_category?post=6278"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278"
+      }
+    ],
+    "wp:action-create-wp_pattern_category": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278"
+      }
+    ],
+    "wp:action-assign-wp_pattern_category": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6278"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+@title: Stappenplan
+@slug: stappenplan
+@path: /nl/stories/stappenplan/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+var:preset|spacing|60
+=== 2
+var:preset|spacing|80
+=== 3
+Hoe het werkt
+=== 4
+var:preset|spacing|50
+=== 5
+van schets tot levering
+=== 6
+Contact
+=== 7
+Je vertelt wat je wilt: aantallen, logo, gewenste datum. Je hoort binnen een werkdag van ons.
+=== 8
+var:preset|spacing|20
+=== 9
+Custom ontwerp
+=== 10
+Wij maken een design op maat voor het shirt of het hele tenue.<br>Je ziet de digitale <strong>3D</strong> proef en geeft akkoord voordat we starten.
+=== 11
+Kleding bestellen
+=== 12
+Passen met onze <strong>paskleding</strong>, of bestellen via de maattabel. Nederlandse pasvorm.<br><strong>Een grote groep?</strong> We bouwen gratis een webshop voor jouw team.
+=== 13
+Productie &amp; controle
+=== 14
+Na jouw akkoord gaat het naar productie. Elk stuk wordt gecontroleerd voor verzending.
+=== 15
+Levering
+=== 16
+We spreken een duidelijke leverdatum met elkaar af. En we houden ons daaraan!<br>Speciale wensen? Vraag het ons. <strong>Nabestellen kan altijd.</strong>

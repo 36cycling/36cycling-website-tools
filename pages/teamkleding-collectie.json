@@ -1,0 +1,61 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "seo": {
+    "title": "Teamwear collectie - customized wielerkleding",
+    "metaDescription": "",
+    "slug": "teamkleding-collectie"
+  },
+  "headings": {
+    "h1": "Teamwear collectie - customized wielerkleding",
+    "sections": ["Wielershirts", "Wielerbroeken", "Jacks"]
+  },
+  "images": [
+    { "src": "https://www.36cycling.com/media/ebllqp1r/wielerkleding-assortiment.jpg", "alt": "", "note": "ALT ONTBREEKT op oude site", "type": "content" },
+    { "src": "https://www.36cycling.com/media/dopdwf22/wielershirt-prestige.jpg", "alt": "wielershirt eigen ontwerp", "type": "content" },
+    { "src": "https://www.36cycling.com/media/sral00ml/wielershirt-prestigeflow.jpg", "alt": "wielershirt ontwerpen en bedrukken - Prestige Flow", "type": "content" },
+    { "src": "https://www.36cycling.com/media/c5inghsj/wielershirt-flow.jpg", "alt": "Flow wielershirt bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielershirt-cadans.jpg", "alt": "wielershirt in eigen ontwerp", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielershirt-classic.jpg", "alt": "Classic wielershirt ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-elite.jpg", "alt": "wielerbroek ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-speed.jpg", "alt": "Pro wielerbroek bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-totalgrip.jpg", "alt": "wielerbroek met gripper bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-classic.jpg", "alt": "Classic wielerbroek met eigen ontwerp bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-lang.jpg", "alt": "lange wielerbroek bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerbroek-warming-up.jpg", "alt": "warming-up wielerbroek bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerjack-allseason.jpg", "alt": "wielerkleding ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/langemouw-extreme.jpg", "alt": "wielershirt met lange mouwen ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wielerjack-thermo.jpg", "alt": "wielerjack ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/windjack-elaspin.jpg", "alt": "wielrenkleding: windstopper bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/windjack-skin.jpg", "alt": "windjack wielrennen bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/windjack-montreal.jpg", "alt": "body voor wielrennen bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/skinsuit-performance.jpg", "alt": "tijdritpak ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/skinsuit-criterium.jpg", "alt": "skin suit ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/trisuit.jpg", "alt": "triatlonpak ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/armstukken.jpg", "alt": "armstukken bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/beenstukken.jpg", "alt": "beenstukken bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/wintermuts.jpg", "alt": "wielrenmuts bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/bandana.jpg", "alt": "bandana wielrennen ontwerpen", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/poloshirt.jpg", "alt": "poloshirt ontwerpen en bedrukken", "type": "content" },
+    { "src": "https://www.36cycling.com/fotos/leisure-jack.jpg", "alt": "trainingsjack in eigen ontwerp bedrukken", "type": "content" }
+  ],
+  "ignoredImages": [
+    "logo_36.png (site-logo)",
+    "shopping.png (winkelwagen-icoon)",
+    "arrow.png (UI)",
+    "loading.gif / close.gif (UI)"
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/",
+    "to": "https://rondevanrotterdam.nl/teamkleding-collectie/ (TE BEVESTIGEN)"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": false,
+    "pageBuilt": false,
+    "verified": false
+  }
+}

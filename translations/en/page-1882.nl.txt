@@ -1,0 +1,21 @@
+@title: Schaatspak - Lycra
+@slug: schaatspak-lycra
+@path: /nl/sportkleding-collectie/schaatspak-lycra/
+@yoast_title: Schaatspak - Lycra ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Schaatspak - Lycra voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.
+@yoast_focuskw: 
+
+=== 1
+sportkleding ontwerpen en bedrukken
+=== 2
+Schaatspak - Lycra
+=== 3
+Ons schaatspak is ontworpen voor optimale snelheid en flexibiliteit op het ijs. Dit pak van high-performance Lycra-materiaal biedt een aerodynamische pasvorm die je bewegingen niet beperkt en tegelijkertijd zorgt voor maximale compressie en spierondersteuning. Het ademende, elastische materiaal voert vocht effectief af, zodat je droog en comfortabel blijft tijdens lange sessies. Ideaal voor zowel recreatieve als competitieve schaatsers die op zoek zijn naar topkwaliteit en prestaties.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

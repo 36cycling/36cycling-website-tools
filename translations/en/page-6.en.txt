@@ -1,0 +1,19 @@
+@title: Cart
+@slug: cart
+@path_en: /en/cart/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+=
+=== 2
+=
+=== 3
+=
+=== 4
+=
+=== 5
+=
+=== 6
+=

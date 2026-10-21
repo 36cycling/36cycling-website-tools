@@ -1,0 +1,236 @@
+{
+  "id": 16,
+  "date": "2024-04-03T06:30:31",
+  "date_gmt": "2024-04-03T06:30:31",
+  "guid": {
+    "rendered": "https://startersites.io/blocksy/e-bike/?page_id=16",
+    "raw": "https://startersites.io/blocksy/e-bike/?page_id=16"
+  },
+  "modified": "2026-08-24T19:41:38",
+  "modified_gmt": "2026-08-24T19:41:38",
+  "password": "",
+  "slug": "stories",
+  "status": "publish",
+  "type": "page",
+  "link": "https://rondevanrotterdam.nl/nl/stories/",
+  "title": {
+    "raw": "Stories",
+    "rendered": "Stories"
+  },
+  "content": {
+    "raw": "",
+    "rendered": "",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "_yoast_wpseo_focuskw": "",
+    "_yoast_wpseo_title": "",
+    "_yoast_wpseo_metadesc": "",
+    "_yoast_wpseo_meta-robots-noindex": "",
+    "_yoast_wpseo_canonical": "",
+    "_gspb_post_css": "",
+    "footnotes": ""
+  },
+  "permalink_template": "https://rondevanrotterdam.nl/nl/%pagename%/",
+  "generated_slug": "stories",
+  "class_list": [
+    "post-16",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "blocksy_meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Stories - Just Deploy It!</title>\n<!-- Opmerking voor de beheerder: deze pagina toont geen meta description omdat het geen heeft. Dit kun je oplossen door er een voor deze pagina te schrijven of ga naar het [Yoast SEO - Instellingen] menu en stel een template in. -->\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Stories - Just Deploy It!\" />\n<meta property=\"og:url\" content=\"https://rondevanrotterdam.nl/nl/stories/\" />\n<meta property=\"og:site_name\" content=\"Just Deploy It!\" />\n<meta property=\"article:modified_time\" content=\"2026-08-24T19:41:38+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":[\"WebPage\",\"CollectionPage\"],\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/stories\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/stories\\/\",\"name\":\"Stories - Just Deploy It!\",\"isPartOf\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\"},\"datePublished\":\"2024-04-03T06:30:31+00:00\",\"dateModified\":\"2026-08-24T19:41:38+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/stories\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/stories\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Stories\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"name\":\"Just Deploy It!\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\",\"name\":\"Just Deploy It!\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"contentUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"width\":500,\"height\":514,\"caption\":\"Just Deploy It!\"},\"image\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Stories - Just Deploy It!",
+    "robots": {
+      "index": "noindex",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "og_locale": "nl_NL",
+    "og_type": "article",
+    "og_title": "Stories - Just Deploy It!",
+    "og_url": "https://rondevanrotterdam.nl/nl/stories/",
+    "og_site_name": "Just Deploy It!",
+    "article_modified_time": "2026-08-24T19:41:38+00:00",
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": [
+            "WebPage",
+            "CollectionPage"
+          ],
+          "@id": "https://rondevanrotterdam.nl/nl/stories/",
+          "url": "https://rondevanrotterdam.nl/nl/stories/",
+          "name": "Stories - Just Deploy It!",
+          "isPartOf": {
+            "@id": "https://rondevanrotterdam.nl/nl/#website"
+          },
+          "datePublished": "2024-04-03T06:30:31+00:00",
+          "dateModified": "2026-08-24T19:41:38+00:00",
+          "breadcrumb": {
+            "@id": "https://rondevanrotterdam.nl/nl/stories/#breadcrumb"
+          },
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rondevanrotterdam.nl/nl/stories/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rondevanrotterdam.nl/nl/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Stories"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rondevanrotterdam.nl/nl/#website",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "name": "Just Deploy It!",
+          "description": "",
+          "publisher": {
+            "@id": "https://rondevanrotterdam.nl/nl/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rondevanrotterdam.nl/nl/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://rondevanrotterdam.nl/nl/#organization",
+          "name": "Just Deploy It!",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "nl-NL",
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/",
+            "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "contentUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "width": 500,
+            "height": 514,
+            "caption": "Just Deploy It!"
+          },
+          "image": {
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/"
+          }
+        }
+      ]
+    }
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/comments?post=16"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 1998,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16/revisions/1998"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=16"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/16"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

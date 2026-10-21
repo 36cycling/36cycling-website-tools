@@ -1,0 +1,14 @@
+https://rondevanrotterdam.nl/wp-content/uploads/blocksy/css/global.css?ver=28734
+https://rondevanrotterdam.nl/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1
+https://rondevanrotterdam.nl/wp-content/themes/blocksy/static/bundle/main.min.css?ver=2.1.53
+https://rondevanrotterdam.nl/wp-content/themes/blocksy/static/bundle/woocommerce.min.css?ver=2.1.53
+https://rondevanrotterdam.nl/wp-content/themes/blocksy/static/bundle/page-title.min.css?ver=2.1.53
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/static/bundle/language-switcher.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/static/bundle/main.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/static/bundle/wishlist-table.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/static/bundle/wishlist.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/static/bundle/custom-badges.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/static/bundle/main.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/static/bundle/header-account.min.css?ver=2.1.57
+https://rondevanrotterdam.nl/wp-content/themes/blocksy/static/bundle/no-scripts.min.css
+https://rondevanrotterdam.nl/wp-content/plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/static/bundle/main.min.css?ver=2.1.57

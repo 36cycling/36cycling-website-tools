@@ -1,0 +1,19 @@
+@title: Cart
+@slug: cart
+@path: /nl/cart/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+woocommerce/product-collection/cross-sells
+=== 2
+Actual products will vary depending on the page being viewed.
+=== 3
+You may be interested in&hellip;
+=== 4
+woocommerce/product-collection/product-title
+=== 5
+Your cart is currently empty!
+=== 6
+New in store

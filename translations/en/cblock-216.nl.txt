@@ -1,0 +1,41 @@
+@title: Footer
+@slug: footer
+@path: /nl/ct_content_block/footer/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+<strong>TEAMKLEDING</strong><br><a href="/nl/wielerkleding-bedrukken/">Wielerkleding bedrukken</a><br><a href="/nl/custom-teamwear/">Hoe werkt het?</a><br><a href="/nl/teamkleding-collectie/">Teamkleding collectie</a><br><br><strong>Informeer ook naar onze:</strong><br><a href="/nl/sportkleding-bedrukken/">Schaatskleding, Triatlonkleding, Hardloopkleding, Voetbalkleding</a>. Ook hiervoor produceren we customized sportkleding van het hoogste niveau.<br><br><a href="/nl/ruilen-en-retourneren/">Ruilen / Retourneren</a><br><a href="/nl/algemene-voorwaarden/">Algemene voorwaarden</a>
+=== 2
+Contact Info
+=== 3
+blocksy/contact-info
+=== 4
+Telefoon:
+=== 5
+R9JD-JiuaRsZQk7TZgrh3
+=== 6
+Email:
+=== 7
+info@36cycling.com
+=== 8
+e4jtcFCirj6vAlHuNqX5a
+=== 9
+Blocksy: Contact Info
+=== 10
+<a href="/nl/shop/">36 Cycling Collection</a><br><br><strong>Waarom 36 Cycling?</strong><br>Onze producten zijn bewezen op het allerhoogste (professioneel) niveau en we werken voortdurend aan vooruitgang in onze producten en materialen. Ons ervaren design team heeft aandacht voor uw wensen en levert altijd een uniek design. <a href="/nl/over-36/">Lees meer</a>
+=== 11
+Cycling Circle
+=== 12
+Meld je aan voor onze Cycling Circle en ontvang af en toe een nieuwsbrief of aantrekkelijke aanbieding van ons.
+=== 13
+Newsletter
+=== 14
+blocksy/newsletter
+=== 15
+Enter your email address below and subscribe to our newsletter
+=== 16
+Blocksy: Newsletter
+=== 17
+Blocksy: Socials

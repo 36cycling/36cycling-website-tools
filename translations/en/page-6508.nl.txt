@@ -1,0 +1,33 @@
+@title: 36 Cycling Circle
+@slug: 36-cycling-circle
+@path: (concept)
+@yoast_title: 36 Cycling Circle: 10% korting en gratis fietssokken | 36 Cycling
+@yoast_metadesc: Word gratis lid van de 36 Cycling Circle: 10% korting op elke bestelling in onze webshop, gratis fietssokken vanaf € 50 en uitnodigingen voor events.
+@yoast_focuskw: 36 Cycling Circle
+
+=== 1
+36 Cycling Circle
+=== 2
+Fijn dat je hier bent! Het is voor ons belangrijk dat je met plezier blijft sporten en dat je klaar bent voor je prestatie, uitdaging of doelstelling. We heten je daarom graag welkom als lid van de 36 Cycling Circle. Leden van de 36 Cycling Circle profiteren van verschillende voordelen, zoals kortingen en uitnodigingen voor gave evenementen.
+=== 3
+Lid worden is gratis en eenvoudig: vul op het aanmeldformulier op deze pagina je voor- en achternaam en e-mailadres in en druk op Aanmelden. Met je mailadres ben je vervolgens bij ons bekend en krijg je voortaan bij elke bestelling* 10% korting en bij bestellingen vanaf €50 gratis sokken. Af en toe houden we je op de hoogte van nieuws of een aanbieding. En bedenken we dingen die leuk kunnen zijn voor leden van de Cycling Circle. O, en afmelden kan uiteraard te allen tijde. ;-)
+=== 4
+Aanmelden
+=== 5
+[fluentform id="3"]
+=== 6
+Voordelen
+=== 7
+10% korting bij elke bestelling in de webshop*
+=== 8
+Gratis fietssokken bij bestellingen boven €50
+=== 9
+Blijf op de hoogte van nieuws of aanbiedingen
+=== 10
+Onze nieuwsbrief met acties, fietstips en meer
+=== 11
+<em>* alleen geldig op producten uit de collectie (geen customized kleding)</em>
+=== 12
+Evenementen
+=== 13
+Behalve van voordelen in onze webshop, profiteer je als lid van de Cycling Circle ook van exclusieve uitnodigingen voor evenementen waar 36 Cycling betrokken is als sponsor en speciale acties. Zo krijg je een gratis entreeticket voor de WielerZesdaagse in Rotterdam Ahoy en doe je straks via de Cycling Circle misschien wel mee aan de populaire toerversie van de Amstel Gold Race.

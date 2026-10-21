@@ -1,0 +1,107 @@
+{
+  "id": 6240,
+  "date": "2026-10-12T11:11:13",
+  "date_gmt": "2026-10-12T11:11:13",
+  "guid": {
+    "rendered": "https://rondevanrotterdam.nl/stories/klantenlogos/",
+    "raw": "https://rondevanrotterdam.nl/stories/klantenlogos/"
+  },
+  "modified": "2026-10-12T11:11:13",
+  "modified_gmt": "2026-10-12T11:11:13",
+  "password": "",
+  "slug": "klantenlogos",
+  "status": "publish",
+  "type": "wp_block",
+  "link": "https://rondevanrotterdam.nl/nl/stories/klantenlogos/",
+  "title": {
+    "raw": "Klantenlogos"
+  },
+  "content": {
+    "raw": "<!-- wp:greenshift-blocks/row {\"id\":\"gsbp-8ad7924\",\"displayStyles\":false,\"spacing\":{\"margin\":{\"values\":{\"top\":[null,null,null,0]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"isVariation\":\"\"} -->\n<div class=\"wp-block-greenshift-blocks-row gspb_row gspb_row-id-gsbp-8ad7924\" id=\"gspb_row-id-gsbp-8ad7924\"><div class=\"gspb_row__content\"> <!-- wp:greenshift-blocks/row-column {\"id\":\"gsbp-06381b2\",\"spacing\":{\"margin\":{\"values\":{\"top\":[null,null,null,0]},\"locked\":false},\"padding\":{\"values\":{\"top\":[\"0px\",null,null,\"5px\"],\"right\":[null,null,null,0],\"bottom\":[\"0px\",null,null,\"5px\"],\"left\":[null,null,null,0]},\"locked\":false}}} -->\n<div class=\"wp-block-greenshift-blocks-row-column gspb_row__col--12 gspb_col-id-gsbp-06381b2\" id=\"gspb_col-id-gsbp-06381b2\"><!-- wp:heading {\"level\":3,\"style\":{\"typography\":{\"textAlign\":\"center\"},\"spacing\":{\"margin\":{\"top\":\"var:preset|spacing|50\",\"bottom\":\"0\"}},\"elements\":{\"link\":{\"color\":{\"text\":\"#706b6b\"}}},\"color\":{\"text\":\"#706b6b\"}},\"fontSize\":\"large\",\"anchor\":\"1-500-teams-gingen-jullie-voor\"} -->\n<h3 class=\"wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size\" id=\"1-500-teams-gingen-jullie-voor\" style=\"color:#706b6b;margin-top:var(--wp--preset--spacing--50);margin-bottom:0\"><em>1.500+ teams gingen jullie voor:</em></h3>\n<!-- /wp:heading -->\n\n<!-- wp:greenshift-blocks/swiper {\"id\":\"gsbp-3bf2b86\",\"tabs\":18,\"slidesPerView\":[8,6,null,3],\"slidesPerGroup\":[2],\"slideHeight\":[120,null,null,null],\"speed\":800,\"loop\":true,\"autoplay\":true,\"disablePause\":true,\"arrowsOnHover\":true,\"navpostopArray\":[\"90%\"],\"navColor\":\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dpalette-color-4, var(\\u002d\\u002dtheme-palette-color-4, #0D0E10))\",\"navSize\":[17,null,null,null],\"navSpaceSize\":[5,null,null,null],\"navradius\":1,\"bullets\":false,\"enableArrowBorder\":true,\"arrowBorder\":{\"borderRadius\":{\"values\":[],\"locked\":true},\"style\":{\"all\":[\"solid\"]},\"size\":{\"all\":[1]},\"color\":{\"all\":[\"var(\\u002d\\u002dwp\\u002d\\u002dpreset\\u002d\\u002dcolor\\u002d\\u002dpalette-color-3, var(\\u002d\\u002dtheme-palette-color-3, #535353))\"]},\"styleHover\":[],\"sizeHover\":[],\"colorHover\":[],\"custom\":[],\"customEnabled\":[],\"preset\":1}} -->\n<div class=\"wp-block-greenshift-blocks-swiper gs-swiper gspb_slider-id-gsbp-3bf2b86\" style=\"position:relative\"><div class=\"gs-swiper-init\" data-slidesperview=\"8\" data-slidesperviewmd=\"6\" data-slidesperviewxs=\"3\" data-slidespergroup=\"2\" data-spacebetween=\"10\" data-spacebetweenmd=\"10\" data-spacebetweensm=\"10\" data-spacebetweenxs=\"10\" data-speed=\"800\" data-disablepause=\"true\" data-loop=\"true\" data-vertical=\"false\" data-verticalheight=\"500px\" data-autoheight=\"false\" data-grabcursor=\"false\" data-freemode=\"false\" data-centered=\"false\" data-autoplay=\"true\" data-autodelay=\"4000\" data-effect=\"\" data-coverflowshadow=\"false\"><div class=\"swiper\"><div class=\"swiper-wrapper\"><!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-5e2beef\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-5e2beef\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1041,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-abn-amro-1.jpg\" alt=\"ABN Amro\" class=\"wp-image-1041\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-2782c4f\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-2782c4f\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1042,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-amstel.jpg\" alt=\"Amstel Gold Race\" class=\"wp-image-1042\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-3b95f59\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-3b95f59\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1049,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-stedin.jpg\" alt=\"\" class=\"wp-image-1049\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-309e251\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-309e251\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1043,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-dhl.jpg\" alt=\"\" class=\"wp-image-1043\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-79ced59\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-79ced59\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1036,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-karcher.jpg\" alt=\"\" class=\"wp-image-1036\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-e8b639c\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-e8b639c\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1038,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-quooker.jpg\" alt=\"\" class=\"wp-image-1038\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-a58b3dc\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-a58b3dc\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1033,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-als.jpg\" alt=\"\" class=\"wp-image-1033\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-b6514a3\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-b6514a3\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1037,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-bicycling.jpg\" alt=\"\" class=\"wp-image-1037\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-9998893\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-9998893\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1035,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-valk.jpg\" alt=\"Van der Valk\" class=\"wp-image-1035\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-08edc87\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-08edc87\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1031,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-ahoy.jpg\" alt=\"\" class=\"wp-image-1031\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-2af75eb\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-2af75eb\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1034,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-dusseldorp.jpg\" alt=\"Dusseldorp BMW Mini\" class=\"wp-image-1034\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-bba250b\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-bba250b\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1047,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-schaatsbaan.jpg\" alt=\"\" class=\"wp-image-1047\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-e710082\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-e710082\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1046,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-rwcahoy.jpg\" alt=\"RWC Ahoy\" class=\"wp-image-1046\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-1a36847\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-1a36847\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1045,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-rpo.jpg\" alt=\"\" class=\"wp-image-1045\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-4990dfe\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-4990dfe\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1050,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-olympia.jpg\" alt=\"ASC Olympia\" class=\"wp-image-1050\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-a0b3ad7\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-a0b3ad7\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1051,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-jordex.jpg\" alt=\"Jordex\" class=\"wp-image-1051\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-6bd15a8\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-6bd15a8\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1044,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-proloog.jpg\" alt=\"De Proloog, Amerongen\" class=\"wp-image-1044\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe -->\n\n<!-- wp:greenshift-blocks/swipe {\"id\":\"gsbp-3207232\"} -->\n<div class=\"swiper-slide\"><div class=\"wp-block-greenshift-blocks-swipe swiper-slide-inner gspb_sliderinner-id-gsbp-3207232\"><div class=\"slider-content-zone\"><!-- wp:image {\"id\":1048,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/07/customer-van-leeuwen-tweewielers.jpg\" alt=\"Van Leeuwen Tweewielers\" class=\"wp-image-1048\"/></figure>\n<!-- /wp:image --></div></div></div>\n<!-- /wp:greenshift-blocks/swipe --></div></div><div class=\"swiper-pagination\"></div><div class=\"swiper-button-prev\"></div><div class=\"swiper-button-next\"></div><div class=\"swiper-scrollbar\"></div></div></div>\n<!-- /wp:greenshift-blocks/swiper --></div>\n<!-- /wp:greenshift-blocks/row-column --> </div></div>\n<!-- /wp:greenshift-blocks/row -->",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "",
+    "protected": false
+  },
+  "template": "",
+  "meta": {
+    "_gspb_post_css": "",
+    "footnotes": ""
+  },
+  "wp_pattern_category": [],
+  "wp_pattern_sync_status": "",
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/wp_block"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 0,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=6240"
+      }
+    ],
+    "wp:term": [
+      {
+        "taxonomy": "wp_pattern_category",
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/wp_pattern_category?post=6240"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240"
+      }
+    ],
+    "wp:action-create-wp_pattern_category": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240"
+      }
+    ],
+    "wp:action-assign-wp_pattern_category": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/blocks/6240"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

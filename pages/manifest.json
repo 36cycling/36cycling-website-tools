@@ -1,0 +1,42 @@
+{
+  "note": "Paginaboom teamkleding-collectie. newPath = doel-URL op rondevanrotterdam.nl. Slugs = exact het laatste segment van de oude URL (1:1). lang=nl (Polylang/WPML).",
+  "lang": "nl",
+  "tree": {
+    "parent": {
+      "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/",
+      "slug": "teamkleding-collectie",
+      "title": "Teamwear collectie",
+      "newPath": "/nl/teamkleding-collectie/",
+      "wpId": null,
+      "extracted": true
+    },
+    "children": [
+      { "slug": "wielershirt-prestige",      "title": "Wielershirt Prestige",      "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-prestige/",      "newPath": "/nl/teamkleding-collectie/wielershirt-prestige/",      "extracted": true },
+      { "slug": "wielershirt-prestige-flow", "title": "Wielershirt Prestige Flow", "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-prestige-flow/", "newPath": "/nl/teamkleding-collectie/wielershirt-prestige-flow/", "extracted": false },
+      { "slug": "wielershirt-flow",          "title": "Wielershirt Flow",          "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-flow/",          "newPath": "/nl/teamkleding-collectie/wielershirt-flow/",          "extracted": false },
+      { "slug": "wielershirt-cadans",        "title": "Wielershirt Cadans",        "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-cadans/",        "newPath": "/nl/teamkleding-collectie/wielershirt-cadans/",        "extracted": false },
+      { "slug": "wielershirt-classic",       "title": "Wielershirt Classic",       "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-classic/",       "newPath": "/nl/teamkleding-collectie/wielershirt-classic/",       "extracted": false },
+      { "slug": "wielerbroek-elite",         "title": "Wielerbroek Elite",         "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-elite/",         "newPath": "/nl/teamkleding-collectie/wielerbroek-elite/",         "extracted": false },
+      { "slug": "wielerbroek-speed",         "title": "Wielerbroek Speed",         "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-speed/",         "newPath": "/nl/teamkleding-collectie/wielerbroek-speed/",         "extracted": false },
+      { "slug": "wielerbroek-totalgrip",     "title": "Wielerbroek Totalgrip",     "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-totalgrip/",     "newPath": "/nl/teamkleding-collectie/wielerbroek-totalgrip/",     "extracted": false },
+      { "slug": "wielerbroek-classic",       "title": "Wielerbroek Classic",       "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-classic/",       "newPath": "/nl/teamkleding-collectie/wielerbroek-classic/",       "extracted": false },
+      { "slug": "lange-wielerbroek",         "title": "Lange Wielerbroek",         "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/lange-wielerbroek/",         "newPath": "/nl/teamkleding-collectie/lange-wielerbroek/",         "extracted": false },
+      { "slug": "warming-up-broek",          "title": "Warming-up Broek",          "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/warming-up-broek/",          "newPath": "/nl/teamkleding-collectie/warming-up-broek/",          "extracted": false },
+      { "slug": "all-season-jack",           "title": "All Season Jack",           "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/all-season-jack/",           "newPath": "/nl/teamkleding-collectie/all-season-jack/",           "extracted": false },
+      { "slug": "lange-mouw-extreme",        "title": "Lange Mouw Extreme",        "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/lange-mouw-extreme/",        "newPath": "/nl/teamkleding-collectie/lange-mouw-extreme/",        "extracted": false },
+      { "slug": "winter-thermo-jack",        "title": "Winter Thermo Jack",        "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/winter-thermo-jack/",        "newPath": "/nl/teamkleding-collectie/winter-thermo-jack/",        "extracted": false },
+      { "slug": "windjack-elaspin",          "title": "Windjack Elaspin",          "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/windjack-elaspin/",          "newPath": "/nl/teamkleding-collectie/windjack-elaspin/",          "extracted": false },
+      { "slug": "windjack-skin",             "title": "Windjack Skin",             "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/windjack-skin/",             "newPath": "/nl/teamkleding-collectie/windjack-skin/",             "extracted": false },
+      { "slug": "windjack-montreal",         "title": "Windjack Montreal",         "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/windjack-montreal/",         "newPath": "/nl/teamkleding-collectie/windjack-montreal/",         "extracted": false },
+      { "slug": "skinsuit-performance",      "title": "Skinsuit Performance",      "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/skinsuit-performance/",      "newPath": "/nl/teamkleding-collectie/skinsuit-performance/",      "extracted": false },
+      { "slug": "skinsuit-criterium",        "title": "Skinsuit Criterium",        "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/skinsuit-criterium/",        "newPath": "/nl/teamkleding-collectie/skinsuit-criterium/",        "extracted": false },
+      { "slug": "triatlonpak",               "title": "Triatlonpak",               "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/triatlonpak/",               "newPath": "/nl/teamkleding-collectie/triatlonpak/",               "extracted": false },
+      { "slug": "armstukken",                "title": "Armstukken",                "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/armstukken/",                "newPath": "/nl/teamkleding-collectie/armstukken/",                "extracted": false },
+      { "slug": "beenstukken",               "title": "Beenstukken",               "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/beenstukken/",               "newPath": "/nl/teamkleding-collectie/beenstukken/",               "extracted": false },
+      { "slug": "wintermuts",                "title": "Wintermuts",                "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/wintermuts/",                "newPath": "/nl/teamkleding-collectie/wintermuts/",                "extracted": false },
+      { "slug": "bandana",                   "title": "Bandana",                   "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/bandana/",                   "newPath": "/nl/teamkleding-collectie/bandana/",                   "extracted": false },
+      { "slug": "team-polo",                 "title": "Team Polo",                 "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/team-polo/",                 "newPath": "/nl/teamkleding-collectie/team-polo/",                 "extracted": false },
+      { "slug": "leisure-jack",              "title": "Leisure Jack",              "oldUrl": "https://www.36cycling.com/nl/teamkleding-collectie/leisure-jack/",              "newPath": "/nl/teamkleding-collectie/leisure-jack/",              "extracted": false }
+    ]
+  }
+}

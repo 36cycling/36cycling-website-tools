@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/team-polo/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Team polo ontwerpen en bedrukken",
+    "metaDescription": "Team polo voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Team polo ontwerpen en bedrukken",
+    "ogDescription": "Team polo voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "team-polo"
+  },
+  "headings": {
+    "h1": "Team polo",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Team polo</h1>\n<p>Als team wil je ook naast de fiets gesoigneerd voor de dag komen. Daarvoor hebben we onze teampolo’s met kraag, naar eigen wensen te ontwerpen en te bedrukken. De polo wordt ook besteld voor andere takken van sport, zoals hockey. De polo kan ook worden uitgevoerd als een Extreme-variant of met Coolmax-technologie.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/poloshirt.jpg",
+    "alt": "poloshirt ontwerpen en bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/team-polo/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/team-polo/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

@@ -1,0 +1,245 @@
+@title: Teamkleding collectie: custom wielerkleding
+@slug: teamkleding-collectie
+@path: /nl/teamkleding-collectie/
+@yoast_title: Team wielerkleding collectie | 36 Cycling
+@yoast_metadesc: Voor het ontwerpen en produceren van customized wielerkleding voor een team, club of bedrijf hanteren we een collectie wielerkleding voor elke type wielrenner.
+@yoast_focuskw: 
+
+=== 1
+assortiment customized wielerkleding
+=== 2
+<a class="wp-block-button__link wp-element-button">Wielerkleding</a>
+=== 3
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/sportkleding-collectie/">Sportkleding</a>
+=== 4
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/event-collectie/">Event collectie</a>
+=== 5
+Voor het ontwerpen en produceren van customized wielerkleding voor een team, club of bedrijf hanteren we een collectie wielerkleding voor elke type wielrenner. Alle <em>Team Wear</em>&nbsp;items zijn te ontwerpen naar je eigen idee. Bij customized wielerkleding denk je waarschijnlijk in de eerste plaats aan het ontwerpen en bedrukken van de kleding, maar er is meer mogelijk. Denk bijvoorbeeld aan: lange/korte rits, afwerking van de boordjes, extra zakje met rits, flatlock stiksels. We adviseren je graag om tot de perfecte outfit te komen. We ontwikkelen voortdurend aan onze wielerkleding.
+=== 6
+Wielershirts
+=== 7
+var:preset|spacing|40
+=== 8
+wielershirt eigen ontwerp
+=== 9
+Wielershirt Prestige
+=== 10
+De Prestige-lijn bestaat voor een groot gedeelte uit luchtige en zeer elastische 4-way stretch stof van een speciale vezel die ontwikkeld is om het lichaam koel te houden en een comfortabel gevoel te geven. Rondom de schouders en armen gebruiken we 3D aero stof met een gripper erin vewerkt, waardoor de mouw mooi op z'n plek blijft. Een wielershirt gemaakt om in te presteren.
+=== 11
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielershirt-prestige/">Meer info</a>
+=== 12
+wielershirt ontwerpen en bedrukken - Prestige Flow
+=== 13
+Wielershirt Prestige Flow
+=== 14
+Gemaakt van het uiterst comfortabel materiaal zoals de Flow, maar dan afgewerkt met de 3D aero mouwen met een gripper erin vewerkt, waardoor de mouw mooi op z'n plek blijft. Door de speciale structuur is het zeer ademend en zorgt het weefsel ook voor meer elasticiteit in alle richtingen, wat het draagcomfort erg ten goede komt. Het materiaal in de mouwen heeft een lage luchtweerstand. De afwerking zorgt bovendien voor een luxe uitstraling.
+=== 15
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielershirt-prestige-flow/">Meer info</a>
+=== 16
+Flow wielershirt bedrukken
+=== 17
+Wielershirt Flow
+=== 18
+Een topper in ons assortiment die bij elke renner scoort. Ook als je een ambitieuze fietser bent. De 'soft lycra' zorgt ervoor dat het shirt uiterst licht en comfortabel aanvoelt. Door de combinatie van juiste hoogwaardige materialen heeft dit wielershirt een lage luchtweerstand en geeft het de juiste ondersteuning.
+=== 19
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielershirt-flow/">Meer info</a>
+=== 20
+wielershirt in eigen ontwerp
+=== 21
+Wielershirt Cadans
+=== 22
+De basis van het Cadans wielershirt is een kwalitatieve vocht- en temperatuurregulerende polyester, gecombineerd met andere functionele materialen die het draagcomfort verbeteren: aero lycra mouwen, mesh lycra en siliconen grip in de mouw en taille. Het resultaat is een zeer hoogwaardig wielershirt, wat voldoet aan de meest moderne sportieve norm.
+=== 23
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielershirt-cadans/">Meer info</a>
+=== 24
+Classic wielershirt ontwerpen en bedrukken
+=== 25
+Wielershirt Classic
+=== 26
+Classic is een no-nonsense allround wielerkledinglijn gemaakt van hoogwaardige functionele materialen. Met een comfortabele pasvorm en een perfecte vocht- en temperatuurregulatie. Voor de sportieve en veeleisende fietser.
+=== 27
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielershirt-classic/">Meer info</a>
+=== 28
+Wielershirt ontwerpen in de 3D-ontwerptool van 36 Cycling
+=== 29
+Ontwerp je eigen wielershirt
+=== 30
+Kies een model en ontwerp je shirt zelf in onze 3D-ontwerptool, of laat ons designteam het ontwerp maken. Gratis en vrijblijvend.
+=== 31
+<a class="wp-block-button__link wp-element-button" href="/nl/wielerkleding-ontwerpen/">Start met ontwerpen</a>
+=== 32
+Wielerbroeken
+=== 33
+wielerbroek ontwerpen en bedrukken
+=== 34
+Wielerbroek Elite
+=== 35
+Geen concessies in materialen, zeem, model, gripper? Dan kom je uit de 'Elite'. Met de zeem is zelfs de hele dag op het zadel geen probleem. De zijpanelen hebben een fraai reliëf en geven de broek extra compressie.
+=== 36
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielerbroek-elite/">Meer info</a>
+=== 37
+Pro wielerbroek bedrukken
+=== 38
+Wielerbroek Speed
+=== 39
+De snit van de Speed wielerbroek volgt de ergonomie van bil en bovenbeen in een fietshouding, waardoor de broek in elke beenpositie optimaal aansluit. De combinatie van materialen maken dit een topmodel bib shorts die geschikt is op het allerhoogste niveau. De broekpijpen zijn afgewerkt met een band met gel gripper die de broek comfortabel op zijn plek houden.
+=== 40
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielerbroek-speed/">Meer info</a>
+=== 41
+wielerbroek met gripper bedrukken
+=== 42
+Wielerbroek TotalGrip
+=== 43
+De hoogwaardige compressie lycra's van de TotalGrip wielerbroek zorgt voor een optimale spierondersteuning en bewegingsvrijheid. Aan het uiteinde van de broekspijpen is de stof aan de binnenkant afgewerkt met gel spots die de broek comfortabel op zijn plek houden. Dus geen band, maar toch de grip.
+=== 44
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielerbroek-totalgrip/">Meer info</a>
+=== 45
+classic wielerbroek met eigen ontwerp bedrukken
+=== 46
+Wielerbroek Classic
+=== 47
+Zoals de naam al verraadt heeft de Classic heeft een klassieke snit met een recht zijpaneel. Maar vergis je niet: deze wielerbroek is van moderne hoogwaardige materialen gemaakt en dat maakt dit gewoon een kwalitatieve bib shorts van deze tijd. De broekpijpen zijn afgewerkt met een band met gel spots die de broek comfortabel op zijn plek houden.
+=== 48
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wielerbroek-classic/">Meer info</a>
+=== 49
+lange wielerbroek bedrukken
+=== 50
+Lange wielerbroek
+=== 51
+Gemaakt van een gebrusht materiaal voor de frisse dagen. Bepaal zelf hoe de je broek wilt uitvoeren: zeem, bandjes, ritsen. Of ga je liever voor een wat dunnere stof of driekwartbroek? Ook dat is mogelijk.
+=== 52
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/lange-wielerbroek/">Meer info</a>
+=== 53
+warming-up wielerbroek bedrukken
+=== 54
+Warming-up broek
+=== 55
+Een gevoerde broek met ritsen aan de zijkant over de hele lengte. Hierdoor is de broek snel uit te trekken. Blijf warm tot het laatste moment voor de start! Of op het podium. :)
+=== 56
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/warming-up-broek/">Meer info</a>
+=== 57
+Jacks
+=== 58
+wielerkleding ontwerpen en bedrukken
+=== 59
+All season jack
+=== 60
+Een populair item in onze collectie. Zoals de naam al zegt is dit jack een groot deel van het jaar te gebruiken. Een zacht, ademend en elastisch 4-way stretch materiaal met een zachtgevoerde binnenkant. Zorgt voor een optimale temperatuurmanagement gecombineerd met een comfortabele pasvorm. Geschikt voor tijdens training, warming-up en na de inspanning.
+=== 61
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/all-season-jack/">Meer info</a>
+=== 62
+wielershirt met lange mouwen ontwerpen en bedrukken
+=== 63
+Lange mouw - Extreme
+=== 64
+Een wielershirt met lange mouw in dezelfde dikte als een wielershirt.
+=== 65
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/lange-mouw-extreme/">Meer info</a>
+=== 66
+wielerjack ontwerpen en bedrukken
+=== 67
+Winter thermo jack
+=== 68
+Een zeer warm jack dat beschermd tegen de ergste kou. Met een hoge kraag blijf je tot over de hals warm. Echt voor de winterse dagen dus. Een ondershirt en dit jack erover en je kunt gaan.
+=== 69
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/winter-thermo-jack/">Meer info</a>
+=== 70
+wielrenkleding: windstopper bedrukken
+=== 71
+Windjack - Elaspin
+=== 72
+Ons nieuwste windjack gemaakt van een elastisch, winddicht en tevens licht en ademend materiaal. Het jack is daarmee een allrounder: de hele rit dragen, maar ook makkelijk mee te nemen.Lange mouw / Korte mouw is beide mogelijk.
+=== 73
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/windjack-elaspin/">Meer info</a>
+=== 74
+windjack wielrennen bedrukken
+=== 75
+Windjack - Skin
+=== 76
+Een windjack gemaakt van een flinterdun, maar winddicht materiaal. En tegelijk ook ademend. Het jack is tot een erg klein pakketje op te vouwen, zodat je het makkelijk meeneemt in je zak onderweg.Lange mouw / Korte mouw is beide mogelijk.
+=== 77
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/windjack-skin/">Meer info</a>
+=== 78
+body voor wielrennen bedrukken
+=== 79
+Windjack - Montreal
+=== 80
+Dit windjack bestaat uit wat meerdere lagen en heeft daarmee ook meerdere functies. Het ademt beter, beschermt goed tegen de kou en houdt je lange tijd droog. Hiermee is dit jack ook geschikt als een extra laag over bijvoorbeeld een All Season Jack. Desondanks is het ook nog redelijk klein te maken om in je achterzak mee te nemen. Lange mouw / Korte mouw is beide mogelijk.
+=== 81
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/windjack-montreal/">Meer info</a>
+=== 82
+Skinsuits en triatlonpakken
+=== 83
+tijdritpak ontwerpen en bedrukken
+=== 84
+Skinsuit - Performance
+=== 85
+Deze innovatieve skinsuit is ontworpen voor sporters die streven naar topprestaties. De suit heeft een lage kraag, compressiestof in de broek en aerodynamische mouwen. Ook zijn de mouwen langer dan onze andere suits. De skinsuit kan ook met zakken achterop worden gemaakt.
+=== 86
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/skinsuit-performance/">Meer info</a>
+=== 87
+skin suit ontwerpen en bedrukken
+=== 88
+Skinsuit - Criterium
+=== 89
+Oorspronkelijk wordt dit skinsuit gedragen in crit racing, maar het is een echt allround snelpak geworden dat bijvoorbeeld ook skeeleraars graag aantrekken. De lycra skinsuit is volledig van hetzelfde materiaal geproduceerd. Ook is deze skinsuit uit de Criterium-lijn met zakken achterop te maken.
+=== 90
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/skinsuit-criterium/">Meer info</a>
+=== 91
+triatlonpak ontwerpen en bedrukken
+=== 92
+Triatlonpak
+=== 93
+Bereid je voor op de triatlon met ons hoogwaardige triatlonpak, speciaal ontworpen voor maximale snelheid en comfort. Deze aerodynamische skinsuit met lage kraag is gemaakt van lichtgewicht, sneldrogend materiaal dat je helpt koel te blijven tijdens het zwemmen, fietsen en hardlopen.
+=== 94
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/triatlonpak/">Meer info</a>
+=== 95
+Accessoires en vrijetijdskleding
+=== 96
+armstukken bedrukken
+=== 97
+Armstukken
+=== 98
+Deze armstukken zijn ideaal voor fietstochten onder wisselende weersomstandigheden. Ze bieden optimale bescherming tegen de wind en kou op dagen waarop je niet te koud of te warm gekleed eropuit wilt gaan. Met een comfortabele pasvorm zijn ze perfect te combineren met jouw fietskleding.
+=== 99
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/armstukken/">Meer info</a>
+=== 100
+beenstukken bedrukken
+=== 101
+Beenstukken
+=== 102
+Twijfel je of je met een korte of een lange broek de racefiets op moet stappen omdat het misschien ’s morgens nog koud is, maar in de middag warmer weer wordt verwacht? Dan zijn onze beenstukken de ideale oplossing. Gemaakt van een zachte, ademende stof, bieden ze optimale bescherming tegen kou en wind tijdens je ritten.
+=== 103
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/beenstukken/">Meer info</a>
+=== 104
+wielrenmuts bedrukken
+=== 105
+Wintermuts
+=== 106
+Houd je hoofd warm tijdens koude ritten met onze wintermuts voor wielrenners. Deze muts is gemaakt van een zachte, ademende stof die je warm houdt, zelfs bij lage temperaturen. Door de slanke pasvorm past de muts perfect onder je fietshelm. Fiets door de winter met onze functionele en trendy wintermuts.
+=== 107
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/wintermuts/">Meer info</a>
+=== 108
+bandana wielrennen ontwerpen
+=== 109
+Bandana
+=== 110
+De bandana werd gemeengoed onder renners dankzij wielerlegende Marco Pantani, die in de jaren negentig zijn aanvallen plaatste vanonder zijn om zijn hoofd geknoopte doek. Nog steeds is de bandana een geliefd kledingstuk onder renners: enerzijds om vocht op te vangen, anderzijds als bescherming tegen de zon.
+=== 111
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/bandana/">Meer info</a>
+=== 112
+poloshirt ontwerpen en bedrukken
+=== 113
+Team polo
+=== 114
+Als team wil je ook naast de fiets gesoigneerd voor de dag komen. Daarvoor hebben we onze teampolo’s met kraag, naar eigen wensen te ontwerpen en te bedrukken. De polo wordt ook besteld voor andere takken van sport, zoals hockey. De polo kan ook worden uitgevoerd als een Extreme-variant of met Coolmax-technologie.
+=== 115
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/team-polo/">Meer info</a>
+=== 116
+trainingsjack in eigen ontwerp bedrukken
+=== 117
+Leisure jack
+=== 118
+Blijf stijlvol en comfortabel, zowel op als naast de fiets, met ons trendy leisure jack. Dit jack is gemaakt van ademend, waterafstotend materiaal dat je beschermt tegen de elementen. De sportieve pasvorm zorgt voor optimale bewegingsvrijheid, terwijl handige zakken genoeg ruimte bieden voor je essentials.
+=== 119
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/leisure-jack/">Meer info</a>

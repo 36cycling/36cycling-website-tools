@@ -1,0 +1,19 @@
+{
+  "name": "rondevanrotterdam-migratie",
+  "version": "1.0.0",
+  "description": "Gefaseerde migratie van **marketing-pagina's** van de oude Umbraco-site naar de nieuwe WordPress-site. WooCommerce-shop komt later, apart. Oude site blijft voorlopig live.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+@title: Twee keuzeblokken
+@slug: twee-keuzeblokken
+@path: /nl/stories/twee-keuzeblokken/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+var:preset|spacing|50
+=== 2
+Zelf ontwerpen in 3D
+=== 3
+Kies je product, speel met kleuren en patronen en zet je logo erop. Je ziet je wielershirt direct in 3D, van alle kanten. Ideaal als je al een idee hebt of gewoon wilt uitproberen.
+=== 4
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" target="_blank" rel="noopener">Start de ontwerptool</a>
+=== 5
+Wielershirt ontwerpen in de 3D-ontwerptool van 36 Cycling
+=== 6
+Laat ons het ontwerp maken
+=== 7
+Geen tijd, of geen idee waar je moet beginnen? Ons designteam maakt een ontwerp op maat in jouw huisstijl. Je geeft feedback op een digitale 3D-proef en pas na jouw akkoord gaan we verder.
+=== 8
+<a class="wp-block-button__link wp-element-button" href="#laat-ons-ontwerpen">Vraag een ontwerp aan</a>
+=== 9
+Klantontwerpen wielershirts voor Cegeka, Goudappel Coffeng, Rotterdams Philharmonisch Orkest en EHV8

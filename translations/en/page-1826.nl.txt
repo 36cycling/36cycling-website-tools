@@ -1,0 +1,21 @@
+@title: Skinsuit - Criterium
+@slug: skinsuit-criterium
+@path: /nl/teamkleding-collectie/skinsuit-criterium/
+@yoast_title: Skinsuit - Criterium ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Skinsuit - Criterium voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+skin suit ontwerpen en bedrukken
+=== 2
+Skinsuit - Criterium
+=== 3
+Oorspronkelijk wordt dit skinsuit gedragen in crit racing, maar het is een echt allround snelpak geworden dat bijvoorbeeld ook skeeleraars graag aantrekken. De lycra skinsuit is volledig van hetzelfde materiaal geproduceerd. Ook is deze skinsuit uit de Criterium-lijn met zakken achterop te maken.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

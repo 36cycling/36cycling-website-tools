@@ -1,0 +1,145 @@
+@title: Sportswear collection
+@slug: custom-sportswear-collection
+@path_en: /en/custom-sportswear-collection/
+@yoast_title: Team Sportswear Collection | Custom Sportswear | 36 Cycling
+@yoast_metadesc: To design and produce custom sportswear for a team, club or company, we offer a sportswear collection for every type of athlete. Discover all models.
+@yoast_focuskw: team sportswear
+
+=== 1
+Sportswear collection: custom sportswear
+=== 2
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/teamkleding-collectie/">Cycling clothing</a>
+=== 3
+<a class="wp-block-button__link wp-element-button">Sportswear</a>
+=== 4
+<a class="wp-block-button__link wp-element-button" href="https://rondevanrotterdam.nl/nl/event-collectie/">Event collection</a>
+=== 5
+To design and produce custom sportswear for a team, club or company, we offer a sportswear collection for every type of athlete.
+=== 6
+Sports shirts, shorts, jackets
+=== 7
+=
+=== 8
+custom sportswear design and printing
+=== 9
+Running shirt - Extreme
+=== 10
+This running shirt is designed for runners who demand the best from their clothing. Made of an ultra-light, breathable fabric that wicks moisture away quickly, this shirt provides maximum comfort during intensive runs. The fit offers optimal freedom of movement, while the stylish look makes you stand out, both on the road and on the track.
+=== 11
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/running-shirt-extreme/">More info</a>
+=== 12
+Running shirt - Coolmax
+=== 13
+This running shirt is the perfect choice for runners who want to stay cool and comfortable. Made of high-quality material, the running shirt wicks moisture away effectively and keeps you dry, even during the hardest efforts. With a lightweight design and an ergonomic fit, it offers optimal freedom of movement.
+=== 14
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/running-shirt-coolmax/">More info</a>
+=== 15
+Running shirt - Rudy
+=== 16
+This running shirt combines style and performance for runners of every level. This shirt is made of breathable, quick-drying material that keeps you cool and comfortable, even during intensive training. With a modern fit and a sporty design, it is not only functional but also a real eye-catcher.
+=== 17
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/running-shirt-rudy/">More info</a>
+=== 18
+Football shirt / sports shirt
+=== 19
+Our all-round sports shirt is designed for ultimate comfort and performance. Made of lightweight, breathable material that wicks sweat away effectively, it keeps you dry and cool during intensive efforts. The fit offers maximum freedom of movement, while the stylish design is perfect for team or individual sports.
+=== 20
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/voetbalshirt-sportshirt/">More info</a>
+=== 21
+Singlet - Extreme
+=== 22
+This running vest is ideal for athletes who want to deliver top performance. Made of ultra-light, breathable material, this singlet offers optimal comfort during intensive training or races. With an ergonomic design and a close fit, you enjoy maximum freedom of movement.
+=== 23
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/singlet-extreme/">More info</a>
+=== 24
+Singlet - Rudy
+=== 25
+This running vest is perfect for athletes who want to combine comfort and style. This lightweight singlet is made of breathable, quick-drying material that keeps you dry and cool on every run. With a modern fit and a sporty design, it is ideal for running, but also for fitness or other intensive activities.
+=== 26
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/singlet-rudy/">More info</a>
+=== 27
+Football shorts / sports shorts
+=== 28
+Our football shorts are designed for ultimate freedom of movement and comfort during every training session or match. With these shorts you stay dry and focused, even during intensive efforts. The elastic waistband ensures a perfect fit, while the timeless design suits any sports outfit.
+=== 29
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/voetbalbroek-sportbroek/">More info</a>
+=== 30
+Running shorts
+=== 31
+Our running shorts offer ultimate comfort and freedom of movement for every runner. Made of lightweight, breathable material that wicks sweat away quickly, they stay dry and comfortable over any distance. With an elastic waistband, these shorts are both functional and stylish. Perfect for running, but also for fitness.
+=== 32
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/running-shorts/">More info</a>
+=== 33
+Running tight
+=== 34
+These running tights are designed for runners looking for maximum support and comfort. Made of high-quality, elastic material, these tights offer optimal freedom of movement and light compression for muscle support. The breathable and moisture-wicking design keeps you dry and comfortable.
+=== 35
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/running-tight/">More info</a>
+=== 36
+custom training jacket in your own design
+=== 37
+Leisure jacket
+=== 38
+The leisure jacket combines style and comfort for sport and everyday use. Made of breathable, lightweight material, this jacket offers optimal protection against wind and light rain. The sporty fit provides freedom of movement, while handy pockets offer enough space for your essentials.
+=== 39
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/leisure-jacket/">More info</a>
+=== 40
+Leisure jacket - Winter
+=== 41
+This winter jacket is the perfect choice for comfort and style during the colder months. This jacket is made of insulating, breathable material that keeps you warm without sacrificing freedom of movement. The water-repellent outer layer protects against rain, while the soft interior provides extra warmth.
+=== 42
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/leisure-jacket-winter/">More info</a>
+=== 43
+custom cycling hat
+=== 44
+Winter hat
+=== 45
+Our winter hat is the ideal companion for cold days. Made of a warm, breathable fabric, this hat offers both comfort and protection against the elements. The soft, stretchy fit sits snugly, while the fabric keeps your head and ears warm without overheating. Perfect for wintry outdoor activities.
+=== 46
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/wintermuts/">More info</a>
+=== 47
+Ice skating clothing
+=== 48
+Skating suit - Lycra
+=== 49
+Our skating suit is designed for optimal speed and flexibility on the ice. This Lycra suit offers an aerodynamic fit that doesn't restrict your movements, while providing maximum compression and muscle support. The material wicks moisture away effectively, so you stay dry and comfortable.
+=== 50
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/schaatspak-lycra/">More info</a>
+=== 51
+Skating suit - Winter
+=== 52
+This thermal skating suit is perfect for cold, wintry conditions and offers excellent insulation and comfort during your skating sessions. Made of warm, breathable material, this suit keeps your body at the ideal temperature while offering enough freedom for every movement on the ice.
+=== 53
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/schaatspak-winter/">More info</a>
+=== 54
+custom warm-up tights
+=== 55
+Warm-up tights
+=== 56
+The warm-up tights are designed for ultimate comfort and flexibility before, during and after your sporting efforts. Made of soft, breathable material, these tights offer optimal freedom of movement and keep your muscles warm before you step onto the ice, the road or into the gym.
+=== 57
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/warming-up-broek/">More info</a>
+=== 58
+custom cycling clothing design and printing
+=== 59
+All Season Jacket
+=== 60
+Our All Season Jacket is the perfect choice for any weather. Made of breathable, water-repellent material, this jacket protects against rain and wind while keeping you cool on sunny days. Thanks to its versatile, lightweight construction, it is ideal for both spring and autumn.
+=== 61
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/all-season-jack/">More info</a>
+=== 62
+custom cycling jacket design and printing
+=== 63
+Winter thermal jacket
+=== 64
+The winter thermal jacket is designed to keep you warm on the coldest days. Made of insulated, breathable material, this jacket offers excellent protection against winter cold and wind, while keeping you comfortable by wicking away moisture. The thermal lining provides extra warmth without making the jacket feel heavy.
+=== 65
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/winter-thermojack/">More info</a>
+=== 66
+custom bib tights
+=== 67
+Salopette
+=== 68
+The salopette is the ideal choice for both comfort and performance, perfect for athletes looking for extra support and freedom of movement. Made of breathable, elastic material, these skating tights offer a firm fit that supports your muscles during intensive activities such as skating, but also when cycling or running.
+=== 69
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/salopette/">More info</a>

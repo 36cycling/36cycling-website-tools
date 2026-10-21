@@ -1,0 +1,173 @@
+@title: Cycling clothing design
+@slug: cycling-clothing-design
+@path_en: /en/cycling-clothing-design/
+@yoast_title: Design Your Own Cycling Kit in 3D, Yourself or With Our Design Team | 36 Cycling
+@yoast_metadesc: Design your own cycling clothing in our 3D design tool or let our design team create it. Free and without obligation, with design tips and inspiration.
+@yoast_focuskw: design your own cycling kit
+
+=== 1
+Black header with title
+=== 2
+Design your own cycling kit
+=== 3
+There are two ways to design your own cycling jersey or complete kit: <br>yourself, in our 3D design tool, or together with our design team. Choose the route that suits you.<br>You are not committed to anything.
+=== 4
+<strong>Your design first, then a decision. A no-obligation quote within one working day.</strong>
+=== 5
+=
+=== 6
+=
+=== 7
+How the design tool works
+=== 8
+=
+=== 9
+four steps to your own cycling jersey
+=== 10
+Choose your product
+=== 11
+Start with the product you want to design, for example a cycling jersey or bib shorts.
+=== 12
+Colours and pattern
+=== 13
+Choose a pattern and give each panel your own colour. You immediately see the result in 3D, from every angle.
+=== 14
+Logo and text
+=== 15
+Upload your logos and add text, such as a club name or sponsor. Move and scale them until everything is right.
+=== 16
+Save and send
+=== 17
+Save your design and send it to us. <strong>We check your design and you will hear from us within one working day.</strong>
+=== 18
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" target="_blank" rel="noopener">Start the design tool</a>
+=== 19
+Inspiration: designed for our customers
+=== 20
+From cycling club to multinational: these are cycling jerseys we designed together with our customers. Every design started with a logo, a few brand colours and an idea. Or take a look at our dedicated <a href="https://www.instagram.com/36cyclingportfolio" target="_blank" rel="noreferrer noopener">Instagram page</a> for inspiration.
+=== 21
+Custom cycling jersey designs for Jordex, ICT Group, Fietsvrouwen and Stadshaven Brouwerij
+=== 22
+Custom cycling jersey designs for Skyworkz, Hotel Le Baroudeur, Crankzinnig and YNNO
+=== 23
+Custom cycling jersey designs for Isla Pastilles, NED. Personeel, BIS and Finco
+=== 24
+Tips for a great cycling jersey design
+=== 25
+A beautiful design on screen is not automatically a good cycling jersey on the road. With these tips, your kit looks just as good in the peloton as it does in the design tool.
+=== 26
+Make sure of contrast and visibility
+=== 27
+You want to be seen, by your fellow riders and by other traffic. Light and bright colours stand out from afar; combine them with a dark accent for contrast. An all-dark jersey looks sleek, but is less visible at dusk.
+=== 28
+Place logos where they stay visible
+=== 29
+The best spots for a main sponsor are the chest and the back. Sleeves, side panels and shorts legs are suited to smaller logos. Watch out for the zip: a logo in the middle of the chest is split in two by the zip. Place it slightly higher or choose a design that takes this into account.
+=== 30
+Design the back with care
+=== 31
+In a group you mainly see backs. That makes the back your most important billboard: put your club name or main sponsor on the back, above the rear pockets. Across the pockets works less well, because they distort the design as soon as there is something in them.
+=== 32
+Use no more than three main colours
+=== 33
+With two or three main colours, a design stays calm and recognisable. Choose colours from your corporate identity and use additional colours only as accents.
+=== 34
+Design shorts and jersey as one
+=== 35
+A kit only looks finished when jersey and shorts match. Let a colour from the shorts come back in the jersey, for example in the sleeve cuffs or side panels. Not sure? Black shorts with an accent colour from the jersey almost always work.
+=== 36
+Take sweat into account
+=== 37
+Plain, light areas show sweat patches more quickly. A pattern or a darker shade on the back, the sides and under the arms makes them less visible. An all-white jersey can also be slightly see-through.
+=== 38
+Make text readable from a distance
+=== 39
+Choose a simple, bold typeface and make text large enough. Thin letters, small slogans and text on a busy background are already unreadable from a few metres away.
+=== 40
+Think about the fit
+=== 41
+A cycling jersey fits tightly and stretches with your body. As a result, logos and text stretch slightly too, especially on the chest and shoulders. Keep important details out of the zones that stretch the most and check your design in the 3D view.
+=== 42
+Let us design it
+=== 43
+Prefer a design by a professional? Our design team thinks along with you about colour choice, logo placement and the right sizes, and translates your ideas into a cycling outfit in your own corporate identity.
+=== 44
+What you provide
+=== 45
+Your logo, preferably as a vector file (AI, EPS, SVG or PDF)
+=== 46
+Your brand colours, as a Pantone, HEX or RGB code
+=== 47
+Logos of any sponsors
+=== 48
+Your wishes: a sketch, examples you like or an existing kit
+=== 49
+The products and approximate quantities you need
+=== 50
+How it works
+=== 51
+We discuss your wishes. You will hear from us within one working day.
+=== 52
+Our design team creates a custom design. Allow [X working days].
+=== 53
+You see a digital 3D proof and give feedback. Including [X] design rounds.
+=== 54
+After your approval, it goes into production. On request we make a colour proof first, and we can send you colour swatches in advance.
+=== 55
+<a class="wp-block-button__link wp-element-button" href="#klaar-om-te-beginnen">Request a design</a>
+=== 56
+From design to kit
+=== 57
+Is the design finished and approved? Then it goes into production. We deliver from as few as 5 pieces and the lead time is 3 to 5 weeks, depending on the time of year. You can try on our fitting samples, or order sizes using the size chart.
+=== 58
+We make fully printed cycling clothing using sublimation: the ink is absorbed into the fabric, so colours stay vivid, even after many washes. Read more about materials, printing techniques and the ordering process on our page about <a href="/nl/wielerkleding-bedrukken/">custom cycling clothing</a>.
+=== 59
+Designing for a club or company? With team kit in one design, optionally with team members' names, you ride as one team. For larger groups we build a free web shop, so everyone can order themselves. View the <a href="/nl/teamkleding-collectie/">team cycling wear collection</a>.
+=== 60
+Frequently asked questions about designing
+=== 61
+=
+=== 62
+<span class="wp-block-accordion-heading__toggle-title"><strong>Does a design cost anything?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 63
+No. Designing is free and without obligation, whether you get started yourself in the 3D design tool or have our design team create the design. You only pay when you order.
+=== 64
+<span class="wp-block-accordion-heading__toggle-title"><strong>Can I save my design and change it later?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 65
+In the 3D design tool you save your design and send it to us. Then we work it out further together with you: you see a digital 3D proof and we only go into production after your approval.
+=== 66
+<span class="wp-block-accordion-heading__toggle-title"><strong>Which logo files do I need?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 67
+Preferably a vector file: AI, EPS, SVG or a PDF with vectors. These stay sharp at any size. Do you only have a PNG or JPG? Feel free to send it, and we'll see what is possible.
+=== 68
+<span class="wp-block-accordion-heading__toggle-title"><strong>What if I don't have an idea yet?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 69
+No problem, that's what our design team is for. We advise you on colour choice, logo placement and the right sizes. We can send you examples and colour swatches in advance, so you get a good idea of the end result.
+=== 70
+<span class="wp-block-accordion-heading__toggle-title"><strong>Can you recreate an existing kit?</strong></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span>
+=== 71
+Yes. Send us photos or the design file of your current kit, and we'll convert it to our products. If you like, we'll give it a fresh update at the same time.
+=== 72
+Does a design cost anything?
+=== 73
+Can I save my design and change it later?
+=== 74
+Which logo files do I need?
+=== 75
+What if I don't have an idea yet?
+=== 76
+Can you recreate an existing kit?
+=== 77
+Ready to get started?
+=== 78
+Get started yourself
+=== 79
+Open the 3D design tool and create your own cycling jersey. Free and without obligation.
+=== 80
+Request a design
+=== 81
+Leave your details and tell us briefly what you are looking for. You will hear from us within one working day.
+=== 82
+=
+=== 83
+Prefer to call or e-mail? <a href="tel:+31182232008">+31 (0)182 232 008</a> · <a href="mailto:info@36cycling.com">info@36cycling.com</a>

@@ -1,0 +1,51 @@
+{
+  "slug": "wielerkleding-wassen",
+  "seo": {
+    "title": "Wielerkleding wassen",
+    "metaDescription": "Hoe zorg je het beste voor je wielerkleding"
+  },
+  "hero": {
+    "src": "https://www.36cycling.com/media/oq3c1yln/kledingrek.jpg",
+    "title": "Wielerkleding wassen - zorg voor je fietsoutfit"
+  },
+  "rows": [
+    [
+      {
+        "type": "text",
+        "html": "<p><strong>Stap 1: Vooraf wassen</strong><br>Als je fietskleding erg vies is, bijvoorbeeld na een graveltocht, schud dan je vieze kleding eerst even uit na de rit. Spoel het vuil af en gebruik indien nodig vlekverwijderaars voor hardnekkige vuilresten voordat je gaat wassen. Je wilt niet dat het vuil je wasmachine beschadigt.</p>\n<p>Was je kleding zo snel mogelijk na het fietsen om onaangename geurtjes tegen te gaan en om te voorkomen dat bacteriën zich ontwikkelen in de vochtige omstandigheden. Sorteer je kleding en lees de waslabels.</p>\n<p><strong>Was je wielerkleding maximaal op 30 graden!</strong> Heet water kan <strong>elastaan</strong> beschadigen, waardoor de elasticiteit afneemt, maar ook vochtafdrijvende eigenschappen kan worden aangetast. Koud water voorkomt krimpen. Kies de laagste centrifugeersnelheid om schade te voorkomen.</p>\n<p>Voordat je jouw kleding in de wasmachine stopt, keer je je kleding binnenstebuiten om de stof te beschermen, rits je de ritsen dicht en sluit je klittenband om beschadigingen te voorkomen. Voor nog wat extra bescherming, kun je wasnetjes gebruiken.</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/t4vkvxdi/wassen-1.jpg"
+      }
+    ],
+    [
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/lzlhyil2/wassen-3.jpg"
+      },
+      {
+        "type": "text",
+        "html": "<p><strong>Stap 2: Wassen</strong><br>Moderne wasmachines hebben vaak een ‘Sport’-programma, wat ideaal is; maar voor de stof van je fietskleding kun je beter het programma ‘Fijne was’ gebruiken omdat de centrifugeersnelheid ook invloed heeft op het wassen van je kleding. In het programma ‘Fijne was’ draait de trommel minder intensief en centrifugeert op een laag toerental.</p>\n<p>Gebruik koud water (max 30 °C) om de vezels te beschermen. Doe een extra spoelbeurt aan het eind om te zorgen dat alle wasmiddel weg is. Gebruik slechts een kleine hoeveelheid wasmiddel voor fijne was en vermijd wasverzachters en bleekmiddelen.</p>"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p><strong>Stap 3: Droog met zorg</strong><br>Laat kleding aan de lucht drogen, dus niet in de wasdroger. Maar pas op met natte kleding in direct zonlicht! Als het echt warm is, kan de temperatuur van de pasgewassen kleding zo hoog oplopen, zodat elastaan alsnog beschadigd raakt buiten de wasmachine.</p>\n<p>Rek je wielerkleding voorzichtig uit als je deze binnenstebuiten hebt gekeerd om kreukels te voorkomen.</p>\n<p><strong>Geïmpregneerde kleding</strong><br>Stoffen die een DWR-behandeling (Durable Water Repellent) hebben gehad kunnen op een lage temperatuur in de droger, omdat dat de waterafstotende laag weer zal activeren.&nbsp;</p>\n<p>&nbsp;</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/5v2jgepd/wassen-4.jpg"
+      }
+    ]
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/stories/wielerkleding-wassen/",
+    "to": "https://rondevanrotterdam.nl/nl/stories/wielerkleding-wassen/"
+  },
+  "status": {
+    "extracted": true,
+    "built": false
+  }
+}

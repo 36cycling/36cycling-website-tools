@@ -1,0 +1,402 @@
+﻿bron;doel;code;regex;toelichting
+/nl/teamkleding/;/nl/teamkleding-collectie/;301;;voorstel: Dun (94 w), zelfde onderwerp
+/nl/offerte-aanvragen/;/nl/offerteaanvraag/;301;;voorstel: Dubbele offertepagina
+/nl/design-aanvraag/;/nl/offerteaanvraag/;301;;voorstel: Dubbele offertepagina
+/nl/design/;/nl/wielerkleding-ontwerpen/;301;;voorstel: Dun (54 w)
+/nl/landingspagina/;/nl/wielerkleding-ontwerpen/;301;;voorstel: Zelfde title als oude ontwerppagina
+/nl/bidon-bedrukken/;/nl/custom-teamwear/;301;;voorstel: Dun (25 w)
+/nl/stories/zemen-reservekopie/;/nl/stories/zemen/;301;;voorstel: Kopie van story
+/nl/stories/wassen-reservekopie/;/nl/stories/wielerkleding-wassen/;301;;voorstel: Kopie van story
+/nl/tools/;;410;;410: Interne toolpagina, hoort niet in Google
+/nl/export/;;410;;410: Interne datadump (12.539 w)
+/nl/import/;;410;;410: Interne toolpagina
+/nl/voorraad/;;410;;410: Interne datadump (13.949 w)
+/nl/talen/;;410;;410: Interne toolpagina
+/nl/migratie/;;410;;410: Interne datadump (15.064 w)
+/custom-teamwear/wielerkleding-bedrukken/;/nl/wielerkleding-bedrukken/;301;;voorstel: Oude geneste URL (staat nog in oude sitemap)
+/custom-teamwear/sportkleding-bedrukken/;/nl/sportkleding-bedrukken/;301;;voorstel: Oude geneste URL
+/custom-teamwear/assortiment-teamkleding/;/nl/teamkleding-collectie/;301;;voorstel: Oude geneste URL
+/stories/zemen-reservekopie/;/nl/stories/zemen/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/stories/zemen-reservekopie/)
+/stories/wassen-reservekopie/;/nl/stories/wielerkleding-wassen/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/stories/wassen-reservekopie/)
+/wielerkleding/;/nl/wielerkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/hoe-werkt-het/;/nl/wielerkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/teamkleding-collectie/;/nl/teamkleding-collectie/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)
+/wielerkleding/wielerkleding-bedrukken/;/nl/wielerkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/wielerkleding/wielerkleding-ontwerpen/;/nl/wielerkleding-ontwerpen/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/sportkleding/;/nl/sportkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)
+/teamkleding/;/nl/teamkleding-collectie/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding/)
+/teamkleding/wielerkleding/;/nl/wielerkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)
+/teamkleding/sportkleding/;/nl/sportkleding-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)
+/teamkleding/bekijk-onze-collectie/;/nl/teamkleding-collectie/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)
+/snel-wielershirt-bedrukken/;/nl/snel-wielershirt-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)
+/snel/;/nl/snel-wielershirt-bedrukken/;301;;voorstel: Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)
+/nl/design-samenwerkingen/;/nl/wielerkleding-ontwerpen/;301;;besloten
+/nl/promotions/;/nl/sportkleding-bedrukken/;301;;besloten
+/nl/36-cycling-circle-basic/;/nl/36-cycling-circle/;301;;besloten
+/nl/36-cycling-circle-basic/bedankt/;/nl/36-cycling-circle/;301;;besloten
+/circle/;/nl/36-cycling-circle/;301;;besloten
+/36-cycling-circle/;/nl/36-cycling-circle/;301;;besloten
+/nl/orderstatus/;/nl/mijn-account/;301;;besloten
+/nl/bestelling-volgen/;/nl/mijn-account/;301;;besloten
+/privacy/;/nl/privacy/;301;;besloten
+/nl/shop/cart/;/nl/winkelwagen/;301;;besloten
+/nl/shop/thankyou/;/nl/shop/;301;;besloten
+/sitemap.xml;/sitemap_index.xml;301;;besloten
+/xml-sitemap/;/sitemap_index.xml;301;;besloten
+/nl/xml-sitemap/;/sitemap_index.xml;301;;besloten
+/nl/fietskleding/;/nl/categorie/fietskleding/;301;;categorie Fietskleding
+/en/cycling-clothing/;/en/category/cycling-clothing/;301;;categorie Fietskleding (EN)
+/nl/fietskleding/heren/;/nl/categorie/fietskleding/heren/;301;;categorie Heren
+/en/cycling-clothing/men/;/en/category/cycling-clothing/men/;301;;categorie Heren (EN)
+/nl/fietskleding/heren/fietsbroeken/;/nl/categorie/fietskleding/heren/fietsbroeken/;301;;categorie Fietsbroeken
+/en/cycling-clothing/men/men-s-legwear/;/en/category/cycling-clothing/men/men-s-legwear/;301;;categorie Fietsbroeken (EN)
+/nl/fietskleding/heren/fietsbroeken/korte-fietsbroeken/;/nl/categorie/fietskleding/heren/fietsbroeken/korte-fietsbroeken/;301;;categorie Korte Fietsbroeken
+/en/cycling-clothing/men/men-s-legwear/cycling-bib-shorts-men/;/en/category/cycling-clothing/men/men-s-legwear/cycling-bib-shorts-men/;301;;categorie Korte Fietsbroeken (EN)
+/nl/fietskleding/heren/fietsbroeken/lange-fietsbroeken/;/nl/categorie/fietskleding/heren/fietsbroeken/lange-fietsbroeken/;301;;categorie Lange Fietsbroeken
+/en/cycling-clothing/men/men-s-legwear/cycling-bib-tights-men/;/en/category/cycling-clothing/men/men-s-legwear/cycling-bib-tights-men/;301;;categorie Lange Fietsbroeken (EN)
+/nl/fietskleding/heren/fietsshirts-heren/;/nl/categorie/fietskleding/heren/fietsshirts-heren/;301;;categorie Fietsshirts Heren
+/en/cycling-clothing/men/cycling-jerseys-men/;/en/category/cycling-clothing/men/cycling-jerseys-men/;301;;categorie Fietsshirts Heren (EN)
+/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-korte-mouw/;/nl/categorie/fietskleding/heren/fietsshirts-heren/fietsshirts-korte-mouw/;301;;categorie Fietsshirts Korte Mouw
+/en/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-short-sleeves/;/en/category/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-short-sleeves/;301;;categorie Fietsshirts Korte Mouw (EN)
+/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-lange-mouw/;/nl/categorie/fietskleding/heren/fietsshirts-heren/fietsshirts-lange-mouw/;301;;categorie Fietsshirts Lange Mouw
+/en/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-long-sleeves/;/en/category/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-long-sleeves/;301;;categorie Fietsshirts Lange Mouw (EN)
+/nl/fietskleding/heren/fietsjacks/;/nl/categorie/fietskleding/heren/fietsjacks/;301;;categorie Fietsjacks
+/en/cycling-clothing/men/cycling-jackets/;/en/category/cycling-clothing/men/cycling-jackets/;301;;categorie Fietsjacks (EN)
+/nl/fietskleding/dames/;/nl/categorie/fietskleding/dames/;301;;categorie Dames
+/en/cycling-clothing/ladies/;/en/category/cycling-clothing/ladies/;301;;categorie Dames (EN)
+/nl/fietskleding/dames/fietsbroeken/;/nl/categorie/fietskleding/dames/fietsbroeken-dames/;301;;categorie Fietsbroeken
+/en/cycling-clothing/ladies/ladies-leg-wear/;/en/category/cycling-clothing/ladies/ladies-leg-wear/;301;;categorie Fietsbroeken (EN)
+/nl/fietskleding/dames/fietsbroeken/korte-fietsbroeken-dames/;/nl/categorie/fietskleding/dames/fietsbroeken-dames/korte-fietsbroeken-dames/;301;;categorie Korte Fietsbroeken Dames
+/en/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/;/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/;301;;categorie Korte Fietsbroeken Dames (EN)
+/nl/fietskleding/dames/fietsbroeken/lange-fietsbroeken-dames/;/nl/categorie/fietskleding/dames/fietsbroeken-dames/lange-fietsbroeken-dames/;301;;categorie Lange Fietsbroeken Dames
+/en/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-tights/;/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-tights/;301;;categorie Lange Fietsbroeken Dames (EN)
+/nl/fietskleding/dames/fietsshirts-dames/;/nl/categorie/fietskleding/dames/fietsshirts-dames/;301;;categorie Fietsshirts Dames
+/en/cycling-clothing/ladies/ladies-cycling-jerseys/;/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/;301;;categorie Fietsshirts Dames (EN)
+/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/;/nl/categorie/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/;301;;categorie Dames Fietsshirts Korte Mouw
+/en/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-short-sleeves/;/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-short-sleeves/;301;;categorie Dames Fietsshirts Korte Mouw (EN)
+/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-lange-mouw/;/nl/categorie/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-lange-mouw/;301;;categorie Dames Fietsshirts Lange Mouw
+/en/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-long-sleeves/;/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-long-sleeves/;301;;categorie Dames Fietsshirts Lange Mouw (EN)
+/nl/fietskleding/dames/fietsjacks-dames/;/nl/categorie/fietskleding/dames/fietsjacks-dames/;301;;categorie Fietsjacks Dames
+/en/cycling-clothing/ladies/ladies-cycling-jackets/;/en/category/cycling-clothing/ladies/ladies-cycling-jackets/;301;;categorie Fietsjacks Dames (EN)
+/nl/fietskleding/accessoires/;/nl/categorie/fietskleding/accessoires/;301;;categorie Accessoires
+/en/cycling-clothing/accessories/;/en/category/cycling-clothing/accessories/;301;;categorie Accessoires (EN)
+/nl/fietskleding/accessoires/fietsbrillen/;/nl/categorie/fietskleding/accessoires/fietsbrillen/;301;;categorie Fietsbrillen
+/en/cycling-clothing/accessories/cycling-glasses/;/en/category/cycling-clothing/accessories/cycling-glasses/;301;;categorie Fietsbrillen (EN)
+/nl/fietskleding/accessoires/fietssokken/;/nl/categorie/fietskleding/accessoires/fietssokken/;301;;categorie Fietssokken
+/en/cycling-clothing/accessories/cycling-socks/;/en/category/cycling-clothing/accessories/cycling-socks/;301;;categorie Fietssokken (EN)
+/nl/fietskleding/accessoires/fiets-onderkleding/;/nl/categorie/fietskleding/accessoires/fiets-onderkleding/;301;;categorie Fiets Onderkleding
+/en/cycling-clothing/accessories/accessories/;/en/category/cycling-clothing/accessories/base-layers/;301;;categorie Fiets Onderkleding (EN)
+/nl/fietskleding/accessoires/fietshandschoenen/;/nl/categorie/fietskleding/accessoires/fietshandschoenen/;301;;categorie Fietshandschoenen
+/en/cycling-clothing/accessories/cycling-gloves/;/en/category/cycling-clothing/accessories/cycling-gloves/;301;;categorie Fietshandschoenen (EN)
+/nl/fietskleding/accessoires/overschoenen/;/nl/categorie/fietskleding/accessoires/overschoenen/;301;;categorie Overschoenen
+/en/cycling-clothing/accessories/shoe-covers/;/en/category/cycling-clothing/accessories/shoe-covers/;301;;categorie Overschoenen (EN)
+/nl/fietskleding/accessoires/arm-en-beenstukken/;/nl/categorie/fietskleding/accessoires/arm-en-beenstukken/;301;;categorie Arm- en Beenstukken
+/en/cycling-clothing/accessories/arm-leg-warmers/;/en/category/cycling-clothing/accessories/arm-leg-warmers/;301;;categorie Arm- en Beenstukken (EN)
+/nl/fietskleding/accessoires/wielerpetten-en-mutsen/;/nl/categorie/fietskleding/accessoires/wielerpetten-en-mutsen/;301;;categorie Wielerpetten en Mutsen
+/en/cycling-clothing/accessories/hats-caps/;/en/category/cycling-clothing/accessories/hats-caps/;301;;categorie Wielerpetten en Mutsen (EN)
+/nl/fietskleding/accessoires/sportkleding/;/nl/categorie/fietskleding/accessoires/sportkleding/;301;;categorie Sportkleding
+/en/cycling-clothing/accessories/sportswear/;/en/category/cycling-clothing/accessories/sportswear/;301;;categorie Sportkleding (EN)
+/nl/fietskleding/accessoires/tassen/;/nl/categorie/fietskleding/accessoires/tassen/;301;;categorie Tassen
+/en/cycling-clothing/accessories/bags/;/en/category/cycling-clothing/accessories/bags/;301;;categorie Tassen (EN)
+/nl/fietskleding/accessoires/36-accessoires/;/nl/categorie/fietskleding/accessoires/36-accessoires/;301;;categorie 36 Accessoires
+/nl/fietskleding/speed-on-wheels/;/nl/categorie/fietskleding/speed-on-wheels/;301;;categorie Speed on Wheels
+/nl/fietskleding/volt-collection/;/nl/categorie/fietskleding/volt-collection/;301;;categorie Volt Collection
+/nl/fietsbrillen/;/nl/categorie/fietskleding/accessoires/fietsbrillen/;301;;oude landingspagina fietsbrillen
+/nl/speedonwheels/;/nl/categorie/fietskleding/speed-on-wheels/;301;;oude collectiepagina Speed on Wheels
+/nl/kask-helmen/;/nl/shop/;301;;oude categorie helmen (geen helmen meer)
+^/nl/shop/175638(/.*)?$;/nl/categorie/fietskleding/dames/fietsbroeken-dames/korte-fietsbroeken-dames/;301;ja;product fietsbroek-dames-totalgrip-zwart (niet in nieuwe shop)
+^/en/shop/175638(/.*)?$;/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/;301;ja;product fietsbroek-dames-totalgrip-zwart (EN, niet in nieuwe shop)
+^/nl/shop/161492(/.*)?$;/nl/shop/speed-on-wheels-t-shirt-wit/;301;ja;product speed-on-wheels-t-shirt-wit
+^/en/shop/161492(/.*)?$;/en/shop/speed-on-wheels-t-shirt-white/;301;ja;product speed-on-wheels-t-shirt-wit (EN)
+^/nl/shop/161484(/.*)?$;/nl/shop/speed-on-wheels-t-shirt-zwart/;301;ja;product speed-on-wheels-t-shirt-zwart
+^/en/shop/161484(/.*)?$;/en/shop/speed-on-wheels-t-shirt-black/;301;ja;product speed-on-wheels-t-shirt-zwart (EN)
+^/nl/shop/161475(/.*)?$;/nl/shop/speed-on-wheels-hoodie-wit/;301;ja;product speed-on-wheels-hoodie-wit
+^/en/shop/161475(/.*)?$;/en/shop/speed-on-wheels-hoodie-white/;301;ja;product speed-on-wheels-hoodie-wit (EN)
+^/nl/shop/161466(/.*)?$;/nl/shop/speed-on-wheels-hoodie-zwart/;301;ja;product speed-on-wheels-hoodie-zwart
+^/en/shop/161466(/.*)?$;/en/shop/speed-on-wheels-hoodie-black/;301;ja;product speed-on-wheels-hoodie-zwart (EN)
+^/nl/shop/161518(/.*)?$;/nl/shop/speed-on-wheels-sokken-de-snelste-sok-ter-wereld/;301;ja;product speed-on-wheels-sokken-de-snelste-sok-ter-wereld
+^/en/shop/161518(/.*)?$;/en/shop/speed-on-wheels-socks-the-fastest-sock-in-the-world/;301;ja;product speed-on-wheels-sokken-de-snelste-sok-ter-wereld (EN)
+^/nl/shop/161509(/.*)?$;/nl/shop/speed-on-wheels-sokken-aero-wit/;301;ja;product speed-on-wheels-sokken-aero-wit
+^/en/shop/161509(/.*)?$;/en/shop/speed-on-wheels-aero-socks-white/;301;ja;product speed-on-wheels-sokken-aero-wit (EN)
+^/nl/shop/161500(/.*)?$;/nl/shop/speed-on-wheels-sokken-aero-zwart/;301;ja;product speed-on-wheels-sokken-aero-zwart
+^/en/shop/161500(/.*)?$;/en/shop/speed-on-wheels-aero-socks-black/;301;ja;product speed-on-wheels-sokken-aero-zwart (EN)
+^/nl/shop/159728(/.*)?$;/nl/shop/speed-on-wheels-sokken-wit/;301;ja;product speed-on-wheels-sokken-wit
+^/en/shop/159728(/.*)?$;/en/shop/speed-on-wheels-socks-white/;301;ja;product speed-on-wheels-sokken-wit (EN)
+^/nl/shop/159709(/.*)?$;/nl/shop/speed-on-wheels-sokken-zwart/;301;ja;product speed-on-wheels-sokken-zwart
+^/en/shop/159709(/.*)?$;/en/shop/speed-on-wheels-socks-black/;301;ja;product speed-on-wheels-sokken-zwart (EN)
+^/nl/shop/159737(/.*)?$;/nl/shop/speed-on-wheels-wielerbroek-zwart/;301;ja;product speed-on-wheels-wielerbroek-zwart
+^/en/shop/159737(/.*)?$;/en/shop/speed-on-wheels-bib-shorts-black/;301;ja;product speed-on-wheels-wielerbroek-zwart (EN)
+^/nl/shop/159688(/.*)?$;/nl/shop/speed-on-wheels-jack-zwart/;301;ja;product speed-on-wheels-jack-zwart
+^/en/shop/159688(/.*)?$;/en/shop/speed-on-wheels-jacket-black/;301;ja;product speed-on-wheels-jack-zwart (EN)
+^/nl/shop/159700(/.*)?$;/nl/shop/speed-on-wheels-jack-wit/;301;ja;product speed-on-wheels-jack-wit
+^/en/shop/159700(/.*)?$;/en/shop/speed-on-wheels-jacket-white/;301;ja;product speed-on-wheels-jack-wit (EN)
+^/nl/shop/6492(/.*)?$;/nl/shop/36-ipad-hoes-zwart/;301;ja;product 36-ipad-hoes-zwart
+^/en/shop/6492(/.*)?$;/en/shop/36-ipad-case-black/;301;ja;product 36-ipad-hoes-zwart (EN)
+^/nl/shop/157405(/.*)?$;/nl/shop/speed-on-wheels-oranje-wielershirt/;301;ja;product speed-on-wheels-oranje-wielershirt
+^/en/shop/157405(/.*)?$;/en/shop/speed-on-wheels-orange-cycling-jersey/;301;ja;product speed-on-wheels-oranje-wielershirt (EN)
+^/nl/shop/160124(/.*)?$;/nl/shop/speed-on-wheels-wielershirt-elite-wit-oranje/;301;ja;product speed-on-wheels-wielershirt-elite-wit-oranje
+^/en/shop/160124(/.*)?$;/en/shop/speed-on-wheels-elite-cycling-jersey-white-orange/;301;ja;product speed-on-wheels-wielershirt-elite-wit-oranje (EN)
+^/nl/shop/160133(/.*)?$;/nl/shop/speed-on-wheels-wielershirt-elite-zwart/;301;ja;product speed-on-wheels-wielershirt-elite-zwart
+^/en/shop/160133(/.*)?$;/en/shop/speed-on-wheels-elite-cycling-jersey-black/;301;ja;product speed-on-wheels-wielershirt-elite-zwart (EN)
+^/nl/shop/160110(/.*)?$;/nl/shop/speed-on-wheels-wielershirt-elite-wit/;301;ja;product speed-on-wheels-wielershirt-elite-wit
+^/en/shop/160110(/.*)?$;/en/shop/speed-on-wheels-elite-cycling-jersey-white/;301;ja;product speed-on-wheels-wielershirt-elite-wit (EN)
+^/nl/shop/6550(/.*)?$;/nl/shop/the-cyclist-bag-zwart-oranje/;301;ja;product the-cyclist-bag-zwart-oranje
+^/en/shop/6550(/.*)?$;/en/shop/the-cyclist-bag-black-orange/;301;ja;product the-cyclist-bag-zwart-oranje (EN)
+^/nl/shop/55812(/.*)?$;/nl/shop/mtb-shorts-zwart/;301;ja;product mtb-shorts-zwart
+^/en/shop/55812(/.*)?$;/en/shop/mtb-shorts-black/;301;ja;product mtb-shorts-zwart (EN)
+^/nl/shop/6477(/.*)?$;/nl/shop/pro-triathlonpak-heren-zwart/;301;ja;product pro-triathlonpak-heren-zwart
+^/en/shop/6477(/.*)?$;/en/shop/pro-tri-suit-men-black/;301;ja;product pro-triathlonpak-heren-zwart (EN)
+^/nl/shop/6557(/.*)?$;/nl/shop/underhelmet-muts-zwart/;301;ja;product underhelmet-muts-zwart
+^/en/shop/6557(/.*)?$;/en/shop/underhelmet-hat-black/;301;ja;product underhelmet-muts-zwart (EN)
+^/nl/shop/86965(/.*)?$;/nl/shop/wielerpet-zwart-thrtsx/;301;ja;product wielerpet-zwart-thrtsx
+^/en/shop/86965(/.*)?$;/en/shop/cycling-cap-black-thrtsx/;301;ja;product wielerpet-zwart-thrtsx (EN)
+^/nl/shop/173049(/.*)?$;/nl/shop/wielerpet-neon-geel/;301;ja;product wielerpet-neon-geel
+^/en/shop/173049(/.*)?$;/en/shop/cycling-cap-neon-yellow/;301;ja;product wielerpet-neon-geel (EN)
+^/nl/shop/173048(/.*)?$;/nl/shop/wielerpet-donkerblauw-neon-geel/;301;ja;product wielerpet-donkerblauw-neon-geel
+^/en/shop/173048(/.*)?$;/en/shop/cycling-cap-navy-blue-neon-yellow/;301;ja;product wielerpet-donkerblauw-neon-geel (EN)
+^/nl/shop/173047(/.*)?$;/nl/shop/wielerpet-zwart-neon-geel/;301;ja;product wielerpet-zwart-neon-geel
+^/en/shop/173047(/.*)?$;/en/shop/cycling-cap-black-neon-yellow/;301;ja;product wielerpet-zwart-neon-geel (EN)
+^/nl/shop/6532(/.*)?$;/nl/shop/running-jacket-man-36-zwart-blauw/;301;ja;product running-jacket-man-36-zwart-blauw
+^/en/shop/6532(/.*)?$;/en/shop/running-jacket-men-36-black-blue/;301;ja;product running-jacket-man-36-zwart-blauw (EN)
+^/nl/shop/6533(/.*)?$;/nl/shop/running-jacket-vrouw-36-zwart-blauw/;301;ja;product running-jacket-vrouw-36-zwart-blauw
+^/en/shop/6533(/.*)?$;/en/shop/running-jacket-women-36-black-blue/;301;ja;product running-jacket-vrouw-36-zwart-blauw (EN)
+^/nl/shop/85532(/.*)?$;/nl/shop/beenstukken-aqua-seal-zwart/;301;ja;product beenstukken-aqua-seal-zwart
+^/en/shop/85532(/.*)?$;/en/shop/leg-warmers-aqua-seal-black/;301;ja;product beenstukken-aqua-seal-zwart (EN)
+^/nl/shop/52318(/.*)?$;/nl/shop/armstukken-aqua-seal-zwart/;301;ja;product armstukken-aqua-seal-zwart
+^/en/shop/52318(/.*)?$;/en/shop/arm-warmers-aqua-seal-black/;301;ja;product armstukken-aqua-seal-zwart (EN)
+^/nl/shop/6522(/.*)?$;/nl/shop/beenstukken-36-zwart/;301;ja;product beenstukken-36-zwart
+^/en/shop/6522(/.*)?$;/en/shop/leg-warmers-36-black/;301;ja;product beenstukken-36-zwart (EN)
+^/nl/shop/6521(/.*)?$;/nl/shop/armstukken-36-zwart/;301;ja;product armstukken-36-zwart
+^/en/shop/6521(/.*)?$;/en/shop/arm-warmers-36-black/;301;ja;product armstukken-36-zwart (EN)
+^/nl/shop/161364(/.*)?$;/nl/shop/teenwarmers-zwart-neopreen/;301;ja;product teenwarmers-zwart-neopreen
+^/en/shop/161364(/.*)?$;/en/shop/toe-covers-black-neoprene/;301;ja;product teenwarmers-zwart-neopreen (EN)
+^/nl/shop/52253(/.*)?$;/nl/shop/teenwarmers-zwart/;301;ja;product teenwarmers-zwart
+^/en/shop/52253(/.*)?$;/en/shop/toe-covers-black/;301;ja;product teenwarmers-zwart (EN)
+^/nl/shop/52233(/.*)?$;/nl/shop/waterdichte-overschoenen-zwart/;301;ja;product waterdichte-overschoenen-zwart
+^/en/shop/52233(/.*)?$;/en/shop/waterproof-shoe-covers-black/;301;ja;product waterdichte-overschoenen-zwart (EN)
+^/nl/shop/111699(/.*)?$;/nl/shop/neopreen-overschoenen-zwart/;301;ja;product neopreen-overschoenen-zwart
+^/en/shop/111699(/.*)?$;/en/shop/neoprene-shoe-covers-black/;301;ja;product neopreen-overschoenen-zwart (EN)
+^/nl/shop/52246(/.*)?$;/nl/shop/zipless-neopreen-overschoenen-zwart/;301;ja;product zipless-neopreen-overschoenen-zwart
+^/en/shop/52246(/.*)?$;/en/shop/zipless-neoprene-shoe-covers-black/;301;ja;product zipless-neopreen-overschoenen-zwart (EN)
+^/nl/shop/6538(/.*)?$;/nl/shop/winter-handschoen-2018-zwart/;301;ja;product winter-handschoen-2018-zwart
+^/en/shop/6538(/.*)?$;/en/shop/winter-glove-2018-black/;301;ja;product winter-handschoen-2018-zwart (EN)
+^/nl/shop/111544(/.*)?$;/nl/shop/wielerhandschoen-roze/;301;ja;product wielerhandschoen-roze
+^/en/shop/111544(/.*)?$;/en/shop/cycling-glove-pink/;301;ja;product wielerhandschoen-roze (EN)
+^/nl/shop/111587(/.*)?$;/nl/shop/wielerhandschoen-navy/;301;ja;product wielerhandschoen-navy
+^/en/shop/111587(/.*)?$;/en/shop/cycling-glove-navy/;301;ja;product wielerhandschoen-navy (EN)
+^/nl/shop/111559(/.*)?$;/nl/shop/wielerhandschoen-blauw/;301;ja;product wielerhandschoen-blauw
+^/en/shop/111559(/.*)?$;/en/shop/cycling-glove-blue/;301;ja;product wielerhandschoen-blauw (EN)
+^/nl/shop/111594(/.*)?$;/nl/shop/wielerhandschoen-groen/;301;ja;product wielerhandschoen-groen
+^/en/shop/111594(/.*)?$;/en/shop/cycling-glove-green/;301;ja;product wielerhandschoen-groen (EN)
+^/nl/shop/111573(/.*)?$;/nl/shop/wielerhandschoen-geel/;301;ja;product wielerhandschoen-geel
+^/en/shop/111573(/.*)?$;/en/shop/cycling-glove-yellow/;301;ja;product wielerhandschoen-geel (EN)
+^/nl/shop/111601(/.*)?$;/nl/shop/wielerhandschoen-oranje/;301;ja;product wielerhandschoen-oranje
+^/en/shop/111601(/.*)?$;/en/shop/cycling-glove-orange/;301;ja;product wielerhandschoen-oranje (EN)
+^/nl/shop/111275(/.*)?$;/nl/shop/wielerhandschoen-rood/;301;ja;product wielerhandschoen-rood
+^/en/shop/111275(/.*)?$;/en/shop/cycling-glove-red/;301;ja;product wielerhandschoen-rood (EN)
+^/nl/shop/111551(/.*)?$;/nl/shop/wielerhandschoen-wit/;301;ja;product wielerhandschoen-wit
+^/en/shop/111551(/.*)?$;/en/shop/cycling-glove-white/;301;ja;product wielerhandschoen-wit (EN)
+^/nl/shop/111580(/.*)?$;/nl/shop/wielerhandschoen-grijs/;301;ja;product wielerhandschoen-grijs
+^/en/shop/111580(/.*)?$;/en/shop/cycling-glove-grey/;301;ja;product wielerhandschoen-grijs (EN)
+^/nl/shop/111566(/.*)?$;/nl/shop/wielerhandschoen-zwart/;301;ja;product wielerhandschoen-zwart
+^/en/shop/111566(/.*)?$;/en/shop/cycling-glove-black/;301;ja;product wielerhandschoen-zwart (EN)
+^/nl/shop/6539(/.*)?$;/nl/shop/voorjaarshandschoen-zwart/;301;ja;product voorjaarshandschoen-zwart
+^/en/shop/6539(/.*)?$;/en/shop/spring-glove-black/;301;ja;product voorjaarshandschoen-zwart (EN)
+^/nl/shop/52260(/.*)?$;/nl/shop/windproof-handschoenen-zwart/;301;ja;product windproof-handschoenen-zwart
+^/en/shop/52260(/.*)?$;/en/shop/windproof-gloves-black/;301;ja;product windproof-handschoenen-zwart (EN)
+^/nl/shop/109810(/.*)?$;/nl/shop/winter-handschoenen-sipora-zwart/;301;ja;product winter-handschoenen-sipora-zwart
+^/en/shop/109810(/.*)?$;/en/shop/winter-gloves-sipora-black/;301;ja;product winter-handschoenen-sipora-zwart (EN)
+^/nl/shop/158137(/.*)?$;/nl/shop/wielerhandschoen-zwart-direct-grip-carbon/;301;ja;product wielerhandschoen-zwart-direct-grip-carbon
+^/en/shop/158137(/.*)?$;/en/shop/cycling-glove-black-direct-grip-carbon/;301;ja;product wielerhandschoen-zwart-direct-grip-carbon (EN)
+^/nl/shop/158110(/.*)?$;/nl/shop/wielerhandschoen-zwart-direct-grip/;301;ja;product wielerhandschoen-zwart-direct-grip
+^/en/shop/158110(/.*)?$;/en/shop/cycling-glove-black-direct-grip/;301;ja;product wielerhandschoen-zwart-direct-grip (EN)
+^/nl/shop/100170(/.*)?$;/nl/shop/mouwloos-ondershirt-wit/;301;ja;product mouwloos-ondershirt-wit
+^/en/shop/100170(/.*)?$;/en/shop/sleeveless-base-layer-white/;301;ja;product mouwloos-ondershirt-wit (EN)
+^/nl/shop/6531(/.*)?$;/nl/shop/ondershirt-36-wit/;301;ja;product ondershirt-36-wit
+^/en/shop/6531(/.*)?$;/en/shop/base-layer-36-white/;301;ja;product ondershirt-36-wit (EN)
+^/nl/shop/6548(/.*)?$;/nl/shop/sokken-zwart/;301;ja;product sokken-zwart
+^/en/shop/6548(/.*)?$;/en/shop/socks-black/;301;ja;product sokken-zwart (EN)
+^/nl/shop/6546(/.*)?$;/nl/shop/sokken-band-wit/;301;ja;product sokken-band-wit
+^/en/shop/6546(/.*)?$;/en/shop/socks-band-white/;301;ja;product sokken-band-wit (EN)
+^/nl/shop/172343(/.*)?$;/nl/shop/fietsbril-nebula-transparant/;301;ja;product fietsbril-nebula-transparant
+^/en/shop/172343(/.*)?$;/en/shop/cycling-glasses-nebula-transparent/;301;ja;product fietsbril-nebula-transparant (EN)
+^/nl/shop/55711(/.*)?$;/nl/shop/fietsbril-transparant-wit/;301;ja;product fietsbril-transparant-wit
+^/en/shop/55711(/.*)?$;/en/shop/cycling-glasses-transparent-white/;301;ja;product fietsbril-transparant-wit (EN)
+^/nl/shop/55600(/.*)?$;/nl/shop/fietsbril-revo-zwart/;301;ja;product fietsbril-revo-zwart
+^/en/shop/55600(/.*)?$;/en/shop/cycling-glasses-revo-black/;301;ja;product fietsbril-revo-zwart (EN)
+^/nl/shop/55591(/.*)?$;/nl/shop/fietsbril-revo-wit/;301;ja;product fietsbril-revo-wit
+^/en/shop/55591(/.*)?$;/en/shop/cycling-glasses-revo-white/;301;ja;product fietsbril-revo-wit (EN)
+^/nl/shop/172339(/.*)?$;/nl/shop/fietsbril-nebula-zwart-pink/;301;ja;product fietsbril-nebula-zwart-pink
+^/en/shop/172339(/.*)?$;/en/shop/cycling-glasses-nebula-black-pink/;301;ja;product fietsbril-nebula-zwart-pink (EN)
+^/nl/shop/172334(/.*)?$;/nl/shop/fietsbril-jade-groen/;301;ja;product fietsbril-jade-groen
+^/en/shop/172334(/.*)?$;/en/shop/cycling-glasses-jade-green/;301;ja;product fietsbril-jade-groen (EN)
+^/nl/shop/171101(/.*)?$;/nl/shop/fietsbril-volt-neon-geel/;301;ja;product fietsbril-volt-neon-geel
+^/en/shop/171101(/.*)?$;/en/shop/cycling-glasses-volt-neon-yellow/;301;ja;product fietsbril-volt-neon-geel (EN)
+^/nl/shop/172335(/.*)?$;/nl/shop/fietsbril-volt-blauw/;301;ja;product fietsbril-volt-blauw
+^/en/shop/172335(/.*)?$;/en/shop/cycling-glasses-volt-blue/;301;ja;product fietsbril-volt-blauw (EN)
+^/nl/shop/135120(/.*)?$;/nl/shop/wielersokken-dry-knit-22-cm-hoog-zwart/;301;ja;product wielersokken-dry-knit-22-cm-hoog-zwart
+^/en/shop/135120(/.*)?$;/en/shop/cycling-socks-dry-knit-22-cm-high-black/;301;ja;product wielersokken-dry-knit-22-cm-hoog-zwart (EN)
+^/nl/shop/135105(/.*)?$;/nl/shop/wielersokken-dry-knit-22-cm-hoog-wit/;301;ja;product wielersokken-dry-knit-22-cm-hoog-wit
+^/en/shop/135105(/.*)?$;/en/shop/cycling-socks-dry-knit-22-cm-high-white/;301;ja;product wielersokken-dry-knit-22-cm-hoog-wit (EN)
+^/nl/shop/85109(/.*)?$;/nl/shop/wielerjack-vuelta-marine-blauw-dames/;301;ja;product wielerjack-vuelta-marine-blauw-dames
+^/en/shop/85109(/.*)?$;/en/shop/cycling-jacket-vuelta-navy-blue-women/;301;ja;product wielerjack-vuelta-marine-blauw-dames (EN)
+^/nl/shop/85099(/.*)?$;/nl/shop/wielerjack-vuelta-rood-dames/;301;ja;product wielerjack-vuelta-rood-dames
+^/en/shop/85099(/.*)?$;/en/shop/cycling-jacket-vuelta-red-women/;301;ja;product wielerjack-vuelta-rood-dames (EN)
+^/nl/shop/85089(/.*)?$;/nl/shop/wielerjack-vuelta-kobaltblauw-dames/;301;ja;product wielerjack-vuelta-kobaltblauw-dames
+^/en/shop/85089(/.*)?$;/en/shop/cycling-jacket-vuelta-cobalt-blue-women/;301;ja;product wielerjack-vuelta-kobaltblauw-dames (EN)
+^/nl/shop/58426(/.*)?$;/nl/shop/aquazero-jack-zwart-dames/;301;ja;product aquazero-jack-zwart-dames
+^/en/shop/58426(/.*)?$;/en/shop/aquazero-jacket-black-women/;301;ja;product aquazero-jack-zwart-dames (EN)
+^/nl/shop/53665(/.*)?$;/nl/shop/all-season-jack-slider-groen-dames/;301;ja;product all-season-jack-slider-groen-dames
+^/en/shop/53665(/.*)?$;/en/shop/all-season-jacket-slider-green-women/;301;ja;product all-season-jack-slider-groen-dames (EN)
+^/nl/shop/53659(/.*)?$;/nl/shop/all-season-jack-slider-blauw-zwart-dames/;301;ja;product all-season-jack-slider-blauw-zwart-dames
+^/en/shop/53659(/.*)?$;/en/shop/all-season-jacket-slider-blue-black-women/;301;ja;product all-season-jack-slider-blauw-zwart-dames (EN)
+^/nl/shop/85069(/.*)?$;/nl/shop/all-season-jack-zwart-grijs-dames/;301;ja;product all-season-jack-zwart-grijs-dames
+^/en/shop/85069(/.*)?$;/en/shop/all-season-jacket-black-grey-women/;301;ja;product all-season-jack-zwart-grijs-dames (EN)
+^/nl/shop/55532(/.*)?$;/nl/shop/mouwloos-wielershirt-dames-licht-blauw/;301;ja;product mouwloos-wielershirt-dames-licht-blauw
+^/en/shop/55532(/.*)?$;/en/shop/sleeveless-cycling-jersey-women-light-blue/;301;ja;product mouwloos-wielershirt-dames-licht-blauw (EN)
+^/nl/shop/58019(/.*)?$;/nl/shop/slider-wielershirt-bordeaux-dames/;301;ja;product slider-wielershirt-bordeaux-dames
+^/en/shop/58019(/.*)?$;/en/shop/slider-cycling-jersey-burgundy-women/;301;ja;product slider-wielershirt-bordeaux-dames (EN)
+^/nl/shop/49775(/.*)?$;/nl/shop/slider-wielershirt-rood-dames/;301;ja;product slider-wielershirt-rood-dames
+^/en/shop/49775(/.*)?$;/en/shop/slider-cycling-jersey-red-women/;301;ja;product slider-wielershirt-rood-dames (EN)
+^/nl/shop/49767(/.*)?$;/nl/shop/slider-wielershirt-groen-dames/;301;ja;product slider-wielershirt-groen-dames
+^/en/shop/49767(/.*)?$;/en/shop/slider-cycling-jersey-green-women/;301;ja;product slider-wielershirt-groen-dames (EN)
+^/nl/shop/49757(/.*)?$;/nl/shop/slider-wielershirt-blauw-zwart-dames/;301;ja;product slider-wielershirt-blauw-zwart-dames
+^/en/shop/49757(/.*)?$;/en/shop/slider-cycling-jersey-blue-black-women/;301;ja;product slider-wielershirt-blauw-zwart-dames (EN)
+^/nl/shop/60618(/.*)?$;/nl/shop/pro-wielershirt-zwart-grijs-dames/;301;ja;product pro-wielershirt-zwart-grijs-dames
+^/en/shop/60618(/.*)?$;/en/shop/pro-cycling-jersey-black-grey-women/;301;ja;product pro-wielershirt-zwart-grijs-dames (EN)
+^/nl/shop/52580(/.*)?$;/nl/shop/lange-dames-fietsbroek-met-zeem-zwart/;301;ja;product lange-dames-fietsbroek-met-zeem-zwart
+^/en/shop/52580(/.*)?$;/en/shop/women-s-bib-tights-with-chamois-black/;301;ja;product lange-dames-fietsbroek-met-zeem-zwart (EN)
+^/nl/shop/52407(/.*)?$;/nl/shop/lange-dames-fietsbroek-zonder-zeem-zwart/;301;ja;product lange-dames-fietsbroek-zonder-zeem-zwart
+^/en/shop/52407(/.*)?$;/en/shop/women-s-bib-tights-without-chamois-black/;301;ja;product lange-dames-fietsbroek-zonder-zeem-zwart (EN)
+^/nl/shop/6519(/.*)?$;/nl/shop/fietsbroek-dames-fragment-zwart/;301;ja;product fietsbroek-dames-fragment-zwart
+^/en/shop/6519(/.*)?$;/en/shop/women-s-bib-shorts-fragment-black/;301;ja;product fietsbroek-dames-fragment-zwart (EN)
+^/nl/shop/55539(/.*)?$;/nl/shop/fietsbroek-dames-marine-blauw-zonder-bretels/;301;ja;product fietsbroek-dames-marine-blauw-zonder-bretels
+^/en/shop/55539(/.*)?$;/en/shop/women-s-cycling-shorts-navy-blue-without-straps/;301;ja;product fietsbroek-dames-marine-blauw-zonder-bretels (EN)
+^/nl/shop/6514(/.*)?$;/nl/shop/fietsbroek-dames-ecoracer-grijs-logo-zwart/;301;ja;product fietsbroek-dames-ecoracer-grijs-logo-zwart
+^/en/shop/6514(/.*)?$;/en/shop/women-s-bib-shorts-ecoracer-grey-logo-black/;301;ja;product fietsbroek-dames-ecoracer-grijs-logo-zwart (EN)
+^/nl/shop/6502(/.*)?$;/nl/shop/fietsbroek-dames-ecoracer-lichtblauw-logo-zwart/;301;ja;product fietsbroek-dames-ecoracer-lichtblauw-logo-zwart
+^/en/shop/6502(/.*)?$;/en/shop/women-s-bib-shorts-ecoracer-light-blue-logo-black/;301;ja;product fietsbroek-dames-ecoracer-lichtblauw-logo-zwart (EN)
+^/nl/shop/54065(/.*)?$;/nl/shop/fietsbroek-dames-elements-zwart/;301;ja;product fietsbroek-dames-elements-zwart
+^/en/shop/54065(/.*)?$;/en/shop/women-s-bib-shorts-elements-black/;301;ja;product fietsbroek-dames-elements-zwart (EN)
+^/nl/shop/54076(/.*)?$;/nl/shop/fietsbroek-dames-ecopower-zwart/;301;ja;product fietsbroek-dames-ecopower-zwart
+^/en/shop/54076(/.*)?$;/en/shop/women-s-bib-shorts-ecopower-black/;301;ja;product fietsbroek-dames-ecopower-zwart (EN)
+^/nl/shop/6528(/.*)?$;/nl/shop/regenjack-transparant-wit/;301;ja;product regenjack-transparant-wit
+^/en/shop/6528(/.*)?$;/en/shop/rain-jacket-transparent-white/;301;ja;product regenjack-transparant-wit (EN)
+^/nl/shop/85055(/.*)?$;/nl/shop/wielerjack-vuelta-rood/;301;ja;product wielerjack-vuelta-rood
+^/en/shop/85055(/.*)?$;/en/shop/cycling-jacket-vuelta-red/;301;ja;product wielerjack-vuelta-rood (EN)
+^/nl/shop/85047(/.*)?$;/nl/shop/wielerjack-vuelta-kobaltblauw/;301;ja;product wielerjack-vuelta-kobaltblauw
+^/en/shop/85047(/.*)?$;/en/shop/cycling-jacket-vuelta-cobalt-blue/;301;ja;product wielerjack-vuelta-kobaltblauw (EN)
+^/nl/shop/84590(/.*)?$;/nl/shop/wielerjack-vuelta-marine-blauw/;301;ja;product wielerjack-vuelta-marine-blauw
+^/en/shop/84590(/.*)?$;/en/shop/cycling-jacket-vuelta-navy-blue/;301;ja;product wielerjack-vuelta-marine-blauw (EN)
+^/nl/shop/6476(/.*)?$;/nl/shop/tego-jack-zwart/;301;ja;product tego-jack-zwart
+^/en/shop/6476(/.*)?$;/en/shop/tego-jacket-black/;301;ja;product tego-jack-zwart (EN)
+^/nl/shop/173037(/.*)?$;/nl/shop/windstopper-zwart/;301;ja;product windstopper-zwart
+^/en/shop/173037(/.*)?$;/en/shop/windstopper-black/;301;ja;product windstopper-zwart (EN)
+^/nl/shop/173027(/.*)?$;/nl/shop/windstopper-donkerblauw/;301;ja;product windstopper-donkerblauw
+^/en/shop/173027(/.*)?$;/en/shop/windstopper-navy-blue/;301;ja;product windstopper-donkerblauw (EN)
+^/nl/shop/172976(/.*)?$;/nl/shop/windstopper-neon-geel/;301;ja;product windstopper-neon-geel
+^/en/shop/172976(/.*)?$;/en/shop/windstopper-neon-yellow/;301;ja;product windstopper-neon-geel (EN)
+^/nl/shop/49783(/.*)?$;/nl/shop/aquazero-jack-zwart/;301;ja;product aquazero-jack-zwart
+^/en/shop/49783(/.*)?$;/en/shop/aquazero-jacket-black/;301;ja;product aquazero-jack-zwart (EN)
+^/nl/shop/49736(/.*)?$;/nl/shop/all-season-jack-slider-groen/;301;ja;product all-season-jack-slider-groen
+^/en/shop/49736(/.*)?$;/en/shop/all-season-jacket-slider-green/;301;ja;product all-season-jack-slider-groen (EN)
+^/nl/shop/49750(/.*)?$;/nl/shop/all-season-jack-slider-blauw-zwart/;301;ja;product all-season-jack-slider-blauw-zwart
+^/en/shop/49750(/.*)?$;/en/shop/all-season-jacket-slider-blue-black/;301;ja;product all-season-jack-slider-blauw-zwart (EN)
+^/nl/shop/6472(/.*)?$;/nl/shop/pro-all-season-jack-zwart-grijs/;301;ja;product pro-all-season-jack-zwart-grijs
+^/en/shop/6472(/.*)?$;/en/shop/pro-all-season-jacket-black-grey/;301;ja;product pro-all-season-jack-zwart-grijs (EN)
+^/nl/shop/158227(/.*)?$;/nl/shop/thermojack-zwart/;301;ja;product thermojack-zwart
+^/en/shop/158227(/.*)?$;/en/shop/thermal-jacket-black/;301;ja;product thermojack-zwart (EN)
+^/nl/shop/133513(/.*)?$;/nl/shop/chroma-wielershirt-lange-mouwen-metal-blue/;301;ja;product chroma-wielershirt-lange-mouwen-metal-blue
+^/en/shop/133513(/.*)?$;/en/shop/chroma-long-sleeve-cycling-jersey-metal-blue/;301;ja;product chroma-wielershirt-lange-mouwen-metal-blue (EN)
+^/nl/shop/129633(/.*)?$;/nl/shop/chroma-wielershirt-lange-mouwen-aubergine/;301;ja;product chroma-wielershirt-lange-mouwen-aubergine
+^/en/shop/129633(/.*)?$;/en/shop/chroma-long-sleeve-cycling-jersey-aubergine/;301;ja;product chroma-wielershirt-lange-mouwen-aubergine (EN)
+^/nl/shop/97540(/.*)?$;/nl/shop/chroma-wielershirt-lange-mouwen-olijf-groen/;301;ja;product chroma-wielershirt-lange-mouwen-olijf-groen
+^/en/shop/97540(/.*)?$;/en/shop/chroma-long-sleeve-cycling-jersey-olive-green/;301;ja;product chroma-wielershirt-lange-mouwen-olijf-groen (EN)
+^/nl/shop/97530(/.*)?$;/nl/shop/chroma-wielershirt-lange-mouwen-petrol/;301;ja;product chroma-wielershirt-lange-mouwen-petrol
+^/en/shop/97530(/.*)?$;/en/shop/chroma-long-sleeve-cycling-jersey-petrol/;301;ja;product chroma-wielershirt-lange-mouwen-petrol (EN)
+^/nl/shop/97520(/.*)?$;/nl/shop/chroma-wielershirt-lange-mouwen-marine-blauw/;301;ja;product chroma-wielershirt-lange-mouwen-marine-blauw
+^/en/shop/97520(/.*)?$;/en/shop/chroma-long-sleeve-cycling-jersey-navy-blue/;301;ja;product chroma-wielershirt-lange-mouwen-marine-blauw (EN)
+^/nl/shop/181112(/.*)?$;/nl/shop/volt-wielershirt-lange-mouwen-zwart/;301;ja;product volt-wielershirt-lange-mouwen-zwart
+^/en/shop/181112(/.*)?$;/en/shop/volt-long-sleeve-cycling-jersey-black/;301;ja;product volt-wielershirt-lange-mouwen-zwart (EN)
+^/nl/shop/6475(/.*)?$;/nl/shop/tego-shirt-zwart/;301;ja;product tego-shirt-zwart
+^/en/shop/6475(/.*)?$;/en/shop/tego-jersey-black/;301;ja;product tego-shirt-zwart (EN)
+^/nl/shop/43391(/.*)?$;/nl/shop/slider-wielershirt-creme/;301;ja;product slider-wielershirt-creme
+^/en/shop/43391(/.*)?$;/en/shop/slider-cycling-jersey-cream/;301;ja;product slider-wielershirt-creme (EN)
+^/nl/shop/43350(/.*)?$;/nl/shop/slider-wielershirt-rood/;301;ja;product slider-wielershirt-rood
+^/en/shop/43350(/.*)?$;/en/shop/slider-cycling-jersey-red/;301;ja;product slider-wielershirt-rood (EN)
+^/nl/shop/55498(/.*)?$;/nl/shop/slider-wielershirt-bordeaux/;301;ja;product slider-wielershirt-bordeaux
+^/en/shop/55498(/.*)?$;/en/shop/slider-cycling-jersey-burgundy/;301;ja;product slider-wielershirt-bordeaux (EN)
+^/nl/shop/43411(/.*)?$;/nl/shop/slider-wielershirt-groen/;301;ja;product slider-wielershirt-groen
+^/en/shop/43411(/.*)?$;/en/shop/slider-cycling-jersey-green/;301;ja;product slider-wielershirt-groen (EN)
+^/nl/shop/53523(/.*)?$;/nl/shop/slider-wielershirt-donkergrijs/;301;ja;product slider-wielershirt-donkergrijs
+^/en/shop/53523(/.*)?$;/en/shop/slider-cycling-jersey-dark-grey/;301;ja;product slider-wielershirt-donkergrijs (EN)
+^/nl/shop/79756(/.*)?$;/nl/shop/wielershirt-aero-light-blauw-zwart/;301;ja;product wielershirt-aero-light-blauw-zwart
+^/en/shop/79756(/.*)?$;/en/shop/cycling-jersey-aero-light-blue-black/;301;ja;product wielershirt-aero-light-blauw-zwart (EN)
+^/nl/shop/77069(/.*)?$;/nl/shop/wielershirt-aero-light-blauw/;301;ja;product wielershirt-aero-light-blauw
+^/en/shop/77069(/.*)?$;/en/shop/cycling-jersey-aero-light-blue/;301;ja;product wielershirt-aero-light-blauw (EN)
+^/nl/shop/161802(/.*)?$;/nl/shop/wielershirt-arcade/;301;ja;product wielershirt-arcade
+^/en/shop/161802(/.*)?$;/en/shop/cycling-jersey-arcade/;301;ja;product wielershirt-arcade (EN)
+^/nl/shop/161795(/.*)?$;/nl/shop/wielershirt-roffa/;301;ja;product wielershirt-roffa
+^/en/shop/161795(/.*)?$;/en/shop/cycling-jersey-roffa/;301;ja;product wielershirt-roffa (EN)
+^/nl/shop/43399(/.*)?$;/nl/shop/slider-wielershirt-blauw-zwart/;301;ja;product slider-wielershirt-blauw-zwart
+^/en/shop/43399(/.*)?$;/en/shop/slider-cycling-jersey-blue-black/;301;ja;product slider-wielershirt-blauw-zwart (EN)
+^/nl/shop/6470(/.*)?$;/nl/shop/pro-wielershirt-zwart-grijs/;301;ja;product pro-wielershirt-zwart-grijs
+^/en/shop/6470(/.*)?$;/en/shop/pro-cycling-jersey-black-grey/;301;ja;product pro-wielershirt-zwart-grijs (EN)
+^/nl/shop/94881(/.*)?$;/nl/shop/chroma-wielershirt-oranje/;301;ja;product chroma-wielershirt-oranje
+^/en/shop/94881(/.*)?$;/en/shop/chroma-cycling-jersey-orange/;301;ja;product chroma-wielershirt-oranje (EN)
+^/nl/shop/94977(/.*)?$;/nl/shop/chroma-wielershirt-lila/;301;ja;product chroma-wielershirt-lila
+^/en/shop/94977(/.*)?$;/en/shop/chroma-cycling-jersey-lilac/;301;ja;product chroma-wielershirt-lila (EN)
+^/nl/shop/94929(/.*)?$;/nl/shop/chroma-wielershirt-mint-groen/;301;ja;product chroma-wielershirt-mint-groen
+^/en/shop/94929(/.*)?$;/en/shop/chroma-cycling-jersey-mint-green/;301;ja;product chroma-wielershirt-mint-groen (EN)
+^/nl/shop/94833(/.*)?$;/nl/shop/chroma-wielershirt-petrol/;301;ja;product chroma-wielershirt-petrol
+^/en/shop/94833(/.*)?$;/en/shop/chroma-cycling-jersey-petrol/;301;ja;product chroma-wielershirt-petrol (EN)
+^/nl/shop/94785(/.*)?$;/nl/shop/chroma-wielershirt-blauw/;301;ja;product chroma-wielershirt-blauw
+^/en/shop/94785(/.*)?$;/en/shop/chroma-cycling-jersey-blue/;301;ja;product chroma-wielershirt-blauw (EN)
+^/nl/shop/94743(/.*)?$;/nl/shop/chroma-wielershirt-marine-blauw/;301;ja;product chroma-wielershirt-marine-blauw
+^/en/shop/94743(/.*)?$;/en/shop/chroma-cycling-jersey-navy-blue/;301;ja;product chroma-wielershirt-marine-blauw (EN)
+^/nl/shop/94857(/.*)?$;/nl/shop/chroma-wielershirt-bruin/;301;ja;product chroma-wielershirt-bruin
+^/en/shop/94857(/.*)?$;/en/shop/chroma-cycling-jersey-brown/;301;ja;product chroma-wielershirt-bruin (EN)
+^/nl/shop/94809(/.*)?$;/nl/shop/chroma-wielershirt-okergeel/;301;ja;product chroma-wielershirt-okergeel
+^/en/shop/94809(/.*)?$;/en/shop/chroma-cycling-jersey-ochre-yellow/;301;ja;product chroma-wielershirt-okergeel (EN)
+^/nl/shop/94953(/.*)?$;/nl/shop/chroma-wielershirt-metaal-blauw/;301;ja;product chroma-wielershirt-metaal-blauw
+^/en/shop/94953(/.*)?$;/en/shop/chroma-cycling-jersey-metal-blue/;301;ja;product chroma-wielershirt-metaal-blauw (EN)
+^/nl/shop/94905(/.*)?$;/nl/shop/chroma-wielershirt-olijfgroen/;301;ja;product chroma-wielershirt-olijfgroen
+^/en/shop/94905(/.*)?$;/en/shop/chroma-cycling-jersey-olive-green/;301;ja;product chroma-wielershirt-olijfgroen (EN)
+^/nl/shop/181103(/.*)?$;/nl/shop/chroma-wielershirt-burgundy/;301;ja;product chroma-wielershirt-burgundy
+^/en/shop/181103(/.*)?$;/en/shop/chroma-cycling-jersey-burgundy/;301;ja;product chroma-wielershirt-burgundy (EN)
+^/nl/shop/181038(/.*)?$;/nl/shop/volt-wielershirt-zwart-neon/;301;ja;product volt-wielershirt-zwart-neon
+^/en/shop/181038(/.*)?$;/en/shop/volt-cycling-jersey-black-neon/;301;ja;product volt-wielershirt-zwart-neon (EN)
+^/nl/shop/181094(/.*)?$;/nl/shop/volt-wielershirt-zwart/;301;ja;product volt-wielershirt-zwart
+^/en/shop/181094(/.*)?$;/en/shop/volt-cycling-jersey-black/;301;ja;product volt-wielershirt-zwart (EN)
+^/nl/shop/52596(/.*)?$;/nl/shop/lange-wielerbroek-zwart-met-zeem/;301;ja;product lange-wielerbroek-zwart-met-zeem
+^/en/shop/52596(/.*)?$;/en/shop/bib-tights-black-with-chamois/;301;ja;product lange-wielerbroek-zwart-met-zeem (EN)
+^/nl/shop/52588(/.*)?$;/nl/shop/lange-wielerbroek-zwart-zonder-zeem/;301;ja;product lange-wielerbroek-zwart-zonder-zeem
+^/en/shop/52588(/.*)?$;/en/shop/bib-tights-black-without-chamois/;301;ja;product lange-wielerbroek-zwart-zonder-zeem (EN)
+^/nl/shop/55523(/.*)?$;/nl/shop/wielerbroek-navy-blauw-zonder-bretels-heren/;301;ja;product wielerbroek-navy-blauw-zonder-bretels-heren
+^/en/shop/55523(/.*)?$;/en/shop/cycling-shorts-navy-blue-without-straps-men/;301;ja;product wielerbroek-navy-blauw-zonder-bretels-heren (EN)
+^/nl/shop/6512(/.*)?$;/nl/shop/wielerbroek-ecoracer-zwart-grijs-logo/;301;ja;product wielerbroek-ecoracer-zwart-grijs-logo
+^/en/shop/6512(/.*)?$;/en/shop/bib-shorts-ecoracer-black-grey-logo/;301;ja;product wielerbroek-ecoracer-zwart-grijs-logo (EN)
+^/nl/shop/6471(/.*)?$;/nl/shop/wielerbroek-ecoracer-zwart-lichtblauw-logo/;301;ja;product wielerbroek-ecoracer-zwart-lichtblauw-logo
+^/en/shop/6471(/.*)?$;/en/shop/bib-shorts-ecoracer-black-light-blue-logo/;301;ja;product wielerbroek-ecoracer-zwart-lichtblauw-logo (EN)
+^/nl/shop/52546(/.*)?$;/nl/shop/wielerbroek-elements-zwart/;301;ja;product wielerbroek-elements-zwart
+^/en/shop/52546(/.*)?$;/en/shop/bib-shorts-elements-black/;301;ja;product wielerbroek-elements-zwart (EN)
+^/nl/shop/158536(/.*)?$;/nl/shop/wielerbroek-ecopower-70-zwart/;301;ja;product wielerbroek-ecopower-70-zwart
+^/en/shop/158536(/.*)?$;/en/shop/bib-shorts-ecopower-70-black/;301;ja;product wielerbroek-ecopower-70-zwart (EN)
+^/nl/shop/53531(/.*)?$;/nl/shop/wielerbroek-ecopower-50-zwart/;301;ja;product wielerbroek-ecopower-50-zwart
+^/en/shop/53531(/.*)?$;/en/shop/bib-shorts-ecopower-50-black/;301;ja;product wielerbroek-ecopower-50-zwart (EN)
+^/nl/shop/159949(/.*)?$;/nl/shop/wielerbroek-totalgrip-zwart/;301;ja;product wielerbroek-totalgrip-zwart
+^/en/shop/159949(/.*)?$;/en/shop/bib-shorts-totalgrip-black/;301;ja;product wielerbroek-totalgrip-zwart (EN)
+^/nl/shop/95086(/.*)?$;/nl/shop/wielerbroek-carve-grijs/;301;ja;product wielerbroek-carve-grijs
+^/en/shop/95086(/.*)?$;/en/shop/bib-shorts-carve-grey/;301;ja;product wielerbroek-carve-grijs (EN)
+^/nl/shop/95079(/.*)?$;/nl/shop/wielerbroek-carve-marine-blauw/;301;ja;product wielerbroek-carve-marine-blauw
+^/en/shop/95079(/.*)?$;/en/shop/bib-shorts-carve-navy-blue/;301;ja;product wielerbroek-carve-marine-blauw (EN)
+^/nl/shop/95093(/.*)?$;/nl/shop/wielerbroek-carve-olijfgroen/;301;ja;product wielerbroek-carve-olijfgroen
+^/en/shop/95093(/.*)?$;/en/shop/bib-shorts-carve-olive-green/;301;ja;product wielerbroek-carve-olijfgroen (EN)
+^/nl/shop/95072(/.*)?$;/nl/shop/wielerbroek-carve-petrol-blauw/;301;ja;product wielerbroek-carve-petrol-blauw
+^/en/shop/95072(/.*)?$;/en/shop/bib-shorts-carve-petrol-blue/;301;ja;product wielerbroek-carve-petrol-blauw (EN)
+^/nl/shop/95065(/.*)?$;/nl/shop/wielerbroek-carve-bruin/;301;ja;product wielerbroek-carve-bruin
+^/en/shop/95065(/.*)?$;/en/shop/bib-shorts-carve-brown/;301;ja;product wielerbroek-carve-bruin (EN)
+^/nl/shop/95051(/.*)?$;/nl/shop/wielerbroek-carve-rood/;301;ja;product wielerbroek-carve-rood
+^/en/shop/95051(/.*)?$;/en/shop/bib-shorts-carve-red/;301;ja;product wielerbroek-carve-rood (EN)
+^/nl/shop/158547(/.*)?$;/nl/shop/wielerbroek-carve-zwart-v2/;301;ja;product wielerbroek-carve-zwart-v2
+^/en/shop/158547(/.*)?$;/en/shop/bib-shorts-carve-black-v2/;301;ja;product wielerbroek-carve-zwart-v2 (EN)

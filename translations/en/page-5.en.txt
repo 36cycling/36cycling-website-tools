@@ -1,0 +1,6 @@
+@title: Shop
+@slug: cycling-clothing
+@path_en: /en/cycling-clothing/
+@yoast_title: Cycling Clothing Shop | Quality Cycling Clothing for Women and Men | 36 Cycling
+@yoast_metadesc: Shop high-quality cycling clothing for women and men at 36 Cycling: cycling jerseys, bib shorts, jackets and accessories, developed and proven at the highest level.
+@yoast_focuskw: cycling clothing

@@ -1,0 +1,17 @@
+# Geheimen — nooit committen
+config.json
+.env
+
+# Persoonsgegevens (Circle-leden, oude bestellingen) — nooit committen
+private/
+
+# Groot / te herleiden / lokaal
+node_modules/
+media/
+raw/
+backups/
+
+# Systeem
+.DS_Store
+Thumbs.db
+*.tmp

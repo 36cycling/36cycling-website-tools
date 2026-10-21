@@ -1,0 +1,283 @@
+{
+  "id": 1980,
+  "date": "2026-08-24T18:15:21",
+  "date_gmt": "2026-08-24T18:15:21",
+  "guid": {
+    "rendered": "https://rondevanrotterdam.nl/?page_id=1980",
+    "raw": "https://rondevanrotterdam.nl/?page_id=1980"
+  },
+  "modified": "2026-10-14T15:48:12",
+  "modified_gmt": "2026-10-14T15:48:12",
+  "password": "",
+  "slug": "custom-teamwear",
+  "status": "publish",
+  "type": "page",
+  "link": "https://rondevanrotterdam.nl/nl/custom-teamwear/",
+  "title": {
+    "raw": "Custom Teamwear",
+    "rendered": "Custom Teamwear"
+  },
+  "content": {
+    "raw": "<!-- wp:heading {\"level\":1,\"style\":{\"typography\":{\"textAlign\":\"center\"},\"spacing\":{\"margin\":{\"bottom\":\"0\"}}},\"fontSize\":\"x-large\",\"anchor\":\"custom-teamwear-in-eigen-ontwerp\"} -->\n<h1 class=\"wp-block-heading has-text-align-center has-x-large-font-size\" id=\"custom-teamwear-in-eigen-ontwerp\" style=\"margin-bottom:0\">Custom teamwear in eigen ontwerp</h1>\n<!-- /wp:heading -->\n\n<!-- wp:greenshift-blocks/text {\"id\":\"gsbp-28ca194\",\"textContent\":\"Wielerkleding en sportkleding voor teams, clubs en bedrijven.\",\"spacing\":{\"margin\":{\"values\":{\"bottom\":[\"40px\"]},\"locked\":false},\"padding\":{\"values\":[],\"locked\":false}},\"typography\":{\"alignment\":[\"center\"],\"textShadow\":[],\"customweight\":[0],\"themeFontsizePresetEnable\":true,\"themeFontsizePreset\":\"medium\"}} -->\n<div id=\"gspb_text-id-gsbp-28ca194\" class=\"gspb_text gspb_text-id-gsbp-28ca194 \">Wielerkleding en sportkleding voor teams, clubs en bedrijven.</div>\n<!-- /wp:greenshift-blocks/text -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|50\",\"right\":\"var:preset|spacing|50\",\"bottom\":\"var:preset|spacing|50\",\"left\":\"var:preset|spacing|50\"}}},\"backgroundColor\":\"palette-color-6\"} -->\n<div class=\"wp-block-column has-palette-color-6-background-color has-background\" style=\"padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)\"><!-- wp:heading {\"level\":3,\"anchor\":\"wielerkleding-1\"} -->\n<h3 id=\"wielerkleding-1\" class=\"wp-block-heading\">Wielerkleding</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Van wielershirt tot skinsuit: het complete tenue in jullie eigen ontwerp. Voor clubs, bedrijfsteams en toerploegen, al vanaf 5 stuks. Met keuze uit stoffen en zemen voor elk niveau, en een 3D-ontwerp dat je ziet voordat je akkoord geeft.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://rondevanrotterdam.nl/nl/wielerkleding-bedrukken/\" target=\"_blank\" rel=\"noopener\">Wielerkleding bedrukken</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:image {\"id\":1970,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg\" alt=\"Wielerkleding bedrukken\" class=\"wp-image-1970\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|50\",\"right\":\"var:preset|spacing|50\",\"bottom\":\"var:preset|spacing|50\",\"left\":\"var:preset|spacing|50\"}}},\"backgroundColor\":\"palette-color-8\"} -->\n<div class=\"wp-block-column has-palette-color-8-background-color has-background\" style=\"padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)\"><!-- wp:heading {\"level\":3,\"anchor\":\"sportkleding-1\"} -->\n<h3 id=\"sportkleding-1\" class=\"wp-block-heading\">Sportkleding</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Hardlopen, triatlon, schaatsen, padel of voetbal: ook daarvoor maken we kleding in jullie eigen ontwerp. Hetzelfde ontwerpteam, dezelfde productie en dezelfde afspraken als bij onze wielerkleding. Voor een loopgroep, een marathonteam of een bedrijfsloop.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://rondevanrotterdam.nl/nl/sportkleding-bedrukken/\">Sportkleding bedrukken</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->\n\n<!-- wp:image {\"id\":1971,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-sportkleding.jpg\" alt=\"Sportkleding bedrukken\" class=\"wp-image-1971\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"right\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|30\"}}}} -->\n<div class=\"wp-block-column\" style=\"padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\"><!-- wp:heading {\"anchor\":\"fietskleding-ontwerpen\"} -->\n<h2 id=\"fietskleding-ontwerpen\" class=\"wp-block-heading\">Fietskleding ontwerpen</h2>\n<!-- /wp:heading -->\n\n<!-- wp:image {\"id\":6384,\"sizeSlug\":\"full\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/10/wielerkleding-ontwerpen.jpg\" alt=\"\" class=\"wp-image-6384\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"right\":\"var:preset|spacing|30\",\"left\":\"var:preset|spacing|30\"}}}} -->\n<div class=\"wp-block-column\" style=\"padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\"><!-- wp:heading {\"anchor\":\"werkwijze\"} -->\n<h2 id=\"werkwijze\" class=\"wp-block-heading\">Werkwijze</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Wielerkleding speelt een belangrijke rol bij de fietservaring. Hetzelfde geldt voor alle sportkleding. De juiste keuze van materialen, het draagcomfort en de uitstraling maken sporten een stuk aangenamer. We maken professionele kwaliteit voor iedereen toegankelijk. En in uw <strong>eigen huisstijl</strong>. Wil je je eigen ontwerp maken of laat je het liever aan ons over? We adviseren je altijd.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/wielerkleding-ontwerpen/\">Ontwerp</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/teamkleding-collectie/\">Assortiment</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-outline\"} -->\n<div class=\"wp-block-button is-style-outline\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/offerteaanvraag/\">Offerte</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:block {\"ref\":1734} /-->\n\n<!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:heading {\"anchor\":\"teamwear-collecties\"} -->\n<h2 id=\"teamwear-collecties\" class=\"wp-block-heading\">Teamwear Collecties</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>36 heeft een aantal collecties ontwikkeld gebaseerd op de behoeften van verschillende type sporters. Elke lijn is vervaardigd uit de beste materialen. Alle items kunnen gepersonaliseerd worden en in je eigen ontwerp worden gedrukt. We adviseren je uiteraard met plezier in elke stap van het proces.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1779,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/wielershirt-prestige/\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielershirt-prestige-1.jpg\" alt=\"wielershirt eigen ontwerp\" class=\"wp-image-1779\"/></a></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"wielershirts\"} -->\n<h3 id=\"wielershirts\" class=\"wp-block-heading has-medium-font-size\">Wielershirts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Vijf modellen, van het luchtige Prestige tot de allround Classic.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1801,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerbroek-speed.jpg\" alt=\"Pro wielerbroek bedrukken\" class=\"wp-image-1801\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"wielerbroeken\"} -->\n<h3 id=\"wielerbroeken\" class=\"wp-block-heading has-medium-font-size\">Wielerbroeken</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Elite, Speed, TotalGrip en Classic, plus een lange wielerbroek en een warming-up broek.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1811,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/all-season-jack/\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerjack-allseason.jpg\" alt=\"wielerkleding ontwerpen en bedrukken\" class=\"wp-image-1811\"/></a></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"jacks-en-windjacks\"} -->\n<h3 id=\"jacks-en-windjacks\" class=\"wp-block-heading has-medium-font-size\">Jacks en windjacks</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>All Season Jack, Winter Thermo Jack en drie windjacks voor koudere dagen.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1823,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/skinsuit-performance/\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/skinsuit-performance.jpg\" alt=\"tijdritpak ontwerpen en bedrukken\" class=\"wp-image-1823\"/></a></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"skinsuits-en-triatlonpakken\"} -->\n<h3 id=\"skinsuits-en-triatlonpakken\" class=\"wp-block-heading has-medium-font-size\">Skinsuits en triatlonpakken</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Skinsuit Performance en Criterium voor tijdritten en wedstrijden, en een triatlonpak.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1859,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/sportkleding-collectie/\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/running-shirt-extreme.jpg\" alt=\"sportkleding ontwerpen en bedrukken\" class=\"wp-image-1859\"/></a></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"sportkleding\"} -->\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Sportshirts</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Ook voor hardlopen, schaatsen en voetbal: running shirts, singlets, schaatspakken en meer.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1821,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/windjack-montreal.jpg\" alt=\"body voor wielrennen bedrukken\" class=\"wp-image-1821\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"sportkleding\"} -->\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Body's en jacks</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Windjacks, body's en andere bovenkleding om je warm te houden bij verschillende sporten.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1871,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/sportbroek-voetbal.jpg\" alt=\"sportkleding ontwerpen en bedrukken\" class=\"wp-image-1871\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"sportkleding\"} -->\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Sportbroeken</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Running tights of losse sportbroeken, voor hardlopen, veldsporten of bijvoorbeeld padel.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var:preset|spacing|40\"}},\"border\":{\"bottom\":{\"width\":\"1px\"}}}} -->\n<div class=\"wp-block-column\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\"><!-- wp:image {\"id\":1829,\"sizeSlug\":\"full\",\"linkDestination\":\"custom\"} -->\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/armstukken/\"><img src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/armstukken.jpg\" alt=\"armstukken bedrukken\" class=\"wp-image-1829\"/></a></figure>\n<!-- /wp:image -->\n\n<!-- wp:heading {\"level\":3,\"fontSize\":\"medium\",\"anchor\":\"accessoires\"} -->\n<h3 id=\"accessoires\" class=\"wp-block-heading has-medium-font-size\">Accessoires</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Armstukken, beenstukken, wintermuts, bandana, team polo en leisure jack.</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:paragraph -->\n<p>Bekijk de complete collectiepagina's om alle producten te zien:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/teamkleding-collectie/\">Teamkleding collectie</a></div>\n<!-- /wp:button -->\n\n<!-- wp:button {\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/sportkleding-collectie/\">Sportkleding collectie</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:group -->",
+    "rendered": "\n<h1 class=\"wp-block-heading has-text-align-center has-x-large-font-size\" id=\"custom-teamwear-in-eigen-ontwerp\" style=\"margin-bottom:0\">Custom teamwear in eigen ontwerp</h1>\n\n\n\n<div id=\"gspb_text-id-gsbp-28ca194\" class=\"gspb_text gspb_text-id-gsbp-28ca194 \">Wielerkleding en sportkleding voor teams, clubs en bedrijven.</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-995f960e wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column has-palette-color-6-background-color has-background is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)\">\n<h3 id=\"wielerkleding-1\" class=\"wp-block-heading\">Wielerkleding</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Van wielershirt tot skinsuit: het complete tenue in jullie eigen ontwerp. Voor clubs, bedrijfsteams en toerploegen, al vanaf 5 stuks. Met keuze uit stoffen en zemen voor elk niveau, en een 3D-ontwerp dat je ziet voordat je akkoord geeft.</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://rondevanrotterdam.nl/nl/wielerkleding-bedrukken/\" target=\"_blank\" rel=\"noopener\">Wielerkleding bedrukken</a></div>\n</div>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"565\" height=\"400\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg\" alt=\"Wielerkleding bedrukken\" class=\"wp-image-1970\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg 565w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding-300x212.jpg 300w\" sizes=\"auto, (max-width: 565px) 100vw, 565px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column has-palette-color-8-background-color has-background is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)\">\n<h3 id=\"sportkleding-1\" class=\"wp-block-heading\">Sportkleding</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Hardlopen, triatlon, schaatsen, padel of voetbal: ook daarvoor maken we kleding in jullie eigen ontwerp. Hetzelfde ontwerpteam, dezelfde productie en dezelfde afspraken als bij onze wielerkleding. Voor een loopgroep, een marathonteam of een bedrijfsloop.</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://rondevanrotterdam.nl/nl/sportkleding-bedrukken/\">Sportkleding bedrukken</a></div>\n</div>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"565\" height=\"400\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-sportkleding.jpg\" alt=\"Sportkleding bedrukken\" class=\"wp-image-1971\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-sportkleding.jpg 565w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-sportkleding-300x212.jpg 300w\" sizes=\"auto, (max-width: 565px) 100vw, 565px\" /></figure>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-995f960e wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\">\n<h2 id=\"fietskleding-ontwerpen\" class=\"wp-block-heading\">Fietskleding ontwerpen</h2>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"800\" height=\"537\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/10/wielerkleding-ontwerpen.jpg\" alt=\"\" class=\"wp-image-6384\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/10/wielerkleding-ontwerpen.jpg 800w, https://rondevanrotterdam.nl/wp-content/uploads/2026/10/wielerkleding-ontwerpen-767x515.jpg 767w, https://rondevanrotterdam.nl/wp-content/uploads/2026/10/wielerkleding-ontwerpen-300x201.jpg 300w\" sizes=\"auto, (max-width: 800px) 100vw, 800px\" /></figure>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)\">\n<h2 id=\"werkwijze\" class=\"wp-block-heading\">Werkwijze</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Wielerkleding speelt een belangrijke rol bij de fietservaring. Hetzelfde geldt voor alle sportkleding. De juiste keuze van materialen, het draagcomfort en de uitstraling maken sporten een stuk aangenamer. We maken professionele kwaliteit voor iedereen toegankelijk. En in uw <strong>eigen huisstijl</strong>. Wil je je eigen ontwerp maken of laat je het liever aan ons over? We adviseren je altijd.</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/wielerkleding-ontwerpen/\">Ontwerp</a></div>\n\n\n\n<div class=\"wp-block-button is-style-outline is-style-outline--3\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/teamkleding-collectie/\">Assortiment</a></div>\n\n\n\n<div class=\"wp-block-button is-style-outline is-style-outline--4\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/offerteaanvraag/\">Offerte</a></div>\n</div>\n</div>\n</div>\n\n\n<style></style><style></style>\n<div class=\"wp-block-group alignfull has-palette-color-6-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained\" style=\"margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60);padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)\">\n<h2 class=\"wp-block-heading has-text-align-center has-x-large-font-size\" id=\"hoe-het-werkt\" style=\"margin-top:0;margin-bottom:0;text-transform:none\">Hoe het werkt</h2>\n\n\n\n<h3 class=\"wp-block-heading has-text-align-center\" id=\"van-schets-tot-levering\" style=\"margin-top:-10px;margin-right:0;margin-bottom:var(--wp--preset--spacing--50);margin-left:0;font-size:clamp(26.465px, 1.654rem + ((1vw - 3.2px) * 1.448), 45px);\">van schets tot levering</h3>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cd772466 wp-block-columns-is-layout-flex\" style=\"margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-top-color:var(--wp--preset--color--black);border-top-style:solid;border-top-width:1px;border-right-style:none;border-right-width:0px;border-bottom-style:none;border-bottom-width:0px;border-left-style:none;border-left-width:0px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h6 id=\"01vertel-wat-jullie-willen\" class=\"wp-block-heading\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">01</h6>\n\n\n\n<h4 id=\"vertel-wat-jullie-willen\" class=\"wp-block-heading has-medium-font-size\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">Contact</h4>\n\n\n\n<p class=\"wp-block-paragraph\">Je vertelt wat je wilt: aantallen, logo, gewenste datum. Je hoort binnen een werkdag van ons.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-container-core-column-is-layout-696f0f9b wp-block-column-is-layout-flow\" style=\"border-top-color:var(--wp--preset--color--black);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h6 id=\"01vertel-wat-jullie-willen\" class=\"wp-block-heading\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">02</h6>\n\n\n\n<h4 id=\"vertel-wat-jullie-willen\" class=\"wp-block-heading has-medium-font-size\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">Custom ontwerp</h4>\n\n\n\n<p class=\"wp-block-paragraph\">Wij maken een design op maat voor het shirt of het hele tenue.<br>Je ziet de digitale <strong>3D</strong> proef en geeft akkoord voordat we starten.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-top-color:var(--wp--preset--color--black);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h6 id=\"01vertel-wat-jullie-willen\" class=\"wp-block-heading\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">03</h6>\n\n\n\n<h4 id=\"vertel-wat-jullie-willen\" class=\"wp-block-heading has-medium-font-size\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">Kleding bestellen</h4>\n\n\n\n<p class=\"wp-block-paragraph\">Passen met onze <strong>paskleding</strong>, of bestellen via de maattabel. Nederlandse pasvorm.<br><strong>Een grote groep?</strong> We bouwen gratis een webshop voor jouw team.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-top-color:var(--wp--preset--color--black);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h6 id=\"01vertel-wat-jullie-willen\" class=\"wp-block-heading\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">04</h6>\n\n\n\n<h4 id=\"vertel-wat-jullie-willen\" class=\"wp-block-heading has-medium-font-size\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">Productie &amp; controle</h4>\n\n\n\n<p class=\"wp-block-paragraph\">Na jouw akkoord gaat het naar productie. Elk stuk wordt gecontroleerd voor verzending.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-top-color:var(--wp--preset--color--black);border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h6 id=\"01vertel-wat-jullie-willen\" class=\"wp-block-heading\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">05</h6>\n\n\n\n<h4 id=\"vertel-wat-jullie-willen\" class=\"wp-block-heading has-medium-font-size\" style=\"margin-top:0;margin-right:0;margin-bottom:0;margin-left:0\">Levering</h4>\n\n\n\n<p class=\"wp-block-paragraph\">We spreken een duidelijke leverdatum met elkaar af. En we houden ons daaraan!<br>Speciale wensen? Vraag het ons. <strong>Nabestellen kan altijd.</strong></p>\n</div>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-constrained wp-block-group-is-layout-constrained\">\n<h2 id=\"teamwear-collecties\" class=\"wp-block-heading\">Teamwear Collecties</h2>\n\n\n\n<p class=\"wp-block-paragraph\">36 heeft een aantal collecties ontwikkeld gebaseerd op de behoeften van verschillende type sporters. Elke lijn is vervaardigd uit de beste materialen. Alle items kunnen gepersonaliseerd worden en in je eigen ontwerp worden gedrukt. We adviseren je uiteraard met plezier in elke stap van het proces.</p>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-995f960e wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/wielershirt-prestige/\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielershirt-prestige-1.jpg\" alt=\"wielershirt eigen ontwerp\" class=\"wp-image-1779\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielershirt-prestige-1.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielershirt-prestige-1-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></a></figure>\n\n\n\n<h3 id=\"wielershirts\" class=\"wp-block-heading has-medium-font-size\">Wielershirts</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Vijf modellen, van het luchtige Prestige tot de allround Classic.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerbroek-speed.jpg\" alt=\"Pro wielerbroek bedrukken\" class=\"wp-image-1801\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerbroek-speed.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerbroek-speed-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></figure>\n\n\n\n<h3 id=\"wielerbroeken\" class=\"wp-block-heading has-medium-font-size\">Wielerbroeken</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Elite, Speed, TotalGrip en Classic, plus een lange wielerbroek en een warming-up broek.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/all-season-jack/\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerjack-allseason.jpg\" alt=\"wielerkleding ontwerpen en bedrukken\" class=\"wp-image-1811\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerjack-allseason.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/wielerjack-allseason-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></a></figure>\n\n\n\n<h3 id=\"jacks-en-windjacks\" class=\"wp-block-heading has-medium-font-size\">Jacks en windjacks</h3>\n\n\n\n<p class=\"wp-block-paragraph\">All Season Jack, Winter Thermo Jack en drie windjacks voor koudere dagen.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/skinsuit-performance/\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/skinsuit-performance.jpg\" alt=\"tijdritpak ontwerpen en bedrukken\" class=\"wp-image-1823\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/skinsuit-performance.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/skinsuit-performance-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></a></figure>\n\n\n\n<h3 id=\"skinsuits-en-triatlonpakken\" class=\"wp-block-heading has-medium-font-size\">Skinsuits en triatlonpakken</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Skinsuit Performance en Criterium voor tijdritten en wedstrijden, en een triatlonpak.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-columns is-layout-flex wp-container-core-columns-is-layout-995f960e wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/sportkleding-collectie/\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/running-shirt-extreme.jpg\" alt=\"sportkleding ontwerpen en bedrukken\" class=\"wp-image-1859\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/running-shirt-extreme.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/running-shirt-extreme-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></a></figure>\n\n\n\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Sportshirts</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Ook voor hardlopen, schaatsen en voetbal: running shirts, singlets, schaatspakken en meer.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/windjack-montreal.jpg\" alt=\"body voor wielrennen bedrukken\" class=\"wp-image-1821\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/windjack-montreal.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/windjack-montreal-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></figure>\n\n\n\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Body&#8217;s en jacks</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Windjacks, body&#8217;s en andere bovenkleding om je warm te houden bij verschillende sporten.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/sportbroek-voetbal.jpg\" alt=\"sportkleding ontwerpen en bedrukken\" class=\"wp-image-1871\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/sportbroek-voetbal.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/sportbroek-voetbal-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></figure>\n\n\n\n<h3 id=\"sportkleding\" class=\"wp-block-heading has-medium-font-size\">Sportbroeken</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Running tights of losse sportbroeken, voor hardlopen, veldsporten of bijvoorbeeld padel.</p>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)\">\n<figure class=\"wp-block-image size-full\"><a href=\"/nl/teamkleding-collectie/armstukken/\"><img loading=\"lazy\" decoding=\"async\" width=\"642\" height=\"800\" src=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/armstukken.jpg\" alt=\"armstukken bedrukken\" class=\"wp-image-1829\" srcset=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/armstukken.jpg 642w, https://rondevanrotterdam.nl/wp-content/uploads/2026/08/armstukken-241x300.jpg 241w\" sizes=\"auto, (max-width: 642px) 100vw, 642px\" /></a></figure>\n\n\n\n<h3 id=\"accessoires\" class=\"wp-block-heading has-medium-font-size\">Accessoires</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Armstukken, beenstukken, wintermuts, bandana, team polo en leisure jack.</p>\n</div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\">Bekijk de complete collectiepagina&#8217;s om alle producten te zien:</p>\n\n\n\n<div class=\"wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/teamkleding-collectie/\">Teamkleding collectie</a></div>\n\n\n\n<div class=\"wp-block-button is-style-fill\"><a class=\"wp-block-button__link wp-element-button\" href=\"/nl/sportkleding-collectie/\">Sportkleding collectie</a></div>\n</div>\n</div>\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>Custom teamwear in eigen ontwerp Wielerkleding Van wielershirt tot skinsuit: het complete tenue in jullie eigen ontwerp. Voor clubs, bedrijfsteams en toerploegen, al vanaf 5 stuks. Met keuze uit stoffen en zemen voor elk niveau, en een 3D-ontwerp dat je ziet voordat je akkoord geeft. Sportkleding Hardlopen, triatlon, schaatsen, padel of voetbal: ook daarvoor maken [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "_yoast_wpseo_focuskw": "",
+    "_yoast_wpseo_title": "Wielershirt Bedrukken & Wielerkleding Ontwerpen | 36 Cycling",
+    "_yoast_wpseo_metadesc": "Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.",
+    "_yoast_wpseo_meta-robots-noindex": "",
+    "_yoast_wpseo_canonical": "",
+    "_gspb_post_css": ".gspb_text-id-gsbp-28ca194{font-size:var(--wp--preset--font-size--medium)!important;margin-bottom:40px!important}.gspb_text-id-gsbp-28ca194,.gspb_text-id-gsbp-28ca194 .gsap-g-line{text-align:center!important}",
+    "footnotes": ""
+  },
+  "permalink_template": "https://rondevanrotterdam.nl/nl/%pagename%/",
+  "generated_slug": "custom-teamwear",
+  "class_list": [
+    "post-1980",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "blocksy_meta": {
+    "styles_descriptor": {
+      "styles": {
+        "desktop": "",
+        "tablet": "",
+        "mobile": ""
+      },
+      "google_fonts": [],
+      "version": 7
+    },
+    "page_structure_type": "default",
+    "content_style_source": "inherit",
+    "vertical_spacing_source": "inherit",
+    "content_area_spacing": "both"
+  },
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Wielershirt Bedrukken &amp; Wielerkleding Ontwerpen | 36 Cycling</title>\n<meta name=\"description\" content=\"Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.\" />\n<meta name=\"robots\" content=\"noindex, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Wielershirt Bedrukken &amp; Wielerkleding Ontwerpen | 36 Cycling\" />\n<meta property=\"og:description\" content=\"Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.\" />\n<meta property=\"og:url\" content=\"https://rondevanrotterdam.nl/nl/custom-teamwear/\" />\n<meta property=\"og:site_name\" content=\"Just Deploy It!\" />\n<meta property=\"article:modified_time\" content=\"2026-10-14T15:48:12+00:00\" />\n<meta property=\"og:image\" content=\"https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg\" />\n\t<meta property=\"og:image:width\" content=\"565\" />\n\t<meta property=\"og:image:height\" content=\"400\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Geschatte leestijd\" />\n\t<meta name=\"twitter:data1\" content=\"5 minuten\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/\",\"name\":\"Wielershirt Bedrukken & Wielerkleding Ontwerpen | 36 Cycling\",\"isPartOf\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/08\\/bigbutton-wielerkleding.jpg\",\"datePublished\":\"2026-08-24T18:15:21+00:00\",\"dateModified\":\"2026-10-14T15:48:12+00:00\",\"description\":\"Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/#primaryimage\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/08\\/bigbutton-wielerkleding.jpg\",\"contentUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/08\\/bigbutton-wielerkleding.jpg\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/custom-teamwear\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Custom Teamwear\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#website\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"name\":\"Just Deploy It!\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#organization\",\"name\":\"Just Deploy It!\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"contentUrl\":\"https:\\/\\/rondevanrotterdam.nl\\/wp-content\\/uploads\\/2026\\/07\\/36_logo-wit-lines.png\",\"width\":500,\"height\":514,\"caption\":\"Just Deploy It!\"},\"image\":{\"@id\":\"https:\\/\\/rondevanrotterdam.nl\\/nl\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+    "title": "Wielershirt Bedrukken & Wielerkleding Ontwerpen | 36 Cycling",
+    "description": "Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.",
+    "robots": {
+      "index": "noindex",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "og_locale": "nl_NL",
+    "og_type": "article",
+    "og_title": "Wielershirt Bedrukken & Wielerkleding Ontwerpen | 36 Cycling",
+    "og_description": "Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.",
+    "og_url": "https://rondevanrotterdam.nl/nl/custom-teamwear/",
+    "og_site_name": "Just Deploy It!",
+    "article_modified_time": "2026-10-14T15:48:12+00:00",
+    "og_image": [
+      {
+        "width": 565,
+        "height": 400,
+        "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Geschatte leestijd": "5 minuten"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/",
+          "url": "https://rondevanrotterdam.nl/nl/custom-teamwear/",
+          "name": "Wielershirt Bedrukken & Wielerkleding Ontwerpen | 36 Cycling",
+          "isPartOf": {
+            "@id": "https://rondevanrotterdam.nl/nl/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/#primaryimage"
+          },
+          "image": {
+            "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/#primaryimage"
+          },
+          "thumbnailUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg",
+          "datePublished": "2026-08-24T18:15:21+00:00",
+          "dateModified": "2026-10-14T15:48:12+00:00",
+          "description": "Wielershirt bedrukken of wielerkleding ontwerpen? Bij 36 Cycling ontwerp je custom teamkleding met onze 3D tool. Vanaf 1 stuk, levering in 3-4 weken. Vraag gratis offerte aan.",
+          "breadcrumb": {
+            "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/#breadcrumb"
+          },
+          "inLanguage": "nl-NL",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://rondevanrotterdam.nl/nl/custom-teamwear/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "nl-NL",
+          "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/#primaryimage",
+          "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg",
+          "contentUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/08/bigbutton-wielerkleding.jpg"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rondevanrotterdam.nl/nl/custom-teamwear/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rondevanrotterdam.nl/nl/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Custom Teamwear"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rondevanrotterdam.nl/nl/#website",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "name": "Just Deploy It!",
+          "description": "",
+          "publisher": {
+            "@id": "https://rondevanrotterdam.nl/nl/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rondevanrotterdam.nl/nl/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://rondevanrotterdam.nl/nl/#organization",
+          "name": "Just Deploy It!",
+          "url": "https://rondevanrotterdam.nl/nl/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "nl-NL",
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/",
+            "url": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "contentUrl": "https://rondevanrotterdam.nl/wp-content/uploads/2026/07/36_logo-wit-lines.png",
+            "width": 500,
+            "height": 514,
+            "caption": "Just Deploy It!"
+          },
+          "image": {
+            "@id": "https://rondevanrotterdam.nl/nl/#/schema/logo/image/"
+          }
+        }
+      ]
+    }
+  },
+  "_links": {
+    "self": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/comments?post=1980"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 16,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 6458,
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980/revisions/6458"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/media?parent=1980"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://rondevanrotterdam.nl/nl/wp-json/wp/v2/pages/1980"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

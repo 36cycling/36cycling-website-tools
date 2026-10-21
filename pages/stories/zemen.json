@@ -1,0 +1,61 @@
+{
+  "slug": "zemen",
+  "seo": {
+    "title": "Zemen in wielerbroeken",
+    "metaDescription": "Wat is de best zeem voor jouw wielerbroek?"
+  },
+  "hero": {
+    "src": "https://www.36cycling.com/media/wjxlqelu/zemen-wielerbroeken.jpg",
+    "title": "Dit moet je weten over fietszemen"
+  },
+  "rows": [
+    [
+      {
+        "type": "text",
+        "html": "<p>Als je lekker wilt fietsen, is het belangrijk om een goed zeem in je broek te hebben. Het zeem zorgt ervoor dat je niet ongemakkelijk zit tijdens het fietsen. Maar wat is een zeem eigenlijk en welke moet je kiezen? 36 Cycling legt het je eenvoudig uit in deze story. We vertellen je ook over de drie soorten zemen die in onze broeken kunnen worden verwerkt:</p>\n<ul>\n<li>Pro lijn: PARIS HP</li>\n<li>Standaard lijn: DOLOMITI</li>\n<li>Off-road: ENDURANCE JOY.</li>\n</ul>\n<p>De zeem vermindert de druk op je zitvlak en biedt comfort tijdens het fietsen, en bestaat meestal uit schuim of gel die zich aanpast aan de vorm van je lichaam. In tegenstelling tot een normale fietsbroek zonder extra voering, biedt een fietszeem specifiek gerichte demping en bescherming. Bovendien zorgen zemen voor vochtregulatie en hebben ze ademend vermogen, wat helpt om je droog en comfortabel te houden op de fiets.</p>\n<p>Om de juiste fietszeem te kiezen, moet je je rijstijl overwegen (bijvoorbeeld racefiets vs. mountainbike) en de duur van je ritten. De racefiets vraagt een dunner, beter ademend zeem, terwijl voor de mountainbike een dikker zeem met extra demping en flexibiliteit is gewenst voor een comfortabele rit over oneffen terrein. Langdurige ritten vereisen een zeem met uitgebreide demping en goede vochtregulatie om comfort te waarborgen.</p>\n<p>&nbsp;</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/r2ldmyp1/zemen-gids-4x4.jpg"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p><strong>Pro lijn: PARIS HP</strong></p>\n<p>De PARIS HP is een zeem voor fietsers die op zoek zijn naar geavanceerde bescherming en comfort. De hoogwaardige inserts met hoge dichtheid in de heup- en perineumzone zorgen voor uitstekende demping en comfort, essentieel voor lange ritten op de weg. Het middenkanaal is antropometrisch ontwerpen en zorgt voor minder druk op de plasbuis, en dat is goed voor de bloedsomloop.</p>\n<p>De zeem is zo gemaakt dat hij heel goed past en je stevig op je zadel blijft zitten, zonder dat je gaat schuiven. De kleine gaatjes bovenop zorgen ervoor dat de lucht er goed doorheen kan, waardoor het minder warm en zweterig wordt. Deze kenmerken maken de PARIS HP-zeem bijzonder geschikt voor wegfietsen door het verbeterde comfort en de geoptimaliseerde prestaties voor lange ritten.</p>\n<p>&nbsp;</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/4lblwo03/paris-hp.jpg"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p><strong>Standaard lijn: DOLOMITI</strong></p>\n<p>De DOLOMITI-zeem is een standaardkeuze voor fietsers die regelmatig de weg op gaan. De zeem is van hoogwaardige kwaliteit, ontworpen voor ritten tot over de 6 uur. Dat de zeem is opgebouwd uit verschillende lagen, zorgt voor een goede balans tussen demping en ondersteuning. Met een totale dikte van 16 mm biedt de zeem voldoende demping zonder onnodige bulk, wat zorgt voor een comfortabele zitervaring.</p>\n<p>De eerste laag heeft gaatjes erin, wat zorgt voor een zacht gevoel in contact met de huid en verbetert de ventilatie. De tweede laag biedt effectieve demping door trillingen van het zadel te verminderen, wat bijdraagt aan een comfortabele rit door de absorptie van schokken en vibraties. Deze eigenschappen maken de DOLOMITI een betrouwbare keuze voor fietsen op de weg.</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/2bgnhxmf/dolomiti-cesen.jpg"
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "html": "<p><strong>Off-Road: ENDURANCE JOY</strong></p>\n<p>Voor mountainbikers en off-track fietsers die over ruw terrein gaan, is de ENDURANCE JOY-zeem. De zeem is anatomisch gevormd, wat zorgt voor een nauwkeurige pasvorm en optimale bescherming tijdens off-track ritten, waar veranderende omstandigheden extra ondersteuning vereisen. De high-density zeem biedt robuuste bescherming en demping, essentieel voor de impact en trillingen die gepaard gaan met off-road fietsen.</p>\n<p>De zeem biedt uitgebreide bescherming over de bekkenrotatiezone, wat cruciaal is voor comfort tijdens lange ritten en op ruig terrein. Het middenkanaal vermindert de druk op de plasbuis, wat bijdraagt aan langdurig comfort op ruige paden. De zeem is gemaakt van een hoogwaardige stofmix, wat zorgt voor snelle droging en warmte afvoer. Deze kenmerken maken de ENDURANCE JOY-zeem ideaal voor off-track fietsen.</p>\n<p>Kies de juiste zeem voor een comfortabele rit. Of je nu een racefiets of mountainbike hebt, zorg ervoor dat de demping en ademend vermogen van het zeem passen bij jouw manier van fietsen en hoelang je onderweg bent. Zo fiets je veel prettiger en voorkom je ongemak!</p>"
+      },
+      {
+        "type": "image",
+        "src": "https://www.36cycling.com/media/1knnqyi2/endurance-joy.jpg"
+      }
+    ]
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/stories/zemen/",
+    "to": "https://rondevanrotterdam.nl/nl/stories/zemen/"
+  },
+  "status": {
+    "extracted": true,
+    "built": false
+  }
+}

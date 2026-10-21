@@ -1,0 +1,52 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-speed/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Speed wielerbroek ontwerpen en bedrukken",
+    "metaDescription": "Speed wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Speed wielerbroek ontwerpen en bedrukken",
+    "ogDescription": "Speed wielerbroek voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "wielerbroek-speed"
+  },
+  "headings": {
+    "h1": "Wielerbroek Speed",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "Mesh bovenstuk",
+    "Coolmax gripperband",
+    "Compressie lycra zijpanelen",
+    "Optie standaard Dolomiti of Pro Elastic Interface zeem"
+  ],
+  "contentHtml": "<h1>Wielerbroek Speed</h1>\n<p>De snit van de Speed wielerbroek volgt de ergonomie van bil en bovenbeen in een fietshouding, waardoor de broek in elke beenpositie optimaal aansluit. De combinatie van materialen maken dit een topmodel bib shorts die geschikt is op het allerhoogste niveau. De broekspijpen zijn afgewerkt met een band met gel gripper die de broek comfortabel op zijn plek houden.</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>Mesh bovenstuk</li>\n<li>Coolmax gripperband</li>\n<li>Compressie lycra zijpanelen</li>\n<li>Optie standaard Dolomiti of Pro Elastic Interface zeem</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/wielerbroek-speed.jpg",
+    "alt": "Pro wielerbroek bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/wielerbroek-speed/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/wielerbroek-speed/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

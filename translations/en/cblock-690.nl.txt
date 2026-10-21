@@ -1,0 +1,11 @@
+@title: Single Product - Contact CTA
+@slug: single-product-contact-cta
+@path: /nl/ct_content_block/single-product-contact-cta/
+@yoast_title: 
+@yoast_metadesc: 
+@yoast_focuskw: 
+
+=== 1
+Liever in een eigen ontwerp?
+=== 2
+Neem contact op

@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/windjack-montreal/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Windjack - Montreal ontwerpen en bedrukken",
+    "metaDescription": "Windjack - Montreal voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "ogTitle": "Windjack - Montreal ontwerpen en bedrukken",
+    "ogDescription": "Windjack - Montreal voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.",
+    "slug": "windjack-montreal"
+  },
+  "headings": {
+    "h1": "Windjack - Montreal",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [],
+  "contentHtml": "<h1>Windjack - Montreal</h1>\n<p>Dit windjack bestaat uit wat meerdere lagen en heeft daarmee ook meerdere functies. Het ademt beter, beschermt goed tegen de kou en houdt je lange tijd droog. Hiermee is dit jack ook geschikt als een extra laag over bijvoorbeeld een All Season Jack. Desondanks is het ook nog redelijk klein te maken om in je achterzak mee te nemen. Lange mouw / Korte mouw is beide mogelijk.</p>\n<h2>Eigenschappen</h2>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/fotos/windjack-montreal.jpg",
+    "alt": "body voor wielrennen bedrukken"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/windjack-montreal/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/windjack-montreal/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "source": {
+    "url": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-prestige/",
+    "cms": "Umbraco",
+    "crawledAt": "2026-08-24"
+  },
+  "parentSlug": "teamkleding-collectie",
+  "seo": {
+    "title": "Prestige wielershirt ontwerpen en bedrukken",
+    "metaDescription": "Prestige fietsshirt voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "ogTitle": "Prestige wielershirt ontwerpen en bedrukken",
+    "ogDescription": "Prestige fietsshirt voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.",
+    "slug": "wielershirt-prestige"
+  },
+  "headings": {
+    "h1": "Wielershirt Prestige",
+    "sections": [
+      "Eigenschappen"
+    ]
+  },
+  "features": [
+    "3 achterzakken",
+    "Gel gripper",
+    "Lange \"blinde\" rits",
+    "Lage kraag",
+    "clean-cut mouwen"
+  ],
+  "contentHtml": "<h1>Wielershirt Prestige</h1>\n<p>De Prestige-lijn bestaat voor een groot gedeelte uit luchtige en zeer elastische 4-way stretch stof van een speciale vezel die ontwikkeld is om het lichaam koel te houden en een comfortabel gevoel te geven. Rondom de schouders en armen gebruiken we 3D aero stof met een gripper erin vewerkt, waardoor de mouw mooi op z'n plek blijft. Een wielershirt gemaakt om in te presteren.</p>\n<h2>Eigenschappen</h2>\n<ul>\n<li>3 achterzakken</li>\n<li>Gel gripper</li>\n<li>Lange \"blinde\" rits</li>\n<li>Lage kraag</li>\n<li>clean-cut mouwen</li>\n</ul>\n<p>Klik voor de maattabel: <strong><a rel=\"noopener\" href=\"/downloads/maattabel-dames-cycling.pdf\" target=\"_blank\">Dames</a> | <a rel=\"noopener\" href=\"/downloads/maattabel-heren-cycling.pdf\" target=\"_blank\">Heren</a></strong></p>\n<p><br><a style=\"margin-top: 10px;\" href=\"/nl/offerteaanvraag/\" title=\"offerteaanvraag\" class=\"tile__btn btn btn-black\">Offerte aanvragen</a>&nbsp; &nbsp;<a style=\"margin-top: 10px;\" rel=\"noopener\" href=\"https://designer.36cycling.com/\" target=\"_blank\" title=\"Wielerkleding Ontwerpen\" class=\"tile__btn btn btn-black\">Start ontwerp</a></p>",
+  "image": {
+    "src": "https://www.36cycling.com/media/dopdwf22/wielershirt-prestige.jpg",
+    "alt": "wielershirt eigen ontwerp"
+  },
+  "assets": [
+    {
+      "label": "Dames",
+      "url": "https://www.36cycling.com/downloads/maattabel-dames-cycling.pdf"
+    },
+    {
+      "label": "Heren",
+      "url": "https://www.36cycling.com/downloads/maattabel-heren-cycling.pdf"
+    }
+  ],
+  "redirect": {
+    "from": "https://www.36cycling.com/nl/teamkleding-collectie/wielershirt-prestige/",
+    "to": "https://rondevanrotterdam.nl/nl/teamkleding-collectie/wielershirt-prestige/"
+  },
+  "status": {
+    "extracted": true,
+    "mediaUploaded": true,
+    "pageBuilt": true,
+    "verified": false
+  }
+}

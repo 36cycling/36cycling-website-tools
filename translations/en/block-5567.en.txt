@@ -1,0 +1,10 @@
+@title: Contactblok onderaan (EN)
+
+=== 1
+Questions?
+=== 2
+Feel free to ask!
+=== 3
+We are happy to help if you have any questions. Send us an e-mail or fill in the contact form and we will answer your question as soon as possible.
+=== 4
+Contact info

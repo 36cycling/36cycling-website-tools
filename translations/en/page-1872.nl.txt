@@ -1,0 +1,21 @@
+@title: Voetbalbroek / sportbroek
+@slug: voetbalbroek-sportbroek
+@path: /nl/sportkleding-collectie/voetbalbroek-sportbroek/
+@yoast_title: Voetbalbroek / sportbroek ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Voetbalbroek / sportbroek voor je team, bedrijf of evenement. Snel geleverd en volledig te ontwerpen en bedrukken in eigen design.
+@yoast_focuskw: 
+
+=== 1
+sportkleding ontwerpen en bedrukken
+=== 2
+Voetbalbroek / sportbroek
+=== 3
+Onze voetbalbroek is ontworpen voor ultieme bewegingsvrijheid en comfort tijdens elke training of wedstrijd. Gemaakt van lichtgewicht, ademend materiaal dat zweet snel afvoert, blijf je droog en gefocust, zelfs tijdens intensieve inspanningen. De elastische tailleband zorgt voor een perfecte pasvorm, terwijl het tijdloze design past bij elke sportoutfit.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

@@ -1,0 +1,2809 @@
+[
+  {
+    "source": "/nl/teamkleding/",
+    "target": "/nl/teamkleding-collectie/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Dun (94 w), zelfde onderwerp"
+  },
+  {
+    "source": "/nl/offerte-aanvragen/",
+    "target": "/nl/offerteaanvraag/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Dubbele offertepagina"
+  },
+  {
+    "source": "/nl/design-aanvraag/",
+    "target": "/nl/offerteaanvraag/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Dubbele offertepagina"
+  },
+  {
+    "source": "/nl/design/",
+    "target": "/nl/wielerkleding-ontwerpen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Dun (54 w)"
+  },
+  {
+    "source": "/nl/landingspagina/",
+    "target": "/nl/wielerkleding-ontwerpen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Zelfde title als oude ontwerppagina"
+  },
+  {
+    "source": "/nl/bidon-bedrukken/",
+    "target": "/nl/custom-teamwear/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Dun (25 w)"
+  },
+  {
+    "source": "/nl/stories/zemen-reservekopie/",
+    "target": "/nl/stories/zemen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Kopie van story"
+  },
+  {
+    "source": "/nl/stories/wassen-reservekopie/",
+    "target": "/nl/stories/wielerkleding-wassen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Kopie van story"
+  },
+  {
+    "source": "/nl/tools/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne toolpagina, hoort niet in Google"
+  },
+  {
+    "source": "/nl/export/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne datadump (12.539 w)"
+  },
+  {
+    "source": "/nl/import/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne toolpagina"
+  },
+  {
+    "source": "/nl/voorraad/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne datadump (13.949 w)"
+  },
+  {
+    "source": "/nl/talen/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne toolpagina"
+  },
+  {
+    "source": "/nl/migratie/",
+    "target": "",
+    "code": 410,
+    "regex": false,
+    "note": "410: Interne datadump (15.064 w)"
+  },
+  {
+    "source": "/custom-teamwear/wielerkleding-bedrukken/",
+    "target": "/nl/wielerkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude geneste URL (staat nog in oude sitemap)"
+  },
+  {
+    "source": "/custom-teamwear/sportkleding-bedrukken/",
+    "target": "/nl/sportkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude geneste URL"
+  },
+  {
+    "source": "/custom-teamwear/assortiment-teamkleding/",
+    "target": "/nl/teamkleding-collectie/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude geneste URL"
+  },
+  {
+    "source": "/stories/zemen-reservekopie/",
+    "target": "/nl/stories/zemen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/stories/zemen-reservekopie/)"
+  },
+  {
+    "source": "/stories/wassen-reservekopie/",
+    "target": "/nl/stories/wielerkleding-wassen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/stories/wassen-reservekopie/)"
+  },
+  {
+    "source": "/wielerkleding/",
+    "target": "/nl/wielerkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)"
+  },
+  {
+    "source": "/wielerkleding/hoe-werkt-het/",
+    "target": "/nl/wielerkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)"
+  },
+  {
+    "source": "/wielerkleding/teamkleding-collectie/",
+    "target": "/nl/teamkleding-collectie/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)"
+  },
+  {
+    "source": "/wielerkleding/wielerkleding-bedrukken/",
+    "target": "/nl/wielerkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)"
+  },
+  {
+    "source": "/wielerkleding/wielerkleding-ontwerpen/",
+    "target": "/nl/wielerkleding-ontwerpen/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)"
+  },
+  {
+    "source": "/sportkleding/",
+    "target": "/nl/sportkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)"
+  },
+  {
+    "source": "/teamkleding/",
+    "target": "/nl/teamkleding-collectie/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding/)"
+  },
+  {
+    "source": "/teamkleding/wielerkleding/",
+    "target": "/nl/wielerkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/wielerkleding-bedrukken/)"
+  },
+  {
+    "source": "/teamkleding/sportkleding/",
+    "target": "/nl/sportkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/sportkleding-bedrukken/)"
+  },
+  {
+    "source": "/teamkleding/bekijk-onze-collectie/",
+    "target": "/nl/teamkleding-collectie/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/teamkleding-collectie/)"
+  },
+  {
+    "source": "/snel-wielershirt-bedrukken/",
+    "target": "/nl/snel-wielershirt-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)"
+  },
+  {
+    "source": "/snel/",
+    "target": "/nl/snel-wielershirt-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "voorstel: Oude URL zonder /nl/ (oud doel: /nl/snel-wielershirt-bedrukken/)"
+  },
+  {
+    "source": "/nl/design-samenwerkingen/",
+    "target": "/nl/wielerkleding-ontwerpen/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/promotions/",
+    "target": "/nl/sportkleding-bedrukken/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/36-cycling-circle-basic/",
+    "target": "/nl/36-cycling-circle/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/36-cycling-circle-basic/bedankt/",
+    "target": "/nl/36-cycling-circle/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/circle/",
+    "target": "/nl/36-cycling-circle/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/36-cycling-circle/",
+    "target": "/nl/36-cycling-circle/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/orderstatus/",
+    "target": "/nl/mijn-account/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/bestelling-volgen/",
+    "target": "/nl/mijn-account/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/privacy/",
+    "target": "/nl/privacy/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/shop/cart/",
+    "target": "/nl/winkelwagen/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/shop/thankyou/",
+    "target": "/nl/shop/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/sitemap.xml",
+    "target": "/sitemap_index.xml",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/xml-sitemap/",
+    "target": "/sitemap_index.xml",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/xml-sitemap/",
+    "target": "/sitemap_index.xml",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
+    "source": "/nl/fietskleding/",
+    "target": "/nl/categorie/fietskleding/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietskleding"
+  },
+  {
+    "source": "/en/cycling-clothing/",
+    "target": "/en/category/cycling-clothing/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietskleding (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/",
+    "target": "/nl/categorie/fietskleding/heren/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Heren"
+  },
+  {
+    "source": "/en/cycling-clothing/men/",
+    "target": "/en/category/cycling-clothing/men/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Heren (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsbroeken/",
+    "target": "/nl/categorie/fietskleding/heren/fietsbroeken/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbroeken"
+  },
+  {
+    "source": "/en/cycling-clothing/men/men-s-legwear/",
+    "target": "/en/category/cycling-clothing/men/men-s-legwear/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbroeken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsbroeken/korte-fietsbroeken/",
+    "target": "/nl/categorie/fietskleding/heren/fietsbroeken/korte-fietsbroeken/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Korte Fietsbroeken"
+  },
+  {
+    "source": "/en/cycling-clothing/men/men-s-legwear/cycling-bib-shorts-men/",
+    "target": "/en/category/cycling-clothing/men/men-s-legwear/cycling-bib-shorts-men/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Korte Fietsbroeken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsbroeken/lange-fietsbroeken/",
+    "target": "/nl/categorie/fietskleding/heren/fietsbroeken/lange-fietsbroeken/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Lange Fietsbroeken"
+  },
+  {
+    "source": "/en/cycling-clothing/men/men-s-legwear/cycling-bib-tights-men/",
+    "target": "/en/category/cycling-clothing/men/men-s-legwear/cycling-bib-tights-men/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Lange Fietsbroeken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsshirts-heren/",
+    "target": "/nl/categorie/fietskleding/heren/fietsshirts-heren/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Heren"
+  },
+  {
+    "source": "/en/cycling-clothing/men/cycling-jerseys-men/",
+    "target": "/en/category/cycling-clothing/men/cycling-jerseys-men/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Heren (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-korte-mouw/",
+    "target": "/nl/categorie/fietskleding/heren/fietsshirts-heren/fietsshirts-korte-mouw/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Korte Mouw"
+  },
+  {
+    "source": "/en/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-short-sleeves/",
+    "target": "/en/category/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-short-sleeves/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Korte Mouw (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsshirts-heren/fietsshirts-lange-mouw/",
+    "target": "/nl/categorie/fietskleding/heren/fietsshirts-heren/fietsshirts-lange-mouw/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Lange Mouw"
+  },
+  {
+    "source": "/en/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-long-sleeves/",
+    "target": "/en/category/cycling-clothing/men/cycling-jerseys-men/cycling-jerseys-long-sleeves/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Lange Mouw (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/heren/fietsjacks/",
+    "target": "/nl/categorie/fietskleding/heren/fietsjacks/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsjacks"
+  },
+  {
+    "source": "/en/cycling-clothing/men/cycling-jackets/",
+    "target": "/en/category/cycling-clothing/men/cycling-jackets/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsjacks (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/",
+    "target": "/nl/categorie/fietskleding/dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/",
+    "target": "/en/category/cycling-clothing/ladies/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsbroeken/",
+    "target": "/nl/categorie/fietskleding/dames/fietsbroeken-dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbroeken"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-leg-wear/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-leg-wear/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbroeken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsbroeken/korte-fietsbroeken-dames/",
+    "target": "/nl/categorie/fietskleding/dames/fietsbroeken-dames/korte-fietsbroeken-dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Korte Fietsbroeken Dames"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Korte Fietsbroeken Dames (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsbroeken/lange-fietsbroeken-dames/",
+    "target": "/nl/categorie/fietskleding/dames/fietsbroeken-dames/lange-fietsbroeken-dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Lange Fietsbroeken Dames"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-tights/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-tights/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Lange Fietsbroeken Dames (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsshirts-dames/",
+    "target": "/nl/categorie/fietskleding/dames/fietsshirts-dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Dames"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-cycling-jerseys/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsshirts Dames (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/",
+    "target": "/nl/categorie/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames Fietsshirts Korte Mouw"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-short-sleeves/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-short-sleeves/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames Fietsshirts Korte Mouw (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-lange-mouw/",
+    "target": "/nl/categorie/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-lange-mouw/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames Fietsshirts Lange Mouw"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-long-sleeves/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-cycling-jerseys/ladies-cycling-jerseys-long-sleeves/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Dames Fietsshirts Lange Mouw (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/dames/fietsjacks-dames/",
+    "target": "/nl/categorie/fietskleding/dames/fietsjacks-dames/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsjacks Dames"
+  },
+  {
+    "source": "/en/cycling-clothing/ladies/ladies-cycling-jackets/",
+    "target": "/en/category/cycling-clothing/ladies/ladies-cycling-jackets/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsjacks Dames (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/",
+    "target": "/nl/categorie/fietskleding/accessoires/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Accessoires"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/",
+    "target": "/en/category/cycling-clothing/accessories/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Accessoires (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/fietsbrillen/",
+    "target": "/nl/categorie/fietskleding/accessoires/fietsbrillen/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbrillen"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/cycling-glasses/",
+    "target": "/en/category/cycling-clothing/accessories/cycling-glasses/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietsbrillen (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/fietssokken/",
+    "target": "/nl/categorie/fietskleding/accessoires/fietssokken/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietssokken"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/cycling-socks/",
+    "target": "/en/category/cycling-clothing/accessories/cycling-socks/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietssokken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/fiets-onderkleding/",
+    "target": "/nl/categorie/fietskleding/accessoires/fiets-onderkleding/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fiets Onderkleding"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/accessories/",
+    "target": "/en/category/cycling-clothing/accessories/base-layers/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fiets Onderkleding (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/fietshandschoenen/",
+    "target": "/nl/categorie/fietskleding/accessoires/fietshandschoenen/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietshandschoenen"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/cycling-gloves/",
+    "target": "/en/category/cycling-clothing/accessories/cycling-gloves/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Fietshandschoenen (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/overschoenen/",
+    "target": "/nl/categorie/fietskleding/accessoires/overschoenen/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Overschoenen"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/shoe-covers/",
+    "target": "/en/category/cycling-clothing/accessories/shoe-covers/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Overschoenen (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/arm-en-beenstukken/",
+    "target": "/nl/categorie/fietskleding/accessoires/arm-en-beenstukken/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Arm- en Beenstukken"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/arm-leg-warmers/",
+    "target": "/en/category/cycling-clothing/accessories/arm-leg-warmers/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Arm- en Beenstukken (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/wielerpetten-en-mutsen/",
+    "target": "/nl/categorie/fietskleding/accessoires/wielerpetten-en-mutsen/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Wielerpetten en Mutsen"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/hats-caps/",
+    "target": "/en/category/cycling-clothing/accessories/hats-caps/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Wielerpetten en Mutsen (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/sportkleding/",
+    "target": "/nl/categorie/fietskleding/accessoires/sportkleding/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Sportkleding"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/sportswear/",
+    "target": "/en/category/cycling-clothing/accessories/sportswear/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Sportkleding (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/tassen/",
+    "target": "/nl/categorie/fietskleding/accessoires/tassen/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Tassen"
+  },
+  {
+    "source": "/en/cycling-clothing/accessories/bags/",
+    "target": "/en/category/cycling-clothing/accessories/bags/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Tassen (EN)"
+  },
+  {
+    "source": "/nl/fietskleding/accessoires/36-accessoires/",
+    "target": "/nl/categorie/fietskleding/accessoires/36-accessoires/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie 36 Accessoires"
+  },
+  {
+    "source": "/nl/fietskleding/speed-on-wheels/",
+    "target": "/nl/categorie/fietskleding/speed-on-wheels/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Speed on Wheels"
+  },
+  {
+    "source": "/nl/fietskleding/volt-collection/",
+    "target": "/nl/categorie/fietskleding/volt-collection/",
+    "code": 301,
+    "regex": false,
+    "note": "categorie Volt Collection"
+  },
+  {
+    "source": "/nl/fietsbrillen/",
+    "target": "/nl/categorie/fietskleding/accessoires/fietsbrillen/",
+    "code": 301,
+    "regex": false,
+    "note": "oude landingspagina fietsbrillen"
+  },
+  {
+    "source": "/nl/speedonwheels/",
+    "target": "/nl/categorie/fietskleding/speed-on-wheels/",
+    "code": 301,
+    "regex": false,
+    "note": "oude collectiepagina Speed on Wheels"
+  },
+  {
+    "source": "/nl/kask-helmen/",
+    "target": "/nl/shop/",
+    "code": 301,
+    "regex": false,
+    "note": "oude categorie helmen (geen helmen meer)"
+  },
+  {
+    "source": "^/nl/shop/175638(/.*)?$",
+    "target": "/nl/categorie/fietskleding/dames/fietsbroeken-dames/korte-fietsbroeken-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-totalgrip-zwart (niet in nieuwe shop)"
+  },
+  {
+    "source": "^/en/shop/175638(/.*)?$",
+    "target": "/en/category/cycling-clothing/ladies/ladies-leg-wear/ladies-bib-shorts/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-totalgrip-zwart (EN, niet in nieuwe shop)"
+  },
+  {
+    "source": "^/nl/shop/161492(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-t-shirt-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-t-shirt-wit"
+  },
+  {
+    "source": "^/en/shop/161492(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-t-shirt-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-t-shirt-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/161484(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-t-shirt-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-t-shirt-zwart"
+  },
+  {
+    "source": "^/en/shop/161484(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-t-shirt-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-t-shirt-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/161475(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-hoodie-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-hoodie-wit"
+  },
+  {
+    "source": "^/en/shop/161475(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-hoodie-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-hoodie-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/161466(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-hoodie-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-hoodie-zwart"
+  },
+  {
+    "source": "^/en/shop/161466(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-hoodie-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-hoodie-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/161518(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-sokken-de-snelste-sok-ter-wereld/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-de-snelste-sok-ter-wereld"
+  },
+  {
+    "source": "^/en/shop/161518(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-socks-the-fastest-sock-in-the-world/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-de-snelste-sok-ter-wereld (EN)"
+  },
+  {
+    "source": "^/nl/shop/161509(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-sokken-aero-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-aero-wit"
+  },
+  {
+    "source": "^/en/shop/161509(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-aero-socks-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-aero-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/161500(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-sokken-aero-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-aero-zwart"
+  },
+  {
+    "source": "^/en/shop/161500(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-aero-socks-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-aero-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/159728(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-sokken-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-wit"
+  },
+  {
+    "source": "^/en/shop/159728(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-socks-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/159709(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-sokken-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-zwart"
+  },
+  {
+    "source": "^/en/shop/159709(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-socks-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-sokken-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/159737(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-wielerbroek-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielerbroek-zwart"
+  },
+  {
+    "source": "^/en/shop/159737(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-bib-shorts-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielerbroek-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/159688(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-jack-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-jack-zwart"
+  },
+  {
+    "source": "^/en/shop/159688(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-jacket-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-jack-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/159700(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-jack-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-jack-wit"
+  },
+  {
+    "source": "^/en/shop/159700(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-jacket-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-jack-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/6492(/.*)?$",
+    "target": "/nl/shop/36-ipad-hoes-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product 36-ipad-hoes-zwart"
+  },
+  {
+    "source": "^/en/shop/6492(/.*)?$",
+    "target": "/en/shop/36-ipad-case-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product 36-ipad-hoes-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/157405(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-oranje-wielershirt/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-oranje-wielershirt"
+  },
+  {
+    "source": "^/en/shop/157405(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-orange-cycling-jersey/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-oranje-wielershirt (EN)"
+  },
+  {
+    "source": "^/nl/shop/160124(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-wielershirt-elite-wit-oranje/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-wit-oranje"
+  },
+  {
+    "source": "^/en/shop/160124(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-elite-cycling-jersey-white-orange/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-wit-oranje (EN)"
+  },
+  {
+    "source": "^/nl/shop/160133(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-wielershirt-elite-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-zwart"
+  },
+  {
+    "source": "^/en/shop/160133(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-elite-cycling-jersey-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/160110(/.*)?$",
+    "target": "/nl/shop/speed-on-wheels-wielershirt-elite-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-wit"
+  },
+  {
+    "source": "^/en/shop/160110(/.*)?$",
+    "target": "/en/shop/speed-on-wheels-elite-cycling-jersey-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product speed-on-wheels-wielershirt-elite-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/6550(/.*)?$",
+    "target": "/nl/shop/the-cyclist-bag-zwart-oranje/",
+    "code": 301,
+    "regex": true,
+    "note": "product the-cyclist-bag-zwart-oranje"
+  },
+  {
+    "source": "^/en/shop/6550(/.*)?$",
+    "target": "/en/shop/the-cyclist-bag-black-orange/",
+    "code": 301,
+    "regex": true,
+    "note": "product the-cyclist-bag-zwart-oranje (EN)"
+  },
+  {
+    "source": "^/nl/shop/55812(/.*)?$",
+    "target": "/nl/shop/mtb-shorts-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product mtb-shorts-zwart"
+  },
+  {
+    "source": "^/en/shop/55812(/.*)?$",
+    "target": "/en/shop/mtb-shorts-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product mtb-shorts-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6477(/.*)?$",
+    "target": "/nl/shop/pro-triathlonpak-heren-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-triathlonpak-heren-zwart"
+  },
+  {
+    "source": "^/en/shop/6477(/.*)?$",
+    "target": "/en/shop/pro-tri-suit-men-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-triathlonpak-heren-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6557(/.*)?$",
+    "target": "/nl/shop/underhelmet-muts-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product underhelmet-muts-zwart"
+  },
+  {
+    "source": "^/en/shop/6557(/.*)?$",
+    "target": "/en/shop/underhelmet-hat-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product underhelmet-muts-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/86965(/.*)?$",
+    "target": "/nl/shop/wielerpet-zwart-thrtsx/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-zwart-thrtsx"
+  },
+  {
+    "source": "^/en/shop/86965(/.*)?$",
+    "target": "/en/shop/cycling-cap-black-thrtsx/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-zwart-thrtsx (EN)"
+  },
+  {
+    "source": "^/nl/shop/173049(/.*)?$",
+    "target": "/nl/shop/wielerpet-neon-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-neon-geel"
+  },
+  {
+    "source": "^/en/shop/173049(/.*)?$",
+    "target": "/en/shop/cycling-cap-neon-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-neon-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/173048(/.*)?$",
+    "target": "/nl/shop/wielerpet-donkerblauw-neon-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-donkerblauw-neon-geel"
+  },
+  {
+    "source": "^/en/shop/173048(/.*)?$",
+    "target": "/en/shop/cycling-cap-navy-blue-neon-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-donkerblauw-neon-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/173047(/.*)?$",
+    "target": "/nl/shop/wielerpet-zwart-neon-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-zwart-neon-geel"
+  },
+  {
+    "source": "^/en/shop/173047(/.*)?$",
+    "target": "/en/shop/cycling-cap-black-neon-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerpet-zwart-neon-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/6532(/.*)?$",
+    "target": "/nl/shop/running-jacket-man-36-zwart-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product running-jacket-man-36-zwart-blauw"
+  },
+  {
+    "source": "^/en/shop/6532(/.*)?$",
+    "target": "/en/shop/running-jacket-men-36-black-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product running-jacket-man-36-zwart-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/6533(/.*)?$",
+    "target": "/nl/shop/running-jacket-vrouw-36-zwart-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product running-jacket-vrouw-36-zwart-blauw"
+  },
+  {
+    "source": "^/en/shop/6533(/.*)?$",
+    "target": "/en/shop/running-jacket-women-36-black-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product running-jacket-vrouw-36-zwart-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/85532(/.*)?$",
+    "target": "/nl/shop/beenstukken-aqua-seal-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product beenstukken-aqua-seal-zwart"
+  },
+  {
+    "source": "^/en/shop/85532(/.*)?$",
+    "target": "/en/shop/leg-warmers-aqua-seal-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product beenstukken-aqua-seal-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52318(/.*)?$",
+    "target": "/nl/shop/armstukken-aqua-seal-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product armstukken-aqua-seal-zwart"
+  },
+  {
+    "source": "^/en/shop/52318(/.*)?$",
+    "target": "/en/shop/arm-warmers-aqua-seal-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product armstukken-aqua-seal-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6522(/.*)?$",
+    "target": "/nl/shop/beenstukken-36-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product beenstukken-36-zwart"
+  },
+  {
+    "source": "^/en/shop/6522(/.*)?$",
+    "target": "/en/shop/leg-warmers-36-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product beenstukken-36-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6521(/.*)?$",
+    "target": "/nl/shop/armstukken-36-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product armstukken-36-zwart"
+  },
+  {
+    "source": "^/en/shop/6521(/.*)?$",
+    "target": "/en/shop/arm-warmers-36-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product armstukken-36-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/161364(/.*)?$",
+    "target": "/nl/shop/teenwarmers-zwart-neopreen/",
+    "code": 301,
+    "regex": true,
+    "note": "product teenwarmers-zwart-neopreen"
+  },
+  {
+    "source": "^/en/shop/161364(/.*)?$",
+    "target": "/en/shop/toe-covers-black-neoprene/",
+    "code": 301,
+    "regex": true,
+    "note": "product teenwarmers-zwart-neopreen (EN)"
+  },
+  {
+    "source": "^/nl/shop/52253(/.*)?$",
+    "target": "/nl/shop/teenwarmers-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product teenwarmers-zwart"
+  },
+  {
+    "source": "^/en/shop/52253(/.*)?$",
+    "target": "/en/shop/toe-covers-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product teenwarmers-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52233(/.*)?$",
+    "target": "/nl/shop/waterdichte-overschoenen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product waterdichte-overschoenen-zwart"
+  },
+  {
+    "source": "^/en/shop/52233(/.*)?$",
+    "target": "/en/shop/waterproof-shoe-covers-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product waterdichte-overschoenen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/111699(/.*)?$",
+    "target": "/nl/shop/neopreen-overschoenen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product neopreen-overschoenen-zwart"
+  },
+  {
+    "source": "^/en/shop/111699(/.*)?$",
+    "target": "/en/shop/neoprene-shoe-covers-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product neopreen-overschoenen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52246(/.*)?$",
+    "target": "/nl/shop/zipless-neopreen-overschoenen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product zipless-neopreen-overschoenen-zwart"
+  },
+  {
+    "source": "^/en/shop/52246(/.*)?$",
+    "target": "/en/shop/zipless-neoprene-shoe-covers-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product zipless-neopreen-overschoenen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6538(/.*)?$",
+    "target": "/nl/shop/winter-handschoen-2018-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product winter-handschoen-2018-zwart"
+  },
+  {
+    "source": "^/en/shop/6538(/.*)?$",
+    "target": "/en/shop/winter-glove-2018-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product winter-handschoen-2018-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/111544(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-roze/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-roze"
+  },
+  {
+    "source": "^/en/shop/111544(/.*)?$",
+    "target": "/en/shop/cycling-glove-pink/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-roze (EN)"
+  },
+  {
+    "source": "^/nl/shop/111587(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-navy/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-navy"
+  },
+  {
+    "source": "^/en/shop/111587(/.*)?$",
+    "target": "/en/shop/cycling-glove-navy/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-navy (EN)"
+  },
+  {
+    "source": "^/nl/shop/111559(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-blauw"
+  },
+  {
+    "source": "^/en/shop/111559(/.*)?$",
+    "target": "/en/shop/cycling-glove-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/111594(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-groen"
+  },
+  {
+    "source": "^/en/shop/111594(/.*)?$",
+    "target": "/en/shop/cycling-glove-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/111573(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-geel"
+  },
+  {
+    "source": "^/en/shop/111573(/.*)?$",
+    "target": "/en/shop/cycling-glove-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/111601(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-oranje/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-oranje"
+  },
+  {
+    "source": "^/en/shop/111601(/.*)?$",
+    "target": "/en/shop/cycling-glove-orange/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-oranje (EN)"
+  },
+  {
+    "source": "^/nl/shop/111275(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-rood/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-rood"
+  },
+  {
+    "source": "^/en/shop/111275(/.*)?$",
+    "target": "/en/shop/cycling-glove-red/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-rood (EN)"
+  },
+  {
+    "source": "^/nl/shop/111551(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-wit"
+  },
+  {
+    "source": "^/en/shop/111551(/.*)?$",
+    "target": "/en/shop/cycling-glove-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/111580(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-grijs/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-grijs"
+  },
+  {
+    "source": "^/en/shop/111580(/.*)?$",
+    "target": "/en/shop/cycling-glove-grey/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-grijs (EN)"
+  },
+  {
+    "source": "^/nl/shop/111566(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart"
+  },
+  {
+    "source": "^/en/shop/111566(/.*)?$",
+    "target": "/en/shop/cycling-glove-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6539(/.*)?$",
+    "target": "/nl/shop/voorjaarshandschoen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product voorjaarshandschoen-zwart"
+  },
+  {
+    "source": "^/en/shop/6539(/.*)?$",
+    "target": "/en/shop/spring-glove-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product voorjaarshandschoen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52260(/.*)?$",
+    "target": "/nl/shop/windproof-handschoenen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product windproof-handschoenen-zwart"
+  },
+  {
+    "source": "^/en/shop/52260(/.*)?$",
+    "target": "/en/shop/windproof-gloves-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product windproof-handschoenen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/109810(/.*)?$",
+    "target": "/nl/shop/winter-handschoenen-sipora-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product winter-handschoenen-sipora-zwart"
+  },
+  {
+    "source": "^/en/shop/109810(/.*)?$",
+    "target": "/en/shop/winter-gloves-sipora-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product winter-handschoenen-sipora-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/158137(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-zwart-direct-grip-carbon/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart-direct-grip-carbon"
+  },
+  {
+    "source": "^/en/shop/158137(/.*)?$",
+    "target": "/en/shop/cycling-glove-black-direct-grip-carbon/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart-direct-grip-carbon (EN)"
+  },
+  {
+    "source": "^/nl/shop/158110(/.*)?$",
+    "target": "/nl/shop/wielerhandschoen-zwart-direct-grip/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart-direct-grip"
+  },
+  {
+    "source": "^/en/shop/158110(/.*)?$",
+    "target": "/en/shop/cycling-glove-black-direct-grip/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerhandschoen-zwart-direct-grip (EN)"
+  },
+  {
+    "source": "^/nl/shop/100170(/.*)?$",
+    "target": "/nl/shop/mouwloos-ondershirt-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product mouwloos-ondershirt-wit"
+  },
+  {
+    "source": "^/en/shop/100170(/.*)?$",
+    "target": "/en/shop/sleeveless-base-layer-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product mouwloos-ondershirt-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/6531(/.*)?$",
+    "target": "/nl/shop/ondershirt-36-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product ondershirt-36-wit"
+  },
+  {
+    "source": "^/en/shop/6531(/.*)?$",
+    "target": "/en/shop/base-layer-36-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product ondershirt-36-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/6548(/.*)?$",
+    "target": "/nl/shop/sokken-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product sokken-zwart"
+  },
+  {
+    "source": "^/en/shop/6548(/.*)?$",
+    "target": "/en/shop/socks-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product sokken-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6546(/.*)?$",
+    "target": "/nl/shop/sokken-band-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product sokken-band-wit"
+  },
+  {
+    "source": "^/en/shop/6546(/.*)?$",
+    "target": "/en/shop/socks-band-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product sokken-band-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/172343(/.*)?$",
+    "target": "/nl/shop/fietsbril-nebula-transparant/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-nebula-transparant"
+  },
+  {
+    "source": "^/en/shop/172343(/.*)?$",
+    "target": "/en/shop/cycling-glasses-nebula-transparent/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-nebula-transparant (EN)"
+  },
+  {
+    "source": "^/nl/shop/55711(/.*)?$",
+    "target": "/nl/shop/fietsbril-transparant-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-transparant-wit"
+  },
+  {
+    "source": "^/en/shop/55711(/.*)?$",
+    "target": "/en/shop/cycling-glasses-transparent-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-transparant-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/55600(/.*)?$",
+    "target": "/nl/shop/fietsbril-revo-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-revo-zwart"
+  },
+  {
+    "source": "^/en/shop/55600(/.*)?$",
+    "target": "/en/shop/cycling-glasses-revo-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-revo-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/55591(/.*)?$",
+    "target": "/nl/shop/fietsbril-revo-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-revo-wit"
+  },
+  {
+    "source": "^/en/shop/55591(/.*)?$",
+    "target": "/en/shop/cycling-glasses-revo-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-revo-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/172339(/.*)?$",
+    "target": "/nl/shop/fietsbril-nebula-zwart-pink/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-nebula-zwart-pink"
+  },
+  {
+    "source": "^/en/shop/172339(/.*)?$",
+    "target": "/en/shop/cycling-glasses-nebula-black-pink/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-nebula-zwart-pink (EN)"
+  },
+  {
+    "source": "^/nl/shop/172334(/.*)?$",
+    "target": "/nl/shop/fietsbril-jade-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-jade-groen"
+  },
+  {
+    "source": "^/en/shop/172334(/.*)?$",
+    "target": "/en/shop/cycling-glasses-jade-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-jade-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/171101(/.*)?$",
+    "target": "/nl/shop/fietsbril-volt-neon-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-volt-neon-geel"
+  },
+  {
+    "source": "^/en/shop/171101(/.*)?$",
+    "target": "/en/shop/cycling-glasses-volt-neon-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-volt-neon-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/172335(/.*)?$",
+    "target": "/nl/shop/fietsbril-volt-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-volt-blauw"
+  },
+  {
+    "source": "^/en/shop/172335(/.*)?$",
+    "target": "/en/shop/cycling-glasses-volt-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbril-volt-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/135120(/.*)?$",
+    "target": "/nl/shop/wielersokken-dry-knit-22-cm-hoog-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielersokken-dry-knit-22-cm-hoog-zwart"
+  },
+  {
+    "source": "^/en/shop/135120(/.*)?$",
+    "target": "/en/shop/cycling-socks-dry-knit-22-cm-high-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielersokken-dry-knit-22-cm-hoog-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/135105(/.*)?$",
+    "target": "/nl/shop/wielersokken-dry-knit-22-cm-hoog-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielersokken-dry-knit-22-cm-hoog-wit"
+  },
+  {
+    "source": "^/en/shop/135105(/.*)?$",
+    "target": "/en/shop/cycling-socks-dry-knit-22-cm-high-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielersokken-dry-knit-22-cm-hoog-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/85109(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-marine-blauw-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-marine-blauw-dames"
+  },
+  {
+    "source": "^/en/shop/85109(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-navy-blue-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-marine-blauw-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/85099(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-rood-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-rood-dames"
+  },
+  {
+    "source": "^/en/shop/85099(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-red-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-rood-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/85089(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-kobaltblauw-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-kobaltblauw-dames"
+  },
+  {
+    "source": "^/en/shop/85089(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-cobalt-blue-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-kobaltblauw-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/58426(/.*)?$",
+    "target": "/nl/shop/aquazero-jack-zwart-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product aquazero-jack-zwart-dames"
+  },
+  {
+    "source": "^/en/shop/58426(/.*)?$",
+    "target": "/en/shop/aquazero-jacket-black-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product aquazero-jack-zwart-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/53665(/.*)?$",
+    "target": "/nl/shop/all-season-jack-slider-groen-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-groen-dames"
+  },
+  {
+    "source": "^/en/shop/53665(/.*)?$",
+    "target": "/en/shop/all-season-jacket-slider-green-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-groen-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/53659(/.*)?$",
+    "target": "/nl/shop/all-season-jack-slider-blauw-zwart-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-blauw-zwart-dames"
+  },
+  {
+    "source": "^/en/shop/53659(/.*)?$",
+    "target": "/en/shop/all-season-jacket-slider-blue-black-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-blauw-zwart-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/85069(/.*)?$",
+    "target": "/nl/shop/all-season-jack-zwart-grijs-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-zwart-grijs-dames"
+  },
+  {
+    "source": "^/en/shop/85069(/.*)?$",
+    "target": "/en/shop/all-season-jacket-black-grey-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-zwart-grijs-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/55532(/.*)?$",
+    "target": "/nl/shop/mouwloos-wielershirt-dames-licht-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product mouwloos-wielershirt-dames-licht-blauw"
+  },
+  {
+    "source": "^/en/shop/55532(/.*)?$",
+    "target": "/en/shop/sleeveless-cycling-jersey-women-light-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product mouwloos-wielershirt-dames-licht-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/58019(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-bordeaux-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-bordeaux-dames"
+  },
+  {
+    "source": "^/en/shop/58019(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-burgundy-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-bordeaux-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/49775(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-rood-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-rood-dames"
+  },
+  {
+    "source": "^/en/shop/49775(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-red-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-rood-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/49767(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-groen-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-groen-dames"
+  },
+  {
+    "source": "^/en/shop/49767(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-green-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-groen-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/49757(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-blauw-zwart-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-blauw-zwart-dames"
+  },
+  {
+    "source": "^/en/shop/49757(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-blue-black-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-blauw-zwart-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/60618(/.*)?$",
+    "target": "/nl/shop/pro-wielershirt-zwart-grijs-dames/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-wielershirt-zwart-grijs-dames"
+  },
+  {
+    "source": "^/en/shop/60618(/.*)?$",
+    "target": "/en/shop/pro-cycling-jersey-black-grey-women/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-wielershirt-zwart-grijs-dames (EN)"
+  },
+  {
+    "source": "^/nl/shop/52580(/.*)?$",
+    "target": "/nl/shop/lange-dames-fietsbroek-met-zeem-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-dames-fietsbroek-met-zeem-zwart"
+  },
+  {
+    "source": "^/en/shop/52580(/.*)?$",
+    "target": "/en/shop/women-s-bib-tights-with-chamois-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-dames-fietsbroek-met-zeem-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52407(/.*)?$",
+    "target": "/nl/shop/lange-dames-fietsbroek-zonder-zeem-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-dames-fietsbroek-zonder-zeem-zwart"
+  },
+  {
+    "source": "^/en/shop/52407(/.*)?$",
+    "target": "/en/shop/women-s-bib-tights-without-chamois-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-dames-fietsbroek-zonder-zeem-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6519(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-fragment-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-fragment-zwart"
+  },
+  {
+    "source": "^/en/shop/6519(/.*)?$",
+    "target": "/en/shop/women-s-bib-shorts-fragment-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-fragment-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/55539(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-marine-blauw-zonder-bretels/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-marine-blauw-zonder-bretels"
+  },
+  {
+    "source": "^/en/shop/55539(/.*)?$",
+    "target": "/en/shop/women-s-cycling-shorts-navy-blue-without-straps/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-marine-blauw-zonder-bretels (EN)"
+  },
+  {
+    "source": "^/nl/shop/6514(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-ecoracer-grijs-logo-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecoracer-grijs-logo-zwart"
+  },
+  {
+    "source": "^/en/shop/6514(/.*)?$",
+    "target": "/en/shop/women-s-bib-shorts-ecoracer-grey-logo-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecoracer-grijs-logo-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6502(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-ecoracer-lichtblauw-logo-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecoracer-lichtblauw-logo-zwart"
+  },
+  {
+    "source": "^/en/shop/6502(/.*)?$",
+    "target": "/en/shop/women-s-bib-shorts-ecoracer-light-blue-logo-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecoracer-lichtblauw-logo-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/54065(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-elements-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-elements-zwart"
+  },
+  {
+    "source": "^/en/shop/54065(/.*)?$",
+    "target": "/en/shop/women-s-bib-shorts-elements-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-elements-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/54076(/.*)?$",
+    "target": "/nl/shop/fietsbroek-dames-ecopower-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecopower-zwart"
+  },
+  {
+    "source": "^/en/shop/54076(/.*)?$",
+    "target": "/en/shop/women-s-bib-shorts-ecopower-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product fietsbroek-dames-ecopower-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6528(/.*)?$",
+    "target": "/nl/shop/regenjack-transparant-wit/",
+    "code": 301,
+    "regex": true,
+    "note": "product regenjack-transparant-wit"
+  },
+  {
+    "source": "^/en/shop/6528(/.*)?$",
+    "target": "/en/shop/rain-jacket-transparent-white/",
+    "code": 301,
+    "regex": true,
+    "note": "product regenjack-transparant-wit (EN)"
+  },
+  {
+    "source": "^/nl/shop/85055(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-rood/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-rood"
+  },
+  {
+    "source": "^/en/shop/85055(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-red/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-rood (EN)"
+  },
+  {
+    "source": "^/nl/shop/85047(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-kobaltblauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-kobaltblauw"
+  },
+  {
+    "source": "^/en/shop/85047(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-cobalt-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-kobaltblauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/84590(/.*)?$",
+    "target": "/nl/shop/wielerjack-vuelta-marine-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-marine-blauw"
+  },
+  {
+    "source": "^/en/shop/84590(/.*)?$",
+    "target": "/en/shop/cycling-jacket-vuelta-navy-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerjack-vuelta-marine-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/6476(/.*)?$",
+    "target": "/nl/shop/tego-jack-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product tego-jack-zwart"
+  },
+  {
+    "source": "^/en/shop/6476(/.*)?$",
+    "target": "/en/shop/tego-jacket-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product tego-jack-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/173037(/.*)?$",
+    "target": "/nl/shop/windstopper-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-zwart"
+  },
+  {
+    "source": "^/en/shop/173037(/.*)?$",
+    "target": "/en/shop/windstopper-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/173027(/.*)?$",
+    "target": "/nl/shop/windstopper-donkerblauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-donkerblauw"
+  },
+  {
+    "source": "^/en/shop/173027(/.*)?$",
+    "target": "/en/shop/windstopper-navy-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-donkerblauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/172976(/.*)?$",
+    "target": "/nl/shop/windstopper-neon-geel/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-neon-geel"
+  },
+  {
+    "source": "^/en/shop/172976(/.*)?$",
+    "target": "/en/shop/windstopper-neon-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product windstopper-neon-geel (EN)"
+  },
+  {
+    "source": "^/nl/shop/49783(/.*)?$",
+    "target": "/nl/shop/aquazero-jack-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product aquazero-jack-zwart"
+  },
+  {
+    "source": "^/en/shop/49783(/.*)?$",
+    "target": "/en/shop/aquazero-jacket-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product aquazero-jack-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/49736(/.*)?$",
+    "target": "/nl/shop/all-season-jack-slider-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-groen"
+  },
+  {
+    "source": "^/en/shop/49736(/.*)?$",
+    "target": "/en/shop/all-season-jacket-slider-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/49750(/.*)?$",
+    "target": "/nl/shop/all-season-jack-slider-blauw-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-blauw-zwart"
+  },
+  {
+    "source": "^/en/shop/49750(/.*)?$",
+    "target": "/en/shop/all-season-jacket-slider-blue-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product all-season-jack-slider-blauw-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6472(/.*)?$",
+    "target": "/nl/shop/pro-all-season-jack-zwart-grijs/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-all-season-jack-zwart-grijs"
+  },
+  {
+    "source": "^/en/shop/6472(/.*)?$",
+    "target": "/en/shop/pro-all-season-jacket-black-grey/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-all-season-jack-zwart-grijs (EN)"
+  },
+  {
+    "source": "^/nl/shop/158227(/.*)?$",
+    "target": "/nl/shop/thermojack-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product thermojack-zwart"
+  },
+  {
+    "source": "^/en/shop/158227(/.*)?$",
+    "target": "/en/shop/thermal-jacket-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product thermojack-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/133513(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lange-mouwen-metal-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-metal-blue"
+  },
+  {
+    "source": "^/en/shop/133513(/.*)?$",
+    "target": "/en/shop/chroma-long-sleeve-cycling-jersey-metal-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-metal-blue (EN)"
+  },
+  {
+    "source": "^/nl/shop/129633(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lange-mouwen-aubergine/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-aubergine"
+  },
+  {
+    "source": "^/en/shop/129633(/.*)?$",
+    "target": "/en/shop/chroma-long-sleeve-cycling-jersey-aubergine/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-aubergine (EN)"
+  },
+  {
+    "source": "^/nl/shop/97540(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lange-mouwen-olijf-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-olijf-groen"
+  },
+  {
+    "source": "^/en/shop/97540(/.*)?$",
+    "target": "/en/shop/chroma-long-sleeve-cycling-jersey-olive-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-olijf-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/97530(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lange-mouwen-petrol/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-petrol"
+  },
+  {
+    "source": "^/en/shop/97530(/.*)?$",
+    "target": "/en/shop/chroma-long-sleeve-cycling-jersey-petrol/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-petrol (EN)"
+  },
+  {
+    "source": "^/nl/shop/97520(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lange-mouwen-marine-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-marine-blauw"
+  },
+  {
+    "source": "^/en/shop/97520(/.*)?$",
+    "target": "/en/shop/chroma-long-sleeve-cycling-jersey-navy-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lange-mouwen-marine-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/181112(/.*)?$",
+    "target": "/nl/shop/volt-wielershirt-lange-mouwen-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-lange-mouwen-zwart"
+  },
+  {
+    "source": "^/en/shop/181112(/.*)?$",
+    "target": "/en/shop/volt-long-sleeve-cycling-jersey-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-lange-mouwen-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6475(/.*)?$",
+    "target": "/nl/shop/tego-shirt-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product tego-shirt-zwart"
+  },
+  {
+    "source": "^/en/shop/6475(/.*)?$",
+    "target": "/en/shop/tego-jersey-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product tego-shirt-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/43391(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-creme/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-creme"
+  },
+  {
+    "source": "^/en/shop/43391(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-cream/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-creme (EN)"
+  },
+  {
+    "source": "^/nl/shop/43350(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-rood/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-rood"
+  },
+  {
+    "source": "^/en/shop/43350(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-red/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-rood (EN)"
+  },
+  {
+    "source": "^/nl/shop/55498(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-bordeaux/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-bordeaux"
+  },
+  {
+    "source": "^/en/shop/55498(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-burgundy/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-bordeaux (EN)"
+  },
+  {
+    "source": "^/nl/shop/43411(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-groen"
+  },
+  {
+    "source": "^/en/shop/43411(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/53523(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-donkergrijs/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-donkergrijs"
+  },
+  {
+    "source": "^/en/shop/53523(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-dark-grey/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-donkergrijs (EN)"
+  },
+  {
+    "source": "^/nl/shop/79756(/.*)?$",
+    "target": "/nl/shop/wielershirt-aero-light-blauw-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-aero-light-blauw-zwart"
+  },
+  {
+    "source": "^/en/shop/79756(/.*)?$",
+    "target": "/en/shop/cycling-jersey-aero-light-blue-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-aero-light-blauw-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/77069(/.*)?$",
+    "target": "/nl/shop/wielershirt-aero-light-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-aero-light-blauw"
+  },
+  {
+    "source": "^/en/shop/77069(/.*)?$",
+    "target": "/en/shop/cycling-jersey-aero-light-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-aero-light-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/161802(/.*)?$",
+    "target": "/nl/shop/wielershirt-arcade/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-arcade"
+  },
+  {
+    "source": "^/en/shop/161802(/.*)?$",
+    "target": "/en/shop/cycling-jersey-arcade/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-arcade (EN)"
+  },
+  {
+    "source": "^/nl/shop/161795(/.*)?$",
+    "target": "/nl/shop/wielershirt-roffa/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-roffa"
+  },
+  {
+    "source": "^/en/shop/161795(/.*)?$",
+    "target": "/en/shop/cycling-jersey-roffa/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielershirt-roffa (EN)"
+  },
+  {
+    "source": "^/nl/shop/43399(/.*)?$",
+    "target": "/nl/shop/slider-wielershirt-blauw-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-blauw-zwart"
+  },
+  {
+    "source": "^/en/shop/43399(/.*)?$",
+    "target": "/en/shop/slider-cycling-jersey-blue-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product slider-wielershirt-blauw-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/6470(/.*)?$",
+    "target": "/nl/shop/pro-wielershirt-zwart-grijs/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-wielershirt-zwart-grijs"
+  },
+  {
+    "source": "^/en/shop/6470(/.*)?$",
+    "target": "/en/shop/pro-cycling-jersey-black-grey/",
+    "code": 301,
+    "regex": true,
+    "note": "product pro-wielershirt-zwart-grijs (EN)"
+  },
+  {
+    "source": "^/nl/shop/94881(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-oranje/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-oranje"
+  },
+  {
+    "source": "^/en/shop/94881(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-orange/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-oranje (EN)"
+  },
+  {
+    "source": "^/nl/shop/94977(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-lila/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lila"
+  },
+  {
+    "source": "^/en/shop/94977(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-lilac/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-lila (EN)"
+  },
+  {
+    "source": "^/nl/shop/94929(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-mint-groen/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-mint-groen"
+  },
+  {
+    "source": "^/en/shop/94929(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-mint-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-mint-groen (EN)"
+  },
+  {
+    "source": "^/nl/shop/94833(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-petrol/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-petrol"
+  },
+  {
+    "source": "^/en/shop/94833(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-petrol/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-petrol (EN)"
+  },
+  {
+    "source": "^/nl/shop/94785(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-blauw"
+  },
+  {
+    "source": "^/en/shop/94785(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/94743(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-marine-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-marine-blauw"
+  },
+  {
+    "source": "^/en/shop/94743(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-navy-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-marine-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/94857(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-bruin/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-bruin"
+  },
+  {
+    "source": "^/en/shop/94857(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-brown/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-bruin (EN)"
+  },
+  {
+    "source": "^/nl/shop/94809(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-okergeel/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-okergeel"
+  },
+  {
+    "source": "^/en/shop/94809(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-ochre-yellow/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-okergeel (EN)"
+  },
+  {
+    "source": "^/nl/shop/94953(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-metaal-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-metaal-blauw"
+  },
+  {
+    "source": "^/en/shop/94953(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-metal-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-metaal-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/94905(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-olijfgroen/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-olijfgroen"
+  },
+  {
+    "source": "^/en/shop/94905(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-olive-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-olijfgroen (EN)"
+  },
+  {
+    "source": "^/nl/shop/181103(/.*)?$",
+    "target": "/nl/shop/chroma-wielershirt-burgundy/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-burgundy"
+  },
+  {
+    "source": "^/en/shop/181103(/.*)?$",
+    "target": "/en/shop/chroma-cycling-jersey-burgundy/",
+    "code": 301,
+    "regex": true,
+    "note": "product chroma-wielershirt-burgundy (EN)"
+  },
+  {
+    "source": "^/nl/shop/181038(/.*)?$",
+    "target": "/nl/shop/volt-wielershirt-zwart-neon/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-zwart-neon"
+  },
+  {
+    "source": "^/en/shop/181038(/.*)?$",
+    "target": "/en/shop/volt-cycling-jersey-black-neon/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-zwart-neon (EN)"
+  },
+  {
+    "source": "^/nl/shop/181094(/.*)?$",
+    "target": "/nl/shop/volt-wielershirt-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-zwart"
+  },
+  {
+    "source": "^/en/shop/181094(/.*)?$",
+    "target": "/en/shop/volt-cycling-jersey-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product volt-wielershirt-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/52596(/.*)?$",
+    "target": "/nl/shop/lange-wielerbroek-zwart-met-zeem/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-wielerbroek-zwart-met-zeem"
+  },
+  {
+    "source": "^/en/shop/52596(/.*)?$",
+    "target": "/en/shop/bib-tights-black-with-chamois/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-wielerbroek-zwart-met-zeem (EN)"
+  },
+  {
+    "source": "^/nl/shop/52588(/.*)?$",
+    "target": "/nl/shop/lange-wielerbroek-zwart-zonder-zeem/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-wielerbroek-zwart-zonder-zeem"
+  },
+  {
+    "source": "^/en/shop/52588(/.*)?$",
+    "target": "/en/shop/bib-tights-black-without-chamois/",
+    "code": 301,
+    "regex": true,
+    "note": "product lange-wielerbroek-zwart-zonder-zeem (EN)"
+  },
+  {
+    "source": "^/nl/shop/55523(/.*)?$",
+    "target": "/nl/shop/wielerbroek-navy-blauw-zonder-bretels-heren/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-navy-blauw-zonder-bretels-heren"
+  },
+  {
+    "source": "^/en/shop/55523(/.*)?$",
+    "target": "/en/shop/cycling-shorts-navy-blue-without-straps-men/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-navy-blauw-zonder-bretels-heren (EN)"
+  },
+  {
+    "source": "^/nl/shop/6512(/.*)?$",
+    "target": "/nl/shop/wielerbroek-ecoracer-zwart-grijs-logo/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecoracer-zwart-grijs-logo"
+  },
+  {
+    "source": "^/en/shop/6512(/.*)?$",
+    "target": "/en/shop/bib-shorts-ecoracer-black-grey-logo/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecoracer-zwart-grijs-logo (EN)"
+  },
+  {
+    "source": "^/nl/shop/6471(/.*)?$",
+    "target": "/nl/shop/wielerbroek-ecoracer-zwart-lichtblauw-logo/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecoracer-zwart-lichtblauw-logo"
+  },
+  {
+    "source": "^/en/shop/6471(/.*)?$",
+    "target": "/en/shop/bib-shorts-ecoracer-black-light-blue-logo/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecoracer-zwart-lichtblauw-logo (EN)"
+  },
+  {
+    "source": "^/nl/shop/52546(/.*)?$",
+    "target": "/nl/shop/wielerbroek-elements-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-elements-zwart"
+  },
+  {
+    "source": "^/en/shop/52546(/.*)?$",
+    "target": "/en/shop/bib-shorts-elements-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-elements-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/158536(/.*)?$",
+    "target": "/nl/shop/wielerbroek-ecopower-70-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecopower-70-zwart"
+  },
+  {
+    "source": "^/en/shop/158536(/.*)?$",
+    "target": "/en/shop/bib-shorts-ecopower-70-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecopower-70-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/53531(/.*)?$",
+    "target": "/nl/shop/wielerbroek-ecopower-50-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecopower-50-zwart"
+  },
+  {
+    "source": "^/en/shop/53531(/.*)?$",
+    "target": "/en/shop/bib-shorts-ecopower-50-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-ecopower-50-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/159949(/.*)?$",
+    "target": "/nl/shop/wielerbroek-totalgrip-zwart/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-totalgrip-zwart"
+  },
+  {
+    "source": "^/en/shop/159949(/.*)?$",
+    "target": "/en/shop/bib-shorts-totalgrip-black/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-totalgrip-zwart (EN)"
+  },
+  {
+    "source": "^/nl/shop/95086(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-grijs/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-grijs"
+  },
+  {
+    "source": "^/en/shop/95086(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-grey/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-grijs (EN)"
+  },
+  {
+    "source": "^/nl/shop/95079(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-marine-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-marine-blauw"
+  },
+  {
+    "source": "^/en/shop/95079(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-navy-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-marine-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/95093(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-olijfgroen/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-olijfgroen"
+  },
+  {
+    "source": "^/en/shop/95093(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-olive-green/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-olijfgroen (EN)"
+  },
+  {
+    "source": "^/nl/shop/95072(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-petrol-blauw/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-petrol-blauw"
+  },
+  {
+    "source": "^/en/shop/95072(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-petrol-blue/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-petrol-blauw (EN)"
+  },
+  {
+    "source": "^/nl/shop/95065(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-bruin/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-bruin"
+  },
+  {
+    "source": "^/en/shop/95065(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-brown/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-bruin (EN)"
+  },
+  {
+    "source": "^/nl/shop/95051(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-rood/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-rood"
+  },
+  {
+    "source": "^/en/shop/95051(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-red/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-rood (EN)"
+  },
+  {
+    "source": "^/nl/shop/158547(/.*)?$",
+    "target": "/nl/shop/wielerbroek-carve-zwart-v2/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-zwart-v2"
+  },
+  {
+    "source": "^/en/shop/158547(/.*)?$",
+    "target": "/en/shop/bib-shorts-carve-black-v2/",
+    "code": 301,
+    "regex": true,
+    "note": "product wielerbroek-carve-zwart-v2 (EN)"
+  }
+]

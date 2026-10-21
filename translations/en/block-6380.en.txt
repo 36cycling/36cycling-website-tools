@@ -1,0 +1,60 @@
+@title: Collectiesamenvatting (EN)
+
+=== 1
+Which clothing can you design?
+=== 2
+Every item in our teamwear collection can be made in your own design, from cycling jerseys to arm warmers. A selection of the options:
+=== 3
+=
+=== 4
+cycling jersey in your own design
+=== 5
+Cycling jerseys
+=== 6
+Five models, from the airy Prestige to the all-round Classic.
+=== 7
+custom pro bib shorts
+=== 8
+Bib shorts
+=== 9
+Elite, Speed, TotalGrip and Classic, plus bib tights and warm-up tights.
+=== 10
+custom cycling clothing design and printing
+=== 11
+Jackets and wind jackets
+=== 12
+All Season Jacket, Winter Thermal Jacket and three wind jackets for colder days.
+=== 13
+custom time trial suit design and printing
+=== 14
+Skinsuits and tri suits
+=== 15
+Skinsuit Performance and Criterium for time trials and races, and a tri suit.
+=== 16
+custom sportswear design and printing
+=== 17
+Sports shirts
+=== 18
+Also for running, ice skating and football: running shirts, singlets, skating suits and more.
+=== 19
+custom printed cycling gilet
+=== 20
+Gilets and jackets
+=== 21
+Wind jackets, gilets and other outerwear to keep you warm in a variety of sports.
+=== 22
+Sports shorts
+=== 23
+Running tights or loose sports shorts, for running, field sports or padel, for example.
+=== 24
+custom printed arm warmers
+=== 25
+Accessories
+=== 26
+Arm warmers, leg warmers, winter hat, bandana, team polo and leisure jacket.
+=== 27
+View the complete collection pages to see all products:
+=== 28
+<a class="wp-block-button__link wp-element-button" href="/nl/teamkleding-collectie/">Team cycling wear collection</a>
+=== 29
+<a class="wp-block-button__link wp-element-button" href="/nl/sportkleding-collectie/">Sportswear collection</a>

@@ -1,0 +1,21 @@
+@title: Windjack - Skin
+@slug: windjack-skin
+@path: /nl/teamkleding-collectie/windjack-skin/
+@yoast_title: Windjack - Skin ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Windjack - Skin voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+windjack wielrennen bedrukken
+=== 2
+Windjack - Skin
+=== 3
+Een windjack gemaakt van een flinterdun, maar winddicht materiaal. En tegelijk ook ademend. Het jack is tot een erg klein pakketje op te vouwen, zodat je het makkelijk meeneemt in je zak onderweg. Lange mouw / Korte mouw is beide mogelijk.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

@@ -1,0 +1,21 @@
+@title: Wintermuts
+@slug: wintermuts
+@path: /nl/teamkleding-collectie/wintermuts/
+@yoast_title: Wintermuts ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Wintermuts voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+wielrenmuts bedrukken
+=== 2
+Wintermuts
+=== 3
+Houd je hoofd warm tijdens koude ritten met onze wintermuts voor wielrenners. Deze muts is gemaakt van een zachte, ademende stof die je warm houdt, zelfs bij lage temperaturen. Door de slanke pasvorm past de muts perfect onder je fietshelm. Fiets door de winter met onze functionele en trendy wintermuts.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>

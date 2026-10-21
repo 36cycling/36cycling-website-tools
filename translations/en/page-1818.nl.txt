@@ -1,0 +1,21 @@
+@title: Windjack - Elaspin
+@slug: windjack-elaspin
+@path: /nl/teamkleding-collectie/windjack-elaspin/
+@yoast_title: Windjack - Elaspin ontwerpen en bedrukken | 36 Cycling
+@yoast_metadesc: Windjack - Elaspin voor jouw team, bedrijf of evenement. Snelle levering en volledig aanpasbaar met een eigen ontwerp en bedrukking.
+@yoast_focuskw: 
+
+=== 1
+wielrenkleding: windstopper bedrukken
+=== 2
+Windjack - Elaspin
+=== 3
+Ons nieuwste windjack gemaakt van een elastisch, winddicht en tevens licht en ademend materiaal. Het jack is daarmee een allrounder: de hele rit dragen, maar ook makkelijk mee te nemen. Lange mouw / Korte mouw is beide mogelijk.
+=== 4
+Eigenschappen
+=== 5
+Klik voor de maattabel: <strong><a rel="noopener" href="/downloads/maattabel-dames-cycling.pdf" target="_blank">Dames</a> | <a rel="noopener" href="/downloads/maattabel-heren-cycling.pdf" target="_blank">Heren</a></strong>
+=== 6
+<a class="wp-block-button__link wp-element-button" href="/nl/offerteaanvraag/">Offerte aanvragen</a>
+=== 7
+<a class="wp-block-button__link wp-element-button" href="https://designer.36cycling.com/" rel="noopener" target="_blank">Start ontwerp</a>
