@@ -9,6 +9,8 @@
  *              2. Productfilter (WooCommerce-blok "Kenmerk"): waarden in de volgorde van Producten → Kenmerken
  *                 (aangepaste volgorde, bijv. XS, S, M, L, XL, 2XL) in plaats van op aantal producten. Het blok biedt
  *                 in de editor alleen "aantal" en "naam" als sortering.
+ *              3. Knoptekst "In winkelwagen" in plaats van "Toevoegen aan winkelwagen" (alleen NL; EN blijft "Add to cart").
+ *                 Andere knopteksten ("Opties selecteren", "Lees verder") blijven ongemoeid.
  * Author: 36cycling migratie
  */
 
@@ -43,3 +45,13 @@ add_filter('render_block_data', function ($block) {
     }
     return $block;
 });
+
+function c36_add_to_cart_text($text)
+{
+    if (apply_filters('wpml_current_language', null) === 'nl' && $text === __('Add to cart', 'woocommerce')) {
+        return 'In winkelwagen';
+    }
+    return $text;
+}
+add_filter('woocommerce_product_single_add_to_cart_text', 'c36_add_to_cart_text', 20);
+add_filter('woocommerce_product_add_to_cart_text', 'c36_add_to_cart_text', 20);
