@@ -270,3 +270,71 @@ function c36_category_seo_text()
 // Onder de productlijst; valt terug op het einde van de hoofdinhoud als het thema de eerste hook niet gebruikt.
 add_action('woocommerce_after_shop_loop', 'c36_category_seo_text', 20);
 add_action('woocommerce_after_main_content', 'c36_category_seo_text', 5);
+
+// ---------------------------------------------------------------------------------------------
+// Beschikbare updates (voor de wekelijkse controle zonder ingelogde beheerder).
+//   GET /wp-json/c36/v1/updates[?refresh=1]
+//   Geeft WordPress-, plugin-, thema- en vertaalupdates terug, plus de huidige versies. Alleen lezen;
+//   refresh=1 laat WordPress eerst opnieuw bij de updateservers (ook WPML/Blocksy Pro) controleren.
+// ---------------------------------------------------------------------------------------------
+add_action('rest_api_init', function () {
+    register_rest_route('c36/v1', '/updates', [
+        'methods'             => 'GET',
+        'permission_callback' => function () {
+            return current_user_can('update_plugins');
+        },
+        'callback'            => function ($req) {
+            require_once ABSPATH . 'wp-admin/includes/update.php';
+            require_once ABSPATH . 'wp-admin/includes/plugin.php';
+            if ($req['refresh']) {
+                wp_version_check([], true);
+                wp_update_plugins();
+                wp_update_themes();
+            }
+            global $wp_version;
+            $core = [];
+            foreach ((array) get_core_updates(['dismissed' => false]) as $u) {
+                if (isset($u->response) && $u->response === 'upgrade') {
+                    $core[] = ['version' => $u->version, 'locale' => $u->locale];
+                }
+            }
+            $all = get_plugins();
+            $plugins = [];
+            $pt = get_site_transient('update_plugins');
+            foreach ((array) ($pt->response ?? []) as $file => $u) {
+                $plugins[] = [
+                    'file'    => $file,
+                    'name'    => $all[$file]['Name'] ?? $file,
+                    'current' => $all[$file]['Version'] ?? '',
+                    'new'     => $u->new_version ?? '',
+                    'active'  => is_plugin_active($file),
+                    'url'     => $u->url ?? '',
+                ];
+            }
+            $themes = [];
+            $tt = get_site_transient('update_themes');
+            foreach ((array) ($tt->response ?? []) as $slug => $u) {
+                $t = wp_get_theme($slug);
+                $themes[] = [
+                    'slug'    => $slug,
+                    'name'    => $t->get('Name'),
+                    'current' => $t->get('Version'),
+                    'new'     => $u['new_version'] ?? '',
+                    'active'  => get_stylesheet() === $slug || get_template() === $slug,
+                ];
+            }
+            return [
+                'checked'      => gmdate('c', (int) ($pt->last_checked ?? 0)),
+                'wordpress'    => $wp_version,
+                'php'          => PHP_VERSION,
+                'core'         => $core,
+                'plugins'      => $plugins,
+                'themes'       => $themes,
+                'translations' => count((array) wp_get_translation_updates()),
+                'inactive_themes' => array_values(array_filter(array_keys(wp_get_themes()), function ($s) {
+                    return $s !== get_stylesheet() && $s !== get_template();
+                })),
+            ];
+        },
+    ]);
+});
