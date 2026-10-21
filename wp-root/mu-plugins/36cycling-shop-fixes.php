@@ -6,6 +6,9 @@
  *                 winkelwagen bij het laden van de pagina leeg was: het venster bevat dan de "winkelwagen is leeg"-melding
  *                 zonder het element waar WooCommerce de nieuwe inhoud in zet. Dit script zet de inhoud er alsnog in.
  *              2. Titel van het venster in de taal van de pagina (was overal "Shopping Cart").
+ *              3. Productfilter (WooCommerce-blok "Kenmerk"): waarden in de volgorde van Producten → Kenmerken
+ *                 (aangepaste volgorde, bijv. XS, S, M, L, XL, 2XL) in plaats van op aantal producten. Het blok biedt
+ *                 in de editor alleen "aantal" en "naam" als sortering.
  * Author: 36cycling migratie
  */
 
@@ -52,3 +55,10 @@ add_action('wp_enqueue_scripts', function () {
 JS
     , wp_json_encode($heading)));
 }, 20);
+
+add_filter('render_block_data', function ($block) {
+    if (($block['blockName'] ?? '') === 'woocommerce/product-filter-attribute') {
+        $block['attrs']['sortOrder'] = 'menu_order-asc';
+    }
+    return $block;
+});
