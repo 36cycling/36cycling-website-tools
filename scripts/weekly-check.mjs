@@ -31,7 +31,19 @@ try {
 let top404 = [], err404 = "";
 try {
   const r = await fetch(`${BASE}/wp-json/redirection/v1/404?per_page=200&groupBy=url&orderby=count&direction=desc`, { headers: H });
-  if (r.ok) { const j = await r.json(); top404 = (j.items || []).slice(0, 10).map((i) => ({ url: i.url, count: +i.count || 1 })); }
+  if (r.ok) {
+    const j = await r.json();
+    // Alleen URL's die nu nog steeds een 404 geven (opgeloste/omgeleide URL's niet meer melden),
+    // en bekende ruis van bots overslaan.
+    const IGNORE = ["/llms.txt", "/llms-full.txt", "/.well-known/", "/wp-login.php", "/xmlrpc.php"];
+    for (const i of j.items || []) {
+      if (top404.length >= 10) break;
+      if (IGNORE.some((p) => i.url.startsWith(p))) continue;
+      const now = await fetch(`${BASE}${i.url}`, { redirect: "manual", headers: { "User-Agent": "Mozilla/5.0 (36cycling weekly-check)" } }).catch(() => null);
+      if (now && now.status !== 404 && now.status !== 410) continue;
+      top404.push({ url: i.url, count: +i.count || 1 });
+    }
+  }
   else err404 = `status ${r.status}`;
 } catch (e) { err404 = e.message; }
 

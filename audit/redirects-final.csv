@@ -44,6 +44,7 @@
 /sitemap.xml;/sitemap_index.xml;301;;besloten
 /xml-sitemap/;/sitemap_index.xml;301;;besloten
 /nl/xml-sitemap/;/sitemap_index.xml;301;;besloten
+/downloads/root-redirect.html;/nl/;301;;besloten
 /nl/fietskleding/;/nl/categorie/fietskleding/;301;;categorie Fietskleding
 /en/cycling-clothing/;/en/category/cycling-clothing/;301;;categorie Fietskleding (EN)
 /nl/fietskleding/heren/;/nl/categorie/fietskleding/heren/;301;;categorie Heren

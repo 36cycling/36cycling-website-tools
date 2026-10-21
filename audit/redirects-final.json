@@ -315,6 +315,13 @@
     "note": "besloten"
   },
   {
+    "source": "/downloads/root-redirect.html",
+    "target": "/nl/",
+    "code": 301,
+    "regex": false,
+    "note": "besloten"
+  },
+  {
     "source": "/nl/fietskleding/",
     "target": "/nl/categorie/fietskleding/",
     "code": 301,

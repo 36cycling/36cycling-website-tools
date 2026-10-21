@@ -40,6 +40,8 @@ const DECIDED = {
   "/sitemap.xml": "/sitemap_index.xml",
   "/xml-sitemap/": "/sitemap_index.xml",
   "/nl/xml-sitemap/": "/sitemap_index.xml",
+  // Restant van een vroegere WPML-instelling voor de rootpagina (bestand bestaat niet meer).
+  "/downloads/root-redirect.html": "/nl/",
 };
 const voorstel = (await readFile(P("audit/redirect-voorstel.csv"), "utf8")).split(/\r?\n/).slice(1).filter(Boolean).map((l) => l.split(";"));
 // Pagina's die op de nieuwe site weer bestaan (geen redirect meer): bedankpagina = meetpunt in Google Tag Manager.
