@@ -35,7 +35,9 @@ const DECIDED = {
   "/nl/bestelling-volgen/": "/nl/mijn-account/",
   "/privacy/": "/nl/privacy/",
   "/nl/shop/cart/": "/nl/winkelwagen/",
-  "/nl/shop/thankyou/": "/nl/shop/",
+  "/nl/shop/thankyou/": "/nl/categorie/fietskleding/",
+  // Shop-basispagina toont geen producten; het menu "Shop" gaat ook naar dit overzicht.
+  "/nl/shop/": "/nl/categorie/fietskleding/",
   // Oude sitemap (Web.config herschreef /sitemap.xml naar /nl/xml-sitemap/) → Yoast-sitemap.
   "/sitemap.xml": "/sitemap_index.xml",
   "/xml-sitemap/": "/sitemap_index.xml",
@@ -70,9 +72,9 @@ for (const [id, c] of Object.entries(oldCats)) {
 }
 // Losse oude categorie-landingspagina's.
 const catByName = (re) => Object.entries(oldCats).find(([, c]) => re.test(c.name))?.[0];
-add("/nl/fietsbrillen/", newCats[catByName(/brillen/i)] || "/nl/shop/", "oude landingspagina fietsbrillen");
-add("/nl/speedonwheels/", newCats[catByName(/speed on wheels/i)] || "/nl/shop/", "oude collectiepagina Speed on Wheels");
-add("/nl/kask-helmen/", "/nl/shop/", "oude categorie helmen (geen helmen meer)");
+add("/nl/fietsbrillen/", newCats[catByName(/brillen/i)] || "/nl/categorie/fietskleding/", "oude landingspagina fietsbrillen");
+add("/nl/speedonwheels/", newCats[catByName(/speed on wheels/i)] || "/nl/categorie/fietskleding/", "oude collectiepagina Speed on Wheels");
+add("/nl/kask-helmen/", "/nl/categorie/fietskleding/", "oude categorie helmen (geen helmen meer)");
 
 // 3. Producten: /nl/shop/<id>/<slug>/ → regex per oud id (vangt ook oude slug-varianten en de EN-versie).
 const products = await json("audit/products.json");
@@ -87,7 +89,7 @@ for (const [oldPath, slug, status] of byOld) {
   const id = oldPath.match(/^\/nl\/shop\/(\d+)\//)?.[1];
   if (!id) continue;
   const nl = `/nl/shop/${slug}/`;
-  add(`^/nl/shop/${id}(/.*)?$`, status === "private" ? "/nl/shop/" : nl, `product ${slug}`, 301, true);
+  add(`^/nl/shop/${id}(/.*)?$`, status === "private" ? "/nl/categorie/fietskleding/" : nl, `product ${slug}`, 301, true);
   const en = urlmap[nl];
   if (en) add(`^/en/shop/${id}(/.*)?$`, status === "private" ? "/en/cycling-clothing/" : en, `product ${slug} (EN)`, 301, true);
 }
