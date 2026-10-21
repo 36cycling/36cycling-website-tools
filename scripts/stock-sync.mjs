@@ -4,7 +4,7 @@
 // Alleen draaien zolang www.36cycling.com nog de oude Umbraco-site is (na de domeinwissel geeft dat adres de nieuwe feed).
 //   node scripts/stock-sync.mjs               → proef: toont wat er verandert (ook prijsverschillen)
 //   node scripts/stock-sync.mjs --apply       → voorraad bijwerken (oude waarden eerst naar backups/)
-//   node scripts/stock-sync.mjs --apply --prices → ook normale prijs en kortingsprijs gelijkzetten aan de oude shop
+//   node scripts/stock-sync.mjs --apply --prices → ook de normale prijs gelijkzetten (kortingen: scripts/price-sync.mjs)
 //   --file=pad/naar/feed.xml                  → een opgeslagen feed gebruiken in plaats van de live feed
 import { readFile, writeFile } from "node:fs/promises";
 import { loadConfig } from "../lib/wp.mjs";
@@ -26,8 +26,6 @@ const tag = (it, t) => {
 const old = xml.split("<item>").slice(1).map((it) => ({
   id: tag(it, "id"), title: tag(it, "title"), size: tag(it, "size"), link: tag(it, "link"),
   qty: parseInt(tag(it, "quantity_to_sell_on_facebook"), 10) || 0, price: parseFloat(tag(it, "price")) || 0,
-  // Let op: sale_price in de oude feed is het kortingsBEDRAG (65.00 met sale_price 15.00 = nu 50.00), 0.00 = geen korting.
-  discount: parseFloat(tag(it, "sale_price")) || 0,
 }));
 if (!old.length || !old.every((o) => /^https:..www.36cycling.com.nl.shop.[0-9]+./.test(o.link))) {
   console.log("Dit is niet de oude Umbraco-feed (geen /nl/shop/<nummer>/-links). Na de domeinwissel kan dit script niet meer; gebruik dan --file met een eerder opgeslagen feed.");
@@ -65,13 +63,13 @@ for (const o of old) {
   const { p, v } = hit;
   const target = Math.max(0, o.qty);
   if (!v.manage_stock || v.stock_quantity !== target) changes.push({ p, v, o, from: v.manage_stock ? v.stock_quantity : "niet beheerd", to: target });
-  const sale = o.discount > 0 ? (o.price - o.discount).toFixed(2) : "";
-  if ((o.price && Math.abs(parseFloat(v.regular_price || 0) - o.price) > 0.001) || (v.sale_price || "") !== sale) priceDiffs.push({ p, v, o, sale });
+  // Alleen de normale prijs: kortingen staan maar half in de oude feed (geen procentuele) → scripts/price-sync.mjs.
+  if (o.price && Math.abs(parseFloat(v.regular_price || 0) - o.price) > 0.001) priceDiffs.push({ p, v, o });
 }
 const label = ({ p, o }) => `${p.name}${o.size ? " " + o.size : ""}`;
 console.log(`Oude feed: ${old.length} maten. Gekoppeld: ${old.length - unmapped.length}. Voorraad anders: ${changes.length}. Prijs anders: ${priceDiffs.length}.`);
 for (const c of changes) console.log(`  voorraad ${label(c)}: ${c.from} → ${c.to}`);
-for (const d of priceDiffs) console.log(`  prijs ${label(d)}: nieuw ${d.v.regular_price}${d.v.sale_price ? " → " + d.v.sale_price : ""} / oud ${d.o.price.toFixed(2)}${d.sale ? " → " + d.sale : ""}`);
+for (const d of priceDiffs) console.log(`  prijs ${label(d)}: nieuw ${d.v.regular_price} / oud ${d.o.price.toFixed(2)}`);
 if (unmapped.length) console.log(`Niet gekoppeld (staat niet in de nieuwe shop): ${[...new Set(unmapped.map((o) => o.title))].join("; ")}`);
 
 // Steekproef om in de Umbraco-backoffice na te kijken
@@ -88,7 +86,7 @@ else {
   const groups = new Map();
   const add = (p, upd) => { const g = groups.get(p.id) || []; g.push(upd); groups.set(p.id, g); };
   for (const c of changes) add(c.p, { id: c.v.id, manage_stock: true, stock_quantity: c.to });
-  if (PRICES) for (const d of priceDiffs) add(d.p, { id: d.v.id, regular_price: d.o.price.toFixed(2), sale_price: d.sale });
+  if (PRICES) for (const d of priceDiffs) add(d.p, { id: d.v.id, regular_price: d.o.price.toFixed(2) });
   let ok = 0, fail = 0;
   for (const [pid, updates] of groups) {
     const p = products.find((x) => x.id === pid);
