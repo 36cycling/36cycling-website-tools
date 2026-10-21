@@ -21,7 +21,7 @@ const hasError = (html) => ["Fatal error", "Parse error", "Warning: ", "Notice: 
 const PAGES = [
   ["Home NL", "/nl/", ["cmplz-cookiebanner", 'href="tel:+31182232008"', "googletagmanager"]],
   ["Home EN", "/en/", ["cmplz-cookiebanner", 'href="tel:+31182232008"']],
-  ["Shop NL", "/nl/shop/", []],
+  ["Shop NL", "/nl/categorie/fietskleding/", ["type-product"]],
   ["Categorie NL", "/nl/categorie/fietskleding/dames/fietsshirts-dames/dames-fietsshirts-korte-mouw/", ['class="ct-breadcrumbs"', "c36-category-seo", "<h2>"]],
   ["Categorie EN", "/en/category/cycling-clothing/", ['class="ct-breadcrumbs"']],
   ["Product NL", "/nl/shop/chroma-wielershirt-blauw/", ['class="ct-breadcrumbs"', "add_to_cart_button", "application/ld+json"]],
