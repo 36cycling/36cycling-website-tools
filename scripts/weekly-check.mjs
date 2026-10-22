@@ -47,6 +47,11 @@ try {
   else err404 = `status ${r.status}`;
 } catch (e) { err404 = e.message; }
 
+// 4. Greenshift-opmaak: lopen Engelse kopieën achter op de Nederlandse pagina (na bewerken in de editor)?
+const gs = spawnSync(process.execPath, [fileURLToPath(new URL("./sync-greenshift-css.mjs", import.meta.url))], { encoding: "utf8" });
+const gsBehind = (gs.stdout.match(/^  achter: .*$/gm) || []).map((l) => l.replace("  achter: ", ""));
+const gsStructure = gs.stdout.includes("Andere opbouw") ? gs.stdout.split("Andere opbouw")[1].split("\n").slice(1).filter((l) => l.startsWith("  ")).map((l) => l.trim()) : [];
+
 // Rapport
 const lines = [];
 const updCount = upd ? upd.core.length + upd.plugins.length + upd.themes.length : 0;
@@ -72,11 +77,17 @@ lines.push("## Niet gevonden (404) — top 10");
 if (err404) lines.push(`Kon het 404-logboek niet lezen: ${err404}`);
 else if (!top404.length) lines.push("Geen 404's gelogd.");
 else for (const i of top404) lines.push(`- ${i.url} (${i.count}×)`);
+lines.push("", "## Engelse pagina's: opmaak en opbouw");
+if (!gsBehind.length && !gsStructure.length) lines.push("Engelse kopieën lopen gelijk met de Nederlandse (opmaak en blokken).");
+for (const n of gsBehind) lines.push(`- Opmaak loopt achter: ${n}`);
+for (const n of gsStructure) lines.push(`- Andere opbouw dan NL (EN-pagina bijwerken): ${n}`);
 lines.push("", "## Voorstel");
 const advice = [];
 if (failed.length) advice.push("Mislukte controles nakijken (zie boven) — mogelijk door een update of wijziging.");
 if (upd?.plugins?.some((p) => SENSITIVE.test(p.file + p.name))) advice.push("Updates met ⚠️: bijwerken op een rustig moment en daarna `node scripts/smoke-test.mjs` draaien.");
 else if (updCount) advice.push("Updates kunnen worden bijgewerkt; daarna de smoke-test draaien.");
+if (gsBehind.length) advice.push("Engelse opmaak gelijkzetten: `node scripts/sync-greenshift-css.mjs --apply`, daarna LiteSpeed legen.");
+if (gsStructure.length) advice.push("Nederlandse pagina is aangepast; Engelse versie bijwerken (translate-en) en daarna de opmaak gelijkzetten.");
 if (top404.length) advice.push("Terugkerende 404's van oude URL's: redirect toevoegen (Gereedschap → Redirection).");
 lines.push(...(advice.length ? advice.map((a) => `- ${a}`) : ["- Niets te doen."]));
 lines.push("", `_Thema: ${smokeData.versions?.thema || "?"} · plugins: ${smokeData.versions?.plugins || "?"}_`);
