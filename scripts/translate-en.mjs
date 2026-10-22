@@ -88,7 +88,7 @@ if (cmd === "extract") {
     console.log(`${base(type, id)}.nl.txt — ${segs.length} segmenten, ${item.title.raw}`);
   }
 } else if (cmd === "apply") {
-  const rewrite = makeUrlRewriter(urlMap);
+  const rewrite = makeUrlRewriter(urlMap, cfg.wp.baseUrl);
   const tm = await loadTM();
   for (const id of ids) {
     const { type, item } = await getItem(id);
