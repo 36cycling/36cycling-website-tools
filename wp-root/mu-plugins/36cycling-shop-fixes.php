@@ -13,6 +13,7 @@
  *                 Andere knopteksten ("Opties selecteren", "Lees verder") blijven ongemoeid.
  *              4. Eigen openingszinnen in de orderbevestiging ("Bestelling in behandeling"), NL en EN. WooCommerce heeft
  *                 hier geen instelling voor; de zinnen komen uit de vertaling van WooCommerce.
+ *              5. Btw-label in het Engels: "VAT" in plaats van "Btw".
  * Author: 36cycling migratie
  */
 
@@ -82,3 +83,9 @@ add_filter('gettext', function ($translation, $text, $domain) {
     }
     return $lines[$text][$translation !== $text ? 'nl' : 'en'];
 }, 20, 3);
+
+// Btw-label op de Engelse site (winkelwagen, afrekenen, bedankpagina, orderbevestiging): "Btw" → "VAT".
+// Het label wordt bij het afrekenen in de bestelling opgeslagen, dus Engelse bestellingen houden "VAT".
+add_filter('woocommerce_rate_label', function ($label) {
+    return ($label === 'Btw' && apply_filters('wpml_current_language', null) === 'en') ? 'VAT' : $label;
+}, 20);
