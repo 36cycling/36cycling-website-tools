@@ -1,0 +1,51 @@
+{
+  "_uitleg": "Geplande momenten voor het weekrapport (scripts/weekly-check.mjs). Een punt verschijnt onder 'Nu aan de beurt' vanaf 'vanaf' tot het op done: true staat. 'voorwaarde': seo-stabiel = alleen als de posities niet meer flink bewegen (anders 'nog even wachten'). 'uiterlijk' geeft een harde deadline.",
+  "items": [
+    {
+      "id": "updraft-dropbox",
+      "vanaf": "2026-10-26",
+      "titel": "Back-ups in Dropbox controleren",
+      "wat": "Staan de geplande UpdraftPlus-back-ups (database dagelijks, bestanden wekelijks) in Dropbox → Apps → UpdraftPlus.Com?",
+      "done": true,
+      "gedaan": "2026-10-26: database 24/25/26 okt en bestanden 24 okt staan in Dropbox"
+    },
+    {
+      "id": "gsc-sitemap",
+      "vanaf": "2026-10-27",
+      "titel": "Search Console: nieuwe sitemap gelezen?",
+      "wat": "Sitemaps: staat sitemap_index.xml op 'Succesvol'? Zo niet: opnieuw indienen. De oude /xml-sitemap/ na een paar weken verwijderen.",
+      "done": false
+    },
+    {
+      "id": "rondevanrotterdam-opruimen",
+      "vanaf": "2026-11-06",
+      "uiterlijk": "2026-12-15",
+      "titel": "rondevanrotterdam.nl opruimen in Plesk",
+      "wat": "Hoofddomein in Plesk omzetten naar 36cycling.com, Let's Encrypt opnieuw uitgeven (alleen 36cycling.com + www), daarna rondevanrotterdam.nl weg. Uiterlijk half december: het certificaat verlengt rond 22 december en mislukt als rondevanrotterdam.nl dan niet meer werkt.",
+      "done": false
+    },
+    {
+      "id": "seo-stap-2",
+      "vanaf": "2026-11-13",
+      "voorwaarde": "seo-stabiel",
+      "titel": "SEO stap 2: titels, intro en tussenkoppen",
+      "wat": "Wielerkleding bedrukken (titel 'Wielerkleding en wielershirts bedrukken in eigen ontwerp', intro onder de H1, tussenkoppen met de zoekterm), Snel wielershirt bedrukken (titel gelijk aan H1 'vanaf 1 stuk'), Teamkleding collectie (titel 'Teamkleding wielrennen: collectie custom wielerkleding'). Daarna de Engelse pagina's. Zie Obsidian To-do.",
+      "done": false
+    },
+    {
+      "id": "categorieteksten",
+      "vanaf": "2026-12-01",
+      "titel": "Categorieteksten herschrijven",
+      "wat": "Korter en concreter, interne links, korte FAQ; beginnen bij de categorieën met het meeste Google-verkeer (zie SEO-deel). Voorbeeld: audit/seo-voorbeeld-dames-fietsshirts-korte-mouw.html.",
+      "done": false
+    },
+    {
+      "id": "entra-geheim",
+      "vanaf": "2028-08-01",
+      "uiterlijk": "2028-10-21",
+      "titel": "Microsoft-clientgeheim voor de sitemail vernieuwen",
+      "wat": "Het geheim van de Entra-app '36cycling website mail' verloopt rond 21-22 oktober 2028. Nieuw geheim maken en in FluentSMTP invullen, anders komen formulieren en orderbevestigingen niet meer aan.",
+      "done": false
+    }
+  ]
+}

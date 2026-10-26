@@ -134,21 +134,68 @@ add_action('woocommerce_cart_loaded_from_session', function () {
 
 // ---------------------------------------------------------------------------------------------
 // 2. Extra velden in de blok-checkout: gratis sokken (keuze maat/kleur) en aanmelden voor de Circle.
+//    De winkelwagen (Store API) krijgt extra gegevens "c36-circle": member (lid) en socks (lid én vanaf € 50).
+//    Daarmee toont de checkout het sokkenveld alleen aan leden vanaf € 50 en het aanmeldvinkje alleen aan niet-leden.
 // ---------------------------------------------------------------------------------------------
+
+add_action('woocommerce_blocks_loaded', function () {
+    if (!function_exists('woocommerce_store_api_register_endpoint_data')) {
+        return;
+    }
+    woocommerce_store_api_register_endpoint_data([
+        'endpoint'        => \Automattic\WooCommerce\StoreApi\Schemas\V1\CartSchema::IDENTIFIER,
+        'namespace'       => 'c36-circle',
+        'data_callback'   => function () {
+            $member = c36_circle_is_member(c36_circle_customer_email());
+            return ['member' => $member, 'socks' => $member && c36_circle_cart_goods_total() >= C36_CIRCLE_THRESHOLD];
+        },
+        'schema_callback' => function () {
+            return [
+                'member' => ['description' => 'Klant is lid van de 36 Cycling Circle', 'type' => 'boolean', 'readonly' => true],
+                'socks'  => ['description' => 'Klant heeft recht op gratis Circle-sokken', 'type' => 'boolean', 'readonly' => true],
+            ];
+        },
+        'schema_type'     => ARRAY_A,
+    ]);
+});
+
+/** Voorwaarde voor 'hidden' van een checkoutveld: verbergen tenzij c36-circle.$key in de winkelwagen true is. */
+function c36_circle_hidden_unless($key)
+{
+    return ['cart' => ['properties' => ['extensions' => ['properties' => ['c36-circle' => ['properties' => [
+        $key => ['not' => ['const' => true]],
+    ]]]]]]];
+}
+
+/** Maat-term "S/M - zwart" → "Zwart, maat S/M" / "Black, size S/M". */
+function c36_circle_sock_label($name)
+{
+    $parts = array_map('trim', explode(' - ', $name, 2));
+    if (count($parts) !== 2) {
+        return $name;
+    }
+    [$size, $color] = $parts;
+    $en = ['zwart' => 'Black', 'wit' => 'White'];
+    return c36_t(ucfirst($color) . ', maat ' . $size, ($en[strtolower($color)] ?? ucfirst($color)) . ', size ' . $size);
+}
 
 add_action('woocommerce_init', function () {
     if (!function_exists('woocommerce_register_additional_checkout_field')) {
         return;
     }
     try {
-        // Variaties rechtstreeks uit de database: bij woocommerce_init zijn producttypes nog niet geregistreerd.
+        // Variaties en maatnamen rechtstreeks uit de database: bij woocommerce_init zijn producttypes en
+        // kenmerk-taxonomieën nog niet geregistreerd.
         global $wpdb;
         $rows = $wpdb->get_results($wpdb->prepare(
             "SELECT p.ID,
                     MAX(CASE WHEN m.meta_key = '_stock_status' THEN m.meta_value END) AS stock,
-                    GROUP_CONCAT(CASE WHEN m.meta_key LIKE 'attribute\\_%%' THEN m.meta_value END SEPARATOR ', ') AS label
+                    MAX(CASE WHEN m.meta_key = 'attribute_pa_maat' THEN t.name END) AS label
              FROM {$wpdb->posts} p
              JOIN {$wpdb->postmeta} m ON m.post_id = p.ID
+             LEFT JOIN {$wpdb->term_taxonomy} tt ON m.meta_key = 'attribute_pa_maat' AND tt.taxonomy = 'pa_maat'
+                 AND tt.term_taxonomy_id IN (SELECT tr.term_taxonomy_id FROM {$wpdb->term_relationships} tr WHERE tr.object_id = p.post_parent)
+             LEFT JOIN {$wpdb->terms} t ON t.term_id = tt.term_id AND t.slug = m.meta_value
              WHERE p.post_parent = %d AND p.post_type = 'product_variation' AND p.post_status IN ('publish', 'private')
              GROUP BY p.ID ORDER BY p.menu_order, p.ID",
             C36_CIRCLE_SOCKS
@@ -156,24 +203,37 @@ add_action('woocommerce_init', function () {
         $options = [];
         foreach ((array) $rows as $row) {
             if ($row->stock !== 'outofstock' && $row->label) {
-                $options[] = ['value' => (string) $row->ID, 'label' => $row->label];
+                $options[] = ['value' => (string) $row->ID, 'label' => c36_circle_sock_label($row->label)];
             }
         }
         if ($options) {
+            $label = c36_t('Je gratis Circle-sokken', 'Your free Circle socks');
             woocommerce_register_additional_checkout_field([
-                'id'       => C36_F_SOCKS,
-                'label'    => c36_t('Circle-lid? Kies je gratis sokken (bij bestellingen vanaf € 50)', 'Circle member? Choose your free socks (on orders from € 50)'),
-                'location' => 'order',
-                'type'     => 'select',
-                'required' => false,
-                'options'  => $options,
+                'id'            => C36_F_SOCKS,
+                'label'         => $label,
+                'optionalLabel' => $label,
+                'placeholder'   => c36_t('Kies kleur en maat', 'Choose colour and size'),
+                'location'      => 'order',
+                'type'          => 'select',
+                'required'      => false,
+                'options'       => $options,
+                'hidden'        => c36_circle_hidden_unless('socks'),
+                // Niet op de bedankpagina/in de mail: de gekozen sokken staan al als orderregel.
+                'show_in_order_confirmation' => false,
             ]);
         }
+        $optin = c36_t('Meld me gratis aan voor de 36 Cycling Circle: 10% korting en gratis sokken bij je volgende bestellingen', 'Sign me up for the 36 Cycling Circle for free: 10% off and free socks on my next orders');
         woocommerce_register_additional_checkout_field([
-            'id'       => C36_F_OPTIN,
-            'label'    => c36_t('Meld me gratis aan voor de 36 Cycling Circle: 10% korting en gratis sokken bij je volgende bestellingen', 'Sign me up for the 36 Cycling Circle for free: 10% off and free socks on my next orders'),
-            'location' => 'order',
-            'type'     => 'checkbox',
+            'id'            => C36_F_OPTIN,
+            'label'         => $optin,
+            'optionalLabel' => $optin,
+            'location'      => 'order',
+            'type'          => 'checkbox',
+            // Niet op de bedankpagina/in de mail ("Nee" is verwarrend voor wie al lid is); waarde blijft in de bestelling.
+            'show_in_order_confirmation' => false,
+            'hidden'        => ['cart' => ['properties' => ['extensions' => ['properties' => ['c36-circle' => ['properties' => [
+                'member' => ['const' => true],
+            ]]]]]]],
         ]);
     } catch (\Throwable $e) {
         error_log('[36cycling-circle] velden: ' . $e->getMessage());

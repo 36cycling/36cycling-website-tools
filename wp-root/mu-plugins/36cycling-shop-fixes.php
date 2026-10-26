@@ -14,6 +14,9 @@
  *              4. Eigen openingszinnen in de orderbevestiging ("Bestelling in behandeling"), NL en EN. WooCommerce heeft
  *                 hier geen instelling voor; de zinnen komen uit de vertaling van WooCommerce.
  *              5. Btw-label in het Engels: "VAT" in plaats van "Btw".
+ *              6. Bedankpagina (Blocksy "Thank You Pages"): van de twee Circle-vlakken alleen het passende tonen.
+ *                 Groep met extra CSS-klasse "c36-circle-join" (uitnodiging) voor niet-leden, "c36-circle-member"
+ *                 (welkom) voor leden en klanten die zich bij het afrekenen net hebben aangemeld.
  * Author: 36cycling migratie
  */
 
@@ -89,3 +92,22 @@ add_filter('gettext', function ($translation, $text, $domain) {
 add_filter('woocommerce_rate_label', function ($label) {
     return ($label === 'Btw' && apply_filters('wpml_current_language', null) === 'en') ? 'VAT' : $label;
 }, 20);
+
+// Bedankpagina: Circle-vlak voor leden of niet-leden. Buiten de bedankpagina (voorbeeld in de editor) blijven
+// beide vlakken staan, zodat ze te bewerken zijn.
+add_filter('render_block', function ($html, $block) {
+    $class = ' ' . ($block['attrs']['className'] ?? '') . ' ';
+    $join = strpos($class, ' c36-circle-join ') !== false;
+    $member = strpos($class, ' c36-circle-member ') !== false;
+    if ((!$join && !$member) || !function_exists('is_wc_endpoint_url') || !is_wc_endpoint_url('order-received')) {
+        return $html;
+    }
+    static $is_member = null;
+    if ($is_member === null) {
+        $order = wc_get_order(absint(get_query_var('order-received')));
+        $valid = $order && hash_equals($order->get_order_key(), wc_clean(wp_unslash($_GET['key'] ?? '')));
+        $is_member = $valid && ($order->get_meta('_c36_circle_optin') === 'yes'
+            || (function_exists('c36_circle_is_member') && c36_circle_is_member($order->get_billing_email())));
+    }
+    return ($member === $is_member) ? $html : '';
+}, 10, 2);

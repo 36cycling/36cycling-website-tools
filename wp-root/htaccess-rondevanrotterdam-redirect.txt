@@ -1,0 +1,9 @@
+# 36 Cycling: oud testdomein rondevanrotterdam.nl doorsturen naar www.36cycling.com (zelfde pad).
+# Bovenaan in httpdocs/.htaccess zetten, boven "# BEGIN LiteSpeed" en "# BEGIN WordPress".
+# /.well-known/ blijft bereikbaar voor de verlenging van het Let's Encrypt-certificaat.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?rondevanrotterdam\.nl$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteRule ^(.*)$ https://www.36cycling.com/$1 [R=301,L]
+</IfModule>
