@@ -23,6 +23,9 @@
  *                 hebben dezelfde slug (xs, s, …); WooCommerce koppelt variaties op slug en pakt dan willekeurig de NL- of
  *                 EN-term, waardoor de filter met voorraad per maat sommige maten niet vond. Na elke bijwerking van de tabel
  *                 zetten we elke regel op de term in de taal van het product (via de WPML-vertaalkoppeling).
+ *              9. Productpagina op de telefoon: bovenaan een terug-link naar de categorie ("‹ Fietsshirts Korte Mouw"), het
+ *                 laatste stuk van de padnavigatie. De Extra CSS verbergt de hele kop (padnavigatie + titel) op mobiel; de
+ *                 titel blijft onder de foto.
  * Author: 36cycling migratie
  */
 
@@ -134,6 +137,19 @@ add_action('wp_enqueue_scripts', function () {
     body .woocommerce-product-gallery .flexy-pills li { flex: 0 0 auto !important; width: 8px !important; height: 8px; margin: 0 !important; padding: 0 !important; border-radius: 50%; background: #1b2629; opacity: .25; cursor: pointer; transition: opacity .2s; }
     body .woocommerce-product-gallery .flexy-pills li.active { opacity: 1; }
     body .woocommerce-product-gallery .flexy-pills li > * { display: none !important; }
+}
+CSS
+    );
+    // Terug-link naar de categorie (zie 9 bovenaan); "body" ervoor om van de Extra CSS te winnen.
+    wp_add_inline_style('c36-gallery-dots', <<<'CSS'
+@media (max-width: 689.98px) {
+    body.single-product .hero-section { display: block; margin-bottom: 0; padding-top: 12px; }
+    body.single-product .hero-section .entry-header > :not(.ct-breadcrumbs) { display: none; }
+    body.single-product .hero-section .ct-breadcrumbs { margin: 0; font-size: 13px; }
+    body.single-product .hero-section .ct-breadcrumbs > span:not(.last-item) { display: none; }
+    body.single-product .hero-section .ct-breadcrumbs .last-item a { display: inline-flex; align-items: center; }
+    body.single-product .hero-section .ct-breadcrumbs .last-item a::before { content: "‹"; position: relative; top: -1px; margin-right: 8px; font-size: 20px; line-height: 1; }
+    body.single-product .ct-container-full[data-vertical-spacing*="top"] { padding-top: 10px; }
 }
 CSS
     );
