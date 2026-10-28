@@ -17,6 +17,8 @@
  *              6. Bedankpagina (Blocksy "Thank You Pages"): van de twee Circle-vlakken alleen het passende tonen.
  *                 Groep met extra CSS-klasse "c36-circle-join" (uitnodiging) voor niet-leden, "c36-circle-member"
  *                 (welkom) voor leden en klanten die zich bij het afrekenen net hebben aangemeld.
+ *              7. Productfoto's op de telefoon: stippen onder de foto, zodat je ziet dat er meer foto's zijn. Blocksy
+ *                 verbergt de miniaturen onder 690 px; die tonen we hier als stippen (tikken en vegen blijven van Blocksy).
  * Author: 36cycling migratie
  */
 
@@ -111,3 +113,23 @@ add_filter('render_block', function ($html, $block) {
     }
     return ($member === $is_member) ? $html : '';
 }, 10, 2);
+
+// Productfoto's op de telefoon: Blocksy's miniaturen (verborgen onder 690 px) als stippen tonen. De actieve stip volgt
+// Blocksy zelf (klasse "active", ook bij vegen); bij één foto maakt Blocksy geen miniaturen, dus ook geen stippen.
+add_action('wp_enqueue_scripts', function () {
+    if (!function_exists('is_product') || !is_product()) {
+        return;
+    }
+    wp_register_style('c36-gallery-dots', false, [], '1.0');
+    wp_enqueue_style('c36-gallery-dots');
+    wp_add_inline_style('c36-gallery-dots', <<<'CSS'
+@media (max-width: 689.98px) {
+    .woocommerce-product-gallery .flexy-pills { display: block; margin-top: 12px; }
+    .woocommerce-product-gallery .flexy-pills ol { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; width: auto !important; transform: none !important; }
+    .woocommerce-product-gallery .flexy-pills li { flex: 0 0 auto !important; width: 8px !important; height: 8px; margin: 0 !important; padding: 0 !important; border-radius: 50%; background: #1b2629; opacity: .25; cursor: pointer; transition: opacity .2s; }
+    .woocommerce-product-gallery .flexy-pills li.active { opacity: 1; }
+    .woocommerce-product-gallery .flexy-pills li > * { display: none !important; }
+}
+CSS
+    );
+}, 20);
