@@ -19,9 +19,9 @@ add_action('wp_footer', function () {
 <style id="c36-drill-css">
 #offcanvas nav.mobile-menu[data-c36-drill] { display: none; }
 #offcanvas .ct-panel-content-inner:has(.c36-drill) { justify-content: flex-start; }
-.c36-drill { position: relative; width: 100%; max-width: 480px; overflow: hidden; text-align: left; transition: height .25s ease; }
+.c36-drill { position: relative; flex-shrink: 0; width: 100%; max-width: 480px; overflow: hidden; text-align: left; } /* flex-shrink: anders knijpt Blocksy het menu op kleine schermen af in plaats van te scrollen */
 .c36-drill-panel { position: absolute; top: 0; left: 0; width: 100%; transform: translateX(100%); transition: transform .28s ease; }
-.c36-drill-panel.is-active { transform: none; }
+.c36-drill-panel.is-active { position: relative; transform: none; } /* het actieve niveau bepaalt de hoogte, zonder meten */
 .c36-drill-panel.is-behind { transform: translateX(-100%); }
 .c36-drill ul { list-style: none; margin: 0; padding: 0; }
 .c36-drill li { margin: 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
@@ -50,9 +50,6 @@ add_action('wp_footer', function () {
         a.textContent = text;
         if (cls) a.className = cls;
         return a;
-    }
-    function fit() {
-        wrap.style.height = stack[stack.length - 1].offsetHeight + 'px';
     }
     function panel(ul, title, href) {
         var p = document.createElement('div');
@@ -109,29 +106,30 @@ add_action('wp_footer', function () {
         p.offsetWidth; // reflow, zodat de overgang start
         if (cur) cur.classList.replace('is-active', 'is-behind');
         p.classList.add('is-active');
-        fit();
+        toTop();
+    }
+    function toTop() {
+        var sc = wrap.closest('.ct-panel-content-inner');
+        if (sc) sc.scrollTop = 0;
     }
     function back() {
         if (stack.length < 2) return;
         var cur = stack.pop(), prev = stack[stack.length - 1];
         cur.classList.remove('is-active');
         prev.classList.replace('is-behind', 'is-active');
-        fit();
+        toTop();
         setTimeout(function () { cur.remove(); }, 300);
     }
     nav.parentNode.insertBefore(wrap, nav);
     open(panel(nav.querySelector('ul'), '', ''));
 
-    // Menu open: hoogte meten (bij het laden is het paneel verborgen). Gesloten: volgende keer op het hoofdniveau beginnen.
+    // Menu gesloten: volgende keer weer op het hoofdniveau beginnen
     var oc = document.getElementById('offcanvas');
     new MutationObserver(function () {
-        if (oc.classList.contains('active')) return requestAnimationFrame(fit);
-        if (stack.length < 2) return;
+        if (oc.classList.contains('active') || stack.length < 2) return;
         while (stack.length > 1) stack.pop().remove();
         stack[0].classList.replace('is-behind', 'is-active');
-        fit();
     }).observe(oc, { attributes: true, attributeFilter: ['class'] });
-    window.addEventListener('resize', fit);
 })();
 </script>
     <?php
