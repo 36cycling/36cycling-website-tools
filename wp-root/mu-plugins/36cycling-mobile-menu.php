@@ -27,6 +27,7 @@ add_action('wp_footer', function () {
 .c36-drill li { margin: 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
 .c36-drill a, .c36-drill-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px 2px; color: #fff; background: none; border: 0; font: inherit; font-size: 17px; font-weight: 500; text-align: left; text-decoration: none; cursor: pointer; }
 .c36-drill a.c36-drill-all { font-weight: 700; }
+.c36-drill a.c36-drill-cta { justify-content: center; margin-top: 24px; padding: 14px 20px; color: #1b2629; background: #ffb8b5; border-radius: 3px; font-size: 16px; font-weight: 600; }
 .c36-drill-back { display: flex; align-items: center; gap: 6px; padding: 6px 0; color: #fff; opacity: .75; background: none; border: 0; font: inherit; font-size: 15px; cursor: pointer; }
 .c36-drill-back svg { transform: rotate(180deg); }
 .c36-drill-title { padding: 6px 2px 12px; color: #fff; font-size: 24px; font-weight: 700; border-bottom: 1px solid rgba(255, 255, 255, .14); }
@@ -73,10 +74,16 @@ add_action('wp_footer', function () {
             li0.appendChild(link(href, T.all, 'c36-drill-all'));
             list.appendChild(li0);
         }
+        var cta = null;
         ul.querySelectorAll(':scope > li').forEach(function (src) {
             var a = src.querySelector(':scope > a, :scope > .ct-sub-menu-parent > a');
             var sub = src.querySelector(':scope > ul');
             if (!a) return;
+            // Offerte aanvragen / Request a quote: als roze knop onder het hoofdmenu
+            if (!title && !sub && /offerte|quote/i.test(a.href)) {
+                cta = link(a.href, a.textContent.trim(), 'c36-drill-cta');
+                return;
+            }
             var li = document.createElement('li');
             if (sub) {
                 var btn = document.createElement('button');
@@ -92,6 +99,7 @@ add_action('wp_footer', function () {
             list.appendChild(li);
         });
         p.appendChild(list);
+        if (cta) p.appendChild(cta);
         return p;
     }
     function open(p) {
