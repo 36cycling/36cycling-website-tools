@@ -19,6 +19,10 @@
  *                 (welkom) voor leden en klanten die zich bij het afrekenen net hebben aangemeld.
  *              7. Productfoto's op de telefoon: stippen onder de foto, zodat je ziet dat er meer foto's zijn. Blocksy
  *                 verbergt de miniaturen onder 690 px; die tonen we hier als stippen (tikken en vegen blijven van Blocksy).
+ *              8. Opzoektabel voor de maatfilter (wc_product_attributes_lookup) per taal rechtzetten. NL- en EN-maattermen
+ *                 hebben dezelfde slug (xs, s, …); WooCommerce koppelt variaties op slug en pakt dan willekeurig de NL- of
+ *                 EN-term, waardoor de filter met voorraad per maat sommige maten niet vond. Na elke bijwerking van de tabel
+ *                 zetten we elke regel op de term in de taal van het product (via de WPML-vertaalkoppeling).
  * Author: 36cycling migratie
  */
 
@@ -134,3 +138,43 @@ add_action('wp_enqueue_scripts', function () {
 CSS
     );
 }, 20);
+
+// Opzoektabel per taal rechtzetten (zie 8 bovenaan). Geeft het aantal gecorrigeerde regels terug.
+function c36_fix_lookup_languages()
+{
+    global $wpdb;
+    $icl = $wpdb->prefix . 'icl_translations';
+    if ($wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', $icl)) !== $icl) {
+        return 0;
+    }
+    return (int) $wpdb->query(
+        "UPDATE {$wpdb->prefix}wc_product_attributes_lookup l
+         JOIN {$icl} pt ON pt.element_id = l.product_or_parent_id AND pt.element_type = 'post_product'
+         JOIN {$wpdb->term_taxonomy} tt ON tt.term_id = l.term_id AND tt.taxonomy = l.taxonomy
+         JOIN {$icl} ti ON ti.element_id = tt.term_taxonomy_id AND ti.element_type = CONCAT('tax_', l.taxonomy)
+         JOIN {$icl} tj ON tj.trid = ti.trid AND tj.element_type = ti.element_type AND tj.language_code = pt.language_code
+         JOIN {$wpdb->term_taxonomy} tt2 ON tt2.term_taxonomy_id = tj.element_id
+         SET l.term_id = tt2.term_id
+         WHERE ti.language_code <> pt.language_code"
+    );
+}
+
+// WooCommerce werkt de tabel bij via Action Scheduler (opnieuw genereren en per product); daarna rechtzetten.
+add_action('action_scheduler_after_execute', function ($action_id, $action) {
+    if (is_object($action) && method_exists($action, 'get_hook') && strpos($action->get_hook(), 'product_attribute_lookup') !== false) {
+        c36_fix_lookup_languages();
+    }
+}, 10, 2);
+
+// Handmatig: POST /wp-json/c36/v1/fix-lookup (beheerders).
+add_action('rest_api_init', function () {
+    register_rest_route('c36/v1', '/fix-lookup', [
+        'methods' => 'POST',
+        'permission_callback' => function () {
+            return current_user_can('manage_woocommerce');
+        },
+        'callback' => function () {
+            return ['fixed' => c36_fix_lookup_languages()];
+        },
+    ]);
+});
