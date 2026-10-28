@@ -18,16 +18,17 @@ add_action('wp_footer', function () {
     ?>
 <style id="c36-drill-css">
 #offcanvas nav.mobile-menu[data-c36-drill] { display: none; }
-#offcanvas .ct-panel-content-inner:has(.c36-drill) { justify-content: flex-start; }
+#offcanvas .ct-panel-content-inner:has(.c36-drill) { justify-content: flex-start; padding-top: 15px; padding-bottom: 20px; }
+#offcanvas .c36-drill ~ .ct-header-socials { margin-top: 28px; } /* compact, zodat Instagram ook op kleine telefoons in beeld staat */
 .c36-drill { position: relative; flex-shrink: 0; width: 100%; max-width: 480px; overflow: hidden; text-align: left; } /* flex-shrink: anders knijpt Blocksy het menu op kleine schermen af in plaats van te scrollen */
 .c36-drill-panel { position: absolute; top: 0; left: 0; width: 100%; transform: translateX(100%); transition: transform .28s ease; }
 .c36-drill-panel.is-active { position: relative; transform: none; } /* het actieve niveau bepaalt de hoogte, zonder meten */
 .c36-drill-panel.is-behind { transform: translateX(-100%); }
 .c36-drill ul { list-style: none; margin: 0; padding: 0; }
 .c36-drill li { margin: 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
-.c36-drill a, .c36-drill-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 16px 2px; color: #fff; background: none; border: 0; font: inherit; font-size: 17px; font-weight: 500; text-align: left; text-decoration: none; cursor: pointer; }
+.c36-drill a, .c36-drill-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 14px 2px; color: #fff; background: none; border: 0; font: inherit; font-size: 17px; font-weight: 500; text-align: left; text-decoration: none; cursor: pointer; }
 .c36-drill a.c36-drill-all { font-weight: 700; }
-.c36-drill a.c36-drill-cta { justify-content: center; margin-top: 24px; padding: 14px 20px; color: #1b2629; background: #ffb8b5; border-radius: 3px; font-size: 16px; font-weight: 600; }
+.c36-drill a.c36-drill-cta { justify-content: center; margin-top: 20px; padding: 14px 20px; color: #1b2629; background: #ffb8b5; border-radius: 3px; font-size: 16px; font-weight: 600; }
 .c36-drill-back { display: flex; align-items: center; gap: 6px; padding: 6px 0; color: #fff; opacity: .75; background: none; border: 0; font: inherit; font-size: 15px; cursor: pointer; }
 .c36-drill-back svg { transform: rotate(180deg); }
 .c36-drill-title { padding: 6px 2px 12px; color: #fff; font-size: 24px; font-weight: 700; border-bottom: 1px solid rgba(255, 255, 255, .14); }
