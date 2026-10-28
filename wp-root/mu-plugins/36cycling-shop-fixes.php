@@ -116,6 +116,7 @@ add_filter('render_block', function ($html, $block) {
 
 // Productfoto's op de telefoon: Blocksy's miniaturen (verborgen onder 690 px) als stippen tonen. De actieve stip volgt
 // Blocksy zelf (klasse "active", ook bij vegen); bij één foto maakt Blocksy geen miniaturen, dus ook geen stippen.
+// "body" ervoor: de Extra CSS (Customizer) verbergt de miniaturen op mobiel (22 okt) en laadt later; zo winnen de stippen.
 add_action('wp_enqueue_scripts', function () {
     if (!function_exists('is_product') || !is_product()) {
         return;
@@ -124,11 +125,11 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('c36-gallery-dots');
     wp_add_inline_style('c36-gallery-dots', <<<'CSS'
 @media (max-width: 689.98px) {
-    .woocommerce-product-gallery .flexy-pills { display: block; margin-top: 12px; }
-    .woocommerce-product-gallery .flexy-pills ol { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; width: auto !important; transform: none !important; }
-    .woocommerce-product-gallery .flexy-pills li { flex: 0 0 auto !important; width: 8px !important; height: 8px; margin: 0 !important; padding: 0 !important; border-radius: 50%; background: #1b2629; opacity: .25; cursor: pointer; transition: opacity .2s; }
-    .woocommerce-product-gallery .flexy-pills li.active { opacity: 1; }
-    .woocommerce-product-gallery .flexy-pills li > * { display: none !important; }
+    body .woocommerce-product-gallery .flexy-pills { display: block; margin-top: 12px; }
+    body .woocommerce-product-gallery .flexy-pills ol { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; width: auto !important; transform: none !important; }
+    body .woocommerce-product-gallery .flexy-pills li { flex: 0 0 auto !important; width: 8px !important; height: 8px; margin: 0 !important; padding: 0 !important; border-radius: 50%; background: #1b2629; opacity: .25; cursor: pointer; transition: opacity .2s; }
+    body .woocommerce-product-gallery .flexy-pills li.active { opacity: 1; }
+    body .woocommerce-product-gallery .flexy-pills li > * { display: none !important; }
 }
 CSS
     );
