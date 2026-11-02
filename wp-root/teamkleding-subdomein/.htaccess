@@ -1,0 +1,4 @@
+# teamkleding.36cycling.com (oude SEA-landingspagina op htmlpub) -> eigen landingspagina.
+# Plaatsen in de documentroot van het subdomein in Plesk. Querystring (gclid, utm_*) gaat mee.
+RewriteEngine On
+RewriteRule ^ https://www.36cycling.com/nl/wielerkleding-bedrukken/ [R=301,L]
