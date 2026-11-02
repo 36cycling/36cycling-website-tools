@@ -26,6 +26,9 @@
  *              9. Productpagina op de telefoon: bovenaan een terug-link naar de categorie ("‹ Fietsshirts Korte Mouw"), het
  *                 laatste stuk van de padnavigatie. De Extra CSS verbergt de hele kop (padnavigatie + titel) op mobiel; de
  *                 titel blijft onder de foto.
+ *             10. Afrekenen: vinkje "Maak een account aan bij 36 Cycling" (WooCommerce-vertaling: "… aan met 36 Cycling").
+ *                 Het afrekenblok vertaalt in de browser, dus via een filter op wp.i18n; alleen NL, EN blijft
+ *                 "Create an account with 36 Cycling".
  * Author: 36cycling migratie
  */
 
@@ -153,6 +156,20 @@ CSS
 }
 CSS
     );
+}, 20);
+
+// Vinkje account aanmaken (zie 10 bovenaan). Draait direct na wp-hooks, dus vóór de scripts van het afrekenblok.
+add_action('wp_enqueue_scripts', function () {
+    if (!function_exists('is_checkout') || !is_checkout() || apply_filters('wpml_current_language', null) !== 'nl') {
+        return;
+    }
+    wp_enqueue_script('wp-hooks');
+    wp_add_inline_script('wp-hooks', <<<'JS'
+wp.hooks.addFilter('i18n.gettext_woocommerce', 'c36/account-text', function (translation, text) {
+    return text === 'Create an account with %s' ? 'Maak een account aan bij %s' : translation;
+});
+JS
+    , 'after');
 }, 20);
 
 // Opzoektabel per taal rechtzetten (zie 8 bovenaan). Geeft het aantal gecorrigeerde regels terug.
