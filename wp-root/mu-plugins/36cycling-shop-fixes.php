@@ -29,6 +29,8 @@
  *             10. Afrekenen: vinkje "Maak een account aan bij 36 Cycling" (WooCommerce-vertaling: "… aan met 36 Cycling").
  *                 Het afrekenblok vertaalt in de browser, dus via een filter op wp.i18n; alleen NL, EN blijft
  *                 "Create an account with 36 Cycling".
+ *             11. Inloggen: "Wachtwoord vergeten?" onderstreept, zodat je ziet dat het een link is (inlogvenster van
+ *                 Blocksy en de pagina Mijn account).
  * Author: 36cycling migratie
  */
 
@@ -170,6 +172,13 @@ wp.hooks.addFilter('i18n.gettext_woocommerce', 'c36/account-text', function (tra
 });
 JS
     , 'after');
+}, 20);
+
+// "Wachtwoord vergeten?" als link herkenbaar (zie 11 bovenaan). Het inlogvenster staat op elke pagina.
+add_action('wp_enqueue_scripts', function () {
+    wp_register_style('c36-login-links', false, [], '1.0');
+    wp_enqueue_style('c36-login-links');
+    wp_add_inline_style('c36-login-links', 'body .ct-forgot-password, body .woocommerce-LostPassword a { text-decoration: underline; text-underline-offset: 2px; }');
 }, 20);
 
 // Opzoektabel per taal rechtzetten (zie 8 bovenaan). Geeft het aantal gecorrigeerde regels terug.
