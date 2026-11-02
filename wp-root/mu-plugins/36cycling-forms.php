@@ -4,6 +4,8 @@
  * Description: Extra controle op de contactformulieren (Fluent Forms 1, 2, 4, 5): het veld Telefoon ("subject")
  *              accepteert alleen een telefoonnummer (cijfers, spaties, + - ( ) .). Leeg mag. Spambots vullen daar
  *              tekst in ("Hey! Keep up the great work!"); die inzendingen worden geweigerd met een duidelijke melding.
+ *              Daarnaast: witte achtergrond in de formuliermails (was lichtgrijs), zodat een rechtstreeks antwoord er
+ *              netjes uitziet.
  * Author: 36cycling migratie
  */
 
@@ -31,3 +33,9 @@ add_filter('fluentform/validation_errors', function ($errors, $formData, $form, 
     }
     return $errors;
 }, 10, 4);
+
+// Formuliermails: achtergrond rond het bericht wit in plaats van #f6f6f6 (alle Fluent Forms-mails).
+add_filter('fluentform/email_template_colors', function ($colors) {
+    $colors['background_color'] = '#ffffff';
+    return $colors;
+});
