@@ -52,6 +52,17 @@ for (const [from, to] of [["/privacy/", "/nl/privacy/"], ["/nl/fietskleding/here
   ok(`Redirect ${from}`, r.status === 301 && (r.headers.get("location") || "").endsWith(to), `${r.status} → ${r.headers.get("location")}`);
 }
 
+// Formulieren: token van de spambeveiliging (Fluent Forms) ophalen zoals een bezoeker. Faalt dit, dan weigert het
+// formulier elke inzending ("Verdachte activiteit gedetecteerd"); oorzaak meestal een te lange LiteSpeed-TTL (zie Valkuilen).
+for (const path of ["/nl/contact/", "/en/contact/", "/nl/36-cycling-circle/"]) {
+  const html = await (await fetch(`${BASE}${path}`, { headers: UA })).text();
+  const nonce = (html.match(/"token_nonce":"([a-z0-9]+)"/) || [])[1];
+  const form = (html.match(/data-form_id="(\d+)"/) || [])[1];
+  if (!html.includes("fluent-form-token-field")) { ok(`Formulier ${path}`, !!form, form ? "tokenbeveiliging uit" : "geen formulier gevonden"); continue; }
+  const r = await (await fetch(`${BASE}/wp-admin/admin-ajax.php`, { method: "POST", headers: UA, body: new URLSearchParams({ action: "fluentform_generate_protection_token", nonce: nonce || "", form_id: form || "" }) })).json().catch(() => ({}));
+  ok(`Formulier ${path} (spamtoken)`, r.success === true, r.success ? "" : `token geweigerd (${r.data?.message || "geen antwoord"}): inzendingen worden geblokkeerd`);
+}
+
 // Eigen routes en API's
 const api = async (path, auth = true) => (await fetch(`${BASE}/wp-json${path}`, { headers: auth ? H : UA })).status;
 ok("Route c36/v1/translations", (await api("/c36/v1/translations?element_type=post_page&id=2")) === 200);
