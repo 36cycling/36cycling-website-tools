@@ -31,6 +31,8 @@
  *                 "Create an account with 36 Cycling".
  *             11. Inloggen: "Wachtwoord vergeten?" onderstreept, zodat je ziet dat het een link is (inlogvenster van
  *                 Blocksy en de pagina Mijn account).
+ *             12. Verzendoptie afhaalpunt (Sendcloud) in het Engels: "Pick up at a DHL point". WPML registreert de titel
+ *                 onder een andere naam dan WCML hem opzoekt, dus de vertaling in String Translation werkt niet.
  * Author: 36cycling migratie
  */
 
@@ -106,6 +108,19 @@ add_filter('gettext', function ($translation, $text, $domain) {
 add_filter('woocommerce_rate_label', function ($label) {
     return ($label === 'Btw' && apply_filters('wpml_current_language', null) === 'en') ? 'VAT' : $label;
 }, 20);
+
+// Afhaalpunt (Sendcloud) op de Engelse site (zie 12 bovenaan).
+add_filter('woocommerce_package_rates', function ($rates) {
+    if (apply_filters('wpml_current_language', null) !== 'en') {
+        return $rates;
+    }
+    foreach ($rates as $rate) {
+        if ($rate->get_method_id() === 'service_point_v2_shipping_method') {
+            $rate->set_label('Pick up at a DHL point');
+        }
+    }
+    return $rates;
+}, 100);
 
 // Bedankpagina: Circle-vlak voor leden of niet-leden. Buiten de bedankpagina (voorbeeld in de editor) blijven
 // beide vlakken staan, zodat ze te bewerken zijn.
