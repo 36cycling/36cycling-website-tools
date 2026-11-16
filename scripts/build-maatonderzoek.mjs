@@ -40,7 +40,7 @@ async function wp(method, path, body) {
 }
 
 // ---------- 1. Tekeningen ----------
-const IMG = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond"];
+const IMG = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond", "meten-borst", "meten-taille", "meten-heup"];
 for (const naam of IMG) {
   if (mine.media[naam]) continue;
   const bestand = `maatwijzer-${naam}.png`;
@@ -78,6 +78,9 @@ const T = {
     meetlint: "Meetlint bij de hand?",
     meetlintUitleg: "Meet op de huid of over dunne kleding, lint horizontaal en niet strak aangetrokken. Eén of twee maten invullen mag ook.",
     borst: "Borstomtrek", taille: "Taille", heup: "Heupomtrek",
+    meetBorst: "Meet rond het breedste deel van je borst, net onder je oksels.",
+    meetTaille: "Meet rond het smalste deel van je middel, meestal net boven je navel.",
+    meetHeup: "Meet rond het breedste deel van je heupen en billen.",
     knop: "Verstuur",
     bedankt: "<h3>Bedankt voor je hulp!</h3>\n<p>Je antwoorden zijn goed aangekomen. Dankzij jou wordt onze maattabel weer een stukje betrouwbaarder.</p>",
   },
@@ -102,6 +105,9 @@ const T = {
     meetlint: "Got a tape measure at hand?",
     meetlintUitleg: "Measure on the skin or over thin clothing, keep the tape horizontal and don't pull it tight. Filling in just one or two measurements is fine too.",
     borst: "Chest", taille: "Waist", heup: "Hips",
+    meetBorst: "Measure around the fullest part of your chest, just under your armpits.",
+    meetTaille: "Measure around the narrowest part of your waist, usually just above your navel.",
+    meetHeup: "Measure around the fullest part of your hips and buttocks.",
     knop: "Send",
     bedankt: "<h3>Thank you for your help!</h3>\n<p>Your answers have arrived safely. Thanks to you, our size chart just became a little more reliable.</p>",
   },
@@ -128,11 +134,13 @@ function bouwVelden(t) {
     },
     editor_options: { title: "Radiobutton veld", icon_class: "ff-edit-radio", element: "input-radio", template: "inputCheckable" },
   });
-  const getal = (name, label, eenheid, [lo, hi], verplicht) => ({
+  // Uitleg achter de i-knop naast de veldnaam (Fluent Forms: help_message als tooltip): tekening + één zin.
+  const uitleg = (beeld, tekst) => `<span class="c36-meet"><img src="${img(beeld)}" alt="" width="150" height="212">${tekst}</span>`;
+  const getal = (name, label, eenheid, [lo, hi], verplicht, help = "") => ({
     index: 6, element: "input_number", uniqElKey: key(),
     attributes: { autocomplete: "off", type: "number", name, value: "", id: "", class: "", placeholder: "" },
     settings: {
-      container_class: "", label, admin_field_label: name, label_placement: "", help_message: "", number_step: "any",
+      container_class: "", label, admin_field_label: name, label_placement: "", help_message: help, number_step: "any",
       prefix_label: "", suffix_label: eenheid, numeric_formatter: "", mobile_keyboard_type_number: "",
       validation_rules: {
         ...req(verplicht, t.vulIn),
@@ -192,7 +200,7 @@ function bouwVelden(t) {
     kolommen(getal("leeftijd", t.leeftijd, t.jaar, [12, 95], false), tekst("ander_merk", t.ander, t.anderVb)),
     tekstvak("opmerking", t.opmerking, t.opmerkingVb),
     sectie(t.meetlint, t.meetlintUitleg),
-    kolommen(getal("borst", t.borst, "cm", [70, 140], false), getal("taille", t.taille, "cm", [55, 140], false), getal("heup", t.heup, "cm", [70, 150], false)),
+    kolommen(getal("borst", t.borst, "cm", [70, 140], false, uitleg("meten-borst", t.meetBorst)), getal("taille", t.taille, "cm", [55, 140], false, uitleg("meten-taille", t.meetTaille)), getal("heup", t.heup, "cm", [70, 150], false, uitleg("meten-heup", t.meetHeup))),
   ];
 }
 const knop = (t) => ({
@@ -251,6 +259,14 @@ for (const lang of ["nl", "en"]) {
 const FORMS = new URL("translations/en/forms.json", ROOT);
 const paren = JSON.parse(await readFile(FORMS, "utf8"));
 if (paren[mine.forms.nl] !== mine.forms.en) { paren[mine.forms.nl] = mine.forms.en; await writeFile(FORMS, JSON.stringify(paren, null, 2)); }
+// Gepubliceerde pagina's opnieuw opslaan (inhoud blijft gelijk): LiteSpeed leegt dan zijn opgeslagen versie,
+// zodat bezoekers de nieuwe velden en opmaak meteen zien.
+for (const lang of ["nl", "en"]) {
+  const pid = state[`maatonderzoek-${lang}`]?.id;
+  if (!pid) continue;
+  const cur = await wp("GET", `/wp/v2/pages/${pid}?context=edit&lang=${lang}&_fields=status`);
+  if (cur.status === "publish") { await wp("POST", `/wp/v2/pages/${pid}?lang=${lang}`, { status: "publish" }); console.log(`pagina ${lang} ververst`); }
+}
 if (ONLY_FORMS) process.exit(0);
 
 // ---------- 5. Pagina's (concept, noindex) ----------

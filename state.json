@@ -292,6 +292,18 @@
       "buik-rond": {
         "id": 9929,
         "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-rond.png"
+      },
+      "meten-borst": {
+        "id": 9939,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-borst.png"
+      },
+      "meten-taille": {
+        "id": 9940,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-taille.png"
+      },
+      "meten-heup": {
+        "id": 9941,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-heup.png"
       }
     }
   },
