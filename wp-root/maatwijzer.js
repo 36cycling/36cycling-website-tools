@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.5 (heren, FLOW shirt en SPEED broek)
+   MAATWIJZER 36 Cycling, v0.6 (heren, FLOW shirt en SPEED broek)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -69,7 +69,10 @@
       rond: { borst: 0.75, onder: 1.5 },
     },
     pas: { strak: -1, normaal: 0, ruim: 1 },                   // cm verschuiving op beide
-    spreiding: { borst: 4, onder: 4 },                         // onzekerheid in cm (restspreiding in het onderzoek: 3,9 en 4,2)
+    // Spreiding in cm rond iemands plek; bepaalt het percentage "zeker" dat bij het advies staat. Gekozen zodat dat
+    // percentage klopt met hoe vaak het advies in het onderzoek raak was (scripts/maatonderzoek-zekerheid.mjs, 99 inzendingen):
+    // shirt toont gemiddeld 52% en was raak bij 53%; broek toont gemiddeld 53% en was raak bij 61%.
+    spreiding: { borst: 3.5, onder: 3.75 },
     grensMarge: 1.5,                                           // zo dicht bij een grens = "tussen twee maten"
   };
   // Uit v0.5 gehaald op 16 nov 2026 (besluit Jeroen, na de toets op de inzendingen):
@@ -110,11 +113,26 @@
     // "plek" is de plaats op de schaal van de maattabel (in cm). Sinds de ijking is dat geen schatting van iemands
     // borst- of heupomtrek meer, maar het getal dat het best past bij de maat die vergelijkbare mannen dragen.
     const boven = MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst + pas;
-    uit.shirt = Object.assign(kiesMaat(SHIRT, boven), { plek: boven, spreiding: MODEL.spreiding.borst });
+    uit.shirt = Object.assign(kiesMaat(SHIRT, boven), { plek: boven });
+    uit.shirt.zeker = zekerheid(SHIRT, boven, MODEL.spreiding.borst, uit.shirt.index);
 
     const onder = MODEL.onder.c + MODEL.onder.perKg * inv.gewicht + MODEL.onder.perCm * inv.lengte + buik.onder + pas;
-    uit.broek = Object.assign(kiesMaat(BROEK, onder), { plek: onder, spreiding: MODEL.spreiding.onder });
+    uit.broek = Object.assign(kiesMaat(BROEK, onder), { plek: onder });
+    uit.broek.zeker = zekerheid(BROEK, onder, MODEL.spreiding.onder, uit.broek.index);
     return uit;
+  }
+
+  // Hoe zeker is het advies? Het percentage mannen met dezelfde antwoorden dat precies deze maat draagt: het deel van een
+  // normale verdeling rond de plek dat binnen de grenzen van de maat valt (benadering van Abramowitz en Stegun).
+  function phi(z) {
+    const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989422804014327 * Math.exp(-z * z / 2);
+    const p = d * t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))));
+    return z >= 0 ? 1 - p : p;
+  }
+  function zekerheid(tabel, plek, sd, i) {
+    const g = tabel.grenzen;
+    const onder = i === 0 ? 0 : phi((g[i] - plek) / sd), boven = i === MATEN.length - 1 ? 1 : phi((g[i + 1] - plek) / sd);
+    return Math.round((boven - onder) * 100);
   }
 
   /* ============================== Teksten ============================== */
@@ -146,7 +164,9 @@
       contactHulp: 'Neem contact met ons op, dan kijken we mee.',
       langShirt: (m, rug) => `Je bent lang voor maat ${m}. De ruglengte is ${rug}, dus het shirt kan wat korter vallen.`,
       buitenTabel: m => `Maat ${m} staat nog niet in onze officiële maattabel; dit advies is een schatting.`,
-      schaalSchatting: 'Het pijltje is onze schatting, de streep erboven de onzekerheid.',
+      schaalSchatting: 'Het pijltje laat zien waar je zit tussen de maten. Ruim 9 van de 10 mannen draagt de geadviseerde maat of één maat ernaast.',
+      zeker: p => `${p}% zeker`,
+      zekerUitleg: (p, m) => `${p} van de 100 mannen met jouw antwoorden dragen precies maat ${m}`,
       vergelijk: k => `Vergelijk met je eigen ${k}`,
       vergelijkUitleg: (k, m) => `Leg je best passende ${k} plat op tafel en meet na. Zo valt maat ${m}:`,
       plat: {
@@ -183,7 +203,9 @@
       contactHulp: 'Get in touch and we will help you choose.',
       langShirt: (m, rug) => `You are tall for size ${m}. The back length is ${rug}, so the jersey may sit a little shorter.`,
       buitenTabel: m => `Size ${m} is not in our official size chart yet; this advice is an estimate.`,
-      schaalSchatting: 'The arrow is our estimate, the line above it the uncertainty.',
+      schaalSchatting: 'The arrow shows where you sit between the sizes. More than 9 out of 10 men wear the recommended size or one size next to it.',
+      zeker: p => `${p}% sure`,
+      zekerUitleg: (p, m) => `${p} out of 100 men with your answers wear exactly size ${m}`,
       vergelijk: k => `Compare with your own ${k}`,
       vergelijkUitleg: (k, m) => `Lay your best-fitting ${k} flat on a table and measure. This is how size ${m} measures:`,
       plat: {
@@ -244,7 +266,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .stap { animation: in .28s ease-out both; }
   .maat { animation: pop .4s cubic-bezier(.2, .9, .3, 1.2) .08s both; }
-  .schaal .stip, .schaal .band { animation: schuif .5s ease-out .15s both; }
+  .schaal .stip { animation: schuif .5s ease-out .15s both; }
   .keuze, .knop, .terug { transition: border-color .15s, background-color .15s, transform .15s, box-shadow .15s; }
 }
 @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
@@ -283,13 +305,21 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .keuzes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 @media (min-width: 640px) { .keuzes { gap: 16px; } }
 .keuze {
-  position: relative; display: block; width: 100%; margin: 0; padding: 12px 6px 14px; text-align: center; cursor: pointer;
+  position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; width: 100%; margin: 0; padding: 12px 6px 14px; text-align: center; cursor: pointer;
   border: 1.5px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit;
 }
 .keuze:hover { border-color: var(--ink); transform: translateY(-2px); box-shadow: 0 8px 18px -12px rgba(27, 38, 41, .5); }
 .keuze img { display: block; width: 100%; height: auto; max-height: 200px; object-fit: contain; margin: 0 auto; mix-blend-mode: multiply; }
 .keuze b { display: block; margin-top: 6px; font-weight: 600; font-size: 17px; }
 .keuze small { display: block; color: var(--muted); font-size: 13px; line-height: 1.3; margin-top: 2px; }
+@media (max-width: 479px) {
+  .kader { padding: 16px 14px 24px; }
+  .keuzes { gap: 8px; }
+  .keuze { padding: 10px 2px 12px; }
+  .keuze b { font-size: 14px; letter-spacing: -.01em; }
+  .keuze small { font-size: 11.5px; }
+  .keuze .vinkje { top: 5px; right: 5px; width: 20px; height: 20px; }
+}
 .keuze .vinkje { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; padding: 3px; border-radius: 50%; background: var(--accent); color: #fff; opacity: 0; transform: scale(.5); transition: opacity .15s, transform .15s; }
 .keuze[aria-pressed="true"] { border-color: var(--zwart); box-shadow: inset 0 0 0 1px var(--zwart); background: var(--soft); }
 .keuze[aria-pressed="true"] .vinkje { opacity: 1; transform: none; }
@@ -304,6 +334,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .kaart { border: 1.5px solid var(--line); border-radius: 8px; padding: 18px 18px 14px; background: var(--bg); }
 .kaartkop { display: flex; align-items: center; gap: 10px; }
 .kaartkop svg { width: 34px; height: 34px; flex: none; }
+.zeker { margin-left: auto; font-size: 13px; font-weight: 600; white-space: nowrap; color: var(--ink); background: var(--accent-zacht); border-radius: 99px; padding: 4px 12px; }
 .kaartkop h3 { margin: 0; font: 600 14px/1 Inter, system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .maat { font: 700 84px/1 var(--kop); margin: 18px 0 2px; letter-spacing: -.01em; transform-origin: left bottom; }
 .oordeel { font-weight: 600; margin: 0 0 14px; }
@@ -311,13 +342,12 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .uitleg { margin: 12px 0 0; font-size: 16px; }
 .notitie { margin: 10px 0 0; padding: 10px 12px; background: var(--soft); border-radius: var(--r); font-size: 14px; line-height: 1.45; }
 
-.schaal { position: relative; margin: 4px 0 6px; padding-top: 24px; }
+.schaal { position: relative; margin: 4px 0 6px; padding-top: 16px; }
 .schaal .vakken { display: flex; height: 38px; border-radius: var(--r); overflow: hidden; border: 1.5px solid var(--line); }
 .schaal .vak { display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; color: var(--muted); border-right: 1.5px solid var(--line); min-width: 0; }
 .schaal .vak:last-child { border-right: 0; }
 .schaal .vak.aan { background: var(--zwart); color: #fff; }
-.schaal .band { position: absolute; top: 4px; height: 5px; background: var(--accent); opacity: .45; border-radius: 3px; }
-.schaal .stip { position: absolute; top: 11px; width: 0; height: 0; margin-left: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid var(--accent); }
+.schaal .stip { position: absolute; top: 3px; width: 0; height: 0; margin-left: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid var(--accent); }
 .schaal-uitleg { font-size: 13px; color: var(--muted); margin: 0; }
 
 details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
@@ -456,10 +486,8 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       const pos = v => Math.max(0, Math.min(100, (v - start) / breed * 100));
       let vakken = '';
       for (let i = van; i <= tot; i++) vakken += `<div class="vak ${i === r.index ? 'aan' : ''}" style="flex:${g[i + 1] - g[i]}">${MATEN[i]}</div>`;
-      const links = pos(r.plek - r.spreiding), rechts = pos(r.plek + r.spreiding);
       return `<div class="schaal">
           <div class="vakken">${vakken}</div>
-          <div class="band" style="left:${links}%;width:${rechts - links}%"></div>
           <div class="stip" style="left:${pos(r.plek)}%"></div>
         </div>
         <p class="schaal-uitleg">${t.schaalSchatting}</p>`;
@@ -481,7 +509,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       if (k === 'shirt' && staat.lengte >= 190 && r.index <= 3) notities.push(t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])));
       if (r.buitenTabel) notities.push(t.buitenTabel(r.maat));
       return `<div class="kaart">
-          <div class="kaartkop">${ICOON[k]}<h3>${t.kleding[k]}</h3></div>
+          <div class="kaartkop">${ICOON[k]}<h3>${t.kleding[k]}</h3>${r.teKlein || r.teGroot ? '' : `<span class="zeker" title="${t.zekerUitleg(r.zeker, r.maat)}">${t.zeker(r.zeker)}</span>`}</div>
           <div class="maat">${r.maat}</div>
           <p class="oordeel ${r.buur ? 'grens' : ''}">${oordeel}</p>
           ${schaal(tabel, r)}
@@ -527,7 +555,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.5', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.6', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();
