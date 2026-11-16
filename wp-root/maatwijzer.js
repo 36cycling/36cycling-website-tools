@@ -1,19 +1,21 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.7 (heren, FLOW shirt en SPEED broek)
+   MAATWIJZER 36 Cycling, v0.9 (heren, FLOW shirt en SPEED broek)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
    van de pagina). De opmaak zit in een afgeschermd blok (shadow DOM), zodat
    het thema van de website en de maatwijzer elkaar niet in de weg zitten.
 
-   Bronnen van het model:
-   - maattabel-heren-cycling.pdf  -> lichaamsmaten per maat (borst, heup)
-   - 2026-Maattabel afmetingen FLOW shirt en SPEED broek.xlsx -> vlakke maten
-
-   Let op: de schatting uit lengte en gewicht is geijkt op vier personen plus
-   een algemene verhouding tussen gewicht, lengte en omvang. De getallen in
-   MODEL horen opnieuw bepaald te worden met de inzendingen van het
-   maatonderzoek (Fluent Forms 7 en 8 op de website).
+   Waar het advies op rust (sinds v0.8, 16 nov 2026):
+   - de inzendingen van het maatonderzoek (Fluent Forms 7 en 8 op de website):
+     welke maat dragen mannen met dit gewicht, deze lengte en deze antwoorden?
+   - de officiële pdf-maattabel doet NIET meer mee. Volgens Jeroen is die deels
+     geïnterpreteerd en overgenomen van concurrenten; in het onderzoek voorspelde
+     een schaal zonder de pdf even goed, en de percentages per maat klopten beter.
+   - 2026-Maattabel afmetingen FLOW shirt en SPEED broek.xlsx: de echt gemeten
+     platte maten. Die staan in "Vergelijk met je eigen shirt/broek" en in de
+     opmerking over de ruglengte; ze bepalen het advies niet.
+   Het model opnieuw afstellen: scripts/maatonderzoek-schaal.mjs in de websitemap.
    ===================================================================== */
 (function () {
   'use strict';
@@ -25,9 +27,9 @@
 
   const SHIRT = {
     sleutel: 'shirt',
-    // Grenzen tussen de maten in cm lichaamsomtrek (midden tussen de bereiken uit de pdf).
-    grenzen: [79.5, 85.5, 90.5, 96.5, 102.5, 105.5, 110.5, 114.5, 117.5, 122.5],
-    buitenTabelVanaf: 99,
+    // De schaal is het volgnummer van de maat: XS loopt van 0 tot 1, S van 1 tot 2, enzovoort. Elke maat is even breed.
+    grenzen: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    // Echt gemeten platte maten (Excel), in cm per maat XS t/m 5XL.
     plat: [
       ['borstbreedte', [42, 45, 46, 49, 51.5, 53, 53.5, 56.5, 59]],
       ['lengteAchter', [60, 64.5, 66.5, 69, 70, 71, 72, 74, 74.5]],
@@ -38,9 +40,7 @@
 
   const BROEK = {
     sleutel: 'broek',
-    // De pdf loopt tot en met 3XL (119-126). 4XL en 5XL zijn doorgetrokken met stappen van 7 cm: aanname.
-    grenzen: [82, 88, 94, 100, 106, 112, 119, 126, 133, 140],
-    buitenTabelVanaf: 7,
+    grenzen: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     plat: [
       ['heupbreedte', [32.5, 34, 35, 37, 38.5, 40, 42, 42, 43]],
       ['binnenbeen', [22, 24, 25, 25, 27, 27, 28, 29, 31]],
@@ -49,31 +49,37 @@
     ],
   };
 
-  // AFSTELLING v0.4/v0.5 (16 nov 2026): geijkt op 74 shirts en 72 broeken van heren uit het maatonderzoek
-  // (scripts/maatonderzoek-analyse.mjs in de websitemap, opties --keuze en --groepen).
-  // Uitkomst, eerlijk getoetst (elke inzending voorspeld zonder dat hij zelf meetelde):
-  //   shirt: zelfde maat 50%, past bij de drager 62%, hooguit één maat ernaast 93%  (v0.3: 39% / 49% / 89%)
-  //   broek: zelfde maat 64%, past bij de drager 68%, hooguit één maat ernaast 93%  (v0.3: 46% / 51% / 90%)
-  // Wat de inzendingen lieten zien: gewicht bepaalt bijna alles; lengte doet er nauwelijks toe (v0.3 trok per cm te veel af);
-  // de vragen over bovenlichaam, buik en pasvoorkeur verbeteren de voorspelling niet aantoonbaar. Ze tellen daarom nog
-  // maar half zo zwaar mee als in v0.3 (dat was op beide kledingstukken net de beste van drie varianten).
-  // v0.3 ter vergelijking: borst 97.7 / 0.62 / -0.27, onder 94.6 / 0.70 / -0.27, bouw ±2.5, buik -0.5..1.5 en -2..3, pas ±2.
+  // AFSTELLING v0.8/v0.9 (16 nov 2026): geijkt op 90 shirts en 87 broeken van heren uit het maatonderzoek (99 inzendingen),
+  // met scripts/maatonderzoek-schaal.mjs in de websitemap. Alles is in maat-eenheden: 1 = één maat.
+  // Eerlijk getoetst (elke man voorspeld met een afstelling waar hij zelf niet in zat):
+  //   shirt: zelfde maat 49%, past bij de drager 58%, hooguit één maat ernaast 92%
+  //   broek: zelfde maat 59%, past bij de drager 62%, hooguit één maat ernaast 94%
+  // Op dezelfde 99 inzendingen deed de schaal van de pdf-maattabel het niet beter (shirt 49% / 58% / 92%, broek 56% / 59% / 95%).
+  // Wat de inzendingen laten zien: gewicht bepaalt bijna alles (ruim 10 kg per shirtmaat, 15 kg per broekmaat); lengte doet er
+  // weinig toe; de vragen over bovenlichaam, buik en pasvoorkeur verbeteren de voorspelling niet aantoonbaar en tellen daarom
+  // licht mee, met vaste waarden (de helft van de oorspronkelijke aannames).
+  // Eerdere afstellingen staan in de Git-geschiedenis van de websitemap (wp-root/maatwijzer.js).
   const MODEL = {
-    // plek in de maattabel (cm) = c + perKg * gewicht + perCm * lengte + bouw + buik + pasvoorkeur
-    borst: { c: 76.0, perKg: 0.354, perCm: -0.027 },
-    onder: { c: 57.1, perKg: 0.440, perCm: 0.055 },
-    bouw: { smal: -1.25, gemiddeld: 0, breed: 1.25 },          // cm op de borst
+    // plek op de schaal = c + perKg * gewicht + perCm * lengte + bouw + buik + pasvoorkeur
+    borst: { c: -0.0702, perKg: 0.08772, perCm: -0.01801 },    // shirt
+    onder: { c: -5.7771, perKg: 0.06116, perCm: 0.02412 },     // broek
+    bouw: { smal: -0.21, gemiddeld: 0, breed: 0.21 },          // alleen op het shirt
     buik: {
-      vlak: { borst: -0.25, onder: -1 },
+      vlak: { borst: -0.04, onder: -0.17 },
       gemiddeld: { borst: 0, onder: 0 },
-      rond: { borst: 0.75, onder: 1.5 },
+      rond: { borst: 0.125, onder: 0.25 },
     },
-    pas: { strak: -1, normaal: 0, ruim: 1 },                   // cm verschuiving op beide
-    // Spreiding in cm rond iemands plek; bepaalt het percentage "zeker" dat bij het advies staat. Gekozen zodat dat
-    // percentage klopt met hoe vaak het advies in het onderzoek raak was (scripts/maatonderzoek-zekerheid.mjs, 99 inzendingen):
-    // shirt toont gemiddeld 52% en was raak bij 53%; broek toont gemiddeld 53% en was raak bij 61%.
-    spreiding: { borst: 3.5, onder: 3.75 },
-    grensMarge: 1.5,                                           // zo dicht bij een grens = "tussen twee maten"
+    // Pasvoorkeur (v0.9). "strak" komt uit de inzendingen: wie strak kiest, draagt bij gelijk gewicht en lengte 0,5 (shirt) en
+    // 0,3 (broek) maat kleiner; hier 0,4 voor beide. "race" is de regel van Jeroen (16 nov 2026): racers nemen een maat kleiner
+    // dan normaal; daar zijn nog geen inzendingen van. "ruim" koos bijna niemand (2 van 91) en bestaat niet meer als keuze.
+    pas: { race: -1, strak: -0.4, normaal: 0, ruim: 0 },
+    // Spreiding rond iemands plek; bepaalt de percentages per maat. Gekozen als de waarde die het best bij de inzendingen past.
+    // Opgeteld per maat komen de percentages dan overeen met wat er gedragen wordt
+    // (shirt M 20 verwacht/21 gedragen, L 29/33, XL 19/18, 2XL 10/9; broek M 24/23, L 30/34, XL 17/18, 2XL 8/6).
+    spreiding: { borst: 0.72, onder: 0.62 },
+    grensMarge: 0.25,                                          // zo dicht bij een grens = "tussen twee maten"
+    // Maten waar het onderzoek nog maar een paar dragers van heeft (XS, S, 3XL en groter): daar is het advies minder zeker.
+    weinigData: i => i <= 1 || i >= 6,
   };
   // Uit v0.5 gehaald op 16 nov 2026 (besluit Jeroen, na de toets op de inzendingen):
   // - de regel "lang (≥ 188 cm) en tussen twee broekmaten = de grootste": was een aanname; van de 8 lange mannen op een
@@ -99,7 +105,7 @@
       buurGroter: buur !== null && buur > i,
       teKlein: cm < g[0],
       teGroot: cm >= g[g.length - 1],
-      buitenTabel: i >= tabel.buitenTabelVanaf,
+      weinigData: MODEL.weinigData(i),
     };
   }
 
@@ -110,8 +116,8 @@
     const buik = MODEL.buik[inv.buik || 'gemiddeld'];
     const uit = {};
 
-    // "plek" is de plaats op de schaal van de maattabel (in cm). Sinds de ijking is dat geen schatting van iemands
-    // borst- of heupomtrek meer, maar het getal dat het best past bij de maat die vergelijkbare mannen dragen.
+    // "plek" is de plaats op de schaal van maten (0 = onderkant XS, 9 = bovenkant 5XL): het getal dat het best past bij
+    // de maat die mannen met dezelfde antwoorden dragen. Het is geen lichaamsmaat.
     const boven = MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst + pas;
     uit.shirt = Object.assign(kiesMaat(SHIRT, boven), { plek: boven });
     uit.shirt.verdeling = zekerheid(SHIRT, boven, MODEL.spreiding.borst, uit.shirt.index);
@@ -129,22 +135,17 @@
     const p = d * t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))));
     return z >= 0 ? 1 - p : p;
   }
-  // Geeft de verdeling over de geadviseerde maat en zijn buren: [{ index, maat, pct }], samen 100%.
-  // De buurmaat links telt ook alles wat kleiner is mee, de buurmaat rechts alles wat groter is (dat is meestal een paar procent).
-  // Getoetst op het onderzoek: opgeteld over alle mannen komen deze percentages per maat goed overeen met wat er echt gedragen
-  // wordt (shirt M 21 verwacht/21 gedragen, L 38/33, XL 13/18, 2XL 11/9; broek M 23/23, L 31/34, XL 17/18).
+  // Geeft per maat (de geadviseerde en zijn buren) het percentage mannen met dezelfde antwoorden dat die maat draagt:
+  // [{ index, maat, pct }]. Elk vakje telt alleen die ene maat; de drie samen zijn dus meestal net geen 100%
+  // (de rest draagt een maat die nog verder weg ligt). Alleen als het advies zelf XS of 5XL is, telt dat vakje ook alles
+  // eronder of erboven mee.
+  // Omdat elke maat even breed is, heeft de maat waar je plek in valt altijd het hoogste percentage.
   function zekerheid(tabel, plek, sd, i) {
     const g = tabel.grenzen, laatste = MATEN.length - 1;
-    const onder = i === 0 ? 0 : phi((g[i] - plek) / sd), boven = i === laatste ? 1 : phi((g[i + 1] - plek) / sd);
-    const delen = [];
-    if (i > 0) delen.push({ index: i - 1, kans: onder });
-    delen.push({ index: i, kans: boven - onder });
-    if (i < laatste) delen.push({ index: i + 1, kans: 1 - boven });
-    // Afronden op hele procenten die samen precies 100 zijn (de grootste rest krijgt het laatste procent).
-    let rest = 100;
-    delen.forEach(d => { d.pct = Math.floor(d.kans * 100); rest -= d.pct; });
-    delen.slice().sort((a, b) => (b.kans * 100 - b.pct) - (a.kans * 100 - a.pct)).slice(0, rest).forEach(d => { d.pct += 1; });
-    return delen.map(d => ({ index: d.index, maat: MATEN[d.index], pct: d.pct }));
+    const kans = k => (k === laatste && k === i ? 1 : phi((g[k + 1] - plek) / sd)) - (k === 0 && k === i ? 0 : phi((g[k] - plek) / sd));
+    const uit = [];
+    for (let k = Math.max(0, i - 1); k <= Math.min(laatste, i + 1); k++) uit.push({ index: k, maat: MATEN[k], pct: Math.round(kans(k) * 100) });
+    return uit;
   }
 
   /* ============================== Teksten ============================== */
@@ -164,9 +165,9 @@
       bouwTitel: 'Welk bovenlichaam lijkt het meest op het jouwe?', bouwLead: 'Kijk naar je schouders en borst.',
       smal: 'Smal', gemiddeld: 'Gemiddeld', breed: 'Breed',
       buikTitel: 'En je buik?', buikLead: 'Van opzij gezien.', vlak: 'Vlak', rond: 'Rond',
-      pasTitel: 'Hoe draag je je wielerkleding het liefst?', pasLead: 'Dit geeft de doorslag als je tussen twee maten zit.',
-      strak: 'Strak', strakSub: 'Als een tweede huid', normaal: 'Normaal', normaalSub: 'Aansluitend, zonder te knellen',
-      ruim: 'Ruim', ruimSub: 'Liever iets losser',
+      pasTitel: 'Hoe strak draag je je wielerkleding?', pasLead: 'Dit telt flink mee in je maat.',
+      race: 'Race', raceSub: 'Zo strak mogelijk', strak: 'Strak', strakSub: 'Als een tweede huid',
+      normaal: 'Normaal', normaalSub: 'Aansluitend, zonder te knellen',
       resTitel: 'Jouw maat', wijzig: 'Wijzig',
       kleding: { shirt: 'Shirt', broek: 'Broek' }, kledingKlein: { shirt: 'shirt', broek: 'broek' },
       past: m => `Maat ${m} past het best`, grens: (a, b) => `Op de grens van ${a} en ${b}`,
@@ -175,9 +176,8 @@
       teKlein: 'Mogelijk kleiner dan onze kleinste maat', teGroot: 'Mogelijk groter dan onze grootste maat',
       contactHulp: 'Neem contact met ons op, dan kijken we mee.',
       langShirt: (m, rug) => `Je bent lang voor maat ${m}. De ruglengte is ${rug}, dus het shirt kan wat korter vallen.`,
-      buitenTabel: m => `Maat ${m} staat nog niet in onze officiële maattabel; dit advies is een schatting.`,
+      weinigData: m => `Voor maat ${m} hebben we nog weinig gegevens. Het advies is hier minder zeker.`,
       schaalSchatting: 'De percentages laten zien welke maat mannen met jouw antwoorden dragen. Het pijltje is jouw plek tussen de maten.',
-      buurVaker: (m, b) => `Maat ${b} wordt net iets vaker gedragen, maar jouw plek tussen de maten valt in ${m}.`,
       vergelijk: k => `Vergelijk met je eigen ${k}`,
       vergelijkUitleg: (k, m) => `Leg je best passende ${k} plat op tafel en meet na. Zo valt maat ${m}:`,
       plat: {
@@ -202,9 +202,9 @@
       bouwTitel: 'Which upper body looks most like yours?', bouwLead: 'Look at your shoulders and chest.',
       smal: 'Slim', gemiddeld: 'Average', breed: 'Broad',
       buikTitel: 'And your belly?', buikLead: 'Seen from the side.', vlak: 'Flat', rond: 'Round',
-      pasTitel: 'How do you prefer to wear your cycling clothing?', pasLead: 'This tips the balance when you are between two sizes.',
-      strak: 'Tight', strakSub: 'Like a second skin', normaal: 'Regular', normaalSub: 'Close-fitting without pinching',
-      ruim: 'Loose', ruimSub: 'Rather a bit looser',
+      pasTitel: 'How tight do you wear your cycling clothing?', pasLead: 'This weighs heavily in your size.',
+      race: 'Race', raceSub: 'As tight as possible', strak: 'Tight', strakSub: 'Like a second skin',
+      normaal: 'Regular', normaalSub: 'Close-fitting without pinching',
       resTitel: 'Your size', wijzig: 'Change',
       kleding: { shirt: 'Jersey', broek: 'Bib shorts' }, kledingKlein: { shirt: 'jersey', broek: 'bib shorts' },
       past: m => `Size ${m} fits best`, grens: (a, b) => `Between ${a} and ${b}`,
@@ -213,9 +213,8 @@
       teKlein: 'Possibly smaller than our smallest size', teGroot: 'Possibly larger than our largest size',
       contactHulp: 'Get in touch and we will help you choose.',
       langShirt: (m, rug) => `You are tall for size ${m}. The back length is ${rug}, so the jersey may sit a little shorter.`,
-      buitenTabel: m => `Size ${m} is not in our official size chart yet; this advice is an estimate.`,
+      weinigData: m => `We have little data for size ${m} so far. The advice is less certain here.`,
       schaalSchatting: 'The percentages show which size men with your answers wear. The arrow is your position between the sizes.',
-      buurVaker: (m, b) => `Size ${b} is worn slightly more often, but your position between the sizes falls in ${m}.`,
       vergelijk: k => `Compare with your own ${k}`,
       vergelijkUitleg: (k, m) => `Lay your best-fitting ${k} flat on a table and measure. This is how size ${m} measures:`,
       plat: {
@@ -236,7 +235,7 @@
   const beeld = (naam, breed, hoog) => `<img src="${BEELD}${naam}.webp" alt="" width="${breed}" height="${hoog}" decoding="async">`;
   const figuur = naam => beeld(naam, 480, 540);     // bovenlichaam, buik, pasvorm
   const ALLE_BEELDEN = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
-    "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim"];
+    "pas-race", "pas-strak", "pas-normaal"];
 
   const ICOON = {
     shirt: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="icoon" d="M18 6 Q24 12 30 6 L42 12 L45 24 L37 26 L36 20 L36 42 L12 42 L12 20 L11 26 L3 24 L6 12 Z"/></svg>',
@@ -485,9 +484,9 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     }
     function toonPas() {
       toonKeuze('pas', t.pasTitel, t.pasLead, [
-        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: figuur("pasvorm-strak") },
-        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: figuur("pasvorm-normaal") },
-        { waarde: 'ruim', naam: t.ruim, sub: t.ruimSub, tekening: figuur("pasvorm-ruim") },
+        { waarde: 'race', naam: t.race, sub: t.raceSub, tekening: figuur("pas-race") },
+        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: figuur("pas-strak") },
+        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: figuur("pas-normaal") },
       ]);
     }
 
@@ -517,18 +516,10 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       } else {
         oordeel = t.past(r.maat);
       }
-      // Bij een smalle maat (shirt XL) kan een buurmaat een hoger percentage hebben dan het advies. Het advies blijft de maat
-      // waar je plek in valt (in het onderzoek paste dat vaker bij de drager dan de maat met het hoogste percentage: 7 tegen 4
-      // van de 11 gevallen); deze zin legt uit waarom het hoogste percentage dan niet zwart is.
-      if (!r.teKlein && !r.teGroot) {
-        const eigen = r.verdeling.find(d => d.index === r.index).pct;
-        const hoger = r.verdeling.filter(d => d.index !== r.index && d.pct > eigen).sort((a, b) => b.pct - a.pct)[0];
-        if (hoger) uitleg = (uitleg ? uitleg + ' ' : '') + t.buurVaker(r.maat, hoger.maat);
-      }
       const notities = [];
       // Feitelijke opmerking voor lange mensen bij het shirt: de ruglengte van de geadviseerde maat.
       if (k === 'shirt' && staat.lengte >= 190 && r.index <= 3) notities.push(t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])));
-      if (r.buitenTabel) notities.push(t.buitenTabel(r.maat));
+      if (r.weinigData) notities.push(t.weinigData(r.maat));
       return `<div class="kaart">
           <div class="kaartkop">${ICOON[k]}<h3>${t.kleding[k]}</h3></div>
           <div class="maat">${r.maat}</div>
@@ -576,7 +567,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.7', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.9', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();

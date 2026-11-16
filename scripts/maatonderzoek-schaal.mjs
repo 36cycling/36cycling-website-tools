@@ -71,7 +71,7 @@ console.log("\nGrenzen B (Excel): shirt " + SCHALEN["B. Excel (kledingmaten)"].s
    Basis, per kg en per cm komen uit de inzendingen. Eerlijk getoetst, plus de spreiding waarbij de percentages het best passen. */
 const BOUW = { smal: -0.21, gemiddeld: 0, breed: 0.21 };
 const BUIK = { shirt: { vlak: -0.04, gemiddeld: 0, rond: 0.125 }, broek: { vlak: -0.17, gemiddeld: 0, rond: 0.25 } };
-const PAS = { strak: -0.17, normaal: 0, ruim: 0.17 };
+const PAS = { race: -1, strak: -0.17, normaal: 0, ruim: 0.17 }; // "race" bestaat sinds 16 nov 2026 als keuze in het onderzoek
 const extra = (stuk, r) => (stuk === "shirt" ? BOUW[r.bovenlichaam] : 0) + BUIK[stuk][r.buik] + PAS[r.pasvoorkeur];
 const phi = (z) => { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989422804014327 * Math.exp(-z * z / 2); const p = d * t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429)))); return z >= 0 ? 1 - p : p; };
 const kansC = (plek, sd, i) => (i === 8 ? 1 : phi((i + 1 - plek) / sd)) - (i === 0 ? 0 : phi((i - plek) / sd));
@@ -105,7 +105,10 @@ for (const stuk of ["shirt", "broek"]) {
    In de inzendingen draagt wie "strak" kiest bij gelijk gewicht en lengte ongeveer een halve maat kleiner. De twee mannen
    die "ruim" kozen tellen mee als "normaal". Bovenlichaam en buik houden hun vaste waarden. */
 console.log("\nAFSTELLING v0.9: schaal C, 'strak' uit de inzendingen");
-const extra9 = (stuk, r) => (stuk === "shirt" ? BOUW[r.bovenlichaam] : 0) + BUIK[stuk][r.buik];
+// "race" telt hier met de vaste regel van Jeroen (één maat kleiner dan normaal). Zijn er genoeg inzendingen met "race"
+// (zeg 15 of meer), bepaal die waarde dan net als "strak" uit de data: voeg een kolom toe aan X9.
+const extra9 = (stuk, r) => (stuk === "shirt" ? BOUW[r.bovenlichaam] : 0) + BUIK[stuk][r.buik] + (r.pasvoorkeur === "race" ? -1 : 0);
+console.log(`  inzendingen met "race": ${heren.filter((r) => r.pasvoorkeur === "race").length}`);
 const X9 = (r) => [1, r.gewicht, r.lengte, +(r.pasvoorkeur === "strak")];
 const fit9 = (lijst, y) => los([0, 1, 2, 3].map((i) => [0, 1, 2, 3].map((j) => lijst.reduce((s, r) => s + X9(r)[i] * X9(r)[j], 0))), [0, 1, 2, 3].map((i) => lijst.reduce((s, r, n) => s + X9(r)[i] * y[n], 0)));
 const vast = {};
