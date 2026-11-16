@@ -3,12 +3,14 @@
 // Nieuwe pagina's worden als CONCEPT aangemaakt; een bestaande pagina houdt zijn status. noindex.
 // Inzendingen: Fluent Forms → Inzendingen (geen melding per mail, geen doorsturen naar de bedankpagina: dat is het meetpunt voor contact).
 //   node scripts/build-maatonderzoek.mjs            → alles
-//   node scripts/build-maatonderzoek.mjs --forms    → alleen de formulieren bijwerken
+//   node scripts/build-maatonderzoek.mjs --forms    → alleen de formulieren bijwerken (velden, teksten, bevestiging, opmaak)
+//   node scripts/build-maatonderzoek.mjs --css      → alleen de eigen opmaak van de formulieren bijwerken (velden blijven zoals ze in het beheer staan)
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { loadConfig, upsertPage, uploadMedia } from "../lib/wp.mjs";
 import { blocks } from "../lib/build.mjs";
 
-const ONLY_FORMS = process.argv.includes("--forms");
+const ONLY_CSS = process.argv.includes("--css");
+const ONLY_FORMS = ONLY_CSS || process.argv.includes("--forms");
 const { paragraph, breadcrumbs } = blocks;
 const cfg = await loadConfig();
 const AUTH = { Authorization: "Basic " + Buffer.from(`${cfg.wp.username}:${cfg.wp.appPassword}`).toString("base64") };
@@ -221,6 +223,7 @@ for (const lang of ["nl", "en"]) {
     const huidig = await ff("GET", `/forms/${id}`);
     await writeFile(new URL(`backups/fluentform-${id}-fields-${Date.now()}.json`, ROOT), JSON.stringify(huidig, null, 2));
   }
+  if (!ONLY_CSS) {
   const velden = JSON.stringify({ fields: bouwVelden(t), submitButton: knop(t) });
   await ff("POST", `/forms/${id}`, { title: t.title, status: "published", formFields: velden, form_fields: velden });
 
@@ -228,6 +231,7 @@ for (const lang of ["nl", "en"]) {
   const [inst] = await ff("GET", `/settings/${id}?meta_key=formSettings`);
   const waarde = { ...inst.value, confirmation: { ...inst.value.confirmation, redirectTo: "samePage", messageToShow: t.bedankt, samePageFormBehavior: "hide_form" } };
   await ff("POST", `/settings/${id}`, { meta_key: "formSettings", meta_id: String(inst.id), value: JSON.stringify(waarde) });
+  }
 
   // Eigen opmaak van dit formulier (Fluent Forms → formulier → Instellingen → Aangepaste CSS/JS). Bron: wp-root/maatonderzoek-form.css.
   const css = (await readFile(new URL("wp-root/maatonderzoek-form.css", ROOT), "utf8")).replace(/\/\*[\s\S]*?\*\//g, "").replaceAll("__W__", `.fluentform.fluentform_wrapper_${id}`).trim();

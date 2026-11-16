@@ -14,6 +14,10 @@ __W__ .ff-el-group.ff_list_buttons .ff-el-form-check.ff_item_selected label > sp
 __W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:checked + span { background-color: #000; border-color: #000 !important; color: #fff; box-shadow: none; }
 __W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:focus-visible + span { outline: 2px solid #00c3d1; outline-offset: 2px; }
 
+/* Tussenkoppen: kleiner dan de standaard-h3 van het thema (35px) en met meer lucht erboven (wens Jeroen, 16 nov). */
+__W__ .ff-el-group.ff-el-section-break { margin-top: 30px; }
+__W__ .ff-el-group.ff-el-section-break .ff-el-section-title { font-size: 26px; line-height: 1.25; }
+
 __W__ .ff_el_checkable_photo_holders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-width: 520px; margin-bottom: 0; overflow: visible; }
 __W__ .ff_el_checkable_photo_holders .ff-el-image-holder {
   float: none; width: auto; margin: 0; padding: 6px 4px 10px; text-align: center;
