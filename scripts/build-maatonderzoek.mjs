@@ -295,6 +295,9 @@ const ids = {};
 for (const [lang, p] of Object.entries(PAGES)) {
   const key = `maatonderzoek-${lang}`;
   const bestond = !!state[key]?.id;
+  // Afspraak (Jeroen, 16 nov 2026): hij maakt pagina's zelf op. Een bestaande pagina blijft dus zoals hij in WordPress staat;
+  // dit script zet alleen een nieuwe pagina neer. Tekst op een bestaande pagina wijzigen: gericht, één zin of één blok.
+  if (bestond) { ids[lang] = state[key].id; console.log(`pagina ${lang}: #${state[key].id} bestaat al, inhoud blijft ongemoeid`); continue; }
   const res = await upsertPage(cfg, {
     id: state[key]?.id, title: p.title, slug: p.slug, lang, status: "draft", content: p.content.join("\n\n"),
     meta: { _yoast_wpseo_title: p.title, "_yoast_wpseo_meta-robots-noindex": "1" },
