@@ -23,8 +23,9 @@ const H = { Authorization: "Basic " + Buffer.from(`${cfg.wp.username}:${cfg.wp.a
 const state = JSON.parse(await readFile(STATE, "utf8"));
 
 const js = (await readFile(BRON, "utf8")).replace(/\r\n/g, "\n").trim();
-// Wat een pagina kapot kan maken als het in een script in de inhoud staat.
-for (const [fout, re] of [["</script", /<\/script/i], ["<!--", /<!--/], ["<img", /<img/i]]) if (re.test(js)) throw new Error(`De bron bevat "${fout}"; dat mag niet in een script in de pagina-inhoud.`);
+// Het script gaat als base64 de pagina in (zie hieronder), dus de inhoud zelf kan WordPress niet raken.
+// Deze twee blijven verboden omdat ze een scripttag kunnen afbreken als iemand het ooit weer als gewone tekst plaatst.
+for (const [fout, re] of [["</script", /<\/script/i], ["<!--", /<!--/]]) if (re.test(js)) throw new Error(`De bron bevat "${fout}"; dat mag niet in het script staan.`);
 
 const h1 = (t) => `<!-- wp:heading {"level":1,"fontSize":"x-large"} -->\n<h1 class="wp-block-heading has-x-large-font-size">${t}</h1>\n<!-- /wp:heading -->`;
 // Het script staat als base64 in het src-adres van de scripttag. Als gewone tekst in de inhoud maakt WordPress er iets anders van

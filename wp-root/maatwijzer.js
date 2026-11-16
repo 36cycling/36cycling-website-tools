@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.2 (heren, FLOW shirt en SPEED broek)
+   MAATWIJZER 36 Cycling, v0.3 (heren, FLOW shirt en SPEED broek)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -245,46 +245,16 @@
     },
   };
 
-  /* ============================ Tekeningen ============================ */
+  /* ============================ Illustraties ============================ */
 
-  // Bovenlichaam van voren. s = schouderbreedte, w = heupbreedte (halve maten, t.o.v. het midden).
-  function lijfPad(s, w) {
-    const c = 50;
-    return [
-      'M44 24 L56 24', `L${c + s} 31`, `Q${c + s + 7} 34 ${c + s + 8} 46`, `L${c + s + 9} 74 L${c + s + 3} 74`,
-      `L${c + s} 48`, `L${c + w} 106 L${c - w} 106`, `L${c - s} 48`, `L${c - s - 3} 74 L${c - s - 9} 74`,
-      `L${c - s - 8} 46`, `Q${c - s - 7} 34 ${c - s} 31`, 'Z',
-    ].join(' ');
-  }
-  const hoofd = '<circle class="lijf" cx="50" cy="13" r="9"/>';
-  const tekenVoor = (s, w) => `<svg viewBox="0 0 100 112" aria-hidden="true">${hoofd}<path class="lijf" d="${lijfPad(s, w)}"/></svg>`;
-
-  function tekenZij(b) {
-    const d = `M45 24 Q34 28 33 46 Q33 76 37 106 L60 106 Q${b + 1} 97 ${b} 82 Q${b} 64 65 52 Q67 40 62 32 Q59 26 55 24 Z`;
-    return `<svg viewBox="0 0 100 112" aria-hidden="true">${hoofd}<path class="lijf" d="${d}"/><path class="arm" d="M47 36 Q42 56 49 78"/></svg>`;
-  }
-
-  // Pasvoorkeur: hetzelfde lijf met een shirt eroverheen; e = hoeveel ruimte het shirt laat.
-  function tekenPas(e) {
-    const c = 50, s = 24, w = 19;
-    const shirt = [
-      'M44 24 Q50 30 56 24', `L${c + s} 31`, `Q${c + s + 7} 34 ${c + s + 8} 46`,
-      `L${c + s + 9.5 + e} 58 L${c + s + 1 + e * 0.6} 59`, `L${c + s + e * 0.5} 50`,
-      `L${c + w + e} 100 L${c - w - e} 100`,
-      `L${c - s - e * 0.5} 50`, `L${c - s - 1 - e * 0.6} 59 L${c - s - 9.5 - e} 58`,
-      `L${c - s - 8} 46`, `Q${c - s - 7} 34 ${c - s} 31`, 'Z',
-    ].join(' ');
-    return `<svg viewBox="0 0 100 112" aria-hidden="true">${hoofd}<path class="lijf" d="${lijfPad(s, w)}"/><path class="shirt" d="${shirt}"/></svg>`;
-  }
-
-  // Meetinstructie: heel figuur van voren; de lijn van de gevraagde maat is turquoise, de andere grijs gestippeld.
-  function tekenMeten(actief) {
-    const lijf = 'M55 24 L65 24 L82 31 Q89 34 90 46 L96 88 L90 90 L83 50 Q79 62 80 72 Q82 84 84 94 L80 160 L68 160 L62 102 L58 102 L52 160 L40 160 L36 94 Q38 84 40 72 Q41 62 37 50 L30 90 L24 88 L30 46 Q31 34 38 31 Z';
-    const lijnen = { borst: [37.5, 82.5, 53], taille: [40, 80, 72], heup: [36, 84, 94] };
-    const lijn = (v, aan) => `<path class="${aan ? 'meet-aan' : 'meet-uit'}" d="M${v[0]} ${v[2]} L${v[1]} ${v[2]}"/>`;
-    const rest = Object.keys(lijnen).filter(k => k !== actief).map(k => lijn(lijnen[k], false)).join('');
-    return `<svg viewBox="0 0 120 170" aria-hidden="true"><circle class="lijf" cx="60" cy="13" r="9"/><path class="lijf" d="${lijf}"/>${rest}${lijn(lijnen[actief], true)}</svg>`;
-  }
+  // Gegenereerd met Gemini ("nano banana") op 16 nov 2026 en bijgesneden tot gelijke maat; ze staan in de
+  // mediabibliotheek van de website. Het maatonderzoek gebruikt dezelfde bestanden.
+  const BEELD = "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-";
+  const beeld = (naam, breed, hoog) => `<img src="${BEELD}${naam}.webp" alt="" width="${breed}" height="${hoog}" decoding="async">`;
+  const figuur = naam => beeld(naam, 480, 540);     // bovenlichaam, buik, pasvorm
+  const meetbeeld = naam => beeld("meten-" + naam, 360, 600);
+  const ALLE_BEELDEN = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
+    "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim", "meten-borst", "meten-heup"];
 
   const ICOON = {
     shirt: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="icoon" d="M18 6 Q24 12 30 6 L42 12 L45 24 L37 26 L36 20 L36 42 L12 42 L12 20 L11 26 L3 24 L6 12 Z"/></svg>',
@@ -368,17 +338,12 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   border: 1.5px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit;
 }
 .keuze:hover { border-color: var(--ink); transform: translateY(-2px); box-shadow: 0 8px 18px -12px rgba(27, 38, 41, .5); }
-.keuze svg { display: block; width: 100%; height: auto; max-height: 170px; margin: 0 auto; }
+.keuze img { display: block; width: 100%; height: auto; max-height: 200px; object-fit: contain; margin: 0 auto; mix-blend-mode: multiply; }
 .keuze b { display: block; margin-top: 6px; font-weight: 600; font-size: 17px; }
 .keuze small { display: block; color: var(--muted); font-size: 13px; line-height: 1.3; margin-top: 2px; }
 .keuze .vinkje { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; padding: 3px; border-radius: 50%; background: var(--accent); color: #fff; opacity: 0; transform: scale(.5); transition: opacity .15s, transform .15s; }
 .keuze[aria-pressed="true"] { border-color: var(--zwart); box-shadow: inset 0 0 0 1px var(--zwart); background: var(--soft); }
 .keuze[aria-pressed="true"] .vinkje { opacity: 1; transform: none; }
-.lijf { fill: #e6e3de; stroke: var(--ink); stroke-width: 1.6; stroke-linejoin: round; }
-.arm { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; }
-.shirt { fill: var(--ink); stroke: var(--ink); stroke-width: 1.6; stroke-linejoin: round; }
-.meet-uit { fill: none; stroke: #8d989c; stroke-width: 1.1; stroke-dasharray: 2.5 2.5; }
-.meet-aan { fill: none; stroke: var(--accent); stroke-width: 3.4; stroke-linecap: round; }
 .icoon { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
 
 .samenvatting { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 0 0 22px; font-size: 14px; color: var(--muted); }
@@ -419,7 +384,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 .meetrijen { display: grid; gap: 14px; }
 @media (min-width: 680px) { .meetrijen { grid-template-columns: 1fr 1fr; } }
 .meetrij { display: grid; grid-template-columns: 62px 1fr; gap: 12px; align-items: center; }
-.meetrij > svg { width: 62px; height: auto; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 4px; }
+.meetrij > img { width: 62px; height: auto; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 3px; }
 .meetlabel { position: relative; display: flex; align-items: center; gap: 4px; margin-bottom: 4px; }
 .meetlabel label { font-weight: 600; font-size: 15px; }
 .info { width: 32px; height: 32px; padding: 6px; margin: -6px 0; border: 0; background: none; color: var(--ink); cursor: pointer; border-radius: 50%; }
@@ -433,7 +398,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
   font-size: 14px; line-height: 1.4;
 }
 .wolk[hidden] { display: none; }
-.wolk svg { display: block; width: 130px; height: auto; margin: 0 auto 8px; }
+.wolk img { display: block; width: 140px; height: auto; margin: 0 auto 8px; }
 .wolk p { margin: 0; }
 .wolk p + p { margin-top: 6px; color: var(--muted); }
 
@@ -539,23 +504,23 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
     function toonBouw() {
       toonKeuze('bouw', t.bouwTitel, t.bouwLead, [
-        { waarde: 'smal', naam: t.smal, tekening: tekenVoor(19, 16) },
-        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: tekenVoor(24, 19) },
-        { waarde: 'breed', naam: t.breed, tekening: tekenVoor(30, 21) },
+        { waarde: 'smal', naam: t.smal, tekening: figuur("bovenlichaam-smal") },
+        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: figuur("bovenlichaam-gemiddeld") },
+        { waarde: 'breed', naam: t.breed, tekening: figuur("bovenlichaam-breed") },
       ]);
     }
     function toonBuik() {
       toonKeuze('buik', t.buikTitel, t.buikLead, [
-        { waarde: 'vlak', naam: t.vlak, tekening: tekenZij(61) },
-        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: tekenZij(68) },
-        { waarde: 'rond', naam: t.rond, tekening: tekenZij(79) },
+        { waarde: 'vlak', naam: t.vlak, tekening: figuur("buik-vlak") },
+        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: figuur("buik-gemiddeld") },
+        { waarde: 'rond', naam: t.rond, tekening: figuur("buik-rond") },
       ]);
     }
     function toonPas() {
       toonKeuze('pas', t.pasTitel, t.pasLead, [
-        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: tekenPas(0) },
-        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: tekenPas(2.5) },
-        { waarde: 'ruim', naam: t.ruim, sub: t.ruimSub, tekening: tekenPas(6) },
+        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: figuur("pasvorm-strak") },
+        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: figuur("pasvorm-normaal") },
+        { waarde: 'ruim', naam: t.ruim, sub: t.ruimSub, tekening: figuur("pasvorm-ruim") },
       ]);
     }
 
@@ -629,12 +594,12 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
     function meetrij(veld, uitleg) {
       return `<div class="meetrij">
-          ${tekenMeten(veld)}
+          ${meetbeeld(veld)}
           <div>
             <div class="meetlabel">
               <label for="mw-${veld}">${t[veld]}</label>
               <button class="info" type="button" aria-expanded="false" aria-controls="mw-wolk-${veld}" aria-label="${t.hoeMeten(t[veld].toLowerCase())}">${ICOON.info}</button>
-              <div class="wolk" id="mw-wolk-${veld}" role="tooltip" hidden>${tekenMeten(veld)}<p>${uitleg}</p><p>${t.meetAlgemeen}</p></div>
+              <div class="wolk" id="mw-wolk-${veld}" role="tooltip" hidden>${meetbeeld(veld)}<p>${uitleg}</p><p>${t.meetAlgemeen}</p></div>
             </div>
             <div class="invoer"><input id="mw-${veld}" type="text" inputmode="decimal" autocomplete="off" value="${staat[veld] ?? ''}"><span class="eenheid">cm</span></div>
             <div class="uitkomst" id="mw-uit-${veld}" aria-live="polite"></div>
@@ -704,10 +669,11 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
     terug.addEventListener('click', () => ga(staat.stap - 1));
     toon();
+    setTimeout(() => ALLE_BEELDEN.forEach(naam => { new Image().src = BEELD + naam + '.webp'; }), 300);
   }
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.2' };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.3' };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();

@@ -305,6 +305,56 @@
         "id": 9941,
         "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-heup.png"
       }
+    },
+    "beeld": {
+      "bovenlichaam-smal": {
+        "id": 9952,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-smal.webp"
+      },
+      "bovenlichaam-gemiddeld": {
+        "id": 9953,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-gemiddeld.webp"
+      },
+      "bovenlichaam-breed": {
+        "id": 9954,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-breed.webp"
+      },
+      "buik-vlak": {
+        "id": 9955,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-vlak.webp"
+      },
+      "buik-gemiddeld": {
+        "id": 9956,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-gemiddeld.webp"
+      },
+      "buik-rond": {
+        "id": 9957,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-rond.webp"
+      },
+      "pasvorm-strak": {
+        "id": 9958,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pasvorm-strak.webp"
+      },
+      "pasvorm-normaal": {
+        "id": 9959,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pasvorm-normaal.webp"
+      },
+      "pasvorm-ruim": {
+        "id": 9960,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pasvorm-ruim.webp"
+      },
+      "meten-borst": {
+        "id": 9961,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-borst.webp"
+      },
+      "meten-taille": {
+        "id": 9962,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-taille.webp"
+      },
+      "meten-heup": {
+        "id": 9963,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-heup.webp"
+      }
     }
   },
   "maatonderzoek-nl": {

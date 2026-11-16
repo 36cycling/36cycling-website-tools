@@ -39,20 +39,25 @@ async function wp(method, path, body) {
   return j;
 }
 
-// ---------- 1. Tekeningen ----------
-const IMG = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond", "meten-borst", "meten-taille", "meten-heup"];
+// ---------- 1. Illustraties ----------
+// Sinds 16 nov 2026 de gegenereerde illustraties (Gemini "nano banana", bijgesneden met scripts/maatwijzer-beelden.py)
+// uit media/maatwijzer/ai/. Ze staan onder state.maatonderzoek.beeld; de maatwijzer gebruikt dezelfde bestanden (ook pasvorm-*).
+// De eerste, zelf getekende versie (state.maatonderzoek.media, media 9924–9929 en 9939–9941) wordt niet meer gebruikt.
+const IMG = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
+  "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim", "meten-borst", "meten-taille", "meten-heup"];
+mine.beeld ||= {};
 for (const naam of IMG) {
-  if (mine.media[naam]) continue;
-  const bestand = `maatwijzer-${naam}.png`;
+  if (mine.beeld[naam]) continue;
+  const bestand = `maatwijzer-${naam}.webp`;
   const m = await uploadMedia(cfg, {
-    filePath: new URL(`media/maatwijzer/${bestand}`, ROOT), filename: bestand,
-    altText: `Tekening ${naam.replace("-", " ")}`, title: `Maatwijzer ${naam.replace("-", " ")}`,
+    filePath: new URL(`media/maatwijzer/ai/${bestand}`, ROOT), filename: bestand,
+    altText: `Illustratie ${naam.replace("-", " ")}`, title: `Maatwijzer ${naam.replace("-", " ")}`,
   });
-  mine.media[naam] = { id: m.id, url: m.source_url };
+  mine.beeld[naam] = { id: m.id, url: m.source_url };
   await save();
-  console.log(`media ${naam} → ${m.id}`);
+  console.log(`media ${naam} → ${m.id} ${m.source_url}`);
 }
-const img = (naam) => mine.media[naam].url;
+const img = (naam) => mine.beeld[naam].url;
 
 // ---------- 2. Teksten ----------
 const MATEN = ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"];
@@ -135,7 +140,7 @@ function bouwVelden(t) {
     editor_options: { title: "Radiobutton veld", icon_class: "ff-edit-radio", element: "input-radio", template: "inputCheckable" },
   });
   // Uitleg achter de i-knop naast de veldnaam (Fluent Forms: help_message als tooltip): tekening + één zin.
-  const uitleg = (beeld, tekst) => `<span class="c36-meet"><img src="${img(beeld)}" alt="" width="150" height="212">${tekst}</span>`;
+  const uitleg = (beeld, tekst) => `<span class="c36-meet"><img src="${img(beeld)}" alt="" width="150" height="250">${tekst}</span>`;
   const getal = (name, label, eenheid, [lo, hi], verplicht, help = "") => ({
     index: 6, element: "input_number", uniqElKey: key(),
     attributes: { autocomplete: "off", type: "number", name, value: "", id: "", class: "", placeholder: "" },
