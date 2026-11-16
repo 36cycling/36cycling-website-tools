@@ -1,0 +1,28 @@
+/* Maatonderzoek (Fluent Forms): staat per formulier in Instellingen → Aangepaste CSS/JS.
+   __W__ wordt door scripts/build-maatonderzoek.mjs vervangen door .fluentform.fluentform_wrapper_<id>.
+   Doel: keuzeknoppen en lichaamstekeningen ook op de telefoon naast elkaar, gekozen optie zwart.
+   De plugin zet op de telefoon zelf border en border-radius met !important; alleen daarom staat hier !important bij border-color. */
+__W__ .ff-el-group.ff_list_buttons .ff-el-input--content { display: flex; flex-wrap: wrap; gap: 8px; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check { display: block; margin: 0; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label > span {
+  display: block; width: auto; min-width: 52px; padding: 12px 14px; font-size: 15px; font-weight: 400; color: #1b2629;
+  border: 1px solid; border-color: #cfd3d4 !important; border-radius: 4px; box-shadow: none;
+}
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label > span:hover { color: #1b2629; border-color: #1b2629 !important; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label:focus-within span { background-color: #fff; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check.ff_item_selected label > span,
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:checked + span { background-color: #000; border-color: #000 !important; color: #fff; box-shadow: none; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:focus-visible + span { outline: 2px solid #00c3d1; outline-offset: 2px; }
+
+__W__ .ff_el_checkable_photo_holders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-width: 520px; margin-bottom: 0; overflow: visible; }
+__W__ .ff_el_checkable_photo_holders .ff-el-image-holder {
+  float: none; width: auto; margin: 0; padding: 6px 4px 10px; text-align: center;
+  border: 1px solid #cfd3d4; border-radius: 4px; background: #fff;
+}
+__W__ .ff_el_checkable_photo_holders label.ff-el-image-input-src { width: 100%; height: auto; aspect-ratio: 9 / 10; background-size: contain; }
+__W__ .ff_el_checkable_photo_holders .ff-el-form-check-label { display: block; margin: 0; padding: 0; font-size: 15px; cursor: pointer; }
+__W__ .ff_el_checkable_photo_holders .ff-el-form-check-input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+__W__ .ff_el_checkable_photo_holders .ff-el-image-holder:hover { border-color: #1b2629; }
+__W__ .ff_el_checkable_photo_holders .ff-el-image-holder.ff_item_selected,
+__W__ .ff_el_checkable_photo_holders .ff-el-image-holder:has(input:checked) { border-color: #000; box-shadow: inset 0 0 0 1px #000; font-weight: 600; }
+__W__ .ff_el_checkable_photo_holders .ff-el-image-holder:has(input:focus-visible) { outline: 2px solid #00c3d1; outline-offset: 2px; }

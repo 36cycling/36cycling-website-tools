@@ -262,5 +262,45 @@
   "bedankt-en": {
     "id": 8209,
     "link": "https://rondevanrotterdam.nl/en/contact/thank-you/"
+  },
+  "maatonderzoek": {
+    "forms": {
+      "nl": 7,
+      "en": 8
+    },
+    "media": {
+      "bovenlichaam-smal": {
+        "id": 9924,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-smal.png"
+      },
+      "bovenlichaam-gemiddeld": {
+        "id": 9925,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-gemiddeld.png"
+      },
+      "bovenlichaam-breed": {
+        "id": 9926,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-bovenlichaam-breed.png"
+      },
+      "buik-vlak": {
+        "id": 9927,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-vlak.png"
+      },
+      "buik-gemiddeld": {
+        "id": 9928,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-gemiddeld.png"
+      },
+      "buik-rond": {
+        "id": 9929,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-buik-rond.png"
+      }
+    }
+  },
+  "maatonderzoek-nl": {
+    "id": 9930,
+    "link": "https://www.36cycling.com/nl/?page_id=9930"
+  },
+  "maatonderzoek-en": {
+    "id": 9931,
+    "link": "https://www.36cycling.com/en/?page_id=9931"
   }
 }
