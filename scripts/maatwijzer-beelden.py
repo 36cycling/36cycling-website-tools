@@ -36,6 +36,10 @@ REEKSEN = [
     ("bovenlichaam.jpg", ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed"], 480, 540, 26),
     ("buik.jpg", ["buik-vlak", "buik-gemiddeld", "buik-rond"], 480, 540, 26),
     ("pasvorm.jpg", ["pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim"], 480, 540, 26),
+    # Pasvoorkeur sinds v0.9 (Race / Strak / Normaal; niemand koos "ruim"). Prompt: dezelfde figuur drie keer met een donker
+    # wielershirt: "race-fit aero jersey, painted-on tight, long tight sleeves almost to the elbow" / "tight cycling jersey that
+    # follows the body contour" / "regular club-fit jersey, still sporty and fitted, a little room around the waist, NOT a baggy T-shirt".
+    ("pas.jpg", ["pas-race", "pas-strak", "pas-normaal"], 480, 540, 26),
     ("meten.jpg", ["meten-borst", "meten-taille", "meten-heup"], 360, 600, 22),
 ]
 DREMPEL = 236  # donkerder dan dit telt als tekening

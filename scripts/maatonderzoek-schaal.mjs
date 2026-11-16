@@ -99,3 +99,41 @@ for (const stuk of ["shirt", "broek"]) {
   console.log(`      per maat verwacht/gedragen: ` + MATEN.map((m, i) => `${m} ${lijst.reduce((s, r) => s + kansC(plek(w, r), sd, i), 0).toFixed(0)}/${lijst.filter((r) => r[maat] === m).length}`).join("  "));
   console.log(`      gewicht per maat bij 184 cm, gemiddeld/normaal: ` + MATEN.map((m, i) => { const lo = Math.ceil((i - w[0] - w[2] * 184) / w[1]), hi = Math.ceil((i + 1 - w[0] - w[2] * 184) / w[1]) - 1; return `${m} ${i === 0 ? "tot " : lo + "–"}${i === 8 ? "" : hi}`; }).join(" | "));
 }
+
+/* ---------- Afstelling v0.9: de pasvoorkeur "strak" komt nu uit de inzendingen in plaats van een vaste aanname ----------
+   Aanleiding (Jeroen, 16 nov 2026): niemand kiest "ruim"; iedereen die fietst wil strak, en racers nemen nog een maat kleiner.
+   In de inzendingen draagt wie "strak" kiest bij gelijk gewicht en lengte ongeveer een halve maat kleiner. De twee mannen
+   die "ruim" kozen tellen mee als "normaal". Bovenlichaam en buik houden hun vaste waarden. */
+console.log("\nAFSTELLING v0.9: schaal C, 'strak' uit de inzendingen");
+const extra9 = (stuk, r) => (stuk === "shirt" ? BOUW[r.bovenlichaam] : 0) + BUIK[stuk][r.buik];
+const X9 = (r) => [1, r.gewicht, r.lengte, +(r.pasvoorkeur === "strak")];
+const fit9 = (lijst, y) => los([0, 1, 2, 3].map((i) => [0, 1, 2, 3].map((j) => lijst.reduce((s, r) => s + X9(r)[i] * X9(r)[j], 0))), [0, 1, 2, 3].map((i) => lijst.reduce((s, r, n) => s + X9(r)[i] * y[n], 0)));
+const vast = {};
+for (const ronde of ["vrij", "gedeeld"]) {
+  for (const stuk of ["shirt", "broek"]) {
+    const [maat, zit] = STUK[stuk];
+    const lijst = heren.filter((r) => MATEN.includes(r[maat]));
+    // In ronde 2 staat "strak" voor beide kledingstukken op dezelfde waarde (het gemiddelde uit ronde 1) en worden alleen
+    // basis, per kg en per cm opnieuw bepaald.
+    const strakVast = ronde === "gedeeld" ? vast.strak : null;
+    const doel = (r) => MATEN.indexOf(r[maat]) + (PLEK[r[zit]] ?? 0.5) - extra9(stuk, r) - (strakVast !== null && r.pasvoorkeur === "strak" ? strakVast : 0);
+    const pas = (w, r) => (strakVast !== null ? (r.pasvoorkeur === "strak" ? strakVast : 0) : w[3] * X9(r)[3]);
+    const fitten = (l) => (strakVast !== null ? [...fit(l, l.map(doel)), 0] : fit9(l, l.map(doel)));
+    const plek = (w, r) => w[0] + w[1] * r.gewicht + w[2] * r.lengte + extra9(stuk, r) + pas(w, r);
+    const idx = (v) => Math.max(0, Math.min(8, Math.floor(v)));
+    let raak = 0, past = 0, een = 0;
+    for (const r of lijst) { const w = fitten(lijst.filter((x) => x !== r)); const d = idx(plek(w, r)) - MATEN.indexOf(r[maat]); if (d === 0) raak++; if (d === 0 || (r[zit] === "strak" && d === 1) || (r[zit] === "ruim" && d === -1)) past++; if (Math.abs(d) <= 1) een++; }
+    const w = fitten(lijst);
+    if (ronde === "vrij") { vast[stuk] = w[3]; console.log(`  ${stuk} (n=${lijst.length}), strak vrij: zelfde maat ${pct(raak, lijst.length)} | past bij drager ${pct(past, lijst.length)} | ≤1 ernaast ${pct(een, lijst.length)} | strak = ${w[3].toFixed(3)} maat`); continue; }
+    let beste = null;
+    for (let sd = 0.4; sd <= 1.2001; sd += 0.02) { const l = lijst.reduce((s, r) => s + Math.log(Math.max(1e-9, kansC(plek(w, r), sd, MATEN.indexOf(r[maat])))), 0); if (!beste || l > beste.l) beste = { sd, l }; }
+    const sd = Math.round(beste.sd * 100) / 100;
+    console.log(`  ${stuk} (n=${lijst.length}), strak = ${strakVast.toFixed(2)} voor beide: zelfde maat ${pct(raak, lijst.length)} | past bij drager ${pct(past, lijst.length)} | ≤1 ernaast ${pct(een, lijst.length)}`);
+    console.log(`      c ${w[0].toFixed(4)} | perKg ${w[1].toFixed(5)} | perCm ${w[2].toFixed(5)} | spreiding ${sd} maat | raak op alle inzendingen ${pct(lijst.filter((r) => idx(plek(w, r)) === MATEN.indexOf(r[maat])).length, lijst.length)}`);
+    console.log(`      per maat verwacht/gedragen: ` + MATEN.map((m, i) => `${m} ${lijst.reduce((s, r) => s + kansC(plek(w, r), sd, i), 0).toFixed(0)}/${lijst.filter((r) => r[maat] === m).length}`).join("  "));
+    for (const [naam, schuif] of [["normaal", 0], ["strak", strakVast], ["race (-1 maat, regel Jeroen)", -1]]) console.log(`      ${naam.padEnd(30)} bij 184 cm: ` + MATEN.slice(1, 7).map((m, k) => { const i = k + 1; const lo = Math.ceil((i - schuif - w[0] - w[2] * 184) / w[1]), hi = Math.ceil((i + 1 - schuif - w[0] - w[2] * 184) / w[1]) - 1; return `${m} ${lo}–${hi}`; }).join(" | "));
+    const prof = w[0] + w[1] * 65 + w[2] * 180;
+    console.log(`      voorbeeld Jeroen, 180 cm en 65 kg: normaal ${MATEN[idx(prof)]} (plek ${prof.toFixed(2)}) | strak ${MATEN[idx(prof + strakVast)]} | race ${MATEN[idx(prof - 1)]} (plek ${(prof - 1).toFixed(2)})`);
+  }
+  if (ronde === "vrij") vast.strak = Math.round(((vast.shirt + vast.broek) / 2) * 100) / 100;
+}

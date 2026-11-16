@@ -44,7 +44,8 @@ async function wp(method, path, body) {
 // uit media/maatwijzer/ai/. Ze staan onder state.maatonderzoek.beeld; de maatwijzer gebruikt dezelfde bestanden (ook pasvorm-*).
 // De eerste, zelf getekende versie (state.maatonderzoek.media, media 9924–9929 en 9939–9941) wordt niet meer gebruikt.
 const IMG = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
-  "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim", "meten-borst", "meten-taille", "meten-heup"];
+  "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim", "meten-borst", "meten-taille", "meten-heup",
+  "pas-race", "pas-strak", "pas-normaal"]; // pas-*: pasvoorkeur sinds maatwijzer v0.9; pasvorm-* wordt niet meer gebruikt
 mine.beeld ||= {};
 for (const naam of IMG) {
   if (mine.beeld[naam]) continue;
@@ -69,7 +70,7 @@ const T = {
     lengte: "Lengte", gewicht: "Gewicht",
     bouw: "Hoe is je bovenlichaam gebouwd?", smal: "Smal", gemiddeld: "Gemiddeld", breed: "Breed",
     buik: "Hoe ziet je buik er van opzij uit?", vlak: "Vlak", rond: "Rond",
-    pas: "Hoe draag je wielerkleding het liefst?", strak: "Strak", normaal: "Normaal", ruim: "Ruim",
+    pas: "Hoe strak draag je wielerkleding?", race: "Race (zo strak mogelijk)", strak: "Strak", normaal: "Normaal",
     kleding: "Je kleding van 36 Cycling",
     kledingUitleg: "Vul in wat je draagt. Heb je alleen een shirt of alleen een broek? Kies dan bij het andere 'Heb ik niet'.",
     shirtMaat: "Welke maat shirt draag je?", shirtZit: "Hoe zit dat shirt?",
@@ -96,7 +97,7 @@ const T = {
     lengte: "Height", gewicht: "Weight",
     bouw: "How is your upper body built?", smal: "Slim", gemiddeld: "Average", breed: "Broad",
     buik: "What does your belly look like from the side?", vlak: "Flat", rond: "Round",
-    pas: "How do you prefer to wear cycling clothing?", strak: "Tight", normaal: "Regular", ruim: "Loose",
+    pas: "How tight do you wear cycling clothing?", race: "Race (as tight as possible)", strak: "Tight", normaal: "Regular",
     kleding: "Your 36 Cycling clothing",
     kledingUitleg: "Tell us what you wear. Do you only have a jersey or only bib shorts? Then choose 'I don't have one' for the other.",
     shirtMaat: "Which jersey size do you wear?", shirtZit: "How does that jersey fit?",
@@ -195,7 +196,9 @@ function bouwVelden(t) {
     kolommen(getal("lengte", t.lengte, "cm", [140, 215], true), getal("gewicht", t.gewicht, "kg", [40, 160], true)),
     keuze("bovenlichaam", t.bouw, [["smal", t.smal, img("bovenlichaam-smal")], ["gemiddeld", t.gemiddeld, img("bovenlichaam-gemiddeld")], ["breed", t.breed, img("bovenlichaam-breed")]], { beeld: true, layout: "ff_list_3col" }),
     keuze("buik", t.buik, [["vlak", t.vlak, img("buik-vlak")], ["gemiddeld", t.gemiddeld, img("buik-gemiddeld")], ["rond", t.rond, img("buik-rond")]], { beeld: true, layout: "ff_list_3col" }),
-    keuze("pasvoorkeur", t.pas, [["strak", t.strak], ["normaal", t.normaal], ["ruim", t.ruim]]),
+    // Sinds 16 nov 2026 (Jeroen): niemand koos "ruim"; daarvoor in de plaats "race", de groep die nog een maat kleiner neemt.
+    // Oude inzendingen met "ruim" blijven staan en tellen in de analyse als "normaal".
+    keuze("pasvoorkeur", t.pas, [["race", t.race], ["strak", t.strak], ["normaal", t.normaal]]),
     sectie(t.kleding, t.kledingUitleg),
     keuze("shirt_maat", t.shirtMaat, maten),
     keuze("shirt_zit", t.shirtZit, zit, { als: "shirt_maat" }),

@@ -316,6 +316,18 @@
       "meten-heup": {
         "id": 9963,
         "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-meten-heup.webp"
+      },
+      "pas-race": {
+        "id": 9978,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pas-race.webp"
+      },
+      "pas-strak": {
+        "id": 9979,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pas-strak.webp"
+      },
+      "pas-normaal": {
+        "id": 9980,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pas-normaal.webp"
       }
     }
   },
