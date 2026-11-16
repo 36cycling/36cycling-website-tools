@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.3 (heren, FLOW shirt en SPEED broek)
+   MAATWIJZER 36 Cycling, v0.5 (heren, FLOW shirt en SPEED broek)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -49,31 +49,42 @@
     ],
   };
 
+  // AFSTELLING v0.4/v0.5 (16 nov 2026): geijkt op 74 shirts en 72 broeken van heren uit het maatonderzoek
+  // (scripts/maatonderzoek-analyse.mjs in de websitemap, opties --keuze en --groepen).
+  // Uitkomst, eerlijk getoetst (elke inzending voorspeld zonder dat hij zelf meetelde):
+  //   shirt: zelfde maat 50%, past bij de drager 62%, hooguit één maat ernaast 93%  (v0.3: 39% / 49% / 89%)
+  //   broek: zelfde maat 64%, past bij de drager 68%, hooguit één maat ernaast 93%  (v0.3: 46% / 51% / 90%)
+  // Wat de inzendingen lieten zien: gewicht bepaalt bijna alles; lengte doet er nauwelijks toe (v0.3 trok per cm te veel af);
+  // de vragen over bovenlichaam, buik en pasvoorkeur verbeteren de voorspelling niet aantoonbaar. Ze tellen daarom nog
+  // maar half zo zwaar mee als in v0.3 (dat was op beide kledingstukken net de beste van drie varianten).
+  // v0.3 ter vergelijking: borst 97.7 / 0.62 / -0.27, onder 94.6 / 0.70 / -0.27, bouw ±2.5, buik -0.5..1.5 en -2..3, pas ±2.
   const MODEL = {
-    // omvang = c + perKg * gewicht + perCm * lengte
-    borst: { c: 97.7, perKg: 0.62, perCm: -0.27 },
-    onder: { c: 94.6, perKg: 0.70, perCm: -0.27 },
-    bouw: { smal: -2.5, gemiddeld: 0, breed: 2.5 },            // cm op de borst
+    // plek in de maattabel (cm) = c + perKg * gewicht + perCm * lengte + bouw + buik + pasvoorkeur
+    borst: { c: 76.0, perKg: 0.354, perCm: -0.027 },
+    onder: { c: 57.1, perKg: 0.440, perCm: 0.055 },
+    bouw: { smal: -1.25, gemiddeld: 0, breed: 1.25 },          // cm op de borst
     buik: {
-      vlak: { borst: -0.5, onder: -2 },
+      vlak: { borst: -0.25, onder: -1 },
       gemiddeld: { borst: 0, onder: 0 },
-      rond: { borst: 1.5, onder: 3 },
+      rond: { borst: 0.75, onder: 1.5 },
     },
-    pas: { strak: -2, normaal: 0, ruim: 2 },                   // cm verschuiving op beide
-    spreiding: { borst: 4, onder: 3.5, gemeten: 1.5 },         // onzekerheid in cm
-    grensMarge: { geschat: 1.5, gemeten: 1 },                  // zo dicht bij een grens = "tussen twee maten"
-    // Broek: wie lang is en tussen twee maten zit, krijgt de grootste van de twee (langere pijp en bretels).
-    // Regel en grens (188 cm) van 36 Cycling, bevestigd op 16 nov 2026; nog niet getoetst aan pasgegevens.
-    lang: { vanaf: 188 },
+    pas: { strak: -1, normaal: 0, ruim: 1 },                   // cm verschuiving op beide
+    spreiding: { borst: 4, onder: 4 },                         // onzekerheid in cm (restspreiding in het onderzoek: 3,9 en 4,2)
+    grensMarge: 1.5,                                           // zo dicht bij een grens = "tussen twee maten"
   };
+  // Uit v0.5 gehaald op 16 nov 2026 (besluit Jeroen, na de toets op de inzendingen):
+  // - de regel "lang (≥ 188 cm) en tussen twee broekmaten = de grootste": was een aanname; van de 8 lange mannen op een
+  //   maatgrens droegen er 5 de kleinste en 3 de grootste, en de regel verlaagde de score van 64% naar 60%.
+  // - de eigen meting (borst- en heupomtrek): via de officiële tabel voorspelde die slechter dan de schatting
+  //   (shirt 47% tegen 56%, broek 43% tegen 57%), en zonder is de maatwijzer eenvoudiger.
 
-  const LIMIET = { lengte: [140, 215], gewicht: [40, 160], borst: [70, 140], heup: [70, 150] };
+  const LIMIET = { lengte: [140, 215], gewicht: [40, 160] };
 
-  function kiesMaat(tabel, cm, gemeten) {
+  function kiesMaat(tabel, cm) {
     const g = tabel.grenzen;
     let i = 0;
     while (i < MATEN.length - 1 && cm >= g[i + 1]) i++;
-    const marge = gemeten ? MODEL.grensMarge.gemeten : MODEL.grensMarge.geschat;
+    const marge = MODEL.grensMarge;
     const totOnder = cm - g[i], totBoven = g[i + 1] - cm;
     let buur = null;
     if (totOnder < marge && i > 0) buur = i - 1;
@@ -96,39 +107,13 @@
     const buik = MODEL.buik[inv.buik || 'gemiddeld'];
     const uit = {};
 
-    const borstGemeten = Number.isFinite(inv.borst);
-    const borst = borstGemeten
-      ? inv.borst
-      : MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst;
-    uit.shirt = Object.assign(kiesMaat(SHIRT, borst + pas, borstGemeten), {
-      omvang: borst, plek: borst + pas, gemeten: borstGemeten,
-      spreiding: borstGemeten ? MODEL.spreiding.gemeten : MODEL.spreiding.borst,
-    });
+    // "plek" is de plaats op de schaal van de maattabel (in cm). Sinds de ijking is dat geen schatting van iemands
+    // borst- of heupomtrek meer, maar het getal dat het best past bij de maat die vergelijkbare mannen dragen.
+    const boven = MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst + pas;
+    uit.shirt = Object.assign(kiesMaat(SHIRT, boven), { plek: boven, spreiding: MODEL.spreiding.borst });
 
-    const heupGemeten = Number.isFinite(inv.heup);
-    const onder = heupGemeten
-      ? inv.heup
-      : MODEL.onder.c + MODEL.onder.perKg * inv.gewicht + MODEL.onder.perCm * inv.lengte + buik.onder;
-    uit.broek = Object.assign(kiesMaat(BROEK, onder + pas, heupGemeten), {
-      omvang: onder, plek: onder + pas, gemeten: heupGemeten,
-      spreiding: heupGemeten ? MODEL.spreiding.gemeten : MODEL.spreiding.onder,
-    });
-
-    // Twijfel tussen twee broekmaten en lang? Dan de grootste van de twee. Geldt ook na een heupmeting:
-    // de omvang zegt niets over de lengte van de pijpen.
-    const b = uit.broek;
-    b.langKeuze = false;
-    if (b.buur && !b.teKlein && !b.teGroot && inv.lengte >= MODEL.lang.vanaf) {
-      if (b.buurGroter) {
-        const kleinste = b.maat;
-        b.index += 1;
-        b.maat = MATEN[b.index];
-        b.buur = kleinste;
-        b.buurGroter = false;
-        b.buitenTabel = b.index >= BROEK.buitenTabelVanaf;
-      }
-      b.langKeuze = true;
-    }
+    const onder = MODEL.onder.c + MODEL.onder.perKg * inv.gewicht + MODEL.onder.perCm * inv.lengte + buik.onder + pas;
+    uit.broek = Object.assign(kiesMaat(BROEK, onder), { plek: onder, spreiding: MODEL.spreiding.onder });
     return uit;
   }
 
@@ -154,37 +139,20 @@
       ruim: 'Ruim', ruimSub: 'Liever iets losser',
       resTitel: 'Jouw maat', wijzig: 'Wijzig',
       kleding: { shirt: 'Shirt', broek: 'Broek' }, kledingKlein: { shirt: 'shirt', broek: 'broek' },
-      lichaam: { shirt: 'borstomtrek', broek: 'heupomtrek' },
       past: m => `Maat ${m} past het best`, grens: (a, b) => `Op de grens van ${a} en ${b}`,
       ruimer: (m, b) => `We adviseren ${m}. Wil je het ruimer, dan past ${b} ook.`,
       strakker: (m, b) => `We adviseren ${m}. Wil je het strakker, dan past ${b} ook.`,
-      langKeuze: (m, b, verschil) => `Omdat je lang bent, adviseren we de grootste van de twee. Maat ${m} valt langer${verschil}. Wil je het strakker, dan past ${b} ook.`,
-      langVerschil: (lang, kort) => `: ${lang} tegenover ${kort}, gemeten vanaf de bretels`,
       teKlein: 'Mogelijk kleiner dan onze kleinste maat', teGroot: 'Mogelijk groter dan onze grootste maat',
       contactHulp: 'Neem contact met ons op, dan kijken we mee.',
       langShirt: (m, rug) => `Je bent lang voor maat ${m}. De ruglengte is ${rug}, dus het shirt kan wat korter vallen.`,
-      langBroek: m => `Je bent lang voor maat ${m}. De bretels kunnen wat strakker aanvoelen.`,
       buitenTabel: m => `Maat ${m} staat nog niet in onze officiële maattabel; dit advies is een schatting.`,
       schaalSchatting: 'Het pijltje is onze schatting, de streep erboven de onzekerheid.',
-      schaalMeting: 'Het pijltje is je meting, de streep erboven de onzekerheid.',
       vergelijk: k => `Vergelijk met je eigen ${k}`,
       vergelijkUitleg: (k, m) => `Leg je best passende ${k} plat op tafel en meet na. Zo valt maat ${m}:`,
-      geschat: l => `Geschatte ${l}`, gemeten: l => `Gemeten ${l}`,
       plat: {
         borstbreedte: 'Borstbreedte', lengteAchter: 'Lengte achter', lengteVoor: 'Lengte voor', taille: 'Taille',
         heupbreedte: 'Heupbreedte', binnenbeen: 'Binnenbeenlengte', lengteBretels: 'Lengte vanaf bretels', bretels: 'Bretels',
       },
-      meetNodigTitel: 'Eén meting geeft uitsluitsel',
-      meetNodig: wat => `Bij je ${wat} zit je tussen twee maten. Pak een meetlint en vul de maat hieronder in.`,
-      en: ' en ',
-      meetOptieTitel: 'Wil je het zeker weten?', meetOptie: 'Met een meetlint wordt het advies nauwkeuriger. Dit hoeft niet.',
-      borst: 'Borstomtrek', heup: 'Heupomtrek',
-      meetBorst: 'Meet rond het breedste deel van je borst, net onder je oksels.',
-      meetHeup: 'Meet rond het breedste deel van je heupen en billen.',
-      meetAlgemeen: 'Houd het lint horizontaal en trek het niet strak aan.',
-      hoeMeten: wat => `Hoe meet je je ${wat}?`,
-      uitkomst: (k, m) => `${k}: maat ${m}`,
-      foutMeting: (wat, a, b) => `Controleer je ${wat}: we verwachten een waarde tussen ${a} en ${b} cm.`,
       collectie: 'Bekijk de collectie', collectieUrl: '/nl/categorie/fietskleding/', opnieuw: 'Opnieuw beginnen',
       onderzoek: 'Draag je al kleding van ons?', onderzoekLink: 'Help ons de maattabel te verbeteren', onderzoekUrl: '/nl/maatonderzoek/',
       voet: 'Dit advies is een schatting en nog in ontwikkeling. Twijfel je?', voetLink: 'Neem contact op', voetNa: ', dan kijken we mee.', voetUrl: '/nl/contact/',
@@ -208,37 +176,20 @@
       ruim: 'Loose', ruimSub: 'Rather a bit looser',
       resTitel: 'Your size', wijzig: 'Change',
       kleding: { shirt: 'Jersey', broek: 'Bib shorts' }, kledingKlein: { shirt: 'jersey', broek: 'bib shorts' },
-      lichaam: { shirt: 'chest', broek: 'hips' },
       past: m => `Size ${m} fits best`, grens: (a, b) => `Between ${a} and ${b}`,
       ruimer: (m, b) => `We recommend ${m}. If you prefer a looser fit, ${b} works too.`,
       strakker: (m, b) => `We recommend ${m}. If you prefer a tighter fit, ${b} works too.`,
-      langKeuze: (m, b, verschil) => `Because you are tall, we recommend the larger of the two. Size ${m} is longer${verschil}. If you prefer a tighter fit, ${b} works too.`,
-      langVerschil: (lang, kort) => `: ${lang} versus ${kort}, measured from the straps`,
       teKlein: 'Possibly smaller than our smallest size', teGroot: 'Possibly larger than our largest size',
       contactHulp: 'Get in touch and we will help you choose.',
       langShirt: (m, rug) => `You are tall for size ${m}. The back length is ${rug}, so the jersey may sit a little shorter.`,
-      langBroek: m => `You are tall for size ${m}. The straps may feel a little tighter.`,
       buitenTabel: m => `Size ${m} is not in our official size chart yet; this advice is an estimate.`,
       schaalSchatting: 'The arrow is our estimate, the line above it the uncertainty.',
-      schaalMeting: 'The arrow is your measurement, the line above it the uncertainty.',
       vergelijk: k => `Compare with your own ${k}`,
       vergelijkUitleg: (k, m) => `Lay your best-fitting ${k} flat on a table and measure. This is how size ${m} measures:`,
-      geschat: l => `Estimated ${l}`, gemeten: l => `Measured ${l}`,
       plat: {
         borstbreedte: 'Chest width', lengteAchter: 'Back length', lengteVoor: 'Front length', taille: 'Waist',
         heupbreedte: 'Hip width', binnenbeen: 'Inseam', lengteBretels: 'Length from straps', bretels: 'Straps',
       },
-      meetNodigTitel: 'One measurement settles it',
-      meetNodig: wat => `For your ${wat} you are between two sizes. Grab a tape measure and enter the measurement below.`,
-      en: ' and ',
-      meetOptieTitel: 'Want to be sure?', meetOptie: 'A tape measure makes the advice more accurate. This is optional.',
-      borst: 'Chest', heup: 'Hips',
-      meetBorst: 'Measure around the fullest part of your chest, just under your armpits.',
-      meetHeup: 'Measure around the fullest part of your hips and buttocks.',
-      meetAlgemeen: "Keep the tape horizontal and don't pull it tight.",
-      hoeMeten: wat => `How do you measure your ${wat}?`,
-      uitkomst: (k, m) => `${k}: size ${m}`,
-      foutMeting: (wat, a, b) => `Please check your ${wat}: we expect a value between ${a} and ${b} cm.`,
       collectie: 'View the collection', collectieUrl: '/en/category/cycling-clothing/', opnieuw: 'Start again',
       onderzoek: 'Already wearing our clothing?', onderzoekLink: 'Help us improve the size chart', onderzoekUrl: '/en/size-survey/',
       voet: 'This advice is an estimate and still in development. Not sure?', voetLink: 'Get in touch', voetNa: ' and we will help you choose.', voetUrl: '/en/contact/',
@@ -252,14 +203,12 @@
   const BEELD = "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-";
   const beeld = (naam, breed, hoog) => `<img src="${BEELD}${naam}.webp" alt="" width="${breed}" height="${hoog}" decoding="async">`;
   const figuur = naam => beeld(naam, 480, 540);     // bovenlichaam, buik, pasvorm
-  const meetbeeld = naam => beeld("meten-" + naam, 360, 600);
   const ALLE_BEELDEN = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
-    "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim", "meten-borst", "meten-heup"];
+    "pasvorm-strak", "pasvorm-normaal", "pasvorm-ruim"];
 
   const ICOON = {
     shirt: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="icoon" d="M18 6 Q24 12 30 6 L42 12 L45 24 L37 26 L36 20 L36 42 L12 42 L12 20 L11 26 L3 24 L6 12 Z"/></svg>',
     broek: '<svg viewBox="0 0 48 48" aria-hidden="true"><path class="icoon" d="M17 4 L19 15 L29 15 L31 4 M13 17 L35 17 L38 44 L27 44 L24 28 L21 44 L10 44 Z"/></svg>',
-    info: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="currentColor"/><rect x="9" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="10" cy="5.6" r="1.25" fill="#fff"/></svg>',
     pijl: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4 L6.5 10 L12.5 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     vink: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5 L8.6 14 L15 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   };
@@ -284,7 +233,7 @@
 .terug { width: 40px; height: 40px; margin-left: -10px; padding: 9px; border: 0; background: none; color: var(--ink); cursor: pointer; border-radius: 50%; }
 .terug:hover { background: var(--soft); }
 .terug[hidden] { display: none; }
-.terug svg, .info svg { display: block; width: 100%; height: 100%; }
+.terug svg { display: block; width: 100%; height: 100%; }
 .staplabel { font-size: 14px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 .chip { margin-left: auto; font-size: 13px; font-weight: 500; color: var(--ink); background: var(--accent-zacht); border-radius: 99px; padding: 3px 12px; white-space: nowrap; }
 .voortgang { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 10px 0 28px; }
@@ -296,7 +245,7 @@
   .stap { animation: in .28s ease-out both; }
   .maat { animation: pop .4s cubic-bezier(.2, .9, .3, 1.2) .08s both; }
   .schaal .stip, .schaal .band { animation: schuif .5s ease-out .15s both; }
-  .keuze, .knop, .info, .terug { transition: border-color .15s, background-color .15s, transform .15s, box-shadow .15s; }
+  .keuze, .knop, .terug { transition: border-color .15s, background-color .15s, transform .15s, box-shadow .15s; }
 }
 @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @keyframes pop { from { opacity: 0; transform: scale(.82); } to { opacity: 1; transform: none; } }
@@ -377,30 +326,6 @@ details p { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
 dl { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin: 10px 0 4px; font-size: 15px; }
 dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
 
-.meten { border: 1.5px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 20px; background: var(--bg); }
-.meten.nodig { border-color: var(--let-op); background: var(--let-op-zacht); }
-.meten h3 { margin: 0 0 4px; font: 700 22px/1.2 var(--kop); }
-.meten > div > p { margin: 0 0 14px; font-size: 15px; }
-.meetrijen { display: grid; gap: 14px; }
-@media (min-width: 680px) { .meetrijen { grid-template-columns: 1fr 1fr; } }
-.meetrij { display: grid; grid-template-columns: 62px 1fr; gap: 12px; align-items: center; }
-.meetrij > img { width: 62px; height: auto; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); padding: 3px; }
-.meetlabel { position: relative; display: flex; align-items: center; gap: 4px; margin-bottom: 4px; }
-.meetlabel label { font-weight: 600; font-size: 15px; }
-.info { width: 32px; height: 32px; padding: 6px; margin: -6px 0; border: 0; background: none; color: var(--ink); cursor: pointer; border-radius: 50%; }
-.info:hover, .info[aria-expanded="true"] { color: var(--accent); }
-.meetrij .invoer input { height: 52px; font-size: 22px; }
-.uitkomst { font-weight: 700; margin-top: 6px; font-size: 15px; }
-.uitkomst:empty { display: none; }
-.wolk {
-  position: absolute; z-index: 5; bottom: calc(100% + 8px); left: 0; width: 210px; padding: 12px; text-align: left;
-  background: var(--bg); color: var(--ink); border: 1.5px solid var(--ink); border-radius: 8px; box-shadow: 0 14px 30px -14px rgba(27, 38, 41, .6);
-  font-size: 14px; line-height: 1.4;
-}
-.wolk[hidden] { display: none; }
-.wolk img { display: block; width: 140px; height: auto; margin: 0 auto 8px; }
-.wolk p { margin: 0; }
-.wolk p + p { margin-top: 6px; color: var(--muted); }
 
 .acties { display: flex; flex-wrap: wrap; gap: 10px; }
 .acties .knop { flex: 1 1 220px; }
@@ -420,7 +345,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     const taal = TEKST[host.dataset.lang] ? host.dataset.lang : ((document.documentElement.lang || 'nl').toLowerCase().startsWith('en') ? 'en' : 'nl');
     const t = TEKST[taal];
     const cm = n => n.toLocaleString(t.locale, { maximumFractionDigits: 1 }) + ' cm';
-    const staat = { stap: 0, lengte: null, gewicht: null, bouw: null, buik: null, pas: null, borst: null, heup: null };
+    const staat = { stap: 0, lengte: null, gewicht: null, bouw: null, buik: null, pas: null };
 
     const root = host.attachShadow({ mode: 'open' });
     root.innerHTML = `<style>${CSS}</style>
@@ -537,7 +462,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
           <div class="band" style="left:${links}%;width:${rechts - links}%"></div>
           <div class="stip" style="left:${pos(r.plek)}%"></div>
         </div>
-        <p class="schaal-uitleg">${r.gemeten ? t.schaalMeting : t.schaalSchatting}</p>`;
+        <p class="schaal-uitleg">${t.schaalSchatting}</p>`;
     }
 
     function kaart(tabel, r) {
@@ -545,19 +470,15 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       let oordeel, uitleg = '';
       if (r.teKlein) { oordeel = t.teKlein; uitleg = t.contactHulp; }
       else if (r.teGroot) { oordeel = t.teGroot; uitleg = t.contactHulp; }
-      else if (r.buur && r.langKeuze) {
-        // Lang en tussen twee broekmaten: de grootste van de twee, met de lengte erbij als die echt verschilt.
-        const lengtes = BROEK.plat[2][1], iKlein = MATEN.indexOf(r.buur);
-        oordeel = t.grens(r.buur, r.maat);
-        uitleg = t.langKeuze(r.maat, r.buur, lengtes[r.index] > lengtes[iKlein] ? t.langVerschil(cm(lengtes[r.index]), cm(lengtes[iKlein])) : '');
-      } else if (r.buur) {
+      else if (r.buur) {
         oordeel = r.buurGroter ? t.grens(r.maat, r.buur) : t.grens(r.buur, r.maat);
         uitleg = r.buurGroter ? t.ruimer(r.maat, r.buur) : t.strakker(r.maat, r.buur);
       } else {
         oordeel = t.past(r.maat);
       }
       const notities = [];
-      if (staat.lengte >= 190 && r.index <= 3) notities.push(k === 'shirt' ? t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])) : t.langBroek(r.maat));
+      // Feitelijke opmerking voor lange mensen bij het shirt: de ruglengte van de geadviseerde maat.
+      if (k === 'shirt' && staat.lengte >= 190 && r.index <= 3) notities.push(t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])));
       if (r.buitenTabel) notities.push(t.buitenTabel(r.maat));
       return `<div class="kaart">
           <div class="kaartkop">${ICOON[k]}<h3>${t.kleding[k]}</h3></div>
@@ -571,39 +492,8 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
             <p>${t.vergelijkUitleg(t.kledingKlein[k], r.maat)}</p>
             <dl>
               ${tabel.plat.map(rij => `<dt>${t.plat[rij[0]]}</dt><dd>${cm(rij[1][r.index])}</dd>`).join('')}
-              <dt>${(r.gemeten ? t.gemeten : t.geschat)(t.lichaam[k])}</dt><dd>${cm(Math.round(r.omvang))}</dd>
             </dl>
           </details>
-        </div>`;
-    }
-
-    /* Ververst alleen de advieskaarten en de kop van het meetblok, zodat de invoervelden hun focus houden. */
-    function werkResultaatBij() {
-      const r = maatAdvies(staat);
-      const twijfel = [];
-      if (r.shirt.buur && !r.shirt.gemeten) twijfel.push(t.kledingKlein.shirt);
-      if (r.broek.buur && !r.broek.gemeten) twijfel.push(t.kledingKlein.broek);
-      $('.kaarten').innerHTML = kaart(SHIRT, r.shirt) + kaart(BROEK, r.broek);
-      $('.meten').classList.toggle('nodig', twijfel.length > 0);
-      $('.meetkop').innerHTML = twijfel.length
-        ? `<h3>${t.meetNodigTitel}</h3><p>${t.meetNodig(twijfel.join(t.en))}</p>`
-        : `<h3>${t.meetOptieTitel}</h3><p>${t.meetOptie}</p>`;
-      $('#mw-uit-borst').textContent = r.shirt.gemeten ? t.uitkomst(t.kleding.shirt, r.shirt.maat) : '';
-      $('#mw-uit-heup').textContent = r.broek.gemeten ? t.uitkomst(t.kleding.broek, r.broek.maat) : '';
-    }
-
-    function meetrij(veld, uitleg) {
-      return `<div class="meetrij">
-          ${meetbeeld(veld)}
-          <div>
-            <div class="meetlabel">
-              <label for="mw-${veld}">${t[veld]}</label>
-              <button class="info" type="button" aria-expanded="false" aria-controls="mw-wolk-${veld}" aria-label="${t.hoeMeten(t[veld].toLowerCase())}">${ICOON.info}</button>
-              <div class="wolk" id="mw-wolk-${veld}" role="tooltip" hidden>${meetbeeld(veld)}<p>${uitleg}</p><p>${t.meetAlgemeen}</p></div>
-            </div>
-            <div class="invoer"><input id="mw-${veld}" type="text" inputmode="decimal" autocomplete="off" value="${staat[veld] ?? ''}"><span class="eenheid">cm</span></div>
-            <div class="uitkomst" id="mw-uit-${veld}" aria-live="polite"></div>
-          </div>
         </div>`;
     }
 
@@ -613,11 +503,6 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
         <h2 class="titel">${t.resTitel}</h2>
         <div class="samenvatting">${delen.map(d => `<span>${d}</span>`).join('')}<button type="button" class="wijzig">${t.wijzig}</button></div>
         <div class="kaarten"></div>
-        <div class="meten">
-          <div class="meetkop"></div>
-          <div class="meetrijen">${meetrij('borst', t.meetBorst)}${meetrij('heup', t.meetHeup)}</div>
-          <p class="fout" role="alert"></p>
-        </div>
         <div class="acties">
           <a class="knop" href="${t.collectieUrl}">${t.collectie}</a>
           <button class="knop rustig" type="button" id="mw-opnieuw">${t.opnieuw}</button>
@@ -625,44 +510,12 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
         <p class="extra">${t.onderzoek} <a href="${t.onderzoekUrl}">${t.onderzoekLink}</a>.</p>
         <p class="voet">${t.voet} <a href="${t.voetUrl}">${t.voetLink}</a>${t.voetNa}</p>
       </div>`;
-      werkResultaatBij();
-
-      ['borst', 'heup'].forEach(veld => {
-        const el = $('#mw-' + veld);
-        el.addEventListener('change', () => {
-          const v = getal(el.value), fout = $('.meten .fout');
-          fout.textContent = '';
-          if (el.value.trim() === '') staat[veld] = null;
-          else if (!binnen(v, LIMIET[veld])) { staat[veld] = null; fout.textContent = t.foutMeting(t[veld].toLowerCase(), LIMIET[veld][0], LIMIET[veld][1]); }
-          else staat[veld] = v;
-          werkResultaatBij();
-        });
-      });
-
-      // i-knoppen: open bij aanwijzen met de muis, en bij klik of tik blijft het wolkje staan tot je ergens anders klikt.
-      root.querySelectorAll('.info').forEach(knop => {
-        const wolk = root.getElementById(knop.getAttribute('aria-controls'));
-        let vast = false;
-        const zet = open => {
-          wolk.hidden = !open;
-          knop.setAttribute('aria-expanded', open);
-          if (open) {
-            // Binnen het kader houden: schuif naar links als het wolkje rechts zou uitsteken.
-            wolk.style.left = '0px';
-            const over = wolk.getBoundingClientRect().right - $('.kader').getBoundingClientRect().right + 12;
-            if (over > 0) wolk.style.left = -over + 'px';
-          }
-        };
-        knop.addEventListener('click', e => { e.stopPropagation(); vast = wolk.hidden ? true : !vast; zet(vast); });
-        knop.addEventListener('mouseenter', () => { if (!vast) zet(true); });
-        knop.addEventListener('mouseleave', () => { if (!vast) zet(false); });
-        knop.addEventListener('keydown', e => { if (e.key === 'Escape') { vast = false; zet(false); } });
-        root.addEventListener('click', e => { if (vast && !wolk.contains(e.target)) { vast = false; zet(false); } });
-      });
+      const r = maatAdvies(staat);
+      $('.kaarten').innerHTML = kaart(SHIRT, r.shirt) + kaart(BROEK, r.broek);
 
       $('.wijzig').addEventListener('click', () => ga(0));
       $('#mw-opnieuw').addEventListener('click', () => {
-        Object.assign(staat, { lengte: null, gewicht: null, bouw: null, buik: null, pas: null, borst: null, heup: null });
+        Object.assign(staat, { lengte: null, gewicht: null, bouw: null, buik: null, pas: null });
         ga(0);
       });
     }
@@ -673,7 +526,8 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
   }
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.3' };
+  // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.5', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();

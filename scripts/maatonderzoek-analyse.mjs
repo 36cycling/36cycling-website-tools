@@ -48,7 +48,7 @@ console.log("Heren: shirt", volg(verdeling(heren, (r) => r.shirt_maat)), "| hoe 
 console.log("Heren: broek", volg(verdeling(heren, (r) => r.broek_maat)), "| hoe zit het:", JSON.stringify(verdeling(heren.filter((r) => r.broek_maat !== "geen"), (r) => r.broek_zit)));
 
 /* ---------- 2. Toets: advies van het model tegenover de gedragen maat ---------- */
-const inv = (r, metMeting = false) => ({ lengte: r.lengte, gewicht: r.gewicht, bouw: r.bovenlichaam, buik: r.buik, pas: r.pasvoorkeur, ...(metMeting && r.borst ? { borst: r.borst } : {}), ...(metMeting && r.heup ? { heup: r.heup } : {}) });
+const inv = (r) => ({ lengte: r.lengte, gewicht: r.gewicht, bouw: r.bovenlichaam, buik: r.buik, pas: r.pasvoorkeur });
 const STUK = { shirt: { maat: "shirt_maat", zit: "shirt_zit", tabel: SHIRT, model: "borst", buikKey: "borst", meting: "borst" }, broek: { maat: "broek_maat", zit: "broek_zit", tabel: BROEK, model: "onder", buikKey: "onder", meting: "heup" } };
 const doelgroep = (stuk) => heren.filter((r) => MATEN.includes(r[STUK[stuk].maat]));
 
@@ -75,17 +75,17 @@ const nu = {};
 for (const stuk of ["shirt", "broek"]) { nu[stuk] = toets(stuk, doelgroep(stuk), (r) => advies(inv(r))[stuk].index); console.log(regel(stuk, nu[stuk])); }
 
 /* ---------- 3. Meetlint: klopt het lichaamsmodel, en klopt de maattabel? ---------- */
-console.log("\nMEETLINT (heren die hebben gemeten)");
+// Sinds v0.5 gebruikt de maatwijzer de meting niet meer; dit blijft als controle of dat nog terecht is.
+console.log("\nMEETLINT (heren die hebben gemeten): voorspelt de officiële tabel bij de gemeten omvang beter dan de maatwijzer?");
 for (const stuk of ["shirt", "broek"]) {
   const s = STUK[stuk];
   const gemeten = doelgroep(stuk).filter((r) => r[s.meting]);
   if (!gemeten.length) continue;
-  const fout = gemeten.map((r) => advies(inv(r))[stuk].omvang - r[s.meting]);
-  console.log(`${s.meting}: n=${gemeten.length} | geschat min gemeten: gem. ${r1(gem(fout))} cm, spreiding ${r1(sd(fout))} cm`);
+  console.log(`${s.meting}: n=${gemeten.length}`);
+  console.log(regel(`  maatwijzer (zonder meting)`, toets(stuk, gemeten, (r) => advies(inv(r))[stuk].index)));
   // Maat volgens de officiële tabel bij de gemeten omvang (zonder pasvoorkeur) tegenover de gedragen maat.
   const tab = toets(stuk, gemeten, (r) => { const g = s.tabel.grenzen; let i = 0; while (i < MATEN.length - 1 && r[s.meting] >= g[i + 1]) i++; return i; });
   console.log(regel(`  maattabel bij gemeten ${s.meting}`, tab));
-  console.log(regel(`  model mét meting + pasvoorkeur`, toets(stuk, gemeten, (r) => advies(inv(r, true))[stuk].index)));
 }
 
 /* ---------- 4. Nieuwe afstelling: kleinste kwadraten op de plek in de maattabel die bij de gedragen maat hoort ---------- */
@@ -134,10 +134,8 @@ for (const stuk of ["shirt", "broek"]) {
     + ` | buik vlak ${MODEL.buik.vlak[STUK[stuk].buikKey]} → ${r1(c.vlak)} | buik rond ${MODEL.buik.rond[STUK[stuk].buikKey]} → ${r1(c.rond)} | strak ${MODEL.pas.strak} → ${r1(c.strak)} | ruim ${MODEL.pas.ruim} → ${r1(c.ruim)} | restspreiding ${r1(uit[stuk].restSd)} cm`);
 }
 
-/* ---------- 5. Lange mensen en de broek ---------- */
-const lang = doelgroep("broek").filter((r) => r.lengte >= MODEL.lang.vanaf);
-const langGrens = lang.filter((r) => advies(inv(r)).broek.langKeuze);
-console.log(`\nLANG (≥ ${MODEL.lang.vanaf} cm) met broek: n=${lang.length} | daarvan op een maatgrens (regel "grootste van de twee" telde mee): ${langGrens.length}` + (langGrens.length ? ` → advies klopt met gedragen maat bij ${langGrens.filter((r) => advies(inv(r)).broek.maat === r.broek_maat).length}` : ""));
+/* ---------- 5. Lange mensen: de regel "lang + maatgrens = grootste broek" is in v0.5 vervallen (zie Besluiten, 16 nov 2026).
+   Of lengte toch meespeelt, zie je met --groepen (de rijen "lengte ..."). ---------- */
 
 if (RIJEN) for (const stuk of ["shirt", "broek"]) { console.log(`\nAFWIJKEND bij huidig model, ${stuk}:`); for (const m of nu[stuk].mis) console.log(`  nr ${m.nr}: ${m.lengte} cm, ${m.gewicht} kg, ${m.bouw}/${m.buik}/${m.pas} | draagt ${m.draagt} (${m.zit}) | advies ${m.advies}`); }
 console.log("\nJSON " + JSON.stringify({ shirt: uit.shirt, broek: uit.broek }));
