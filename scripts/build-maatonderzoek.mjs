@@ -256,15 +256,13 @@ const PAGES = {
   nl: {
     slug: "maatonderzoek", title: "Welke maat draag jij?",
     content: [breadcrumbs(), h1("Welke maat draag jij?"),
-      paragraph("Niets is zo vervelend als wielerkleding bestellen die net niet lekker zit. Daarom werken we aan een maattabel waar je echt op kunt vertrouwen. En daar kunnen we jouw hulp goed bij gebruiken!"),
-      paragraph("Draag jij een shirt of broek van 36 Cycling? Vertel ons dan welke maat je hebt en hoe die zit. Het kost je ongeveer een minuut en we vragen geen naam of e-mailadres. Alvast heel erg bedankt!"),
+      paragraph("We werken aan een maattabel waar je echt op kunt vertrouwen. Help je mee? Vertel ons welke maat je draagt en hoe die zit. Het kost een minuut en we vragen geen naam of e-mailadres."),
       formulier(mine.forms.nl)],
   },
   en: {
     slug: "size-survey", title: "Which size do you wear?",
     content: [breadcrumbs(), h1("Which size do you wear?"),
-      paragraph("Nothing is more annoying than ordering cycling clothing that doesn't quite fit. That's why we are working on a size chart you can really rely on. And we could really use your help!"),
-      paragraph("Do you wear a 36 Cycling jersey or bib shorts? Then tell us which size you have and how it fits. It takes about a minute and we don't ask for your name or e-mail address. Thank you so much in advance!"),
+      paragraph("We're working on a size chart you can really rely on. Will you help? Tell us which size you wear and how it fits. It takes a minute and we don't ask for your name or e-mail address."),
       formulier(mine.forms.en)],
   },
 };
