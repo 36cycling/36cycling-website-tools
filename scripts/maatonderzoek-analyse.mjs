@@ -15,7 +15,11 @@ const { MATEN, SHIRT, BROEK, MODEL } = intern;
 const alle = JSON.parse(await readFile(new URL("../private/maatonderzoek-inzendingen.json", import.meta.url), "utf8"));
 
 // De waarden van de bouwvragen in model v0.3 (vóór de ijking): secties 7 en 8 rekenen met een factor hiervan.
-const PRIOR = { bouw: { smal: -2.5, gemiddeld: 0, breed: 2.5 }, buik: { vlak: { borst: -0.5, onder: -2 }, gemiddeld: { borst: 0, onder: 0 }, rond: { borst: 1.5, onder: 3 } }, pas: { strak: -2, normaal: 0, ruim: 2 } };
+// Sinds maatwijzer v0.8 is de schaal in maat-eenheden (1 = één maat); de oude cm-waarden zijn gedeeld door 6.
+const PRIOR = { bouw: { smal: -0.42, gemiddeld: 0, breed: 0.42 }, buik: { vlak: { borst: -0.08, onder: -0.34 }, gemiddeld: { borst: 0, onder: 0 }, rond: { borst: 0.25, onder: 0.5 } }, pas: { strak: -0.34, normaal: 0, ruim: 0.34 } };
+// De grenzen van de officiële pdf-maattabel (cm borst en heup). De maatwijzer gebruikt ze niet meer; hier alleen nog om te
+// toetsen hoe goed die tabel de gedragen maat voorspelt bij wie zichzelf heeft opgemeten.
+const PDF = { shirt: [79.5, 85.5, 90.5, 96.5, 102.5, 105.5, 110.5, 114.5, 117.5, 122.5], broek: [82, 88, 94, 100, 106, 112, 119, 126, 133, 140] };
 const pct = (n, t) => (t ? Math.round((n / t) * 100) + "%" : "-");
 const gem = (a) => (a.length ? a.reduce((s, v) => s + v, 0) / a.length : NaN);
 const sd = (a) => { const m = gem(a); return Math.sqrt(gem(a.map((v) => (v - m) ** 2))); };
@@ -84,7 +88,7 @@ for (const stuk of ["shirt", "broek"]) {
   console.log(`${s.meting}: n=${gemeten.length}`);
   console.log(regel(`  maatwijzer (zonder meting)`, toets(stuk, gemeten, (r) => advies(inv(r))[stuk].index)));
   // Maat volgens de officiële tabel bij de gemeten omvang (zonder pasvoorkeur) tegenover de gedragen maat.
-  const tab = toets(stuk, gemeten, (r) => { const g = s.tabel.grenzen; let i = 0; while (i < MATEN.length - 1 && r[s.meting] >= g[i + 1]) i++; return i; });
+  const tab = toets(stuk, gemeten, (r) => { const g = PDF[stuk]; let i = 0; while (i < MATEN.length - 1 && r[s.meting] >= g[i + 1]) i++; return i; });
   console.log(regel(`  maattabel bij gemeten ${s.meting}`, tab));
 }
 
