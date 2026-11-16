@@ -54,7 +54,7 @@ for (const [from, to] of [["/privacy/", "/nl/privacy/"], ["/nl/fietskleding/here
 
 // Formulieren: token van de spambeveiliging (Fluent Forms) ophalen zoals een bezoeker. Faalt dit, dan weigert het
 // formulier elke inzending ("Verdachte activiteit gedetecteerd"); oorzaak meestal een te lange LiteSpeed-TTL (zie Valkuilen).
-for (const path of ["/nl/contact/", "/en/contact/", "/nl/36-cycling-circle/"]) {
+for (const path of ["/nl/contact/", "/en/contact/", "/nl/36-cycling-circle/", "/nl/maatonderzoek/", "/en/size-survey/"]) {
   const html = await (await fetch(`${BASE}${path}`, { headers: UA })).text();
   const nonce = (html.match(/"token_nonce":"([a-z0-9]+)"/) || [])[1];
   const form = (html.match(/data-form_id="(\d+)"/) || [])[1];
