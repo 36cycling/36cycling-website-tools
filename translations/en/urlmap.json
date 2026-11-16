@@ -272,5 +272,6 @@
   "/nl/privacy/": "/en/privacy/",
   "/nl/cookiebeleid/": "/en/cookie-policy/",
   "/nl/contact/bedankt/": "/en/contact/thank-you/",
-  "/nl/maatonderzoek/": "/en/size-survey/"
+  "/nl/maatonderzoek/": "/en/size-survey/",
+  "/nl/maatwijzer/": "/en/size-finder/"
 }

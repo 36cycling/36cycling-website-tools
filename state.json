@@ -314,5 +314,13 @@
   "maatonderzoek-en": {
     "id": 9931,
     "link": "https://www.36cycling.com/en/size-survey/"
+  },
+  "maatwijzer-nl": {
+    "id": 9942,
+    "link": "https://www.36cycling.com/nl/maatwijzer/"
+  },
+  "maatwijzer-en": {
+    "id": 9943,
+    "link": "https://www.36cycling.com/en/size-finder/"
   }
 }
