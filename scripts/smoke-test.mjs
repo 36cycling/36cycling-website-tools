@@ -31,6 +31,8 @@ const PAGES = [
   ["Privacy NL", "/nl/privacy/", []],
   ["Cookiebeleid NL", "/nl/cookiebeleid/", ["cmplz-document"]],
   ["Circle NL", "/nl/36-cycling-circle/", ["fluentform"]],
+  ["Maatwijzer NL", "/nl/maatwijzer/", ['class="c36-maatwijzer"', 'id="c36-maatwijzer-js"']],
+  ["Maatwijzer EN", "/en/size-finder/", ['class="c36-maatwijzer"', 'id="c36-maatwijzer-js"']],
 ];
 for (const [name, path, must] of PAGES) {
   const p = await page(path);

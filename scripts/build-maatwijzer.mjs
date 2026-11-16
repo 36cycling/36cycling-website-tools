@@ -71,10 +71,11 @@ if (!CHECK) {
       const cur = await (await fetch(`${BASE}/wp-json/wp/v2/pages/${id}?context=edit&lang=${lang}`, { headers: H })).json();
       await writeFile(new URL(`backups/page-${id}-maatwijzer-${Date.now()}.json`, ROOT), JSON.stringify(cur, null, 2));
     }
-    // Nieuw = meteen gepubliceerd (akkoord Jeroen 16 nov 2026); een bestaande pagina houdt zijn status. Voorlopig noindex.
+    // Nieuw = meteen gepubliceerd (akkoord Jeroen 16 nov 2026); een bestaande pagina houdt zijn status.
+    // Vindbaar in zoekmachines sinds 16 nov 2026 (akkoord Jeroen): Yoast-waarde 0 = standaard = indexeren. Terug naar noindex: "1".
     const res = await upsertPage(cfg, {
       id, title: p.title, slug: p.slug, lang, status: "publish", content: p.content.join("\n\n"),
-      meta: { _yoast_wpseo_title: p.yoast, _yoast_wpseo_metadesc: p.desc, "_yoast_wpseo_meta-robots-noindex": "1" },
+      meta: { _yoast_wpseo_title: p.yoast, _yoast_wpseo_metadesc: p.desc, "_yoast_wpseo_meta-robots-noindex": "0" },
     });
     ids[lang] = res.id;
     state[key] = { id: res.id, link: res.link };
