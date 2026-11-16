@@ -50,3 +50,41 @@ for (const [stuk, tabel, veld, sd] of [["shirt", SHIRT, "shirt_maat", 3.5], ["br
   }
   console.log(`  ${stuk} (n=${lijst.length}): plek-regel raak ${pct(nu / lijst.length)} (≤1: ${pct(nu1 / lijst.length)}) | hoogste kans raak ${pct(top / lijst.length)} (≤1: ${pct(top1 / lijst.length)}) | advies verschilt bij ${anders} mensen`);
 }
+
+// Kloppen de percentages PER MAAT? Tel voor alle mannen de getoonde kansen per maat op en leg dat naast het aantal dat de maat
+// echt draagt. Daarna: de grenzen tussen de maten zo leggen dat de kansen het best bij de inzendingen passen (alleen grenzen
+// waar genoeg mensen omheen zitten), en opnieuw tellen.
+const somPerMaat = (tabel, lijst, sd, grenzen) => MATEN.map((_, i) => lijst.reduce((s, x) => s + kans({ grenzen }, x.plek, sd, i), 0));
+const logk = (lijst, sd, grenzen) => lijst.reduce((s, x) => s + Math.log(Math.max(1e-9, kans({ grenzen }, x.plek, sd, x.draagt))), 0);
+console.log("\nPERCENTAGES PER MAAT");
+for (const [stuk, tabel, veld, sd0] of [["shirt", SHIRT, "shirt_maat", MODEL.spreiding.borst], ["broek", BROEK, "broek_maat", MODEL.spreiding.onder]]) {
+  const lijst = heren.filter((r) => MATEN.includes(r[veld])).map((r) => ({ plek: advies(inv(r))[stuk].plek, draagt: MATEN.indexOf(r[veld]) }));
+  const echt = MATEN.map((_, i) => lijst.filter((x) => x.draagt === i).length);
+  const toon = (naam, sd, g) => {
+    const som = somPerMaat(tabel, lijst, sd, g);
+    const top = lijst.filter((x) => { let b = 0; for (let i = 1; i < MATEN.length; i++) if (kans({ grenzen: g }, x.plek, sd, i) > kans({ grenzen: g }, x.plek, sd, b)) b = i; return b === x.draagt; }).length;
+    console.log(`  ${naam}: ` + MATEN.map((m, i) => `${m} ${som[i].toFixed(0)}/${echt[i]}`).join("  ") + `  | maat met hoogste kans raak: ${pct(top / lijst.length)} | past bij data: ${(logk(lijst, sd, g) / lijst.length).toFixed(3)}`);
+  };
+  console.log(`${stuk.toUpperCase()} (n=${lijst.length}); per maat: verwacht volgens de kansen / echt gedragen`);
+  toon("grenzen uit de maattabel", sd0, tabel.grenzen);
+  // Grenzen M|L, L|XL, XL|2XL (index 3, 4, 5) en de spreiding vrij; om beurten de beste waarde zoeken tot het niet meer verbetert.
+  let g = [...tabel.grenzen], sd = sd0, beste = logk(lijst, sd, g);
+  for (let ronde = 0; ronde < 40; ronde++) {
+    let verbeterd = false;
+    for (const i of [3, 4, 5]) for (const stap of [0.25, -0.25]) { const p = [...g]; p[i] += stap; if (p[i] > p[i - 1] + 1 && p[i] < p[i + 1] - 1) { const l = logk(lijst, sd, p); if (l > beste + 1e-9) { g = p; beste = l; verbeterd = true; } } }
+    for (const stap of [0.25, -0.25]) { const l = logk(lijst, sd + stap, g); if (sd + stap >= 2 && l > beste + 1e-9) { sd += stap; beste = l; verbeterd = true; } }
+    if (!verbeterd) break;
+  }
+  toon(`grenzen uit de inzendingen (spreiding ${sd} cm)`, sd, g);
+  console.log(`    grens M|L ${tabel.grenzen[3]} → ${g[3]} | L|XL ${tabel.grenzen[4]} → ${g[4]} | XL|2XL ${tabel.grenzen[5]} → ${g[5]}`);
+  // Eerlijke toets van die aangepaste grenzen: elke man voorspeld met grenzen die zonder hem zijn bepaald.
+  let raak = 0, raakOud = 0;
+  for (const x of lijst) {
+    const rest = lijst.filter((y) => y !== x); let gg = [...tabel.grenzen], s = sd0, b = logk(rest, s, gg);
+    for (let ronde = 0; ronde < 40; ronde++) { let v = false; for (const i of [3, 4, 5]) for (const stap of [0.25, -0.25]) { const p = [...gg]; p[i] += stap; if (p[i] > p[i - 1] + 1 && p[i] < p[i + 1] - 1) { const l = logk(rest, s, p); if (l > b + 1e-9) { gg = p; b = l; v = true; } } } for (const stap of [0.25, -0.25]) { const l = logk(rest, s + stap, gg); if (s + stap >= 2 && l > b + 1e-9) { s += stap; b = l; v = true; } } if (!v) break; }
+    let top = 0; for (let i = 1; i < MATEN.length; i++) if (kans({ grenzen: gg }, x.plek, s, i) > kans({ grenzen: gg }, x.plek, s, top)) top = i;
+    if (top === x.draagt) raak++;
+    let i0 = 0; while (i0 < MATEN.length - 1 && x.plek >= tabel.grenzen[i0 + 1]) i0++; if (i0 === x.draagt) raakOud++;
+  }
+  console.log(`    eerlijk getoetst: hoogste kans met aangepaste grenzen raak ${pct(raak / lijst.length)} | huidige regel (maattabel) raak ${pct(raakOud / lijst.length)}`);
+}
