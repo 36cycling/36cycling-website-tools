@@ -167,7 +167,7 @@
       buikTitel: 'En je buik?', buikLead: 'Van opzij gezien.', vlak: 'Vlak', rond: 'Rond',
       pasTitel: 'Hoe strak draag je je wielerkleding?', pasLead: 'Dit telt flink mee in je maat.',
       race: 'Race', raceSub: 'Zo strak mogelijk', strak: 'Strak', strakSub: 'Als een tweede huid',
-      normaal: 'Normaal', normaalSub: 'Aansluitend, zonder te knellen',
+      normaal: 'Comfortabel', normaalSub: 'Aansluitend, met iets meer ruimte',
       resTitel: 'Jouw maat', wijzig: 'Wijzig',
       kleding: { shirt: 'Shirt', broek: 'Broek' }, kledingKlein: { shirt: 'shirt', broek: 'broek' },
       past: m => `Maat ${m} past het best`, grens: (a, b) => `Op de grens van ${a} en ${b}`,
@@ -204,7 +204,7 @@
       buikTitel: 'And your belly?', buikLead: 'Seen from the side.', vlak: 'Flat', rond: 'Round',
       pasTitel: 'How tight do you wear your cycling clothing?', pasLead: 'This weighs heavily in your size.',
       race: 'Race', raceSub: 'As tight as possible', strak: 'Tight', strakSub: 'Like a second skin',
-      normaal: 'Regular', normaalSub: 'Close-fitting without pinching',
+      normaal: 'Comfortable', normaalSub: 'Close-fitting, with a little more room',
       resTitel: 'Your size', wijzig: 'Change',
       kleding: { shirt: 'Jersey', broek: 'Bib shorts' }, kledingKlein: { shirt: 'jersey', broek: 'bib shorts' },
       past: m => `Size ${m} fits best`, grens: (a, b) => `Between ${a} and ${b}`,
@@ -329,6 +329,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   .keuze small { font-size: 11.5px; }
   .keuze .vinkje { top: 5px; right: 5px; width: 20px; height: 20px; }
 }
+/* De smalste telefoons (320 px): "Comfortabel" is het langste woord en past dan alleen met iets kleinere letters. */
+@media (max-width: 359px) { .keuze b { font-size: 12.5px; } }
 .keuze .vinkje { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; padding: 3px; border-radius: 50%; background: var(--accent); color: #fff; opacity: 0; transform: scale(.5); transition: opacity .15s, transform .15s; }
 .keuze[aria-pressed="true"] { border-color: var(--zwart); box-shadow: inset 0 0 0 1px var(--zwart); background: var(--soft); }
 .keuze[aria-pressed="true"] .vinkje { opacity: 1; transform: none; }
@@ -567,7 +569,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.9', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.9.1', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();
