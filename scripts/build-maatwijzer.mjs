@@ -11,7 +11,7 @@
 // blijft dus van alles buiten het maatwijzerblok af: kop, tekst, titel, slug en SEO-velden. Eerder bouwde dit script de hele
 // pagina opnieuw op en gooide het zijn opmaak twee keer weg.
 import { readFile, writeFile, copyFile } from "node:fs/promises";
-import { loadConfig, upsertPage } from "../lib/wp.mjs";
+import { loadConfig, upsertPage, uploadMedia } from "../lib/wp.mjs";
 
 const CHECK = process.argv.includes("--check");
 const SJABLOON = process.argv.includes("--sjabloon");
@@ -28,6 +28,24 @@ const js = (await readFile(BRON, "utf8")).replace(/\r\n/g, "\n").trim();
 // Het script gaat als base64 de pagina in (zie hieronder), dus de inhoud zelf kan WordPress niet raken.
 // Deze twee blijven verboden omdat ze een scripttag kunnen afbreken als iemand het ooit weer als gewone tekst plaatst.
 for (const [fout, re] of [["</script", /<\/script/i], ["<!--", /<!--/]]) if (re.test(js)) throw new Error(`De bron bevat "${fout}"; dat mag niet in het script staan.`);
+// Illustraties voor dames (maatwijzer v0.11, 17 nov 2026): bijgesneden met scripts/maatwijzer-beelden.py dames, in
+// media/maatwijzer/ai/. Wat nog niet in de mediabibliotheek staat, wordt hier geüpload (één keer; daarna staat het in
+// state.maatonderzoek.beeld, bij de andere illustraties). De maatwijzer verwacht ze op een vast adres; wijkt dat af, dan stopt het script.
+const BEELD_BASIS = /const BEELD = [^"]*"([^"]+)"/.exec(js)?.[1];
+const DAMES_BEELD = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond", "pas-race", "pas-strak", "pas-normaal"].map((n) => `dames-${n}`);
+if (!CHECK) {
+  const beeld = ((state.maatonderzoek ||= {}).beeld ||= {});
+  for (const naam of DAMES_BEELD) {
+    if (beeld[naam]) continue;
+    const bestand = `maatwijzer-${naam}.webp`;
+    const m = await uploadMedia(cfg, { filePath: new URL(`media/maatwijzer/ai/${bestand}`, ROOT), filename: bestand, altText: `Illustratie ${naam.replaceAll("-", " ")}`, title: `Maatwijzer ${naam.replaceAll("-", " ")}` });
+    beeld[naam] = { id: m.id, url: m.source_url };
+    await writeFile(STATE, JSON.stringify(state, null, 2));
+    console.log(`media ${naam} → ${m.id} ${m.source_url}`);
+  }
+  for (const naam of DAMES_BEELD) if (beeld[naam].url !== `${BEELD_BASIS}${naam}.webp`) throw new Error(`Illustratie ${naam} staat op ${beeld[naam].url}, maar de maatwijzer verwacht ${BEELD_BASIS}${naam}.webp`);
+}
+
 
 // Sjabloon voor een NIEUWE pagina (of met --sjabloon): zoals Jeroen de pagina zelf opmaakte: geen padnavigatie, kop en tekst
 // gecentreerd. De blokcode is letterlijk die uit zijn eigen versie (back-up van 16 nov), zodat de editor hem geldig vindt.

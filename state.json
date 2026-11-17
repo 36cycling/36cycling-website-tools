@@ -328,6 +328,42 @@
       "pas-normaal": {
         "id": 9980,
         "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-pas-normaal.webp"
+      },
+      "dames-bovenlichaam-smal": {
+        "id": 9989,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-bovenlichaam-smal.webp"
+      },
+      "dames-bovenlichaam-gemiddeld": {
+        "id": 9990,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-bovenlichaam-gemiddeld.webp"
+      },
+      "dames-bovenlichaam-breed": {
+        "id": 9991,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-bovenlichaam-breed.webp"
+      },
+      "dames-buik-vlak": {
+        "id": 9992,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-buik-vlak.webp"
+      },
+      "dames-buik-gemiddeld": {
+        "id": 9993,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-buik-gemiddeld.webp"
+      },
+      "dames-buik-rond": {
+        "id": 9994,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-buik-rond.webp"
+      },
+      "dames-pas-race": {
+        "id": 9995,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-pas-race.webp"
+      },
+      "dames-pas-strak": {
+        "id": 9996,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-pas-strak.webp"
+      },
+      "dames-pas-normaal": {
+        "id": 9997,
+        "url": "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-dames-pas-normaal.webp"
       }
     }
   },

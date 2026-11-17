@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.10 (heren, FLOW shirt en SPEED broek)
+   MAATWIJZER 36 Cycling, v0.11 (heren: FLOW shirt en SPEED broek; dames: eerste schatting)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -88,6 +88,15 @@
     grensMarge: 0.25,                                          // zo dicht bij een grens = "tussen twee maten"
     // Maten waar het onderzoek nog maar een paar dragers van heeft (XS, S, 3XL en groter): daar is het advies minder zeker.
     weinigData: i => i <= 1 || i >= 6,
+    // Dames (v0.11, 17 nov 2026, op verzoek van Jeroen, "ondanks te weinig data"): hetzelfde model als de heren met een
+    // vaste verschuiving per kledingstuk, uit de 16 inzendingen van dames (16 shirts, 13 broeken):
+    //   shirt: dames dragen gemiddeld +0,16 maat t.o.v. het herenmodel (95%: -0,34 tot +0,65) -> 0,15
+    //   broek: +0,83 maat (95%: +0,28 tot +1,38) -> 0,75 (iets voorzichtiger dan het gemiddelde)
+    // Eerlijk getoetst: shirt 10 van de 16 dezelfde maat en 15 hooguit één ernaast; broek 5 van de 13 en 11.
+    // De spreiding is groter dan bij de heren (0,93 maat), dus de percentages vallen lager uit. Van de damesmodellen
+    // zijn er geen platte maten; "Vergelijk met je eigen shirt/broek" vervalt daarom bij dames.
+    // Opnieuw bepalen als er meer inzendingen van dames zijn: scripts/maatonderzoek-schaal.mjs (onderaan).
+    dames: { borst: 0.15, onder: 0.75, spreiding: 0.9 },
   };
   // Uit v0.5 gehaald op 16 nov 2026 (besluit Jeroen, na de toets op de inzendingen):
   // - de regel "lang (≥ 188 cm) en tussen twee broekmaten = de grootste": was een aanname; van de 8 lange mannen op een
@@ -122,17 +131,18 @@
     const pas = MODEL.pas[inv.pas || 'normaal'];
     const bouw = MODEL.bouw[inv.bouw || 'gemiddeld'];
     const buik = MODEL.buik[inv.buik || 'gemiddeld'];
+    const dames = inv.geslacht === 'dames' ? MODEL.dames : null;
     const uit = {};
 
     // "plek" is de plaats op de schaal van maten (0 = onderkant XS, 9 = bovenkant 5XL): het getal dat het best past bij
     // de maat die mannen met dezelfde antwoorden dragen. Het is geen lichaamsmaat.
-    const boven = MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst + pas.borst;
+    const boven = MODEL.borst.c + MODEL.borst.perKg * inv.gewicht + MODEL.borst.perCm * inv.lengte + bouw + buik.borst + pas.borst + (dames ? dames.borst : 0);
     uit.shirt = Object.assign(kiesMaat(SHIRT, boven), { plek: boven });
-    uit.shirt.verdeling = zekerheid(SHIRT, boven, MODEL.spreiding.borst, uit.shirt.index);
+    uit.shirt.verdeling = zekerheid(SHIRT, boven, dames ? dames.spreiding : MODEL.spreiding.borst, uit.shirt.index);
 
-    const onder = MODEL.onder.c + MODEL.onder.perKg * inv.gewicht + MODEL.onder.perCm * inv.lengte + buik.onder + pas.onder;
+    const onder = MODEL.onder.c + MODEL.onder.perKg * inv.gewicht + MODEL.onder.perCm * inv.lengte + buik.onder + pas.onder + (dames ? dames.onder : 0);
     uit.broek = Object.assign(kiesMaat(BROEK, onder), { plek: onder });
-    uit.broek.verdeling = zekerheid(BROEK, onder, MODEL.spreiding.onder, uit.broek.index);
+    uit.broek.verdeling = zekerheid(BROEK, onder, dames ? dames.spreiding : MODEL.spreiding.onder, uit.broek.index);
     return uit;
   }
 
@@ -161,7 +171,8 @@
   const TEKST = {
     nl: {
       locale: 'nl-NL',
-      naam: 'Maatwijzer', heren: 'Herenmaten',
+      naam: 'Maatwijzer', heren: 'Herenmaten', dames: 'Damesmaten',
+      voorWie: 'Kleding voor', herenKort: 'Heren', damesKort: 'Dames',
       stap: (n, t) => `Stap ${n} van ${t}`, klaar: 'Jouw advies',
       terug: 'Vorige stap', volgende: 'Volgende',
       basisTitel: 'Wat is je lengte en gewicht?',
@@ -186,19 +197,22 @@
       langShirt: (m, rug) => `Je bent lang voor maat ${m}. De ruglengte is ${rug}, dus het shirt kan wat korter vallen.`,
       weinigData: m => `Voor maat ${m} hebben we nog weinig gegevens. Het advies is hier minder zeker.`,
       schaalSchatting: 'De percentages laten zien welke maat mannen met jouw antwoorden dragen. Het pijltje is jouw plek tussen de maten.',
+      schaalSchattingDames: 'De percentages zijn een schatting van welke maat vrouwen met jouw antwoorden dragen. Het pijltje is jouw plek tussen de maten.',
+      damesNotitie: 'Het advies voor dames is nieuw en rust nog op weinig gegevens. Zie het als een eerste schatting.',
       vergelijk: k => `Vergelijk met je eigen ${k}`,
       vergelijkUitleg: (k, m) => `Leg je best passende ${k} plat op tafel en meet na. Zo valt maat ${m}:`,
       plat: {
         borstbreedte: 'Borstbreedte', lengteAchter: 'Lengte achter', lengteVoor: 'Lengte voor', taille: 'Taille',
         heupbreedte: 'Heupbreedte', binnenbeen: 'Binnenbeenlengte', lengteBretels: 'Lengte vanaf bretels', bretels: 'Bretels',
       },
-      collectie: 'Bekijk de collectie', collectieUrl: '/nl/categorie/fietskleding/', opnieuw: 'Opnieuw beginnen',
+      collectie: 'Bekijk de collectie', collectieUrl: '/nl/categorie/fietskleding/', collectieUrlDames: '/nl/categorie/fietskleding/dames/', opnieuw: 'Opnieuw beginnen',
       onderzoek: 'Draag je al kleding van ons?', onderzoekLink: 'Help ons de maattabel te verbeteren', onderzoekUrl: '/nl/maatonderzoek/',
       voet: 'Dit advies is een schatting en nog in ontwikkeling. Twijfel je?', voetLink: 'Neem contact op', voetNa: ', dan kijken we mee.', voetUrl: '/nl/contact/',
     },
     en: {
       locale: 'en-GB',
-      naam: 'Size finder', heren: "Men's sizes",
+      naam: 'Size finder', heren: "Men's sizes", dames: "Ladies' sizes",
+      voorWie: 'Clothing for', herenKort: 'Men', damesKort: 'Ladies',
       stap: (n, t) => `Step ${n} of ${t}`, klaar: 'Your advice',
       terug: 'Previous step', volgende: 'Next',
       basisTitel: 'What is your height and weight?',
@@ -223,13 +237,15 @@
       langShirt: (m, rug) => `You are tall for size ${m}. The back length is ${rug}, so the jersey may sit a little shorter.`,
       weinigData: m => `We have little data for size ${m} so far. The advice is less certain here.`,
       schaalSchatting: 'The percentages show which size men with your answers wear. The arrow is your position between the sizes.',
+      schaalSchattingDames: 'The percentages are an estimate of which size women with your answers wear. The arrow is your position between the sizes.',
+      damesNotitie: 'Our advice for ladies is new and based on little data so far. Please treat it as a first estimate.',
       vergelijk: k => `Compare with your own ${k}`,
       vergelijkUitleg: (k, m) => `Lay your best-fitting ${k} flat on a table and measure. This is how size ${m} measures:`,
       plat: {
         borstbreedte: 'Chest width', lengteAchter: 'Back length', lengteVoor: 'Front length', taille: 'Waist',
         heupbreedte: 'Hip width', binnenbeen: 'Inseam', lengteBretels: 'Length from straps', bretels: 'Straps',
       },
-      collectie: 'View the collection', collectieUrl: '/en/category/cycling-clothing/', opnieuw: 'Start again',
+      collectie: 'View the collection', collectieUrl: '/en/category/cycling-clothing/', collectieUrlDames: '/en/category/cycling-clothing/ladies/', opnieuw: 'Start again',
       onderzoek: 'Already wearing our clothing?', onderzoekLink: 'Help us improve the size chart', onderzoekUrl: '/en/size-survey/',
       voet: 'This advice is an estimate and still in development. Not sure?', voetLink: 'Get in touch', voetNa: ' and we will help you choose.', voetUrl: '/en/contact/',
     },
@@ -239,7 +255,10 @@
 
   // Gegenereerd met Gemini ("nano banana") op 16 nov 2026 en bijgesneden tot gelijke maat; ze staan in de
   // mediabibliotheek van de website. Het maatonderzoek gebruikt dezelfde bestanden.
-  const BEELD = "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-";
+  // De damesreeks (17 nov 2026) heeft dezelfde namen met "dames-" ervoor.
+  // window.c36MaatwijzerBeeld is er alleen voor de lokale proefpagina (index.html?lokaal=1), om nieuwe illustraties te
+  // bekijken voordat ze in de mediabibliotheek staan.
+  const BEELD = window.c36MaatwijzerBeeld || "https://www.36cycling.com/wp-content/uploads/2026/11/maatwijzer-";
   const beeld = (naam, breed, hoog) => `<img src="${BEELD}${naam}.webp" alt="" width="${breed}" height="${hoog}" decoding="async">`;
   const figuur = naam => beeld(naam, 480, 540);     // bovenlichaam, buik, pasvorm
   const ALLE_BEELDEN = ["bovenlichaam-smal", "bovenlichaam-gemiddeld", "bovenlichaam-breed", "buik-vlak", "buik-gemiddeld", "buik-rond",
@@ -305,6 +324,15 @@ label.naam { display: block; font-weight: 600; margin-bottom: 6px; }
 .invoer input::placeholder { color: #c3c8ca; font-weight: 400; }
 .invoer input:focus { outline: none; border-color: var(--zwart); box-shadow: 0 0 0 3px var(--accent-zacht); }
 .invoer .eenheid { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 16px; }
+.wie { display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; margin: 0 0 20px; }
+.wie-label { font-weight: 600; }
+.segment { display: inline-flex; border: 1.5px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.segment button { min-width: 104px; min-height: 46px; padding: 0 18px; margin: 0; border: 0; background: var(--bg); color: var(--ink); font: 600 16px/1 Inter, system-ui, sans-serif; cursor: pointer; }
+.segment button + button { border-left: 1.5px solid var(--line); }
+.segment button[aria-pressed="true"] { background: var(--zwart); color: #fff; }
+.segment button:focus-visible { outline-offset: -3px; }
+@media (max-width: 479px) { .wie { display: block; } .wie-label { display: block; margin-bottom: 6px; } .segment { display: flex; } .segment button { flex: 1; } }
+.melding { margin: 0 0 14px; padding: 12px 14px; background: var(--accent-zacht); border-radius: var(--r); font-size: 15px; line-height: 1.45; }
 .hint { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
 .fout { font-size: 15px; color: var(--rood); font-weight: 500; margin: 6px 0 0; min-height: 24px; }
 
@@ -396,7 +424,10 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     const taal = TEKST[host.dataset.lang] ? host.dataset.lang : ((document.documentElement.lang || 'nl').toLowerCase().startsWith('en') ? 'en' : 'nl');
     const t = TEKST[taal];
     const cm = n => n.toLocaleString(t.locale, { maximumFractionDigits: 1 }) + ' cm';
-    const staat = { stap: 0, lengte: null, gewicht: null, bouw: null, buik: null, pas: null };
+    const staat = { stap: 0, geslacht: 'heren', lengte: null, gewicht: null, bouw: null, buik: null, pas: null };
+    const isDames = () => staat.geslacht === 'dames';
+    const fig = naam => figuur((isDames() ? 'dames-' : '') + naam);
+    let damesGeladen = false;
 
     const root = host.attachShadow({ mode: 'open' });
     root.innerHTML = `<style>${CSS}</style>
@@ -436,6 +467,12 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
         <h2 class="titel">${t.basisTitel}</h2>
         <p class="lead">${t.basisLead}</p>
         <form novalidate>
+          <div class="wie" role="group" aria-label="${t.voorWie}">
+            <span class="wie-label">${t.voorWie}</span>
+            <div class="segment">
+              <button type="button" data-geslacht="heren" aria-pressed="${!isDames()}">${t.herenKort}</button><button type="button" data-geslacht="dames" aria-pressed="${isDames()}">${t.damesKort}</button>
+            </div>
+          </div>
           <div class="velden">
             <div>
               <label class="naam" for="mw-lengte">${t.lengte}</label>
@@ -450,6 +487,12 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
           <button class="knop breed" type="submit">${t.volgende}</button>
           <p class="hint">${t.privacy}</p>
         </form></div>`;
+      root.querySelectorAll('.segment button').forEach(knop => knop.addEventListener('click', () => {
+        staat.geslacht = knop.dataset.geslacht;
+        root.querySelectorAll('.segment button').forEach(k => k.setAttribute('aria-pressed', k === knop));
+        $('.chip').textContent = isDames() ? t.dames : t.heren;
+        if (isDames() && !damesGeladen) { damesGeladen = true; ALLE_BEELDEN.forEach(naam => { new Image().src = BEELD + 'dames-' + naam + '.webp'; }); }
+      }));
       $('form').addEventListener('submit', e => {
         e.preventDefault();
         const l = getal($('#mw-lengte').value), g = getal($('#mw-gewicht').value);
@@ -480,23 +523,23 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
     function toonBouw() {
       toonKeuze('bouw', t.bouwTitel, t.bouwLead, [
-        { waarde: 'smal', naam: t.smal, tekening: figuur("bovenlichaam-smal") },
-        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: figuur("bovenlichaam-gemiddeld") },
-        { waarde: 'breed', naam: t.breed, tekening: figuur("bovenlichaam-breed") },
+        { waarde: 'smal', naam: t.smal, tekening: fig("bovenlichaam-smal") },
+        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: fig("bovenlichaam-gemiddeld") },
+        { waarde: 'breed', naam: t.breed, tekening: fig("bovenlichaam-breed") },
       ]);
     }
     function toonBuik() {
       toonKeuze('buik', t.buikTitel, t.buikLead, [
-        { waarde: 'vlak', naam: t.vlak, tekening: figuur("buik-vlak") },
-        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: figuur("buik-gemiddeld") },
-        { waarde: 'rond', naam: t.rond, tekening: figuur("buik-rond") },
+        { waarde: 'vlak', naam: t.vlak, tekening: fig("buik-vlak") },
+        { waarde: 'gemiddeld', naam: t.gemiddeld, tekening: fig("buik-gemiddeld") },
+        { waarde: 'rond', naam: t.rond, tekening: fig("buik-rond") },
       ]);
     }
     function toonPas() {
       toonKeuze('pas', t.pasTitel, t.pasLead, [
-        { waarde: 'race', naam: t.race, sub: t.raceSub, tekening: figuur("pas-race") },
-        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: figuur("pas-strak") },
-        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: figuur("pas-normaal") },
+        { waarde: 'race', naam: t.race, sub: t.raceSub, tekening: fig("pas-race") },
+        { waarde: 'strak', naam: t.strak, sub: t.strakSub, tekening: fig("pas-strak") },
+        { waarde: 'normaal', naam: t.normaal, sub: t.normaalSub, tekening: fig("pas-normaal") },
       ]);
     }
 
@@ -512,7 +555,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
           <div class="vakken">${vakken}</div>
           <div class="stip" style="left:${pos(r.plek)}%"></div>
         </div>
-        <p class="schaal-uitleg">${t.schaalSchatting}</p>`;
+        <p class="schaal-uitleg">${isDames() ? t.schaalSchattingDames : t.schaalSchatting}</p>`;
     }
 
     function kaart(tabel, r) {
@@ -528,8 +571,9 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       }
       const notities = [];
       // Feitelijke opmerking voor lange mensen bij het shirt: de ruglengte van de geadviseerde maat.
-      if (k === 'shirt' && staat.lengte >= 190 && r.index <= 3) notities.push(t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])));
-      if (r.weinigData) notities.push(t.weinigData(r.maat));
+      if (!isDames() && k === 'shirt' && staat.lengte >= 190 && r.index <= 3) notities.push(t.langShirt(r.maat, cm(SHIRT.plat[1][1][r.index])));
+      // Bij dames staat er één melding boven de kaarten dat het hele advies nog op weinig gegevens rust.
+      if (r.weinigData && !isDames()) notities.push(t.weinigData(r.maat));
       return `<div class="kaart">
           <div class="kaartkop">${ICOON[k]}<h3>${t.kleding[k]}</h3></div>
           <div class="maat">${r.maat}</div>
@@ -537,13 +581,13 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
           ${schaal(tabel, r)}
           ${uitleg ? `<p class="uitleg">${uitleg}</p>` : ''}
           ${notities.map(n => `<p class="notitie">${n}</p>`).join('')}
-          <details>
+          ${isDames() ? '' : `<details>
             <summary>${t.vergelijk(t.kledingKlein[k])}</summary>
             <p>${t.vergelijkUitleg(t.kledingKlein[k], r.maat)}</p>
             <dl>
               ${tabel.plat.map(rij => `<dt>${t.plat[rij[0]]}</dt><dd>${cm(rij[1][r.index])}</dd>`).join('')}
             </dl>
-          </details>
+          </details>`}
         </div>`;
     }
 
@@ -552,9 +596,10 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
       toneel.innerHTML = `<div class="stap" tabindex="-1">
         <h2 class="titel">${t.resTitel}</h2>
         <div class="samenvatting">${delen.map(d => `<span>${d}</span>`).join('')}<button type="button" class="wijzig">${t.wijzig}</button></div>
+        ${isDames() ? `<p class="melding">${t.damesNotitie}</p>` : ''}
         <div class="kaarten"></div>
         <div class="acties">
-          <a class="knop" href="${t.collectieUrl}">${t.collectie}</a>
+          <a class="knop" href="${isDames() ? t.collectieUrlDames : t.collectieUrl}">${t.collectie}</a>
           <button class="knop rustig" type="button" id="mw-opnieuw">${t.opnieuw}</button>
         </div>
         <p class="extra">${t.onderzoek} <a href="${t.onderzoekUrl}">${t.onderzoekLink}</a>.</p>
@@ -577,7 +622,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.10', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.11', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();
