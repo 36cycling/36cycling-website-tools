@@ -146,3 +146,24 @@ for (const stuk of ["shirt", "broek"]) {
   const prof = w[0] + w[1] * 65 + w[2] * 180;
   console.log(`      voorbeeld Jeroen, 180 cm en 65 kg: comfortabel ${MATEN[idx(prof)]} (plek ${prof.toFixed(2)}) | strak ${MATEN[idx(prof + P.strak)]} | race ${MATEN[idx(prof + P.race)]} (plek ${(prof + P.race).toFixed(2)})`);
 }
+
+/* ---------- Dames (maatwijzer v0.11): hoeveel wijken dames af van het herenmodel? ----------
+   Er zijn te weinig inzendingen van dames voor een eigen model. De maatwijzer rekent daarom met het herenmodel plus een vaste
+   verschuiving per kledingstuk (MODEL.dames). Hier staat waar die verschuiving vandaan komt; draai dit opnieuw als er meer
+   inzendingen van dames zijn en pas MODEL.dames in maatwijzer.js aan. */
+{
+  const { MODEL } = intern;
+  const ruw = JSON.parse(await readFile(new URL("../private/maatonderzoek-inzendingen.json", import.meta.url), "utf8"));
+  const gezienD = new Set(), dames = ruw.filter((r) => { const k = [r.lengte, r.gewicht, r.bovenlichaam, r.buik, r.pasvoorkeur, r.shirt_maat, r.broek_maat].join("|"); if (r.pasvorm !== "dames" || /\btest\b/i.test(r.opmerking || "") || gezienD.has(k)) return false; gezienD.add(k); return true; });
+  console.log(`\nDAMES t.o.v. het herenmodel (n=${dames.length}); in de maatwijzer staat nu: shirt ${MODEL.dames.borst}, broek ${MODEL.dames.onder}, spreiding ${MODEL.dames.spreiding}`);
+  const gemD = (a) => a.reduce((s, v) => s + v, 0) / a.length, sdD = (a) => Math.sqrt(a.reduce((s, v) => s + (v - gemD(a)) ** 2, 0) / (a.length - 1));
+  for (const [stuk, sl] of [["shirt", "borst"], ["broek", "onder"]]) {
+    const [maat, zit] = STUK[stuk];
+    const lijst = dames.filter((r) => MATEN.includes(r[maat]));
+    const heer = (r) => MODEL[sl].c + MODEL[sl].perKg * r.gewicht + MODEL[sl].perCm * r.lengte + (stuk === "shirt" ? MODEL.bouw[r.bovenlichaam] : 0) + MODEL.buik[r.buik][sl] + (MODEL.pas[r.pasvoorkeur] || MODEL.pas.normaal)[sl];
+    const rest = lijst.map((r) => MATEN.indexOf(r[maat]) + (PLEK[r[zit]] ?? 0.5) - heer(r)), g = gemD(rest), m = 2.13 * sdD(rest) / Math.sqrt(rest.length);
+    let raak = 0, een = 0; lijst.forEach((r, k) => { const d = Math.max(0, Math.min(8, Math.floor(heer(r) + gemD(rest.filter((_, i) => i !== k))))) - MATEN.indexOf(r[maat]); if (d === 0) raak++; if (Math.abs(d) <= 1) een++; });
+    let nu = 0; for (const r of lijst) if (Math.max(0, Math.min(8, Math.floor(heer(r) + MODEL.dames[sl]))) === MATEN.indexOf(r[maat])) nu++;
+    console.log(`  ${stuk} (n=${lijst.length}): dames dragen ${g >= 0 ? "+" : ""}${g.toFixed(2)} maat t.o.v. het herenmodel (95%: ${(g - m).toFixed(2)} tot ${(g + m).toFixed(2)}) | spreiding ${sdD(rest).toFixed(2)} | eerlijk getoetst: zelfde maat ${raak} van ${lijst.length}, hooguit één ernaast ${een} | met de waarde in de maatwijzer: zelfde maat ${nu} van ${lijst.length}`);
+  }
+}

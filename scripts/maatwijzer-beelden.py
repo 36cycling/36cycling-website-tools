@@ -1,7 +1,7 @@
 # Maatwijzer/maatonderzoek: snijdt de vier gegenereerde drieluiken (Gemini "nano banana", 16 nov 2026) tot 12 losse
 # afbeeldingen van gelijke maat. Binnen een reeks houden de figuren dezelfde schaal, zodat smal/gemiddeld/breed eerlijk
 # naast elkaar staan. Een bijschrift dat het model onder een figuur zette, wordt weggelaten.
-#   python scripts/maatwijzer-beelden.py
+#   python scripts/maatwijzer-beelden.py          (alles)   of   python scripts/maatwijzer-beelden.py dames
 # Bron: media/maatwijzer/bron/*.jpg   Uitvoer: media/maatwijzer/ai/*.webp (wit als achtergrond)
 #
 # ZO ZIJN DE BRONNEN GEMAAKT (MCP mcp-image, provider gemini, per reeks één afbeelding met drie figuren naast elkaar):
@@ -24,6 +24,7 @@
 # - Voor dezelfde stijl in een volgende reeks: een eerdere reeks meegeven als voorbeeld (inputImagePaths) met de zin
 #   "Use the attached image only as the style reference". Afgekeurde proeven staan in media/maatwijzer/bron/proeven/.
 import os
+import sys
 from PIL import Image
 
 HIER = os.path.dirname(os.path.abspath(__file__))
@@ -41,7 +42,21 @@ REEKSEN = [
     # follows the body contour" / "regular club-fit jersey, still sporty and fitted, a little room around the waist, NOT a baggy T-shirt".
     ("pas.jpg", ["pas-race", "pas-strak", "pas-normaal"], 480, 540, 26),
     ("meten.jpg", ["meten-borst", "meten-taille", "meten-heup"], 360, 600, 22),
+    # Dames (17 nov 2026), voor de dameskeuze in de maatwijzer. Gemaakt met de herenreeks als stijlvoorbeeld
+    # ("Use the attached image only as the style reference ... three faceless FEMALE mannequins ... clearly a woman by
+    # silhouette only: narrower shoulders, a gentle modest bust contour, a defined waist and slightly wider hips").
+    # Bovenlichaam: "very slender, petite long-distance runner type" / "ordinary woman of average build" / "strong,
+    # broad-shouldered swimmer type". Buik en pas zijn in een tweede ronde bijgewerkt (eerste versie als voorbeeld, alleen
+    # de rechter figuur opnieuw): de ronde buik oogde als zwanger ("a heavier woman with a soft, full midsection, clearly
+    # NOT pregnant") en het comfortabele shirt als een wijd T-shirt ("still clearly a fitted women's cycling jersey ...
+    # only with a little ease"). Eerste versies: bron/proeven/dames-*1.jpg.
+    ("dames-bovenlichaam.jpg", ["dames-bovenlichaam-smal", "dames-bovenlichaam-gemiddeld", "dames-bovenlichaam-breed"], 480, 540, 26),
+    ("dames-buik.jpg", ["dames-buik-vlak", "dames-buik-gemiddeld", "dames-buik-rond"], 480, 540, 26),
+    ("dames-pas.jpg", ["dames-pas-race", "dames-pas-strak", "dames-pas-normaal"], 480, 540, 26),
 ]
+# Alleen bepaalde reeksen opnieuw snijden: python scripts/maatwijzer-beelden.py dames  (begin van de bestandsnaam)
+if len(sys.argv) > 1:
+    REEKSEN = [r for r in REEKSEN if r[0].startswith(tuple(sys.argv[1:]))]
 DREMPEL = 236  # donkerder dan dit telt als tekening
 
 
