@@ -16,7 +16,7 @@ const alle = JSON.parse(await readFile(new URL("../private/maatonderzoek-inzendi
 
 // De waarden van de bouwvragen in model v0.3 (vóór de ijking): secties 7 en 8 rekenen met een factor hiervan.
 // Sinds maatwijzer v0.8 is de schaal in maat-eenheden (1 = één maat); de oude cm-waarden zijn gedeeld door 6.
-const PRIOR = { bouw: { smal: -0.42, gemiddeld: 0, breed: 0.42 }, buik: { vlak: { borst: -0.08, onder: -0.34 }, gemiddeld: { borst: 0, onder: 0 }, rond: { borst: 0.25, onder: 0.5 } }, pas: { race: -2, strak: -0.8, normaal: 0, ruim: 0 } }; // ×0,5 = de waarden in maatwijzer v0.9 (race −1, strak −0,4)
+const PRIOR = { bouw: { smal: -0.42, gemiddeld: 0, breed: 0.42 }, buik: { vlak: { borst: -0.08, onder: -0.34 }, gemiddeld: { borst: 0, onder: 0 }, rond: { borst: 0.25, onder: 0.5 } }, pas: { race: { borst: -1.7, onder: -0.5 }, strak: { borst: -0.8, onder: -0.5 }, normaal: { borst: 0, onder: 0 }, ruim: { borst: 0, onder: 0 } } }; // ×0,5 = de waarden in maatwijzer v0.10 (shirt: race −0,85, strak −0,4; broek: beide −0,25)
 // De grenzen van de officiële pdf-maattabel (cm borst en heup). De maatwijzer gebruikt ze niet meer; hier alleen nog om te
 // toetsen hoe goed die tabel de gedragen maat voorspelt bij wie zichzelf heeft opgemeten.
 const PDF = { shirt: [79.5, 85.5, 90.5, 96.5, 102.5, 105.5, 110.5, 114.5, 117.5, 122.5], broek: [82, 88, 94, 100, 106, 112, 119, 126, 133, 140] };
@@ -135,7 +135,7 @@ for (const stuk of ["shirt", "broek"]) {
   const c = uit[stuk].coef, h = MODEL[STUK[stuk].model];
   console.log(`  ${stuk}, afstelling op alle ${lijst.length} (huidig → nieuw): basis ${h.c} → ${r1(c.c)} | per kg ${h.perKg} → ${r2(c.perKg)} | per cm ${h.perCm} → ${r2(c.perCm)}`
     + (stuk === "shirt" ? ` | smal ${MODEL.bouw.smal} → ${r1(c.smal)} | breed ${MODEL.bouw.breed} → ${r1(c.breed)}` : ` | (broek) smal → ${r1(c.smal)} | breed → ${r1(c.breed)}`)
-    + ` | buik vlak ${MODEL.buik.vlak[STUK[stuk].buikKey]} → ${r1(c.vlak)} | buik rond ${MODEL.buik.rond[STUK[stuk].buikKey]} → ${r1(c.rond)} | strak ${MODEL.pas.strak} → ${r1(c.strak)} | ruim ${MODEL.pas.ruim} → ${r1(c.ruim)} | restspreiding ${r1(uit[stuk].restSd)} cm`);
+    + ` | buik vlak ${MODEL.buik.vlak[STUK[stuk].buikKey]} → ${r1(c.vlak)} | buik rond ${MODEL.buik.rond[STUK[stuk].buikKey]} → ${r1(c.rond)} | strak ${MODEL.pas.strak[STUK[stuk].buikKey]} → ${r1(c.strak)} | ruim ${MODEL.pas.ruim[STUK[stuk].buikKey]} → ${r1(c.ruim)} | restspreiding ${r1(uit[stuk].restSd)} cm`);
 }
 
 /* ---------- 5. Lange mensen: de regel "lang + maatgrens = grootste broek" is in v0.5 vervallen (zie Besluiten, 16 nov 2026).
@@ -205,8 +205,8 @@ if (process.argv.includes("--verken")) {
    laten meewegen met de huidige waarden (×factor). Eerlijk getoetst, en de afstelling op alle inzendingen. ---------- */
 if (process.argv.includes("--keuze")) {
   const bijdrage = (stuk, r) => stuk === "shirt"
-    ? PRIOR.bouw[r.bovenlichaam] + PRIOR.buik[r.buik].borst + PRIOR.pas[r.pasvoorkeur]
-    : PRIOR.buik[r.buik].onder + PRIOR.pas[r.pasvoorkeur];
+    ? PRIOR.bouw[r.bovenlichaam] + PRIOR.buik[r.buik].borst + PRIOR.pas[r.pasvoorkeur].borst
+    : PRIOR.buik[r.buik].onder + PRIOR.pas[r.pasvoorkeur].onder;
   const basisFit = (stuk, lijst, factor) => {
     const X = lijst.map((r) => [1, r.gewicht, r.lengte]), y = lijst.map((r) => doel(stuk, r) - factor * bijdrage(stuk, r));
     const A = [0, 1, 2].map((i) => [0, 1, 2].map((j) => X.reduce((s, x) => s + x[i] * x[j], 0)));
@@ -237,7 +237,7 @@ if (process.argv.includes("--keuze")) {
    lichte, zware, korte en lange mensen? Eerlijk getoetst. Drukt ook de afstelling met drie decimalen af. ---------- */
 if (process.argv.includes("--groepen")) {
   const FACTOR = 0.5;
-  const bijdrage = (stuk, r) => stuk === "shirt" ? PRIOR.bouw[r.bovenlichaam] + PRIOR.buik[r.buik].borst + PRIOR.pas[r.pasvoorkeur] : PRIOR.buik[r.buik].onder + PRIOR.pas[r.pasvoorkeur];
+  const bijdrage = (stuk, r) => stuk === "shirt" ? PRIOR.bouw[r.bovenlichaam] + PRIOR.buik[r.buik].borst + PRIOR.pas[r.pasvoorkeur].borst : PRIOR.buik[r.buik].onder + PRIOR.pas[r.pasvoorkeur].onder;
   const basisFit = (stuk, lijst) => { const X = lijst.map((r) => [1, r.gewicht, r.lengte]), y = lijst.map((r) => doel(stuk, r) - FACTOR * bijdrage(stuk, r)); return los([0, 1, 2].map((i) => [0, 1, 2].map((j) => X.reduce((s, x) => s + x[i] * x[j], 0))), [0, 1, 2].map((i) => X.reduce((s, x, n) => s + x[i] * y[n], 0))); };
   const index = (stuk, cm) => { const g = STUK[stuk].tabel.grenzen; let i = 0; while (i < MATEN.length - 1 && cm >= g[i + 1]) i++; return i; };
   const GROEPEN = [["gewicht < 75 kg", (r) => r.gewicht < 75], ["gewicht 75–84 kg", (r) => r.gewicht >= 75 && r.gewicht < 85], ["gewicht 85–94 kg", (r) => r.gewicht >= 85 && r.gewicht < 95], ["gewicht ≥ 95 kg", (r) => r.gewicht >= 95],

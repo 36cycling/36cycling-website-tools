@@ -30,7 +30,7 @@ for (const stuk of ["shirt", "broek"]) {
   MATEN.forEach((m, i) => console.log(`${m.padEnd(6)} ${per.map((lijst) => band(lijst, i).padStart(12)).join("")}   ${aantal[stuk][m] || 0} heren`));
   const [, m, sleutel] = STUK[stuk];
   const kg = (cm) => (cm / m.perKg).toFixed(1);
-  const delen = [`10 cm langer: ${kg(-m.perCm * 10)} kg`, `strak: ${kg(-MODEL.pas.strak)} kg`, `ruim: ${kg(-MODEL.pas.ruim)} kg`,
+  const delen = [`10 cm langer: ${kg(-m.perCm * 10)} kg`, `strak: ${kg(-MODEL.pas.strak[sleutel])} kg`, `race: ${kg(-MODEL.pas.race[sleutel])} kg`,
     `buik vlak: ${kg(-MODEL.buik.vlak[sleutel])} kg`, `buik rond: ${kg(-MODEL.buik.rond[sleutel])} kg`];
   if (stuk === "shirt") delen.push(`bovenlichaam smal: ${kg(-MODEL.bouw.smal)} kg`, `breed: ${kg(-MODEL.bouw.breed)} kg`);
   console.log(`  Zo schuiven de grenzen (plus = je moet zoveel zwaarder zijn voor dezelfde maat): ${delen.join(" | ")}\n`);
