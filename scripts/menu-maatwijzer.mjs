@@ -1,5 +1,7 @@
-// Zet de maatwijzer in het hoofdmenu: Shop → Heren, na Fietsjacks (NL-menu 28) en Shop → Men, after Cycling jackets (EN-menu 225).
-// De maatwijzer is voor herenmaten, vandaar onder Heren. Opnieuw draaien is veilig: staat het item er al, dan gebeurt er niets.
+// Zet de maatwijzer in het hoofdmenu: Shop → Heren en Shop → Dames, telkens na Fietsjacks (NL-menu 28),
+// en Shop → Men / Women, after Cycling jackets (EN-menu 225). Heren sinds 16 nov 2026, dames sinds 17 nov 2026 (v0.11).
+// Het nieuwe item neemt de Blocksy-opmaak over van het item waar het achter komt.
+// Opnieuw draaien is veilig: staat het item er op die plek al, dan gebeurt er niets.
 //   node scripts/menu-maatwijzer.mjs          → proef: laat zien wat er zou gebeuren
 //   node scripts/menu-maatwijzer.mjs --apply  → voert door (back-up van het menu in backups/)
 import { readFile, writeFile } from "node:fs/promises";
@@ -22,13 +24,15 @@ async function call(method, path, body) {
 // na = het menu-item waar de maatwijzer direct achter komt (zelfde ouder).
 const MENUS = [
   { lang: "nl", menu: 28, na: 5628, titel: "Maatwijzer", pagina: state["maatwijzer-nl"].id },
+  { lang: "nl", menu: 28, na: 5620, titel: "Maatwijzer", pagina: state["maatwijzer-nl"].id },
   { lang: "en", menu: 225, na: 7896, titel: "Size finder", pagina: state["maatwijzer-en"].id },
+  { lang: "en", menu: 225, na: 7904, titel: "Size finder", pagina: state["maatwijzer-en"].id },
 ];
 for (const m of MENUS) {
   const items = await call("GET", `/menu-items?menus=${m.menu}&per_page=100&context=edit&lang=${m.lang}`);
-  if (items.some((i) => i.object === "page" && i.object_id === m.pagina)) { console.log(`${m.lang}: staat al in het menu`); continue; }
   const anker = items.find((i) => i.id === m.na);
   if (!anker) throw new Error(`${m.lang}: menu-item #${m.na} niet gevonden`);
+  if (items.some((i) => i.object === "page" && i.object_id === m.pagina && i.parent === anker.parent)) { console.log(`${m.lang}: staat al in het menu onder #${anker.parent}`); continue; }
   // Het item komt na het anker én na alles wat onder het anker hangt.
   const onder = (id) => items.filter((i) => i.parent === id).flatMap((i) => [i, ...onder(i.id)]);
   const plek = Math.max(anker.menu_order, ...onder(anker.id).map((i) => i.menu_order)) + 1;
@@ -41,6 +45,8 @@ for (const m of MENUS) {
     title: m.titel, menus: m.menu, parent: anker.parent, menu_order: plek, type: "post_type", object: "page", object_id: m.pagina, status: "publish",
   });
   console.log(`${m.lang}: menu-item #${nieuw.id} aangemaakt → ${nieuw.url}`);
+  const meta = await fetch(W.replace("/wp/v2", "/c36/v1") + "/copy-meta", { method: "POST", headers: H, body: JSON.stringify({ from: anker.id, to: nieuw.id }) });
+  console.log(`${m.lang}: Blocksy-opmaak overgenomen van #${anker.id}: ${meta.status} ${JSON.stringify((await meta.json()).copied || [])}`);
   // Controle: volgorde zonder dubbele plekken, en de buren van het nieuwe item.
   const na = (await call("GET", `/menu-items?menus=${m.menu}&per_page=100&context=edit&lang=${m.lang}`)).sort((a, b) => a.menu_order - b.menu_order);
   const dubbel = na.filter((i, n) => n && i.menu_order === na[n - 1].menu_order).length;
