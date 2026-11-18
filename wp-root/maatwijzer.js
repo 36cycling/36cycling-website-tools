@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.11 (heren: FLOW shirt en SPEED broek; dames: eerste schatting)
+   MAATWIJZER 36 Cycling, v0.12 (heren: FLOW shirt en SPEED broek; dames: eerste schatting)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -424,10 +424,14 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     const taal = TEKST[host.dataset.lang] ? host.dataset.lang : ((document.documentElement.lang || 'nl').toLowerCase().startsWith('en') ? 'en' : 'nl');
     const t = TEKST[taal];
     const cm = n => n.toLocaleString(t.locale, { maximumFractionDigits: 1 }) + ' cm';
-    const staat = { stap: 0, geslacht: 'heren', lengte: null, gewicht: null, bouw: null, buik: null, pas: null };
+    // v0.12 (18 nov 2026): met #dames (Engels: #ladies of #women) achter het adres opent de maatwijzer met Dames gekozen.
+    // Zo werkt de link "Maatwijzer" in het menu onder Dames. Zonder dat stukje blijft Heren de standaard.
+    const damesInAdres = () => /^#(dames|ladies|women)$/i.test(location.hash);
+    const staat = { stap: 0, geslacht: damesInAdres() ? 'dames' : 'heren', lengte: null, gewicht: null, bouw: null, buik: null, pas: null };
     const isDames = () => staat.geslacht === 'dames';
     const fig = naam => figuur((isDames() ? 'dames-' : '') + naam);
     let damesGeladen = false;
+    const laadDames = () => { if (!damesGeladen) { damesGeladen = true; ALLE_BEELDEN.forEach(naam => { new Image().src = BEELD + 'dames-' + naam + '.webp'; }); } };
 
     const root = host.attachShadow({ mode: 'open' });
     root.innerHTML = `<style>${CSS}</style>
@@ -435,7 +439,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
         <div class="balk">
           <button class="terug" type="button" aria-label="${t.terug}" hidden>${ICOON.pijl}</button>
           <span class="staplabel"></span>
-          <span class="chip">${t.heren}</span>
+          <span class="chip">${isDames() ? t.dames : t.heren}</span>
         </div>
         <div class="voortgang" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
         <div class="toneel" aria-live="polite"></div>
@@ -443,6 +447,14 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     const $ = sel => root.querySelector(sel);
     const toneel = $('.toneel'), terug = $('.terug'), staplabel = $('.staplabel');
     const segmenten = root.querySelectorAll('.voortgang span');
+
+    // Zet de keuze Heren/Dames en werkt het label rechtsboven en de knoppen in stap 1 bij.
+    function kiesGeslacht(geslacht) {
+      staat.geslacht = geslacht;
+      $('.chip').textContent = isDames() ? t.dames : t.heren;
+      root.querySelectorAll('.segment button').forEach(k => k.setAttribute('aria-pressed', k.dataset.geslacht === geslacht));
+      if (isDames()) laadDames();
+    }
 
     function ga(stap) {
       staat.stap = Math.max(0, Math.min(STAPPEN.length - 1, stap));
@@ -487,12 +499,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
           <button class="knop breed" type="submit">${t.volgende}</button>
           <p class="hint">${t.privacy}</p>
         </form></div>`;
-      root.querySelectorAll('.segment button').forEach(knop => knop.addEventListener('click', () => {
-        staat.geslacht = knop.dataset.geslacht;
-        root.querySelectorAll('.segment button').forEach(k => k.setAttribute('aria-pressed', k === knop));
-        $('.chip').textContent = isDames() ? t.dames : t.heren;
-        if (isDames() && !damesGeladen) { damesGeladen = true; ALLE_BEELDEN.forEach(naam => { new Image().src = BEELD + 'dames-' + naam + '.webp'; }); }
-      }));
+      root.querySelectorAll('.segment button').forEach(knop => knop.addEventListener('click', () => kiesGeslacht(knop.dataset.geslacht)));
       $('form').addEventListener('submit', e => {
         e.preventDefault();
         const l = getal($('#mw-lengte').value), g = getal($('#mw-gewicht').value);
@@ -616,13 +623,21 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
     }
 
     terug.addEventListener('click', () => ga(staat.stap - 1));
+    // Wie al op de pagina is en in het menu onder Dames op "Maatwijzer" klikt, krijgt alleen #dames achter het adres
+    // (de pagina laadt niet opnieuw). In stap 1 blijft wat al is ingevuld staan; in latere stappen wisselen de tekeningen mee.
+    window.addEventListener('hashchange', () => {
+      if (!damesInAdres() || isDames()) return;
+      kiesGeslacht('dames');
+      if (staat.stap > 0) toon();
+    });
     toon();
+    if (isDames()) laadDames();
     setTimeout(() => ALLE_BEELDEN.forEach(naam => { new Image().src = BEELD + naam + '.webp'; }), 300);
   }
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.11', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.12', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();

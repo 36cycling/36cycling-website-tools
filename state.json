@@ -382,5 +382,13 @@
   "maatwijzer-en": {
     "id": 9943,
     "link": "https://www.36cycling.com/en/size-finder/"
+  },
+  "bestelstatus-nl": {
+    "id": 10008,
+    "link": "https://www.36cycling.com/nl/waar-is-mijn-bestelling/"
+  },
+  "bestelstatus-en": {
+    "id": 10009,
+    "link": "https://www.36cycling.com/en/where-is-my-order/"
   }
 }
