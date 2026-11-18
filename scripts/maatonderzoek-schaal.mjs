@@ -155,22 +155,28 @@ for (const stuk of ["shirt", "broek"]) {
   const { MODEL } = intern;
   const ruw = JSON.parse(await readFile(new URL("../private/maatonderzoek-inzendingen.json", import.meta.url), "utf8"));
   const gezienD = new Set(), dames = ruw.filter((r) => { const k = [r.lengte, r.gewicht, r.bovenlichaam, r.buik, r.pasvoorkeur, r.shirt_maat, r.broek_maat].join("|"); if (r.pasvorm !== "dames" || /\btest\b/i.test(r.opmerking || "") || gezienD.has(k)) return false; gezienD.add(k); return true; });
-  console.log(`\nDAMES t.o.v. het herenmodel (n=${dames.length}); in de maatwijzer staat nu: shirt ${MODEL.dames.borst}, broek ${MODEL.dames.onder}, spreiding ${MODEL.dames.spreiding}`);
+  // Sinds 18 nov 2026 vraagt het formulier dames naar de pasvorm: damespasvorm / unisex (= het herenmodel) / weet ik niet.
+  // Besluit Jeroen (18 nov 2026): inzendingen van dames van vóór die vraag tellen als damespasvorm ("het meest waarschijnlijk").
+  // MODEL.dames is dus de verschuiving voor de damespasvorm. Unisex en "weet ik niet" staan er apart onder; zet pas een eigen
+  // waarde voor unisex in de maatwijzer als die groep groot genoeg is (richtlijn: 15 of meer).
+  const pasvormD = (r) => r.dames_pasvorm || "dames";
+  const aangenomen = dames.filter((r) => !r.dames_pasvorm).length;
+  console.log(`\nDAMES t.o.v. het herenmodel (n=${dames.length}: damespasvorm ${dames.filter((r) => pasvormD(r) === "dames").length}, waarvan ${aangenomen} aangenomen (van vóór de vraag) | unisex ${dames.filter((r) => pasvormD(r) === "unisex").length} | weet ik niet ${dames.filter((r) => pasvormD(r) === "onbekend").length})`);
+  console.log(`  in de maatwijzer staat nu voor dames: shirt ${MODEL.dames.borst}, broek ${MODEL.dames.onder}, spreiding ${MODEL.dames.spreiding}`);
   const gemD = (a) => a.reduce((s, v) => s + v, 0) / a.length, sdD = (a) => Math.sqrt(a.reduce((s, v) => s + (v - gemD(a)) ** 2, 0) / (a.length - 1));
-  for (const [stuk, sl] of [["shirt", "borst"], ["broek", "onder"]]) {
-    const [maat, zit] = STUK[stuk];
-    const lijst = dames.filter((r) => MATEN.includes(r[maat]));
-    const heer = (r) => MODEL[sl].c + MODEL[sl].perKg * r.gewicht + MODEL[sl].perCm * r.lengte + (stuk === "shirt" ? MODEL.bouw[r.bovenlichaam] : 0) + MODEL.buik[r.buik][sl] + (MODEL.pas[r.pasvoorkeur] || MODEL.pas.normaal)[sl];
-    const rest = lijst.map((r) => MATEN.indexOf(r[maat]) + (PLEK[r[zit]] ?? 0.5) - heer(r)), g = gemD(rest), m = 2.13 * sdD(rest) / Math.sqrt(rest.length);
-    let raak = 0, een = 0; lijst.forEach((r, k) => { const d = Math.max(0, Math.min(8, Math.floor(heer(r) + gemD(rest.filter((_, i) => i !== k))))) - MATEN.indexOf(r[maat]); if (d === 0) raak++; if (Math.abs(d) <= 1) een++; });
-    let nu = 0; for (const r of lijst) if (Math.max(0, Math.min(8, Math.floor(heer(r) + MODEL.dames[sl]))) === MATEN.indexOf(r[maat])) nu++;
-    console.log(`  ${stuk} (n=${lijst.length}): dames dragen ${g >= 0 ? "+" : ""}${g.toFixed(2)} maat t.o.v. het herenmodel (95%: ${(g - m).toFixed(2)} tot ${(g + m).toFixed(2)}) | spreiding ${sdD(rest).toFixed(2)} | eerlijk getoetst: zelfde maat ${raak} van ${lijst.length}, hooguit één ernaast ${een} | met de waarde in de maatwijzer: zelfde maat ${nu} van ${lijst.length}`);
-    // Sinds 18 nov 2026 vraagt het formulier dames naar de pasvorm (damespasvorm / unisex / weet ik niet). Per groep het
-    // gemiddelde verschil met het herenmodel; pas bij genoeg inzendingen per groep (richtlijn: 15 of meer) een eigen waarde
-    // voor unisex in de maatwijzer zetten. "(niet gevraagd)" zijn de inzendingen van vóór die datum.
-    for (const groep of ["dames", "unisex", "onbekend", ""]) {
-      const deel = rest.filter((_, i) => (lijst[i].dames_pasvorm || "") === groep);
-      if (deel.length) console.log(`      pasvorm ${groep || "(niet gevraagd)"}: n=${deel.length}, gemiddeld ${gemD(deel) >= 0 ? "+" : ""}${gemD(deel).toFixed(2)} maat${deel.length > 1 ? `, spreiding ${sdD(deel).toFixed(2)}` : ""}`);
+  for (const [groep, naam] of [["dames", "DAMESPASVORM"], ["unisex", "UNISEX (herenmodel)"], ["onbekend", "WEET IK NIET"]]) {
+    for (const [stuk, sl] of [["shirt", "borst"], ["broek", "onder"]]) {
+      const [maat, zit] = STUK[stuk];
+      const lijst = dames.filter((r) => pasvormD(r) === groep && MATEN.includes(r[maat]));
+      if (!lijst.length) continue;
+      const heer = (r) => MODEL[sl].c + MODEL[sl].perKg * r.gewicht + MODEL[sl].perCm * r.lengte + (stuk === "shirt" ? MODEL.bouw[r.bovenlichaam] : 0) + MODEL.buik[r.buik][sl] + (MODEL.pas[r.pasvoorkeur] || MODEL.pas.normaal)[sl];
+      const rest = lijst.map((r) => MATEN.indexOf(r[maat]) + (PLEK[r[zit]] ?? 0.5) - heer(r)), g = gemD(rest);
+      if (lijst.length < 3) { console.log(`  ${naam}, ${stuk} (n=${lijst.length}): ${g >= 0 ? "+" : ""}${g.toFixed(2)} maat t.o.v. het herenmodel (te weinig voor meer)`); continue; }
+      // 95%-marge met een benadering van de t-waarde (n=16: 2,13; n=30: 2,05).
+      const m = (1.96 + 2.5 / (rest.length - 1)) * sdD(rest) / Math.sqrt(rest.length);
+      let raak = 0, een = 0; lijst.forEach((r, k) => { const d = Math.max(0, Math.min(8, Math.floor(heer(r) + gemD(rest.filter((_, i) => i !== k))))) - MATEN.indexOf(r[maat]); if (d === 0) raak++; if (Math.abs(d) <= 1) een++; });
+      let nu = 0; for (const r of lijst) if (Math.max(0, Math.min(8, Math.floor(heer(r) + MODEL.dames[sl]))) === MATEN.indexOf(r[maat])) nu++;
+      console.log(`  ${naam}, ${stuk} (n=${lijst.length}): ${g >= 0 ? "+" : ""}${g.toFixed(2)} maat t.o.v. het herenmodel (95%: ${(g - m).toFixed(2)} tot ${(g + m).toFixed(2)}) | spreiding ${sdD(rest).toFixed(2)} | eerlijk getoetst: zelfde maat ${raak} van ${lijst.length}, hooguit één ernaast ${een} | met de dameswaarde uit de maatwijzer: zelfde maat ${nu} van ${lijst.length}`);
     }
   }
 }
