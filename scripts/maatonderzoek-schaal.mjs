@@ -165,5 +165,12 @@ for (const stuk of ["shirt", "broek"]) {
     let raak = 0, een = 0; lijst.forEach((r, k) => { const d = Math.max(0, Math.min(8, Math.floor(heer(r) + gemD(rest.filter((_, i) => i !== k))))) - MATEN.indexOf(r[maat]); if (d === 0) raak++; if (Math.abs(d) <= 1) een++; });
     let nu = 0; for (const r of lijst) if (Math.max(0, Math.min(8, Math.floor(heer(r) + MODEL.dames[sl]))) === MATEN.indexOf(r[maat])) nu++;
     console.log(`  ${stuk} (n=${lijst.length}): dames dragen ${g >= 0 ? "+" : ""}${g.toFixed(2)} maat t.o.v. het herenmodel (95%: ${(g - m).toFixed(2)} tot ${(g + m).toFixed(2)}) | spreiding ${sdD(rest).toFixed(2)} | eerlijk getoetst: zelfde maat ${raak} van ${lijst.length}, hooguit één ernaast ${een} | met de waarde in de maatwijzer: zelfde maat ${nu} van ${lijst.length}`);
+    // Sinds 18 nov 2026 vraagt het formulier dames naar de pasvorm (damespasvorm / unisex / weet ik niet). Per groep het
+    // gemiddelde verschil met het herenmodel; pas bij genoeg inzendingen per groep (richtlijn: 15 of meer) een eigen waarde
+    // voor unisex in de maatwijzer zetten. "(niet gevraagd)" zijn de inzendingen van vóór die datum.
+    for (const groep of ["dames", "unisex", "onbekend", ""]) {
+      const deel = rest.filter((_, i) => (lijst[i].dames_pasvorm || "") === groep);
+      if (deel.length) console.log(`      pasvorm ${groep || "(niet gevraagd)"}: n=${deel.length}, gemiddeld ${gemD(deel) >= 0 ? "+" : ""}${gemD(deel).toFixed(2)} maat${deel.length > 1 ? `, spreiding ${sdD(deel).toFixed(2)}` : ""}`);
+    }
   }
 }

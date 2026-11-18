@@ -9,7 +9,8 @@ const H = { Authorization: "Basic " + Buffer.from(`${cfg.wp.username}:${cfg.wp.a
 const F = cfg.wp.baseUrl.replace(/\/$/, "") + "/wp-json/fluentform/v1";
 const ROOT = new URL("..", import.meta.url);
 const state = JSON.parse(await readFile(new URL("state.json", ROOT), "utf8"));
-const VELDEN = ["pasvorm", "lengte", "gewicht", "bovenlichaam", "buik", "pasvoorkeur", "shirt_maat", "shirt_zit", "broek_maat", "broek_zit", "leeftijd", "ander_merk", "opmerking", "borst", "taille", "heup"];
+// dames_pasvorm (sinds 18 nov 2026, alleen gevraagd aan dames): dames / unisex / onbekend; leeg bij oudere inzendingen.
+const VELDEN = ["pasvorm", "dames_pasvorm", "lengte", "gewicht", "bovenlichaam", "buik", "pasvoorkeur", "shirt_maat", "shirt_zit", "broek_maat", "broek_zit", "leeftijd", "ander_merk", "opmerking", "borst", "taille", "heup"];
 const GETAL = new Set(["lengte", "gewicht", "leeftijd", "borst", "taille", "heup"]);
 
 const alle = [];
@@ -39,5 +40,5 @@ await mkdir(new URL("private/", ROOT), { recursive: true });
 await writeFile(new URL("private/maatonderzoek-inzendingen.json", ROOT), JSON.stringify(alle, null, 1));
 const tel = (f) => alle.reduce((o, r) => { const k = f(r) || "(leeg)"; o[k] = (o[k] || 0) + 1; return o; }, {});
 console.log(`${alle.length} inzendingen opgehaald (nr. ${alle[0]?.nr} t/m ${alle.at(-1)?.nr}), ${alle[0]?.datum} tot ${alle.at(-1)?.datum}`);
-console.log("taal:", tel((r) => r.taal), "| pasvorm:", tel((r) => r.pasvorm), "| status:", tel((r) => r.status));
+console.log("taal:", tel((r) => r.taal), "| pasvorm:", tel((r) => r.pasvorm), "| dames, pasvorm:", tel((r) => r.pasvorm === "dames" ? r.dames_pasvorm || "(niet gevraagd)" : "n.v.t."), "| status:", tel((r) => r.status));
 console.log("met meetlint (borst/taille/heup):", alle.filter((r) => r.borst).length, alle.filter((r) => r.taille).length, alle.filter((r) => r.heup).length, "| met leeftijd:", alle.filter((r) => r.leeftijd).length, "| met ander merk:", alle.filter((r) => r.ander_merk).length, "| met opmerking:", alle.filter((r) => r.opmerking).length);

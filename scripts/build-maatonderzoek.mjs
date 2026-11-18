@@ -66,7 +66,8 @@ const T = {
   nl: {
     title: "Maatonderzoek (NL)", verplicht: "Maak een keuze", vulIn: "Vul dit veld in", getal: "Vul een getal in",
     tussen: (lo, hi, e) => `Vul een waarde in tussen ${lo} en ${hi} ${e}`,
-    pasvorm: "Welke pasvorm draag je?", heren: "Heren", dames: "Dames",
+    pasvorm: "Voor wie is de kleding?", heren: "Heren", dames: "Dames",
+    damesPasvorm: "Heb je de damespasvorm of unisex?", damespas: "Damespasvorm", unisex: "Unisex", weetNiet: "Weet ik niet",
     lengte: "Lengte", gewicht: "Gewicht",
     bouw: "Hoe is je bovenlichaam gebouwd?", smal: "Smal", gemiddeld: "Gemiddeld", breed: "Breed",
     buik: "Hoe ziet je buik er van opzij uit?", vlak: "Vlak", rond: "Rond",
@@ -93,7 +94,8 @@ const T = {
   en: {
     title: "Maatonderzoek (EN)", verplicht: "Please make a choice", vulIn: "Please fill in this field", getal: "Please enter a number",
     tussen: (lo, hi, e) => `Please enter a value between ${lo} and ${hi} ${e}`,
-    pasvorm: "Which fit do you wear?", heren: "Men", dames: "Women",
+    pasvorm: "Who is the clothing for?", heren: "Men", dames: "Women",
+    damesPasvorm: "Do you have the women's fit or unisex?", damespas: "Women's fit", unisex: "Unisex", weetNiet: "I don't know",
     lengte: "Height", gewicht: "Weight",
     bouw: "How is your upper body built?", smal: "Slim", gemiddeld: "Average", breed: "Broad",
     buik: "What does your belly look like from the side?", vlak: "Flat", rond: "Round",
@@ -124,10 +126,11 @@ function bouwVelden(t) {
   let n = 0;
   const key = () => `el_3600000${String(++n).padStart(3, "0")}`;
   const req = (aan, message) => ({ required: { value: aan, message, global_message: message, global: false } });
-  const zichtbaarAls = (veld) => ({ type: "any", status: true, conditions: [{ field: veld, operator: "!=", value: "geen" }] });
+  // als: "shirt_maat" → zichtbaar zolang daar niet "Heb ik niet" gekozen is; als: ["pasvorm", "=", "dames"] → eigen voorwaarde.
+  const zichtbaarAls = (als) => { const [field, operator, value] = Array.isArray(als) ? als : [als, "!=", "geen"]; return { type: "any", status: true, conditions: [{ field, operator, value }] }; };
 
-  const keuze = (name, label, opties, { beeld = false, layout = "ff_list_buttons", verplicht = true, als = null } = {}) => ({
-    index: 8, element: "input_radio", uniqElKey: key(),
+  const keuze = (name, label, opties, { beeld = false, layout = "ff_list_buttons", verplicht = true, als = null, sleutel = null } = {}) => ({
+    index: 8, element: "input_radio", uniqElKey: sleutel || key(),
     attributes: { type: "radio", name, value: "" },
     settings: {
       dynamic_default_value: "", container_class: "", label, admin_field_label: name, label_placement: "", display_type: "", help_message: "",
@@ -192,7 +195,12 @@ function bouwVelden(t) {
   const maten = [...MATEN.map((m) => [m, m]), ["geen", t.geen]];
   const zit = [["strak", t.zitStrak], ["goed", t.zitGoed], ["ruim", t.zitRuim]];
   return [
+    // Tot 18 nov 2026 heette deze vraag "Welke pasvorm draag je?". Sindsdien gaat hij over voor wie de kleding is, en
+    // vraagt de volgende vraag (alleen bij Dames) naar de pasvorm: dames kiezen soms unisex (Jeroen, 18 nov 2026).
+    // De veldnaam blijft "pasvorm" (heren/dames), zodat oude en nieuwe inzendingen bij elkaar passen.
     keuze("pasvorm", t.pasvorm, [["heren", t.heren], ["dames", t.dames]]),
+    // Eigen vaste sleutel, zodat de sleutels van de bestaande velden niet verschuiven.
+    keuze("dames_pasvorm", t.damesPasvorm, [["dames", t.damespas], ["unisex", t.unisex], ["onbekend", t.weetNiet]], { als: ["pasvorm", "=", "dames"], sleutel: "el_3600000101" }),
     kolommen(getal("lengte", t.lengte, "cm", [140, 215], true), getal("gewicht", t.gewicht, "kg", [40, 160], true)),
     keuze("bovenlichaam", t.bouw, [["smal", t.smal, img("bovenlichaam-smal")], ["gemiddeld", t.gemiddeld, img("bovenlichaam-gemiddeld")], ["breed", t.breed, img("bovenlichaam-breed")]], { beeld: true, layout: "ff_list_3col" }),
     keuze("buik", t.buik, [["vlak", t.vlak, img("buik-vlak")], ["gemiddeld", t.gemiddeld, img("buik-gemiddeld")], ["rond", t.rond, img("buik-rond")]], { beeld: true, layout: "ff_list_3col" }),
