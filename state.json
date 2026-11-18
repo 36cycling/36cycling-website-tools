@@ -390,5 +390,13 @@
   "bestelstatus-en": {
     "id": 10009,
     "link": "https://www.36cycling.com/en/where-is-my-order/"
+  },
+  "promotions-nl": {
+    "id": 10098,
+    "link": "https://www.36cycling.com/nl/?page_id=10098"
+  },
+  "promotions-en": {
+    "id": 10099,
+    "link": "https://www.36cycling.com/en/?page_id=10099"
   }
 }
