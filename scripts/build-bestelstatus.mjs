@@ -66,27 +66,23 @@ const T = {
   },
 };
 
-const p = (tekst, midden) =>
-  midden
-    ? `<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->\n<p class="has-text-align-center">${tekst}</p>\n<!-- /wp:paragraph -->`
-    : `<!-- wp:paragraph -->\n<p>${tekst}</p>\n<!-- /wp:paragraph -->`;
+const p = (tekst) => `<!-- wp:paragraph -->\n<p>${tekst}</p>\n<!-- /wp:paragraph -->`;
 const h2 = (tekst) => `<!-- wp:heading -->\n<h2 class="wp-block-heading">${tekst}</h2>\n<!-- /wp:heading -->`;
 
 function paginaInhoud(t) {
-  return [
-    // De kop draagt het anker waar het chatvenster op let: op deze pagina opent het vanzelf.
-    `<!-- wp:heading {"level":1,"style":{"typography":{"textAlign":"center"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"x-large","anchor":"bestelstatus-openen"} -->\n<h1 class="wp-block-heading has-text-align-center has-x-large-font-size" id="bestelstatus-openen" style="margin-top:0;margin-bottom:0">${t.titel}</h1>\n<!-- /wp:heading -->`,
-    p(t.intro, true),
-    `<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->\n<div class="wp-block-buttons"><!-- wp:button -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="${t.anker}">${t.knop}</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->`,
-    `<!-- wp:group {"layout":{"type":"constrained","contentSize":"620px"}} -->\n<div class="wp-block-group">${[
-      h2(t.kop1),
-      `<!-- wp:list {"ordered":true} -->\n<ol class="wp-block-list">${t.stappen.map((s) => `<!-- wp:list-item -->\n<li>${s}</li>\n<!-- /wp:list-item -->`).join("\n\n")}</ol>\n<!-- /wp:list -->`,
-      p(t.werkt),
-      h2(t.kop2),
-      p(t.waar),
-      p(t.hulp),
-    ].join("\n\n")}</div>\n<!-- /wp:group -->`,
-  ].join("\n\n");
+  // Alles links uitgelijnd in één kolom van hooguit 720 px (wens Jeroen, 18 nov 2026).
+  // De kop draagt het anker waar het chatvenster op let (zie src/chat-widget.ts in teamleader-mcp).
+  return `<!-- wp:group {"layout":{"type":"constrained","contentSize":"720px","justifyContent":"left"}} -->\n<div class="wp-block-group">${[
+    `<!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"x-large","anchor":"bestelstatus-openen"} -->\n<h1 class="wp-block-heading has-x-large-font-size" id="bestelstatus-openen" style="margin-top:0;margin-bottom:0">${t.titel}</h1>\n<!-- /wp:heading -->`,
+    p(t.intro),
+    `<!-- wp:buttons -->\n<div class="wp-block-buttons"><!-- wp:button -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="${t.anker}">${t.knop}</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->`,
+    h2(t.kop1),
+    `<!-- wp:list {"ordered":true} -->\n<ol class="wp-block-list">${t.stappen.map((s) => `<!-- wp:list-item -->\n<li>${s}</li>\n<!-- /wp:list-item -->`).join("\n\n")}</ol>\n<!-- /wp:list -->`,
+    p(t.werkt),
+    h2(t.kop2),
+    p(t.waar),
+    p(t.hulp),
+  ].join("\n\n")}</div>\n<!-- /wp:group -->`;
 }
 
 // ------------------------------------------------------------------ 1. pagina's
