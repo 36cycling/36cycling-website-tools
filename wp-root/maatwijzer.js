@@ -1,5 +1,5 @@
 /* =====================================================================
-   MAATWIJZER 36 Cycling, v0.12 (heren: FLOW shirt en SPEED broek; dames: eerste schatting)
+   MAATWIJZER 36 Cycling, v0.13 (heren: FLOW shirt en SPEED broek; dames: eerste schatting)
 
    Eén los onderdeel: zoekt elk element met class "c36-maatwijzer" en bouwt
    daarin de maatwijzer op. Taal via data-lang="nl" of "en" (anders de taal
@@ -171,8 +171,8 @@
   const TEKST = {
     nl: {
       locale: 'nl-NL',
-      naam: 'Maatwijzer', heren: 'Herenmaten', dames: 'Damesmaten',
-      voorWie: 'Kleding voor', herenKort: 'Heren', damesKort: 'Dames',
+      naam: 'Maatwijzer', heren: 'Herenmaten / unisex', dames: 'Damesmaten',
+      voorWie: 'Kleding voor', herenKort: 'Heren / Unisex', damesKort: 'Dames',
       stap: (n, t) => `Stap ${n} van ${t}`, klaar: 'Jouw advies',
       terug: 'Vorige stap', volgende: 'Volgende',
       basisTitel: 'Wat is je lengte en gewicht?',
@@ -211,8 +211,8 @@
     },
     en: {
       locale: 'en-GB',
-      naam: 'Size finder', heren: "Men's sizes", dames: "Ladies' sizes",
-      voorWie: 'Clothing for', herenKort: 'Men', damesKort: 'Ladies',
+      naam: 'Size finder', heren: "Men's sizes / unisex", dames: "Ladies' sizes",
+      voorWie: 'Clothing for', herenKort: 'Men / Unisex', damesKort: 'Ladies',
       stap: (n, t) => `Step ${n} of ${t}`, klaar: 'Your advice',
       terug: 'Previous step', volgende: 'Next',
       basisTitel: 'What is your height and weight?',
@@ -331,7 +331,7 @@ label.naam { display: block; font-weight: 600; margin-bottom: 6px; }
 .segment button + button { border-left: 1.5px solid var(--line); }
 .segment button[aria-pressed="true"] { background: var(--zwart); color: #fff; }
 .segment button:focus-visible { outline-offset: -3px; }
-@media (max-width: 479px) { .wie { display: block; } .wie-label { display: block; margin-bottom: 6px; } .segment { display: flex; } .segment button { flex: 1; } }
+@media (max-width: 479px) { .wie { display: block; } .wie-label { display: block; margin-bottom: 6px; } .segment { display: flex; } .segment button { flex: 1; padding: 0 8px; white-space: nowrap; } }
 .melding { margin: 0 0 14px; padding: 12px 14px; background: var(--accent-zacht); border-radius: var(--r); font-size: 15px; line-height: 1.45; }
 .hint { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
 .fout { font-size: 15px; color: var(--rood); font-weight: 500; margin: 6px 0 0; min-height: 24px; }
@@ -637,7 +637,7 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 600; text-align: right;
 
   function start() { document.querySelectorAll('.c36-maatwijzer').forEach(bouwOp); }
   // "intern" is er alleen voor de analyse van het maatonderzoek (scripts/maatonderzoek-analyse.mjs in de websitemap).
-  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.12', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
+  window.c36Maatwijzer = { advies: maatAdvies, start: start, versie: '0.13', intern: { MATEN, SHIRT, BROEK, MODEL, LIMIET } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
   start();
 })();
