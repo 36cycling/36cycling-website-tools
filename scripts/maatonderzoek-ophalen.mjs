@@ -13,7 +13,8 @@ const state = JSON.parse(await readFile(new URL("state.json", ROOT), "utf8"));
 const VELDEN = ["pasvorm", "dames_pasvorm", "lengte", "gewicht", "bovenlichaam", "buik", "pasvoorkeur", "shirt_maat", "shirt_zit", "broek_maat", "broek_zit", "leeftijd", "ander_merk", "opmerking", "borst", "taille", "heup"];
 // Proefinzendingen zonder het woord "test" in de opmerking. Ze krijgen hier "test:" voor de opmerking, zodat de
 // analysescripts (die op dat woord filteren) ze overslaan. 266: proef van Jeroen voor de vraag naar de damespasvorm (18 nov 2026).
-const PROEVEN = new Set([266]);
+// 43: de allereerste inzending (16 nov 2026), ook een proef (bevestigd door Jeroen op 18 nov 2026).
+const PROEVEN = new Set([43, 266]);
 const GETAL = new Set(["lengte", "gewicht", "leeftijd", "borst", "taille", "heup"]);
 
 const alle = [];
