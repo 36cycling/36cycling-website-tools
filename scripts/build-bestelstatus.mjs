@@ -1,7 +1,7 @@
 // Maakt het chatvenster "Waar is mijn bestelling?" vindbaar op de site (wens Jeroen, 18 nov 2026):
 //   1. een pagina /nl/waar-is-mijn-bestelling/ en /en/where-is-my-order/ met korte uitleg; het chatvenster
 //      opent daar vanzelf (de kop heeft het anker "bestelstatus-openen", daar let het venster op);
-//   2. een menu-item onder Contact (NL-menu 28, EN-menu 225) naar die pagina;
+//   2. een menu-item onder Contact (NL-menu 28, EN-menu 225) naar die pagina, met daarboven de contactpagina zelf;
 //   3. een knop op de contactpagina (NL 18, EN 6512) boven het adres, die het venster opent (link #bestelstatus).
 // Het venster zelf staat in de Teamleader-koppeling (C:\Claude\teamleader-mcp); de laadregel in de voettekst
 // zet scripts/place-bestelstatus.mjs.
@@ -140,6 +140,38 @@ for (const m of MENUS) {
   for (const i of schuiven) { await call("POST", `/wp/v2/menu-items/${i.id}?lang=${m.lang}`, { menu_order: i.menu_order + 1 }); await wacht(120); }
   const nieuw = await call("POST", `/wp/v2/menu-items?lang=${m.lang}`, {
     title: t.titel, menus: m.menu, parent: contact.id, menu_order: plek, type: "post_type", object: "page", object_id: pagina, status: "publish",
+  });
+  console.log(`menu ${m.lang}: item #${nieuw.id} aangemaakt -> ${nieuw.url}`);
+  if (voorbeeld) {
+    const meta = await fetch(`${BASE}/wp-json/c36/v1/copy-meta`, { method: "POST", headers: H, body: JSON.stringify({ from: voorbeeld.id, to: nieuw.id }) });
+    console.log(`menu ${m.lang}: Blocksy-opmaak overgenomen van #${voorbeeld.id}: ${meta.status} ${JSON.stringify((await meta.json()).copied || [])}`);
+  }
+  const na = (await call("GET", `/wp/v2/menu-items?menus=${m.menu}&per_page=100&context=edit&lang=${m.lang}`)).sort((a, b) => a.menu_order - b.menu_order);
+  const dubbel = na.filter((i, n) => n && i.menu_order === na[n - 1].menu_order).length;
+  const pos = na.findIndex((i) => i.id === nieuw.id);
+  console.log(`menu ${m.lang}: ${na.length} items, dubbele plekken: ${dubbel}, buren: "${na[pos - 1]?.title.rendered}" <- "${na[pos].title.rendered}" -> "${na[pos + 1]?.title.rendered}"`);
+}
+
+// ------------------------------------------------------------------ 2b. eerste item onder Contact: de contactpagina zelf
+
+// Met maar één item in het uitklapmenu leek het alsof je niet meer bij de contactgegevens en het formulier kwam
+// (Jeroen, 18 nov 2026). Daarom staat de contactpagina zelf als eerste item onder Contact.
+const EERSTE = { nl: { titel: "Contactgegevens en formulier", pagina: 18 }, en: { titel: "Contact details and form", pagina: 6512 } };
+for (const m of MENUS) {
+  const e = EERSTE[m.lang];
+  const items = await call("GET", `/wp/v2/menu-items?menus=${m.menu}&per_page=100&context=edit&lang=${m.lang}`);
+  const contact = items.find((i) => i.id === m.contact);
+  if (!contact) throw new Error(`${m.lang}: menu-item Contact #${m.contact} niet gevonden`);
+  if (items.some((i) => i.object === "page" && i.object_id === e.pagina && i.parent === contact.id)) { console.log(`menu ${m.lang}: "${e.titel}" staat al onder Contact`); continue; }
+  const plek = contact.menu_order + 1;
+  const schuiven = items.filter((i) => i.menu_order >= plek).sort((a, b) => b.menu_order - a.menu_order);
+  const voorbeeld = items.filter((i) => i.parent === m.opmaakVan).sort((a, b) => a.menu_order - b.menu_order)[0];
+  console.log(`menu ${m.lang}: "${e.titel}" komt als eerste onder Contact op plek ${plek}; ${schuiven.length} item(s) schuiven op (${schuiven.map((i) => i.title.rendered).join(", ") || "geen"}); opmaak van "${voorbeeld?.title.rendered ?? "geen voorbeeld"}"`);
+  if (!APPLY) continue;
+  await backup(`menu-${m.menu}-before-contactitem`, items);
+  for (const i of schuiven) { await call("POST", `/wp/v2/menu-items/${i.id}?lang=${m.lang}`, { menu_order: i.menu_order + 1 }); await wacht(120); }
+  const nieuw = await call("POST", `/wp/v2/menu-items?lang=${m.lang}`, {
+    title: e.titel, menus: m.menu, parent: contact.id, menu_order: plek, type: "post_type", object: "page", object_id: e.pagina, status: "publish",
   });
   console.log(`menu ${m.lang}: item #${nieuw.id} aangemaakt -> ${nieuw.url}`);
   if (voorbeeld) {
