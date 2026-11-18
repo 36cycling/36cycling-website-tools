@@ -156,13 +156,24 @@ for (const m of MENUS) {
 
 // Met maar één item in het uitklapmenu leek het alsof je niet meer bij de contactgegevens en het formulier kwam
 // (Jeroen, 18 nov 2026). Daarom staat de contactpagina zelf als eerste item onder Contact.
-const EERSTE = { nl: { titel: "Contactgegevens en formulier", pagina: 18 }, en: { titel: "Contact details and form", pagina: 6512 } };
+const EERSTE = { nl: { titel: "Contact en formulier", pagina: 18 }, en: { titel: "Contact details and form", pagina: 6512 } };
 for (const m of MENUS) {
   const e = EERSTE[m.lang];
   const items = await call("GET", `/wp/v2/menu-items?menus=${m.menu}&per_page=100&context=edit&lang=${m.lang}`);
   const contact = items.find((i) => i.id === m.contact);
   if (!contact) throw new Error(`${m.lang}: menu-item Contact #${m.contact} niet gevonden`);
-  if (items.some((i) => i.object === "page" && i.object_id === e.pagina && i.parent === contact.id)) { console.log(`menu ${m.lang}: "${e.titel}" staat al onder Contact`); continue; }
+  const bestaand = items.find((i) => i.object === "page" && i.object_id === e.pagina && i.parent === contact.id);
+  if (bestaand) {
+    // Het item staat er al; alleen de titel volgt dit script (bijvoorbeeld na inkorten).
+    const nu = bestaand.title.raw ?? bestaand.title.rendered;
+    if (nu === e.titel) { console.log(`menu ${m.lang}: "${e.titel}" staat al onder Contact`); continue; }
+    console.log(`menu ${m.lang}: titel van item #${bestaand.id} wordt "${e.titel}" (was "${nu}")`);
+    if (!APPLY) continue;
+    await backup(`menu-item-${bestaand.id}-titel`, bestaand);
+    const res = await call("POST", `/wp/v2/menu-items/${bestaand.id}?lang=${m.lang}`, { title: e.titel });
+    console.log(`menu ${m.lang}: opgeslagen als "${res.title.raw ?? res.title.rendered}"`);
+    continue;
+  }
   const plek = contact.menu_order + 1;
   const schuiven = items.filter((i) => i.menu_order >= plek).sort((a, b) => b.menu_order - a.menu_order);
   const voorbeeld = items.filter((i) => i.parent === m.opmaakVan).sort((a, b) => a.menu_order - b.menu_order)[0];
