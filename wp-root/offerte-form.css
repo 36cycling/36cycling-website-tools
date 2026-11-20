@@ -17,10 +17,16 @@ __W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:checked + span { back
 __W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:focus-visible + span { outline: 2px solid #00c3d1; outline-offset: 2px; }
 __W__ .ff-el-form-control:focus-visible { outline: 2px solid #00c3d1; outline-offset: 1px; }
 
-/* Tussenkoppen: kleiner dan de standaard-h3 van het thema (35px), met lucht erboven. */
-__W__ .ff-el-group.ff-el-section-break { margin-top: 30px; }
-__W__ .ff-el-group.ff-el-section-break .ff-el-section-title { font-size: 26px; line-height: 1.25; }
+/* Tussenkoppen: kleiner dan de standaard-h3 van het thema (35px). Scheiding door ruimte erboven, niet door een lijn (wens Jeroen, 20 nov). */
+__W__ .ff-el-group.ff-el-section-break { margin-top: 56px; margin-bottom: 18px; }
+__W__ .ff-el-group.ff-el-section-break .ff-el-section-title { font-size: 26px; line-height: 1.25; margin-bottom: 0; }
+
+/* Aantal: smal invoerveld (een getal hoeft geen volle breedte). */
+__W__ .c36-aantal .ff-el-input--content { max-width: 160px; }
 
 /* Tip bij minder dan 5 stuks. */
 __W__ .c36-tip { background: #f4f6f6; border-left: 4px solid #1b2629; padding: 12px 16px; font-size: 15px; line-height: 1.5; }
 __W__ .c36-tip p { margin: 0; }
+
+/* Geen lichtgrijze lijn onder de tussenkoppen (wens Jeroen, 20 nov). */
+__W__ .ff-el-group.ff-el-section-break hr { display: none; }

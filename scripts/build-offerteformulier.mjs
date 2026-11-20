@@ -36,7 +36,7 @@ const T = {
     sec1: "Wat wil je laten maken?",
     sport: "Om welke sport gaat het?", sporten: ["Wielrennen", "Mountainbike / gravel", "Hardlopen", "Schaatsen", "Triatlon", "Veldsport", "Anders"],
     prod: "Welke producten?", producten: ["Shirts", "Korte broeken", "Lange broeken", "Jacks", "Windvesten", "Anders"],
-    aantal: "Hoeveel stuks ongeveer?", aantallen: [["1-4", "1 tot 4"], ["5-9", "5 tot 9"], ["10-19", "10 tot 19"], ["20-49", "20 tot 49"], ["50-99", "50 tot 99"], ["100+", "100 of meer"]],
+    aantal: "Hoeveel stuks?", aantalHelp: "Weet je het nog niet precies? Vul een schatting in.", getal: "Vul een aantal in (1 of meer)",
     tip: '<div class="c36-tip"><p>Een volledig eigen ontwerp maken we vanaf 5 stuks. Voor minder stuks bedrukken we een <a href="/nl/snel-wielershirt-bedrukken/">wielershirt uit voorraad met je eigen logo</a>, binnen enkele dagen klaar. Je kunt dit formulier gewoon versturen, dan denken we met je mee.</p></div>',
     kwal: "Welke kwaliteit zoek je?", kwaliteiten: [["budget", "Budget / recreatief"], ["amateur", "Amateur / enthousiast"], ["semipro", "Semi-professioneel"], ["pro", "Professioneel / elite"], ["weet-niet", "Weet ik nog niet"]],
     sec2: "Ontwerp en planning",
@@ -46,8 +46,9 @@ const T = {
     knop: "Offerte aanvragen", bedankPagina: 8208,
     bedankt: "<h3>Bedankt voor je aanvraag.</h3>\n<p>We nemen snel contact met je op.</p>",
     meldNaam: "Offerteaanvraag op 36Cycling.com", meldOnderwerp: "Offerteaanvraag: {inputs.names.first_name} {inputs.names.last_name}, {inputs.aantal} stuks",
-    meldTekst: (rij) => `<p>Nieuwe offerteaanvraag via de website (NL).</p>\n${rij}`,
-    lab: { naam: "Naam", mail: "E-mail", tel: "Telefoon", org: "Club, team of bedrijf", sport: "Sport", prod: "Producten", aantal: "Aantal", kwal: "Kwaliteit", ontwerp: "Ontwerp", wanneer: "Nodig op", opm: "Vragen of opmerkingen" },
+    intro: "Nieuwe offerteaanvraag via de website. Met Beantwoorden mail je de aanvrager direct.", kop: ["Contact", "Aanvraag", "Ontwerp en planning"],
+    lab: { naam: "Naam", mail: "E-mail", tel: "Telefoon", org: "Club, team of bedrijf", sport: "Sport", prod: "Producten", aantal: "Aantal", kwal: "Kwaliteit", ontwerp: "Ontwerp", wanneer: "Gewenste datum", opm: "Vragen of opmerkingen" },
+    h1: "Offerte aanvragen",
   },
   en: {
     title: "Quote request (EN)", verplicht: "This field is required", kies: "Please make a choice", email: "Please enter a valid email address",
@@ -56,7 +57,7 @@ const T = {
     sec1: "What would you like us to make?",
     sport: "Which sport is it for?", sporten: ["Road cycling", "Mountain bike / gravel", "Running", "Ice skating", "Triathlon", "Field sports", "Other"],
     prod: "Which products?", producten: ["Jerseys", "Shorts", "Long tights", "Jackets", "Wind vests", "Other"],
-    aantal: "Roughly how many pieces?", aantallen: [["1-4", "1 to 4"], ["5-9", "5 to 9"], ["10-19", "10 to 19"], ["20-49", "20 to 49"], ["50-99", "50 to 99"], ["100+", "100 or more"]],
+    aantal: "How many pieces?", aantalHelp: "Not sure yet? Enter an estimate.", getal: "Enter a quantity (1 or more)",
     tip: '<div class="c36-tip"><p>We make a fully custom design from 5 pieces. For fewer pieces, we print a <a href="/en/custom-cycling-jersey-from-1-piece/">jersey from stock with your own logo</a>, ready within a few days. You can still send this form and we will think along with you.</p></div>',
     kwal: "Which quality are you looking for?", kwaliteiten: [["budget", "Budget / recreational"], ["amateur", "Amateur / enthusiast"], ["semipro", "Semi-professional"], ["pro", "Professional / elite"], ["weet-niet", "Not sure yet"]],
     sec2: "Design and planning",
@@ -66,8 +67,9 @@ const T = {
     knop: "Request a quote", bedankPagina: 8209,
     bedankt: "<h3>Thank you for your request.</h3>\n<p>We will get back to you soon.</p>",
     meldNaam: "Quote request on 36Cycling.com", meldOnderwerp: "Quote request (EN): {inputs.names.first_name} {inputs.names.last_name}, {inputs.aantal} pieces",
-    meldTekst: (rij) => `<p>New quote request via the website (EN).</p>\n${rij}`,
-    lab: { naam: "Name", mail: "Email", tel: "Phone", org: "Club, team or company", sport: "Sport", prod: "Products", aantal: "Quantity", kwal: "Quality", ontwerp: "Design", wanneer: "Needed by", opm: "Questions or comments" },
+    intro: "New quote request via the English website. Reply to email the requester directly.", kop: ["Contact", "Request", "Design and planning"],
+    lab: { naam: "Name", mail: "Email", tel: "Phone", org: "Club, team or company", sport: "Sport", prod: "Products", aantal: "Quantity", kwal: "Quality", ontwerp: "Design", wanneer: "Wanted by", opm: "Questions or comments" },
+    h1: "Request a quote",
   },
 };
 
@@ -108,9 +110,18 @@ function bouwVelden(t) {
       ? { title: "Check Box", icon_class: "ff-edit-checkbox-1", template: "inputCheckable" }
       : { title: "Radiobutton veld", icon_class: "ff-edit-radio", element: "input-radio", template: "inputCheckable" },
   });
+  const getal = (name, label, help) => ({
+    index: 6, element: "input_number", uniqElKey: key(),
+    attributes: { autocomplete: "off", type: "number", name, value: "", id: "", class: "", placeholder: "", min: "1" },
+    settings: { container_class: "c36-aantal", label, admin_field_label: name, label_placement: "", help_message: help, number_step: "1", prefix_label: "", suffix_label: "", numeric_formatter: "", mobile_keyboard_type_number: "",
+      validation_rules: { ...req(true, t.getal), numeric: { value: true, message: t.getal, global_message: t.getal, global: false },
+        min: { value: "1", message: t.getal, global_message: "", global: false }, max: { value: "", message: "", global_message: "", global: false }, digits: { value: "", message: "", global_message: "", global: false } },
+      conditional_logics: [], calculation_settings: { status: false, formula: "" } },
+    editor_options: { title: "Numeriek veld", icon_class: "ff-edit-numeric", template: "inputText" },
+  });
   const html = (code, als) => ({
     index: 10, element: "custom_html", uniqElKey: key(), attributes: [],
-    settings: { html_codes: code, container_class: "", conditional_logics: als ? { type: "any", status: true, conditions: [{ field: als[0], operator: "=", value: als[1] }] } : [] },
+    settings: { html_codes: code, container_class: "", conditional_logics: als ? { type: "any", status: true, conditions: [{ field: als[0], operator: als[2] || "=", value: als[1] }] } : [] },
     editor_options: { title: "Custom HTML", icon_class: "ff-edit-html", template: "customHTML" },
   });
   const tekstvak = (name, label, placeholder) => ({
@@ -136,8 +147,8 @@ function bouwVelden(t) {
     sectie(t.sec1),
     keuzes("input_checkbox", "sport", t.sport, t.sporten, true),
     keuzes("input_checkbox", "producten", t.prod, t.producten, true),
-    keuzes("input_radio", "aantal", t.aantal, t.aantallen, true),
-    html(t.tip, ["aantal", "1-4"]),
+    getal("aantal", t.aantal, t.aantalHelp),
+    html(t.tip, ["aantal", "5", "<"]),
     keuzes("input_radio", "kwaliteit", t.kwal, t.kwaliteiten, true),
     sectie(t.sec2),
     keuzes("input_radio", "ontwerp", t.ontwerp, t.ontwerpen, false),
@@ -153,9 +164,17 @@ const knop = (t) => ({
     hover_styles: { backgroundColor: "#1b2629", borderColor: "#1b2629", color: "#ffffff", borderRadius: "", minWidth: "" }, current_state: "normal_styles" },
   editor_options: { title: "Submit Button" },
 });
+// Mail als nette tabel met inline stijl (mailprogramma's negeren losse CSS): links het onderdeel, rechts het antwoord, in drie blokjes.
 const meldBericht = (t) => {
-  const r = (lab, v) => `<strong>${lab}:</strong> ${v}<br />`;
-  return t.meldTekst(`<p>${r(t.lab.naam, "{inputs.names.first_name} {inputs.names.last_name}")}${r(t.lab.mail, "{inputs.email}")}${r(t.lab.tel, "{inputs.telefoon}")}${r(t.lab.org, "{inputs.organisatie}")}</p>\n<p>${r(t.lab.sport, "{inputs.sport}")}${r(t.lab.prod, "{inputs.producten}")}${r(t.lab.aantal, "{inputs.aantal}")}${r(t.lab.kwal, "{inputs.kwaliteit}")}</p>\n<p>${r(t.lab.ontwerp, "{inputs.ontwerp}")}${r(t.lab.wanneer, "{inputs.wanneer}")}</p>\n<p><strong>${t.lab.opm}:</strong><br />{inputs.opmerking}</p>`);
+  const td = "padding:7px 10px;border-bottom:1px solid #e6e8e9;vertical-align:top;font-size:14px;line-height:1.45;";
+  const rij = (lab, v) => `<tr><td style="${td}width:170px;color:#5b6466;">${lab}</td><td style="${td}color:#1b2629;">${v}</td></tr>`;
+  const kop = (tekst) => `<tr><td colspan="2" style="padding:18px 10px 6px;font-size:13px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#1b2629;">${tekst}</td></tr>`;
+  return `<p style="font-size:14px;margin:0 0 6px;">${t.intro}</p>
+<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+${kop(t.kop[0])}${rij(t.lab.naam, "{inputs.names.first_name} {inputs.names.last_name}")}${rij(t.lab.mail, "{inputs.email}")}${rij(t.lab.tel, "{inputs.telefoon}")}${rij(t.lab.org, "{inputs.organisatie}")}
+${kop(t.kop[1])}${rij(t.lab.aantal, "{inputs.aantal}")}${rij(t.lab.sport, "{inputs.sport}")}${rij(t.lab.prod, "{inputs.producten}")}${rij(t.lab.kwal, "{inputs.kwaliteit}")}
+${kop(t.kop[2])}${rij(t.lab.ontwerp, "{inputs.ontwerp}")}${rij(t.lab.wanneer, "{inputs.wanneer}")}${rij(t.lab.opm, "{inputs.opmerking}")}
+</table>`;
 };
 
 // Toegankelijkheid: Fluent Forms koppelt de vraag van een keuzelijst niet aan de knoppen. Dit maakt van elke lijst een
@@ -218,10 +237,20 @@ if (ONLY_FORMS) process.exit(0);
 // Voorbeeldpagina's (concept, noindex) om het formulier te bekijken voordat het op de offertepagina komt.
 for (const lang of ["nl", "en"]) {
   const key = `offerteformulier-voorbeeld-${lang}`;
-  if (state[key]?.id) { console.log(`voorbeeld ${lang}: #${state[key].id} bestaat al`); continue; }
+  const inhoud = `<!-- wp:heading {"level":1,"fontSize":"x-large"} -->
+<h1 class="wp-block-heading has-x-large-font-size">${T[lang].h1}</h1>
+<!-- /wp:heading -->
+
+<!-- wp:shortcode -->
+[fluentform id="${mine.forms[lang]}"]
+<!-- /wp:shortcode -->`;
+  if (state[key]?.id) {
+    const r = await fetch(`${W}/wp/v2/pages/${state[key].id}`, { method: "POST", headers: { ...AUTH, "Content-Type": "application/json" }, body: JSON.stringify({ content: inhoud }) });
+    console.log(`voorbeeld ${lang}: #${state[key].id} bijgewerkt (${r.status})`); continue;
+  }
   const titel = lang === "nl" ? "Offerte aanvragen (nieuw formulier, voorbeeld)" : "Request a quote (new form, preview)";
   const res = await upsertPage(cfg, { title: titel, slug: lang === "nl" ? "offerteformulier-voorbeeld" : "quote-form-preview", lang, status: "draft",
-    content: `<!-- wp:shortcode -->\n[fluentform id="${mine.forms[lang]}"]\n<!-- /wp:shortcode -->`, meta: { "_yoast_wpseo_meta-robots-noindex": "1" } });
+    content: inhoud, meta: { "_yoast_wpseo_meta-robots-noindex": "1" } });
   state[key] = { id: res.id, link: res.link }; await save();
   console.log(`voorbeeld ${lang}: #${res.id} ${res.status}`);
 }
