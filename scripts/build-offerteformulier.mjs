@@ -148,7 +148,7 @@ function bouwVelden(t) {
     keuzes("input_checkbox", "sport", t.sport, t.sporten, true),
     keuzes("input_checkbox", "producten", t.prod, t.producten, true),
     getal("aantal", t.aantal, t.aantalHelp),
-    html(t.tip, ["aantal", "5", "<"]),
+    // Tip bij minder dan 5 stuks weggehaald (20 nov, Jeroen: binnenkort een oplossing, MINT). Tekst staat nog in T.tip.
     keuzes("input_radio", "kwaliteit", t.kwal, t.kwaliteiten, true),
     sectie(t.sec2),
     keuzes("input_radio", "ontwerp", t.ontwerp, t.ontwerpen, false),
