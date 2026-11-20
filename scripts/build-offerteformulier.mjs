@@ -241,9 +241,11 @@ for (const lang of ["nl", "en"]) {
 <h1 class="wp-block-heading has-x-large-font-size">${T[lang].h1}</h1>
 <!-- /wp:heading -->
 
-<!-- wp:shortcode -->
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:shortcode -->
 [fluentform id="${mine.forms[lang]}"]
-<!-- /wp:shortcode -->`;
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->`;
   if (state[key]?.id) {
     const r = await fetch(`${W}/wp/v2/pages/${state[key].id}`, { method: "POST", headers: { ...AUTH, "Content-Type": "application/json" }, body: JSON.stringify({ content: inhoud }) });
     console.log(`voorbeeld ${lang}: #${state[key].id} bijgewerkt (${r.status})`); continue;
