@@ -72,7 +72,7 @@ const NL = {
   over: [
     ["Wat is 36 Cycling?", 'Al meer dan 10 jaar maken we wielerkleding en sportkleding in eigen ontwerp voor bedrijven, clubs en teams, en verkopen we onze eigen wielerkleding in de webshop. Oud-profs als Leontien van Moorsel, Maarten den Bakker en Bart Voskamp zijn bij 36 Cycling betrokken. Lees meer <a href="/nl/over-36/">over 36</a>.'],
     ["Waar zitten jullie?", 'In Moordrecht (Zuid-Holland), aan de Westbaan 286. Je bereikt ons via <a href="/nl/contact/">het contactformulier</a>, info@36cycling.com of 0182 – 232 008.'],
-    ["Waarom heet het 36?", "36 was het favoriete startnummer van Fausto Coppi, en Leontien van Moorsel werd met nummer 36 olympisch kampioen in Sydney. Voor veel renners is het een geluksgetal."],
+    ["Waarom heet het 36?", 'Sporters hebben vaak bijgeloof en rituelen. 36 is een getal met veel kracht en lading. Fausto Coppi gaf het getal mythische waarden. En onze eigen Leontien van Moorsel behaalde haar mooiste overwinning met nummer 36: olympisch kampioene in Sydney. <a href="/nl/over-36/">Lees meer</a>'],
   ],
 };
 
@@ -106,7 +106,7 @@ const EN = {
   over: [
     ["What is 36 Cycling?", 'For more than 10 years we have been making custom cycling clothing and sportswear for companies, clubs and teams, and we sell our own cycling clothing in our webshop. Former pros such as Leontien van Moorsel, Maarten den Bakker and Bart Voskamp are involved with 36 Cycling. Read more <a href="/en/about-36/">about 36</a>.'],
     ["Where are you located?", 'In Moordrecht (South Holland, the Netherlands), at Westbaan 286. You can reach us via <a href="/en/contact/">the contact form</a>, info@36cycling.com or +31 182 232 008.'],
-    ["Why is it called 36?", "36 was Fausto Coppi's favourite race number, and Leontien van Moorsel became Olympic champion in Sydney wearing number 36. For many riders it is a lucky number."],
+    ["Why is it called 36?", 'Athletes often have superstitions and rituals. 36 is a number with a lot of power and meaning. Fausto Coppi gave the number a mythical value. And our own Leontien van Moorsel achieved her greatest victory wearing number 36: Olympic champion in Sydney. <a href="/en/about-36/">Read more</a>'],
   ],
 };
 
