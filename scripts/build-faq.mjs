@@ -46,7 +46,7 @@ const NL = {
   maatwerk: [
     ["Wat is het minimum aantal voor wielerkleding in eigen ontwerp?", 'Een volledig eigen ontwerp maken we vanaf 5 stuks. Wil je minder, bijvoorbeeld één shirt? Dan bedrukken we een wielershirt uit voorraad met je eigen logo of tekst: <a href="/nl/snel-wielershirt-bedrukken/">wielershirt met eigen logo, vanaf 1 stuk</a>.'],
     ["Hoe lang duurt het voordat mijn kleding klaar is?", "Kleding in een volledig eigen ontwerp is 3 tot 5 weken na goedkeuring van het ontwerp klaar, afhankelijk van het product en de tijd van het jaar. Een shirt uit voorraad met je logo is binnen enkele dagen klaar. Heb je een vaste datum, zoals een evenement? Laat het ons weten, dan denken we mee."],
-    ["Wat kost wielerkleding in eigen ontwerp?", 'Dat hangt af van het aantal en de kwaliteit die je kiest. Daarnaast zijn er eenmalige kosten om je ontwerp in te stellen. Een shirt uit voorraad met je eigen logo kost € 89 per stuk. <a href="/nl/offerteaanvraag/">Vraag een offerte aan</a>, dan krijg je snel een prijs.'],
+    ["Wat kost wielerkleding in eigen ontwerp?", 'Een wielershirt in eigen ontwerp kost vanaf € 35 excl. btw (€ 42,35 incl. btw) per stuk bij 10 stuks, plus eenmalige opstartkosten voor je ontwerp. Bij 5 tot 9 stuks is de prijs per stuk iets hoger. De prijs hangt verder af van de kwaliteit die je kiest. Heel snel een shirt nodig? Dat kan ook. We hebben <a href="/nl/snel-wielershirt-bedrukken/">shirts op voorraad</a> waarop we je logo of tekst drukken voor € 89 per stuk. <a href="/nl/offerteaanvraag/">Vraag een offerte aan</a>, dan krijg je snel een exacte prijs.'],
     ["Kan ik mijn eigen ontwerp aanleveren?", "Ja. Je kunt een ontwerp, schets of je logo's sturen, of zelf beginnen in onze 3D-designer. Onze ontwerpers maken er een productieklaar ontwerp van en laten je een 3D-voorbeeld zien voordat we gaan maken. Logo's ontvangen we het liefst als vectorbestand (EPS, PDF of AI)."],
     ["Betaal ik voor het ontwerp?", "Je betaalt voor het ontwerp als je alles in onze handen geeft. Ben je zelf al ver op weg, bijvoorbeeld in onze 3D-designer, dan vervallen deze kosten."],
     ["Hoe wordt de kleding bedrukt?", "Kleding in eigen ontwerp maken we met sublimatiedruk: de inkt wordt in de stof zelf gedrukt. Daardoor kan elke kleur en elk ontwerp, blijft de stof soepel en slijt de print niet. Een shirt uit voorraad bedrukken we met dunne transfers."],
@@ -80,7 +80,7 @@ const EN = {
   maatwerk: [
     ["What is the minimum order for custom cycling clothing?", 'We make a fully custom design from 5 pieces. Need fewer, for example one jersey? Then we print a jersey from stock with your own logo or text: <a href="/en/custom-cycling-jersey-from-1-piece/">custom cycling jersey from 1 piece</a>.'],
     ["How long does it take before my clothing is ready?", "Clothing in a fully custom design is ready 3 to 5 weeks after design approval, depending on the product and the time of year. A stock jersey with your logo is ready within a few days. Do you have a fixed date, such as an event? Let us know and we will think along with you."],
-    ["How much does custom cycling clothing cost?", 'That depends on the quantity and the quality you choose. There is also a one-off fee for setting up your design. A stock jersey with your own logo costs € 89 per piece. <a href="/en/request-a-quote/">Request a quote</a> and you will get a price quickly.'],
+    ["How much does custom cycling clothing cost?", 'A cycling jersey in your own design starts at € 35 excl. VAT (€ 42.35 incl. VAT) per piece for 10 pieces, plus a one-off set-up fee for your design. For 5 to 9 pieces the price per piece is slightly higher. The price also depends on the quality you choose. Need a jersey very quickly? That is possible too. We have <a href="/en/custom-cycling-jersey-from-1-piece/">jerseys in stock</a> that we print with your logo or text for € 89 per piece. <a href="/en/request-a-quote/">Request a quote</a> and you will quickly get an exact price.'],
     ["Can I supply my own design?", "Yes. You can send a design, a sketch or your logos, or start yourself in our 3D designer. Our designers turn it into a production-ready design and show you a 3D preview before we start production. We prefer logos as a vector file (EPS, PDF or AI)."],
     ["Do I pay for the design?", "You pay for the design if you leave everything in our hands. If you have already come a long way yourself, for example in our 3D designer, these costs are waived."],
     ["How is the clothing printed?", "We make custom clothing with sublimation printing: the ink is printed into the fabric itself. This allows any colour and any design, keeps the fabric soft and the print does not wear off. Stock jerseys are printed with thin transfers."],
@@ -134,7 +134,23 @@ const PAGES = {
 const ids = {};
 for (const [lang, p] of Object.entries(PAGES)) {
   const key = `faq-${lang}`;
-  if (state[key]?.id) { ids[lang] = state[key].id; console.log(`pagina ${lang}: #${state[key].id} bestaat al, inhoud blijft ongemoeid`); continue; }
+  if (state[key]?.id) {
+    ids[lang] = state[key].id;
+    // --update-concept: alleen een concept dat sinds het aanmaken niet is bewerkt (geen revisies, modified niet later dan date; openen in de editor verschuift date bij concepten) opnieuw opbouwen.
+    if (process.argv.includes("--update-concept")) {
+      const cur = await wp("GET", `/wp/v2/pages/${state[key].id}?context=edit&_fields=status,date,modified`);
+      const revs = await wp("GET", `/wp/v2/pages/${state[key].id}/revisions?_fields=id`);
+      if (cur.status === "draft" && cur.modified <= cur.date && revs.length === 0) {
+        await wp("POST", `/wp/v2/pages/${state[key].id}`, { content: p.content });
+        console.log(`pagina ${lang}: #${state[key].id} concept bijgewerkt`);
+        continue;
+      }
+      console.log(`pagina ${lang}: #${state[key].id} is ${cur.status} of al bewerkt; niet overschreven`);
+      continue;
+    }
+    console.log(`pagina ${lang}: #${state[key].id} bestaat al, inhoud blijft ongemoeid`);
+    continue;
+  }
   const res = await upsertPage(cfg, { title: p.title, slug: p.slug, lang, status: "draft", content: p.content, meta: { _yoast_wpseo_title: p.seoTitle, _yoast_wpseo_metadesc: p.metadesc, _yoast_wpseo_focuskw: p.focus } });
   ids[lang] = res.id;
   state[key] = { id: res.id, link: res.link };
