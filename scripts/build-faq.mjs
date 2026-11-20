@@ -1,3 +1,6 @@
+// LET OP (20 nov 2026): de live FAQ (NL 10119, EN 10120) is omgebouwd naar Greenshift-accordeons in de editor (vraag als H3, FAQ-schema via
+// Greenshift, CSS-regel c36-faq in een HTML-blok). Dit script maakt nog de oude versie met Yoast FAQ-blokken en is alleen nog de bron van de teksten;
+// --blok werkt niet meer op de live pagina's. Tekst aanpassen = in de editor (Greenshift maakt zijn CSS alleen bij opslaan in de editor).
 // /nl/veelgestelde-vragen/ en /en/faq/ — vraagbaak met Yoast FAQ-blokken (FAQPage-schema komt van Yoast zelf).
 // 20 nov 2026: vragen uit Search Console, het contactformulier en de mailbox (alleen de vragen, geen namen).
 // Eén pagina per zoekdoel: vragen over maatwerk krijgen een kort antwoord en een link naar de pagina die het onderwerp "bezit".
