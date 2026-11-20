@@ -11,7 +11,7 @@ const ROOT = new URL("..", import.meta.url);
 const STATE = new URL("state.json", ROOT);
 const cfg = await loadConfig();
 const state = JSON.parse(await readFile(STATE, "utf8"));
-const { heading, paragraph, buttons, breadcrumbs } = blocks;
+const { heading, paragraph, buttons } = blocks;
 const AUTH = { Authorization: "Basic " + Buffer.from(`${cfg.wp.username}:${cfg.wp.appPassword}`).toString("base64"), "Content-Type": "application/json" };
 const wp = async (method, path, body) => {
   const r = await fetch(cfg.wp.baseUrl.replace(/\/$/, "") + "/wp-json" + path, { method, headers: AUTH, body: body ? JSON.stringify(body) : undefined });
@@ -116,7 +116,6 @@ const build = (lang, Q) => {
     : { h1: "Frequently asked questions", intro: "Here you will find answers to the questions we get most often: about custom cycling clothing, our products, the webshop and 36 Cycling itself. Is your question not listed? Feel free to get in touch.", s: ["Custom cycling clothing", "Products and materials", "Webshop: shipping, exchanges and returns", "About 36 Cycling"], end: "Is your question not listed?", endP: "We are happy to help. Send us a message or request a quote right away.", btn: [{ text: "Contact us", href: "/en/contact/" }, { text: "Request a quote", href: "/en/request-a-quote/" }] };
   const keys = ["maatwerk", "materiaal", "webshop", "over"];
   return [
-    breadcrumbs(),
     heading(t.h1, 1, { size: "x-large" }),
     paragraph(t.intro),
     ...keys.flatMap((k, i) => [heading(t.s[i], 2), faq(`${lang}-${k}`, Q[k])]),
