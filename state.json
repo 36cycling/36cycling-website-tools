@@ -398,5 +398,13 @@
   "promotions-en": {
     "id": 10099,
     "link": "https://www.36cycling.com/en/?page_id=10099"
+  },
+  "faq-nl": {
+    "id": 10119,
+    "link": "https://www.36cycling.com/nl/?page_id=10119"
+  },
+  "faq-en": {
+    "id": 10120,
+    "link": "https://www.36cycling.com/en/?page_id=10120"
   }
 }
