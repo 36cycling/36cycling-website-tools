@@ -2,8 +2,9 @@
    __W__ wordt door scripts/build-offerteformulier.mjs vervangen door .fluentform.fluentform_wrapper_<id>.
    Keuzeknoppen zoals bij het maatonderzoek: op de telefoon naast elkaar, gekozen optie zwart, duidelijke focusrand voor toetsenbordgebruikers.
    De plugin zet op de telefoon zelf border en border-radius met !important; alleen daarom staat hier !important bij border-color. */
-/* Links uitgelijnd (wens Jeroen, 20 nov): de pagina centreert smallere blokken, het formulier begint gelijk met de titel. */
-__W__ { max-width: 720px; margin-left: 0; margin-right: auto; }
+/* Links uitgelijnd (wens Jeroen, 20 nov): de pagina centreert smallere blokken, het formulier begint gelijk met de titel.
+   WordPress zet die centrering zelf met !important (.is-layout-constrained > …), alleen daarom hier ook !important. */
+__W__ { max-width: 720px; margin-left: 0 !important; margin-right: auto !important; }
 __W__ .ff-el-input--label label { font-weight: 600; }
 __W__ .ff-el-group.ff_list_buttons .ff-el-input--content { display: flex; flex-wrap: wrap; gap: 8px; }
 __W__ .ff-el-group.ff_list_buttons .ff-el-form-check { display: block; margin: 0; }
