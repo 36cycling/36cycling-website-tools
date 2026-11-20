@@ -70,7 +70,7 @@ const NL = {
     ["Waar is mijn bestelling?", 'Dat zoek je zelf op met je e-mailadres en postcode, ook voor bestellingen in de webshop van je club of bedrijf. Zie <a href="/nl/waar-is-mijn-bestelling/">Waar is mijn bestelling?</a>'],
   ],
   over: [
-    ["Wie zit er achter 36 Cycling?", 'Al meer dan 10 jaar maken we wielerkleding en sportkleding voor bedrijven, clubs en teams, en verkopen we onze eigen wielerkleding in de webshop. In ons team zitten oud-profs als Leontien van Moorsel, Maarten den Bakker en Bart Voskamp. Lees meer <a href="/nl/over-36/">over 36</a>.'],
+    ["Wat is 36 Cycling?", 'Al meer dan 10 jaar maken we wielerkleding en sportkleding in eigen ontwerp voor bedrijven, clubs en teams, en verkopen we onze eigen wielerkleding in de webshop. Oud-profs als Leontien van Moorsel, Maarten den Bakker en Bart Voskamp zijn bij 36 Cycling betrokken. Lees meer <a href="/nl/over-36/">over 36</a>.'],
     ["Waar zitten jullie?", 'In Moordrecht (Zuid-Holland), aan de Westbaan 286. Je bereikt ons via <a href="/nl/contact/">het contactformulier</a>, info@36cycling.com of 0182 – 232 008.'],
     ["Waarom heet het 36?", "36 was het favoriete startnummer van Fausto Coppi, en Leontien van Moorsel werd met nummer 36 olympisch kampioen in Sydney. Voor veel renners is het een geluksgetal."],
   ],
@@ -104,7 +104,7 @@ const EN = {
     ["Where is my order?", 'You can look it up yourself with your email address and postcode, also for orders in the webshop of your club or company. See <a href="/en/where-is-my-order/">Where is my order?</a>'],
   ],
   over: [
-    ["Who is behind 36 Cycling?", 'For more than 10 years we have been making cycling clothing and sportswear for companies, clubs and teams, and we sell our own cycling clothing in our webshop. Our team includes former pros such as Leontien van Moorsel, Maarten den Bakker and Bart Voskamp. Read more <a href="/en/about-36/">about 36</a>.'],
+    ["What is 36 Cycling?", 'For more than 10 years we have been making custom cycling clothing and sportswear for companies, clubs and teams, and we sell our own cycling clothing in our webshop. Former pros such as Leontien van Moorsel, Maarten den Bakker and Bart Voskamp are involved with 36 Cycling. Read more <a href="/en/about-36/">about 36</a>.'],
     ["Where are you located?", 'In Moordrecht (South Holland, the Netherlands), at Westbaan 286. You can reach us via <a href="/en/contact/">the contact form</a>, info@36cycling.com or +31 182 232 008.'],
     ["Why is it called 36?", "36 was Fausto Coppi's favourite race number, and Leontien van Moorsel became Olympic champion in Sydney wearing number 36. For many riders it is a lucky number."],
   ],
@@ -130,6 +130,27 @@ const PAGES = {
   nl: { title: "Veelgestelde vragen", slug: "veelgestelde-vragen", seoTitle: "Veelgestelde vragen: maatwerk, maten en webshop", metadesc: "Antwoord op de meestgestelde vragen: minimum aantal, levertijd, prijs, maten, zeem, wassen, verzenden en retour. Wielerkleding in eigen ontwerp vanaf 5 stuks.", focus: "veelgestelde vragen wielerkleding", content: build("nl", NL) },
   en: { title: "Frequently asked questions", slug: "faq", seoTitle: "FAQ: custom cycling clothing, sizes and webshop", metadesc: "Answers to the most frequently asked questions: minimum order, delivery time, price, sizes, chamois, washing, shipping and returns. Custom cycling clothing from 5 pieces.", focus: "cycling clothing faq", content: build("en", EN) },
 };
+
+// --blok=<sleutel> (maatwerk, materiaal, webshop, over): vervangt op de bestaande (ook gepubliceerde) pagina's alleen dat ene FAQ-blok,
+// met back-up in backups/. De rest van de pagina (ook eigen aanpassingen van Jeroen) blijft staan.
+const blokArg = process.argv.find((a) => a.startsWith("--blok="));
+if (blokArg) {
+  const key = blokArg.slice(7);
+  const DATA = { nl: NL, en: EN };
+  if (!DATA.nl[key]) throw new Error(`onbekend blok: ${key}`);
+  const stamp = new Date().toISOString().slice(0, 10);
+  for (const lang of ["nl", "en"]) {
+    const id = state[`faq-${lang}`]?.id;
+    const p = await wp("GET", `/wp/v2/pages/${id}?context=edit&_fields=id,content,modified`);
+    await writeFile(new URL(`backups/page-${id}-before-faq-${key}-${stamp}.json`, ROOT), JSON.stringify(p, null, 1));
+    const re = new RegExp(`<!-- wp:yoast/faq-block \\{"questions":\\[\\{"id":"faq-question-${lang}-${key}-1"[\\s\\S]*?<!-- /wp:yoast/faq-block -->`);
+    const hits = p.content.raw.match(new RegExp(re.source, "g")) || [];
+    if (hits.length !== 1) throw new Error(`pagina ${id}: blok ${key} ${hits.length}x gevonden`);
+    await wp("POST", `/wp/v2/pages/${id}`, { content: p.content.raw.replace(re, () => faq(`${lang}-${key}`, DATA[lang][key])) });
+    console.log(`pagina ${lang}: #${id} blok ${key} vervangen`);
+  }
+  process.exit(0);
+}
 
 const ids = {};
 for (const [lang, p] of Object.entries(PAGES)) {
