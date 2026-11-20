@@ -56,7 +56,12 @@ const BLOK = /<!-- wp:html -->\s*<div class="c36-maatwijzer"[\s\S]*?<!-- \/wp:ht
 // Het script staat als base64 in het src-adres van de scripttag. Als gewone tekst in de inhoud maakt WordPress er iets anders van
 // (&& wordt &#038;&#038;) en start de maatwijzer niet (gezien op 16 nov 2026). Aan een adres binnen een tag komt WordPress niet.
 const B64 = Buffer.from(js, "utf8").toString("base64");
-const widget = (lang, zonderJs) => `<!-- wp:html -->\n<div class="c36-maatwijzer" data-lang="${lang}"><noscript>${zonderJs}</noscript></div>\n<script id="c36-maatwijzer-js" src="data:text/javascript;charset=utf-8;base64,${B64}"></script>\n<!-- /wp:html -->`;
+// Alleen op telefoons (Blocksy: tot 690 px), alleen op deze twee pagina's, wens Jeroen 20 nov 2026: paginatitel wat groter
+// (31 → 38 px) en minder wit boven de titel (60 → 28 px). Er is geen instelling per pagina én per apparaat voor, daarom
+// deze twee regels eigen CSS in het maatwijzerblok. De titel volgt de maat "XL" van het kopblok: kiest Jeroen in de editor
+// een andere maat, dan geldt die gewoon. Geen aanhalingstekens, & of > gebruiken: WordPress kan die in de inhoud veranderen.
+const PAGINA_CSS = "@media (max-width: 689.98px) { .ct-container-full[data-vertical-spacing*=top] { padding-top: 28px; } .entry-content { --wp--preset--font-size--x-large: 38px; } }";
+const widget = (lang, zonderJs) => `<!-- wp:html -->\n<div class="c36-maatwijzer" data-lang="${lang}"><noscript>${zonderJs}</noscript></div>\n<style id="c36-maatwijzer-pagina">${PAGINA_CSS}</style>\n<script id="c36-maatwijzer-js" src="data:text/javascript;charset=utf-8;base64,${B64}"></script>\n<!-- /wp:html -->`;
 const PAGES = {
   nl: {
     slug: "maatwijzer", title: "Maatwijzer", yoast: "Maatwijzer wielerkleding: vind je maat in een minuut",
