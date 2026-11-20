@@ -406,5 +406,19 @@
   "faq-en": {
     "id": 10120,
     "link": "https://www.36cycling.com/en/?page_id=10120"
+  },
+  "offerteformulier": {
+    "forms": {
+      "nl": 9,
+      "en": 10
+    }
+  },
+  "offerteformulier-voorbeeld-nl": {
+    "id": 10156,
+    "link": "https://www.36cycling.com/nl/?page_id=10156"
+  },
+  "offerteformulier-voorbeeld-en": {
+    "id": 10157,
+    "link": "https://www.36cycling.com/en/?page_id=10157"
   }
 }

@@ -1,0 +1,26 @@
+/* Offerteformulier (Fluent Forms): staat per formulier in Instellingen → Aangepaste CSS/JS.
+   __W__ wordt door scripts/build-offerteformulier.mjs vervangen door .fluentform.fluentform_wrapper_<id>.
+   Keuzeknoppen zoals bij het maatonderzoek: op de telefoon naast elkaar, gekozen optie zwart, duidelijke focusrand voor toetsenbordgebruikers.
+   De plugin zet op de telefoon zelf border en border-radius met !important; alleen daarom staat hier !important bij border-color. */
+__W__ { max-width: 720px; }
+__W__ .ff-el-input--label label { font-weight: 600; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-input--content { display: flex; flex-wrap: wrap; gap: 8px; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check { display: block; margin: 0; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label > span {
+  display: block; width: auto; min-width: 52px; padding: 12px 14px; font-size: 15px; font-weight: 400; color: #1b2629;
+  border: 1px solid; border-color: #cfd3d4 !important; border-radius: 4px; box-shadow: none;
+}
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label > span:hover { color: #1b2629; border-color: #1b2629 !important; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check label:focus-within span { background-color: #fff; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check.ff_item_selected label > span,
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:checked + span { background-color: #000; border-color: #000 !important; color: #fff; box-shadow: none; }
+__W__ .ff-el-group.ff_list_buttons .ff-el-form-check input:focus-visible + span { outline: 2px solid #00c3d1; outline-offset: 2px; }
+__W__ .ff-el-form-control:focus-visible { outline: 2px solid #00c3d1; outline-offset: 1px; }
+
+/* Tussenkoppen: kleiner dan de standaard-h3 van het thema (35px), met lucht erboven. */
+__W__ .ff-el-group.ff-el-section-break { margin-top: 30px; }
+__W__ .ff-el-group.ff-el-section-break .ff-el-section-title { font-size: 26px; line-height: 1.25; }
+
+/* Tip bij minder dan 5 stuks. */
+__W__ .c36-tip { background: #f4f6f6; border-left: 4px solid #1b2629; padding: 12px 16px; font-size: 15px; line-height: 1.5; }
+__W__ .c36-tip p { margin: 0; }
