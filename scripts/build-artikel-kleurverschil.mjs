@@ -1,54 +1,59 @@
-// Artikel (Stories) "Kleurverschil bij nabestellen" — eerste van de antwoord-artikelen n.a.v. de GEO-audit van Dashboa (23 nov 2026).
-// Maakt of werkt het NL-bericht bij als CONCEPT (Jeroen publiceert). Gebruik: node scripts/build-artikel-kleurverschil.mjs [--id=<postId>]
+// Artikel (Stories) "Hoe we kleurverschil voorkomen bij nabestellen" — eerste van de antwoord-artikelen n.a.v. de GEO-audit van Dashboa (23 nov 2026).
+// Maakt of werkt het NL-bericht bij als CONCEPT (Jeroen publiceert). Gebruik: node scripts/build-artikel-kleurverschil.mjs [--id=<postId>]  (NL-concept: 10165)
 // Opbouw voor AI en zoekmachines: direct antwoord bovenaan, tussenkoppen als vraag, korte lijsten, interne links.
-// Alleen feiten die al op de site staan over 36 Cycling (ontwerp bewaard, Pantone/HEX/RGB, kleurstalen, kleurproef op verzoek, sublimatie, clubwebshop).
+// Werkwijze 36 Cycling volgens Jeroen (23 nov): eigen fabriek; dezelfde printers, inkten en afstellingen; bij kleine veranderingen opnieuw ijken;
+// Pantone zo nauwkeurig mogelijk matchen of matchen op een vorig kledingstuk (klant stuurt het op, kan van een andere leverancier zijn);
+// proefkleuren bij twijfel of op verzoek; stof meestal dezelfde, niet gegarandeerd. Land van de fabriek alleen noemen als iemand ernaar vraagt.
 import { loadConfig, upsertPost } from "../lib/wp.mjs";
 
 const p = (t) => `<!-- wp:paragraph -->\n<p>${t}</p>\n<!-- /wp:paragraph -->`;
 const h2 = (t) => `<!-- wp:heading -->\n<h2 class="wp-block-heading">${t}</h2>\n<!-- /wp:heading -->`;
 const ul = (items) => `<!-- wp:list -->\n<ul class="wp-block-list">${items.map((i) => `<!-- wp:list-item -->\n<li>${i}</li>\n<!-- /wp:list-item -->`).join("\n")}</ul>\n<!-- /wp:list -->`;
-const ol = (items) => `<!-- wp:list {"ordered":true} -->\n<ol class="wp-block-list">${items.map((i) => `<!-- wp:list-item -->\n<li>${i}</li>\n<!-- /wp:list-item -->`).join("\n")}</ol>\n<!-- /wp:list -->`;
 
 const NL = {
-  title: "Kleurverschil bij nabestellen van wielerkleding: zo voorkom je het",
+  title: "Hoe we kleurverschil voorkomen bij nabestellen van wielerkleding",
   slug: "kleurverschil-nabestellen",
   meta: {
-    _yoast_wpseo_title: "Kleurverschil bij nabestellen wielerkleding voorkomen",
-    _yoast_wpseo_metadesc: "Nabestelde wielershirts net iets anders van kleur? Zo ontstaat kleurverschil en zo voorkom je het: kleurcodes, dezelfde stof, een referentieshirt en slim bestellen.",
+    _yoast_wpseo_title: "Hoe we kleurverschil voorkomen bij nabestellen",
+    _yoast_wpseo_metadesc: "Nabestelde wielershirts moeten dezelfde kleur hebben als de vorige. Zo doen we dat: dezelfde printers en inkten, opnieuw ijken, Pantone matchen en proefkleuren.",
     _yoast_wpseo_focuskw: "kleurverschil nabestellen",
   },
   content: [
-    p("<strong>Kleurverschil bij het nabestellen van bedrukte wielerkleding voorkom je door zo weinig mogelijk te veranderen: dezelfde kleurcodes, hetzelfde ontwerpbestand, dezelfde stof en dezelfde leverancier.</strong> Een heel klein verschil tussen twee productierondes is bij textieldruk normaal. Een zichtbaar ander blauw in de groep hoeft niet."),
-    p("Het gebeurt vaak bij clubs en bedrijfsteams: een jaar na de eerste bestelling komen er nieuwe leden bij, je bestelt een paar shirts na en in de groep vallen ze net op. Hieronder lees je waar dat verschil vandaan komt en wat je eraan kunt doen."),
+    p("<strong>Bij een nabestelling moeten je nieuwe shirts dezelfde kleur hebben als de vorige. Daarom drukken we in onze eigen fabriek met dezelfde printers, dezelfde inkten en dezelfde afstellingen. Verandert er iets in het proces, dan ijken we opnieuw. Je kleuren matchen we zo nauwkeurig mogelijk op de Pantone-code of op een kledingstuk uit je vorige bestelling, en bij twijfel maken we eerst proefkleuren.</strong>"),
+    p("Het speelt vooral bij clubs en bedrijfsteams. Een jaar na de eerste bestelling komen er nieuwe leden bij en bestel je een paar shirts na. Die moeten in de groep niet opvallen. Hieronder lees je waar kleurverschil vandaan komt, hoe wij het voorkomen en wat je zelf kunt doen."),
     h2("Waarom kleuren bij een nabestelling kunnen verschillen"),
+    p("Een gedrukte kleur is het resultaat van veel factoren tegelijk. Verandert er één, dan kan de kleur net anders uitvallen:"),
     ul([
-      "<strong>Een andere stof.</strong> Dezelfde kleur ziet er op shirtstof anders uit dan op het stevigere materiaal van een wielerbroek of op mesh. Hoe meer elastaan een stof bevat, hoe minder fel een gedrukte kleur wordt.",
-      "<strong>Een nieuwe productieronde.</strong> Inkt, printerinstellingen en de temperatuur van de pers zijn bij elke ronde net iets anders. Meestal zie je dat niet, bij grote egale vlakken in een felle of donkere kleur soms wel.",
-      "<strong>Een andere leverancier.</strong> Een andere drukker werkt met andere inkt, andere stoffen en andere instellingen. Dat geeft de grootste kans op een zichtbaar verschil.",
-      "<strong>Kleuren op een scherm.</strong> Een scherm toont licht, een print is inkt op stof. Vooral fluo, felgroen, oranje en paars zien er op stof vaak anders uit dan op je scherm.",
-      "<strong>Het oude tenue is veranderd.</strong> Kleding die vaak gewassen is en veel in de zon heeft gehangen, verbleekt een beetje. Dan lijkt het nieuwe shirt anders, terwijl juist het oude veranderd is. Met de juiste was blijven kleuren langer mooi, zie <a href=\"/nl/stories/wielerkleding-wassen/\">wielerkleding wassen</a>.",
+      "<strong>Printer, inkt en afstelling.</strong> Een andere printer, een andere inkt of een iets andere instelling geeft een andere kleur, ook met hetzelfde ontwerpbestand.",
+      "<strong>De stof.</strong> Dezelfde kleur ziet er op shirtstof anders uit dan op het stevigere materiaal van een wielerbroek of op mesh. Hoe meer elastaan een stof bevat, hoe minder fel een gedrukte kleur wordt.",
+      "<strong>Scherm en stof.</strong> Een scherm toont licht, een print is inkt op stof. Vooral fluo, felgroen, oranje en paars zien er op stof vaak anders uit dan op een scherm.",
+      "<strong>Een andere leverancier.</strong> Wie overstapt, krijgt andere printers, inkten en stoffen. Zonder goede kleurmatch geeft dat de grootste kans op verschil.",
+      "<strong>Het oude tenue is veranderd.</strong> Kleding die vaak gewassen is en in de zon heeft gehangen, verbleekt een beetje. Dan lijkt het nieuwe shirt anders, terwijl juist het oude veranderd is.",
     ]),
-    h2("Zo voorkom je kleurverschil"),
-    ol([
-      "<strong>Leg je kleuren vast met codes.</strong> Geef je huisstijlkleuren door als Pantone-, HEX- of RGB-code. \"Ons clubblauw\" laat te veel ruimte. Bewaar de codes bij je ontwerp.",
-      "<strong>Bestel bij dezelfde leverancier, met hetzelfde ontwerp.</strong> Dan wordt hetzelfde bestand opnieuw gebruikt en hoeft niemand je kleuren opnieuw te zoeken.",
-      "<strong>Kies hetzelfde model en dezelfde stof.</strong> Een ander shirtmodel of een andere kwaliteit betekent vaak een andere stof, en dus een iets andere kleur. Wil je overstappen, doe dat dan voor het hele team tegelijk.",
-      "<strong>Bewaar een ongedragen referentieshirt.</strong> Leg één exemplaar uit de eerste levering apart, uit de zon. Daarmee vergelijk je een nieuwe levering eerlijk.",
-      "<strong>Bestel zoveel mogelijk in één keer.</strong> Hoe minder losse productierondes, hoe kleiner de kans op verschil. Bestel bij de eerste ronde een paar extra shirts in veelgevraagde maten, voor nieuwe leden. Heeft je club vaak nabestellingen, dan werkt een eigen webshop goed: leden bestellen zelf en de bestellingen worden samen gemaakt.",
-      "<strong>Vraag een kleurproef als je twijfelt.</strong> Een proef op de echte stof laat zien hoe je kleur er in het echt uitziet, voordat de hele bestelling gemaakt wordt.",
-      "<strong>Houd er in je ontwerp rekening mee.</strong> Laat één egale kleur niet doorlopen van shirt naar broek of van stof naar mesh: daar valt een klein verschil het meest op. Een contrastkleur op de overgang, of een zwarte broek met een accentkleur uit het shirt, maakt je tenue minder gevoelig.",
+    h2("Zo voorkomen wij kleurverschil"),
+    ul([
+      "<strong>Eigen fabriek, vaste opstelling.</strong> We drukken met dezelfde printers, dezelfde inkten en dezelfde afstellingen. Zo komt een nabestelling uit hetzelfde proces als de eerste bestelling.",
+      "<strong>Opnieuw ijken bij elke verandering.</strong> Verandert er iets in het proces, hoe klein ook, dan ijken we de printers opnieuw voordat we verder drukken.",
+      "<strong>Pantone zo nauwkeurig mogelijk matchen.</strong> We werken met jullie Pantone-, HEX- of RGB-codes en stemmen de gedrukte kleur zo precies mogelijk af op de Pantone-kleur.",
+      "<strong>Matchen op een vorig kledingstuk.</strong> Heb je geen kleurcode, of moet het passen bij kleding die je al hebt? Stuur ons een kledingstuk uit je vorige bestelling, dan matchen we daarop. Dat kan ook als die kleding van een andere leverancier komt.",
+      "<strong>Proefkleuren bij twijfel.</strong> Is een kleur lastig, of wil je zekerheid, dan maken we eerst proefkleuren op stof en leggen we die naast het origineel. Pas als de kleur klopt, maken we de hele bestelling.",
+      "<strong>Je ontwerp blijft bewaard.</strong> We bewaren jullie ontwerp, ook als je jaren later nabestelt. Er wordt dus met hetzelfde bestand gedrukt, en de eenmalige opstartkosten komen niet terug.",
+      "<strong>Zoveel mogelijk dezelfde stof.</strong> Bij een nabestelling kiezen we zoveel mogelijk dezelfde stof als bij de eerste bestelling.",
+    ]),
+    h2("Je kleding komt van een andere leverancier: kunnen jullie de kleuren namaken?"),
+    p("Ja. Stuur ons een kledingstuk uit je huidige tenue, het liefst een dat weinig gedragen is. We matchen de kleuren daarop en maken bij twijfel eerst proefkleuren. Heb je ook de Pantone-codes van je huisstijl, geef die dan mee."),
+    h2("Wat je zelf kunt doen"),
+    ul([
+      "<strong>Leg je kleuren vast met codes.</strong> \"Ons clubblauw\" laat te veel ruimte. Een Pantone-code niet.",
+      "<strong>Bewaar een ongedragen referentieshirt.</strong> Leg één exemplaar uit de eerste levering apart, uit de zon. Daarmee kunnen we bij een nabestelling matchen en kun jij een nieuwe levering eerlijk vergelijken.",
+      "<strong>Bestel zoveel mogelijk in één keer.</strong> Bestel bij de eerste ronde een paar extra shirts in veelgevraagde maten, voor nieuwe leden. Heeft je club vaak nabestellingen, dan werkt een <a href=\"/nl/custom-teamwear/\">eigen clubwebshop</a> goed: leden bestellen zelf en wij bundelen de bestellingen.",
+      "<strong>Wissel van model met het hele team tegelijk.</strong> Een ander shirtmodel kan een andere stof hebben, en dus een iets andere kleur.",
+      "<strong>Houd er in je ontwerp rekening mee.</strong> Een egale kleur die doorloopt van shirt naar broek, of van stof naar mesh, laat het kleinste verschil zien. Een contrastkleur op de overgang, of een zwarte broek met een accentkleur uit het shirt, is minder gevoelig.",
+      "<strong>Was je kleding goed.</strong> Zo blijven de kleuren langer mooi en past een nabestelling beter bij wat je al hebt. Zie <a href=\"/nl/stories/wielerkleding-wassen/\">wielerkleding wassen</a>.",
     ]),
     h2("Is een klein kleurverschil normaal?"),
-    p("Ja. Bij elke vorm van textieldruk zit er tussen twee productierondes een kleine marge. In een rijdende groep zie je dat niet. Valt het verschil wel op, meld het dan meteen na de levering, met een foto bij daglicht waarop het oude en het nieuwe shirt naast elkaar liggen."),
-    h2("Hoe we dit bij 36 Cycling aanpakken"),
-    ul([
-      "We bewaren jullie ontwerp. Ook als je jaren later nabestelt, kan dat, en de eenmalige opstartkosten komen dan niet terug.",
-      "We werken met jullie Pantone-, HEX- of RGB-codes.",
-      "Vooraf krijg je kleurstalen, en op verzoek maken we eerst een kleurproef.",
-      "We bedrukken met sublimatie: de inkt zit in de stof zelf. De print barst of bladdert niet en de kleuren blijven helder, ook na veel wasbeurten.",
-      "Voor clubs en bedrijven openen we een eigen webshop. Wij bundelen de bestellingen en laten ze samen maken.",
-    ]),
-    p("Lees meer over <a href=\"/nl/wielerkleding-bedrukken/\">wielerkleding bedrukken</a> en <a href=\"/nl/custom-teamwear/\">teamkleding met een eigen clubwebshop</a>, of bekijk de <a href=\"/nl/veelgestelde-vragen/\">veelgestelde vragen</a>. Wil je nabestellen of een nieuw tenue laten maken? <a href=\"/nl/offerteaanvraag/\">Vraag een offerte aan</a>."),
+    p("Bij textieldruk zit er tussen twee productierondes altijd een kleine marge; met een vaste opstelling en opnieuw ijken houden we die zo klein mogelijk. In een rijdende groep zie je hem niet. Valt een verschil je toch op, laat het ons dan meteen na de levering weten, met een foto bij daglicht waarop het oude en het nieuwe kledingstuk naast elkaar liggen."),
+    p("Lees meer over <a href=\"/nl/wielerkleding-bedrukken/\">wielerkleding bedrukken</a> of bekijk de <a href=\"/nl/veelgestelde-vragen/\">veelgestelde vragen</a>. Wil je nabestellen of een tenue laten namaken? <a href=\"/nl/offerteaanvraag/\">Vraag een offerte aan</a>."),
   ].join("\n\n"),
 };
 
