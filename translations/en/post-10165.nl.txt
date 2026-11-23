@@ -1,0 +1,67 @@
+@title: Hoe we kleurverschil voorkomen bij nabestellen van wielerkleding
+@slug: kleurverschil-nabestellen
+@path: /nl/stories/kleurverschil-nabestellen/
+@yoast_title: Hoe we kleurverschil voorkomen bij nabestellen | 36 Cycling
+@yoast_metadesc: Nabestelde wielershirts moeten dezelfde kleur hebben als de vorige. Zo doen we dat: dezelfde printers en inkten, opnieuw ijken, Pantone matchen en proefkleuren.
+@yoast_focuskw: kleurverschil nabestellen
+
+=== 1
+<strong>Bij een nabestelling moeten je nieuwe shirts dezelfde kleur hebben als de vorige. Daarom drukken we in onze eigen fabriek met dezelfde printers, dezelfde inkten en dezelfde afstellingen. Verandert er iets in het proces, dan ijken we opnieuw. Je kleuren matchen we zo nauwkeurig mogelijk op de Pantone-code of op een kledingstuk uit je vorige bestelling, en bij twijfel maken we eerst proefkleuren.</strong>
+=== 2
+Het speelt vooral bij clubs en bedrijfsteams. Een jaar na de eerste bestelling komen er nieuwe leden bij en bestel je een paar shirts na. Die moeten in de groep niet opvallen. Hieronder lees je hoe wij kleurverschil voorkomen en wat je zelf kunt doen.
+=== 3
+Waarom gedrukte kleuren kunnen verschillen
+=== 4
+Een gedrukte kleur is het resultaat van veel factoren tegelijk. Verandert er één, dan kan de kleur net anders uitvallen:
+=== 5
+<strong>Printer, inkt en afstelling.</strong> Een andere printer, een andere inkt of een iets andere instelling geeft een andere kleur, ook met hetzelfde ontwerpbestand.
+=== 6
+<strong>De stof.</strong> Dezelfde kleur ziet er op shirtstof anders uit dan op het stevigere materiaal van een wielerbroek of op mesh. Hoe meer elastaan een stof bevat, hoe minder fel een gedrukte kleur wordt.
+=== 7
+<strong>Scherm en stof.</strong> Een scherm toont licht, een print is inkt op stof. Vooral fluo, felgroen, oranje en paars zien er op stof vaak anders uit dan op een scherm.
+=== 8
+<strong>Een andere leverancier.</strong> Wie overstapt, krijgt andere printers, inkten en stoffen. Zonder goede kleurmatch geeft dat de grootste kans op verschil.
+=== 9
+<strong>Het oude tenue is veranderd.</strong> Kleding die vaak gewassen is en in de zon heeft gehangen, verbleekt een beetje. Dan lijkt het nieuwe shirt anders, terwijl juist het oude veranderd is.
+=== 10
+Zo voorkomen wij kleurverschil
+=== 11
+<strong>Eigen fabriek, vaste opstelling.</strong> We drukken met dezelfde printers, dezelfde inkten en dezelfde afstellingen. Zo komt een nabestelling uit hetzelfde proces als de eerste bestelling.
+=== 12
+<strong>Opnieuw ijken bij elke verandering.</strong> Verandert er iets in het proces, hoe klein ook, dan ijken we de printers opnieuw voordat we verder drukken.
+=== 13
+<strong>Pantone zo nauwkeurig mogelijk matchen.</strong> We werken het liefst met Pantone Coated-kleurcodes en stemmen de gedrukte kleur zo precies mogelijk af op die kleur. Pantone is een wereldwijde standaard voor drukwerkkleuren en dus altijd als ijkpunt te gebruiken.
+=== 14
+<strong>Matchen op een vorig kledingstuk.</strong> Heb je geen kleurcode, of moet het passen bij kleding die je al hebt? Stuur ons een kledingstuk uit je vorige bestelling, dan matchen we daarop. Dat kan ook als die kleding van een andere leverancier komt. Ook ander bestaand drukwerk kan een goed voorbeeld zijn.
+=== 15
+<strong>Proefkleuren bij twijfel.</strong> Is een kleur lastig, of wil je zekerheid, dan maken we eerst proefkleuren op stof en leggen we die naast het origineel. Pas als de kleur klopt, maken we de hele bestelling.
+=== 16
+<strong>Je ontwerp blijft bewaard.</strong> We bewaren jullie ontwerp, ook als je jaren later nabestelt. Er wordt dus met hetzelfde bestand gedrukt, en de eenmalige opstartkosten komen niet terug.
+=== 17
+<strong>Zoveel mogelijk dezelfde stof.</strong> Bij een nabestelling kiezen we zoveel mogelijk dezelfde stof als bij de eerste bestelling.
+=== 18
+Welke kleuren zijn het moeilijkst om te drukken?
+=== 19
+Het zal je misschien verbazen, maar juist de kleur die je niet drukt, is het lastigst: <strong>wit</strong>. Wit is de kleur van de stof zelf. Technische stoffen zijn verschillend samengesteld, bijvoorbeeld met meer of minder elastaan, een membraan of een andere stofdikte. Daardoor begin je steeds met een ander canvas. Daar is weinig aan te doen, behalve er in het ontwerp rekening mee houden. Verder kunnen pasteltinten en sommige tussenkleuren lastig zijn, zoals groenblauw, bruinrood en lilagrijs. Ook dan geldt ons advies: stuur je voorbeeld mee en laat eerst een proefje drukken.
+=== 20
+Je kleding komt van een andere leverancier: kunnen jullie de kleuren namaken?
+=== 21
+Ja. Stuur ons een kledingstuk uit je huidige tenue, het liefst een dat weinig gedragen is. We matchen de kleuren daarop en maken bij twijfel eerst proefkleuren. Heb je ook de Pantone-codes van je huisstijl, geef die dan mee.
+=== 22
+Wat je zelf kunt doen
+=== 23
+<strong>Leg je kleuren vast met codes.</strong> "Ons clubblauw" laat te veel ruimte. Een Pantone-code niet.
+=== 24
+<strong>Bewaar een ongedragen referentieshirt.</strong> Leg één exemplaar uit de eerste levering apart, uit de zon. Daarmee kunnen we bij een nabestelling matchen en kun jij een nieuwe levering eerlijk vergelijken.
+=== 25
+<strong>Vraag ons om advies als je twijfelt.</strong> We kennen onze producten en materialen goed en weten waar de valkuilen liggen.
+=== 26
+<strong>Houd er in je ontwerp rekening mee.</strong> Een egale kleur die doorloopt van shirt naar broek, of van stof naar mesh, laat zelfs het kleinste verschil zien. Een contrastkleur op de overgang, of een zwarte broek met een accentkleur uit het shirt, is minder gevoelig.
+=== 27
+<strong>Was je kleding goed.</strong> Zo blijven de kleuren langer mooi en past een nabestelling beter bij wat je al hebt. Zie <a href="/nl/stories/wielerkleding-wassen/">wielerkleding wassen</a>.
+=== 28
+Is een klein kleurverschil normaal?
+=== 29
+Bij textieldruk zit er tussen twee productierondes altijd een kleine marge; met een vaste opstelling en opnieuw ijken houden we die zo klein mogelijk. In een rijdende groep zie je hem niet. Valt een verschil je toch op, laat het ons dan meteen na de levering weten, met een foto bij daglicht waarop het oude en het nieuwe kledingstuk naast elkaar liggen.
+=== 30
+Lees meer over <a href="/nl/wielerkleding-bedrukken/">wielerkleding bedrukken</a> of bekijk de <a href="/nl/veelgestelde-vragen/">veelgestelde vragen</a>. Wil je nabestellen of een tenue laten namaken? <a href="/nl/offerteaanvraag/">Vraag een offerte aan</a>.

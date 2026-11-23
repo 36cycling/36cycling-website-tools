@@ -274,5 +274,7 @@
   "/nl/contact/bedankt/": "/en/contact/thank-you/",
   "/nl/maatonderzoek/": "/en/size-survey/",
   "/nl/maatwijzer/": "/en/size-finder/",
-  "/nl/waar-is-mijn-bestelling/": "/en/where-is-my-order/"
+  "/nl/waar-is-mijn-bestelling/": "/en/where-is-my-order/",
+  "/nl/veelgestelde-vragen/": "/en/faq/",
+  "/nl/stories/kleurverschil-nabestellen/": "/en/stories/colour-differences-reorders/"
 }

@@ -1,0 +1,67 @@
+@title: How we prevent colour differences when you reorder cycling clothing
+@slug: colour-differences-reorders
+@path_en: /en/stories/colour-differences-reorders/
+@yoast_title: How we prevent colour differences when you reorder | 36 Cycling
+@yoast_metadesc: Reordered cycling jerseys should match the colour of your previous ones. Here's how we do it: same printers and inks, recalibration, Pantone matching and colour proofs.
+@yoast_focuskw: colour difference reorder
+
+=== 1
+<strong>When you reorder, your new jerseys should be the same colour as the previous ones. That's why we print in our own factory with the same printers, the same inks and the same settings. If anything in the process changes, we recalibrate. We match your colours as closely as possible to the Pantone code or to a garment from your previous order, and if in doubt we make colour proofs first.</strong>
+=== 2
+This mostly matters for clubs and company teams. A year after the first order, new members join and you reorder a few jerseys. They shouldn't stand out in the group. Below you can read how we prevent colour differences and what you can do yourself.
+=== 3
+Why printed colours can differ
+=== 4
+A printed colour is the result of many factors at once. If one of them changes, the colour can turn out slightly different:
+=== 5
+<strong>Printer, ink and settings.</strong> A different printer, a different ink or a slightly different setting produces a different colour, even with the same design file.
+=== 6
+<strong>The fabric.</strong> The same colour looks different on jersey fabric than on the sturdier material of bib shorts or on mesh. The more elastane a fabric contains, the less vivid a printed colour becomes.
+=== 7
+<strong>Screen versus fabric.</strong> A screen shows light; a print is ink on fabric. Fluo colours, bright green, orange and purple in particular often look different on fabric than on a screen.
+=== 8
+<strong>A different supplier.</strong> Switching suppliers means different printers, inks and fabrics. Without a good colour match, that is the biggest risk of a difference.
+=== 9
+<strong>The old kit has changed.</strong> Clothing that has been washed often and hung in the sun fades a little. The new jersey then looks different, while in fact it's the old one that has changed.
+=== 10
+How we prevent colour differences
+=== 11
+<strong>Our own factory, a fixed setup.</strong> We print with the same printers, the same inks and the same settings. So a reorder comes out of the same process as the first order.
+=== 12
+<strong>Recalibration after every change.</strong> If anything in the process changes, however small, we recalibrate the printers before we continue printing.
+=== 13
+<strong>Matching Pantone as closely as possible.</strong> We prefer to work with Pantone Coated colour codes and match the printed colour as precisely as possible to that colour. Pantone is a worldwide standard for print colours, so it can always be used as a reference point.
+=== 14
+<strong>Matching a previous garment.</strong> No colour code, or does it need to match clothing you already have? Send us a garment from your previous order and we'll match it. That works even if the clothing came from another supplier. Other existing printed material can also be a good reference.
+=== 15
+<strong>Colour proofs when in doubt.</strong> If a colour is tricky, or you want certainty, we first print colour proofs on fabric and compare them with the original. Only when the colour is right do we produce the full order.
+=== 16
+<strong>Your design is kept on file.</strong> We keep your design, even if you reorder years later. So we print from the same file, and the one-off setup costs don't come back.
+=== 17
+<strong>The same fabric wherever possible.</strong> For a reorder we use the same fabric as for the first order wherever possible.
+=== 18
+Which colours are the hardest to print?
+=== 19
+It may surprise you, but the hardest colour is the one you don't print: <strong>white</strong>. White is the colour of the fabric itself. Technical fabrics vary in composition, for example with more or less elastane, a membrane or a different thickness. So you always start with a different canvas. There's little you can do about that, other than taking it into account in the design. Pastel shades and some in-between colours, such as blue-green, reddish brown and lilac grey, can also be tricky. Here too our advice applies: send your sample along and have a proof printed first.
+=== 20
+Your clothing comes from another supplier: can you recreate the colours?
+=== 21
+Yes. Send us a garment from your current kit, preferably one that has hardly been worn. We match the colours to it and, if in doubt, make colour proofs first. If you also have the Pantone codes of your brand colours, include them.
+=== 22
+What you can do yourself
+=== 23
+<strong>Record your colours with codes.</strong> "Our club blue" leaves too much room for interpretation. A Pantone code doesn't.
+=== 24
+<strong>Keep an unworn reference jersey.</strong> Put one item from the first delivery aside, out of the sun. We can use it to match a reorder, and you can compare a new delivery fairly.
+=== 25
+<strong>Ask us for advice if you're unsure.</strong> We know our products and materials well and know where the pitfalls are.
+=== 26
+<strong>Take it into account in your design.</strong> A solid colour that runs from jersey to shorts, or from fabric to mesh, shows even the smallest difference. A contrasting colour at the transition, or black shorts with an accent colour from the jersey, is less sensitive.
+=== 27
+<strong>Wash your clothing properly.</strong> That keeps the colours looking good for longer and helps a reorder match what you already have. See <a href="/nl/stories/wielerkleding-wassen/">how to wash cycling clothing</a>.
+=== 28
+Is a small colour difference normal?
+=== 29
+In textile printing there is always a small margin between two production runs; with a fixed setup and recalibration we keep it as small as possible. In a moving group you won't see it. If you do notice a difference, let us know straight after delivery, with a daylight photo showing the old and the new garment side by side.
+=== 30
+Read more about <a href="/nl/wielerkleding-bedrukken/">custom cycling clothing</a> or see the <a href="/nl/veelgestelde-vragen/">frequently asked questions</a>. Want to reorder or have a kit recreated? <a href="/nl/offerteaanvraag/">Request a quote</a>.
