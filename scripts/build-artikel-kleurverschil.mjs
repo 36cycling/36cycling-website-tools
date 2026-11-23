@@ -1,4 +1,6 @@
 // Artikel (Stories) "Hoe we kleurverschil voorkomen bij nabestellen" — eerste van de antwoord-artikelen n.a.v. de GEO-audit van Dashboa (23 nov 2026).
+// LET OP: Jeroen heeft het concept op 23 nov in de editor aangevuld (o.a. "Welke kleuren zijn het moeilijkst om te drukken?").
+// De site is nu leidend; dit script NIET opnieuw draaien op 10165 (zou zijn tekst overschrijven). Back-up: backups/post-10165-jeroen-2026-11-23.json.
 // Maakt of werkt het NL-bericht bij als CONCEPT (Jeroen publiceert). Gebruik: node scripts/build-artikel-kleurverschil.mjs [--id=<postId>]  (NL-concept: 10165)
 // Opbouw voor AI en zoekmachines: direct antwoord bovenaan, tussenkoppen als vraag, korte lijsten, interne links.
 // Werkwijze 36 Cycling volgens Jeroen (23 nov): eigen fabriek; dezelfde printers, inkten en afstellingen; bij kleine veranderingen opnieuw ijken;
